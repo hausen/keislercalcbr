@@ -294,13 +294,7 @@ Podemos pensar que os números reais estão dispostos ao longo de uma
 reta, com os inteiros marcados a intervalos regulares, como na Figura%
 ~\ref{fig:realline}. Esta reta é chamada \newdef{reta real}.
 
-\begin{figure}
-\begin{center}
-\includegraphics{figuras/chp_reals/realline}
-\end{center}
-\caption{A reta real.}
-\label{fig:realline}
-\end{figure}
+\widefigurefile[A reta real.]{fig:realline}{figuras/chp_reals/realline}
 
 Na matemática dos níveis fundamental e médio, a sistema de números
 reais é construído gradualmente em vários estágios. Começando-se
@@ -349,16 +343,13 @@ O \newdef[intervalo!aberto]{intervalo aberto} $(a,b)$ é definido como o conjunt
 os números reais $x$ que satisfazem $a < x < b$. Intervalos fechados e
 abertos estão ilustrados na Figura~\ref{fig:intervals}. 
 
-\begin{figure}
-\begin{center}
-\includegraphics{figuras/chp_reals/closedinter}\\
-O intervalo fechado $[a,b]$\\[\baselineskip]
-\includegraphics{figuras/chp_reals/openinter}\\
-O intervalo aberto $(a,b)$
-\end{center}
-\caption{}
-\label{fig:intervals}
-\end{figure}
+\widefigure{fig:intervals}
+{
+	\includegraphics{figuras/chp_reals/closedinter}\\
+	O intervalo fechado $[a,b]$\\[\baselineskip]
+	\includegraphics{figuras/chp_reals/openinter}\\
+	O intervalo aberto $(a,b)$
+}
 
 Tanto para o intervalo aberto $(a,b)$, quanto para o intervalo
 fechado $[a,b]$, o número $a$ é chamado de
@@ -387,26 +378,23 @@ $[a,b)$. O conjunto de todos os números reais $x$ tais que $a < x \le b$
 A Tabela~\ref{tab:intervaltypes} mostra os vários tipos de intervalos.
 \tnote{Nesta tradução, optamos por fazer correções sobre as classificações de intervalos neste parágrafo e na tabela.}
 
-\begin{table}
-\caption{Tipos de intervalos.}
-\label{tab:intervaltypes}
-\begin{center}
-\begin{tabular}{l @{\hspace{3ex}} l @{\hspace{3ex}} l}
-\hline
-Tipo            & Símbolo         & Definição              \\
-\hline
-Fechado          & $[a,b]$         & $\{ x \in \setR | a \le x \le b \}$ \\
-Fechado          & $[a,\infty)$    & $\{ x \in \setR | a \le x \}$ \\
-Fechado          & $(-\infty,b]$   & $\{ x \in \setR | x \le b \}$ \\
-Aberto           & $(a,b)$         & $\{ x \in \setR | a < x < b \}$ \\
-Aberto           & $(a,\infty)$    & $\{ x \in \setR | a < x \}$ \\
-Aberto           & $(-\infty,b)$   & $\{ x \in \setR | x < b \}$ \\
-Semiaberto       & $(a,b]$         & $\{ x \in \setR | a < x \le b \}$ \\
-Semiaberto       & $[a,b)$         & $\{ x \in \setR | a \le x < b \}$ \\
-Fechado e aberto & $(-\infty,\infty)$ & $\setR$ \\
-\end{tabular}
-\end{center}
-\end{table}
+\widetable[Tipos de intervalos.]%
+{tab:intervaltypes}%
+{l @{\hspace{3ex}} l @{\hspace{3ex}} l}%
+{
+  \hline
+  Tipo            & Símbolo         & Definição              \\
+  \hline
+  Fechado          & $[a,b]$         & $\{ x \in \setR | a \le x \le b \}$ \\
+  Fechado          & $[a,\infty)$    & $\{ x \in \setR | a \le x \}$ \\
+  Fechado          & $(-\infty,b]$   & $\{ x \in \setR | x \le b \}$ \\
+  Aberto           & $(a,b)$         & $\{ x \in \setR | a < x < b \}$ \\
+  Aberto           & $(a,\infty)$    & $\{ x \in \setR | a < x \}$ \\
+  Aberto           & $(-\infty,b)$   & $\{ x \in \setR | x < b \}$ \\
+  Semiaberto       & $(a,b]$         & $\{ x \in \setR | a < x \le b \}$ \\
+  Semiaberto       & $[a,b)$         & $\{ x \in \setR | a \le x < b \}$ \\
+  Fechado e aberto & $(-\infty,\infty)$ & $\setR$
+}
 
 Listamos a seguir alguns outros conjuntos importantes de números reais.
 
@@ -466,17 +454,9 @@ A partir de agora, simplificaremos as coisas por meio da identidade entre
 pontos no plano e pares de números reais, conforme mostramos na Figura%
 ~\ref{fig:identidadepontos}.
 
-\begin{figure}
-\includegraphics{figuras/chp_reals/px0y0}
-\caption{}
-\label{fig:coordP}
-\end{figure}
+\narrowfigurefile{fig:coordP}{figuras/chp_reals/px0y0}
 
-\begin{figure}
-\includegraphics{figuras/chp_reals/xyisapoint}
-\caption{}
-\label{fig:identidadepontos}
-\end{figure}
+\narrowfigurefile{fig:identidadepontos}{figuras/chp_reals/xyisapoint}
 
 \begin{defin}
 O \newdef{plano} $(x,y)$ é o conjunto de todos os pares ordenados $(x,y)$
@@ -502,17 +482,9 @@ zero. Por exemplo, quando $x_2 > x_1$, temos que $\Delta x$ é positivo
 e quando $x_2 < x_1$, temos que $\Delta x$ é negativo. Usando $\Delta x$
 e $\Delta y$ definimos a noção básica de distância.
 
-\begin{figure}
-\includegraphics{figuras/chp_reals/quadrants}
-\caption{Quadrantes}
-\label{fig:quadrants}
-\end{figure}
+\narrowfigurefile[Quadrantes]{fig:quadrants}{figuras/chp_reals/quadrants}
 
-\begin{figure}
-\includegraphics{figuras/chp_reals/pyththeo}
-\caption{}
-\label{fig:pyththeo}
-\end{figure}
+\narrowfigurefile{fig:pyththeo}{figuras/chp_reals/pyththeo}
 
 \begin{defin}
 A \newdef{distância} entre os pontos $P(x_1,y_1)$ e $Q(x_2,y_2)$ é
@@ -542,11 +514,7 @@ Encontre a distância entre $P(7,2)$ e $Q(4,6)$
 \end{eqnarray*}
 \end{example}
 
-\begin{figure}
-\includegraphics{figuras/chp_reals/exdist}
-\caption{}
-\label{fig:exdist}
-\end{figure}
+\narrowfigurefile{fig:exdist}{figuras/chp_reals/exdist}
 
 \begin{defin}[círculo]
 O conjunto de todos os pontos no plano que estão a distância $r$ de um ponto
@@ -554,7 +522,7 @@ $P$ é chamado o \newdef{círculo} de \newdef{raio} $r$ e \newdef{centro} $P$.
 \end{defin}
 
 Usando a fórmula da distância, vemos que o círculo de raio $r$ e centro na
-origem (Figura~\ref{fig:locuscircle}) é o lugar geométrico da equação
+origem (Figura~\ref{fig:locuscirc}) é o lugar geométrico da equação
 \[
 	x^2 + y^2 = r^2.
 \]
@@ -564,24 +532,173 @@ o lugar geométrico da equação
 	(x-h)^2 + (y-k)^2 = r^2.
 \]
 
-\begin{figure}
-\includegraphics{figuras/chp_reals/locuscirc}
-\caption{}
-\label{fig:locuscirc}
-\end{figure}
+\narrowfigurefile{fig:locuscirc}{figuras/chp_reals/locuscirc}
 
 Por exemplo, o círculo de raio $3$ e centro em $P(2,-4)$ possui equação
 \[
 	(x-2)^2 + (y+4)^2 = 9.
 \]
 
-\sectionproblems{\ref{sec:realline}}
+\sectionproblems
+
+\noindent Nos problemas de 1 a 6, encontre a distância entre
+          os pontos $P$ e $Q$.
+
+\begin{multicols}{2}
+\exer{$P(2,9),   Q(-1,13)$}
+\exer{$P(0,0),   Q(-2,-3)$}
+\exer{$P(6,-1),  Q(-7, 1)$}
+\exer{$P(1,-2),  Q( 2,10)$}
+\exer{$P(-1,-1), Q( 4, 4)$}
+\exer{$P(5,10),  Q( 9,10)$}
+\end{multicols}
+
+\noindent Esboce os círculos dados nos problemas de 7 a 12.
+
+\begin{multicols}{2}
+\exer{$x^2+y^2 = 4$}
+\exer{$(x - 1)^2 + (y + 2)^2 = 1$}
+\exer{$(x - 1)^2 + (y - 1)^2 = 2$}
+\exer{$x^2 + y^2 = \frac{1}{4}$}
+\exer{$(x+2)^2 + (y+3)^2 = 25$}
+\exer{$(x+3)^2 + (y-4)^2 = 25$}
+\end{multicols}
+
+\exer{Encontre a equação do círculo de raio $2$ e centro $(3,0)$.}
+
+\exer{Encontre a equação do círculo de raio $\sqrt{3}$ e centro $(-1,-2)$.}
+
+\hardex{Há dois círculos de raio $2$ que possuem centro na linha
+        $x = 1$ e que passam pela origem. Encontre suas equações.}
+
+\hardex{Encontre a equação do círculo que passa pelos pontos
+        $(0,0)$, $(0,1)$ e $(2,0)$.}
+
+\hardex{Encontre a equação do círculo tal que o segmento de reta
+        entre $(-1,0)$ e $(5,8)$ seja seu diâmetro.}
 
 \section{Funções de Números Reais}
 \label{sec:funcreal}
 
+As próximas duas seções tratam apenas de números reais. O cálculo
+lida com problemas nos quais uma quantidade depende de uma ou mais
+outras quantidades. Por exemplo, a área do círculo depende de seu
+raio. O comprimento de um dia depende tanto da latitude quanto da
+data. O preço de um objeto depende da oferta e da demanda. A maneira
+pela qual uma quantidade depende de outra(s) pode ser descrita
+matematicamente por uma função de uma ou mais variáveis.
+
+\begin{defin}
+Uma \newdef{função real de uma variável} é um conjunto $f$ de pares
+ordenados de números reais tal que, para cada número real $a$ uma
+das seguintes coisas acontece:
+
+\begin{enumerate}[(i)]
+\item Há exatamente um número real $b$ para o qual o par ordenado $(a,b)$
+é um membro de $f$. Neste caso, dizemos que $f(a)$ é definido e
+escrevemos $f(a) = b$. O número $b$ é chamado o valor de $f$ em $a$.
+\item Não há nenhum número real $b$ para o qual o par ordenado $(a,b)$
+é um membro de $f$. Neste caso, dizemos que $f(a)$ é indefinido.
+\end{enumerate}
+\end{defin}
+
+Logo, $f(a) = b$ significa que o par ordenado $(a,b)$ é um elemento
+de $f$.
+
+Uma maneira de visualizar uma função é imaginar uma caixa preta, a qual
+rotularemos $f$, conforme a Figura~\ref{fig:funcbox}. Dentro da caixa há
+alguma máquina, a qual não podemos ver. Em ambos os lados da caixa,
+esquerdo e direito, há uma cópia da reta real, chamadas reta de entrada
+e reta de saída, respectivamente. Toda vez que indicarmos um número $a$
+na reta de entrada, ou um ponto $b$ será marcado na reta de saída para
+nos dizer que $f(a) = b$, ou nada irá acontecer no caso em que $f(a)$
+é indefinido.
+
+Uma segunda maneira de visualizar uma função é desenhando o seu gráfico.
+O \newdef{gráfico} de uma função real $f$ de uma variável é o conjunto de
+todos os pontos no plano $P(x,y)$ tais que $y = f(x)$. Para desenhar o
+gráfico, localizamos o valor de $x$ no eixo horizontal (eixo $x$) e
+o valor de $f(x)$ no eixo vertical (eixo $y$). Como podemos dizer se
+um conjunto de pontos no plano é o gráfico de alguma função? Lendo-se
+novamente a definição de uma função, temos uma resposta.
+
+Um conjunto $C$ de pontos no plano é o gráfico de alguma função $f$ se,
+e somente se, para cada reta vertical do plano uma das seguintes
+condições é verdadeira:
+\begin{enumerate}[(1)]
+\item Exatamente um ponto na linha pertence ao conjunto $C$.
+\item Nenhum ponto na linha pertence ao conjunto $C$.
+\end{enumerate}
+
+Uma reta vertical cruzando o eixo $x$ em um ponto $a$ irá encontrar
+o conjunto $C$ em exatamente um ponto $(a,b)$ se $f(a)$ está definido
+e $f(a) = b$, e a reta não encontrará o conjunto $C$ de nenhuma forma
+se $f(a)$ for indefinido. Experimente usar essa regra para os conjuntos
+de pontos mostrados na Figura~\ref{fig:grafrule}.
+
+Os exemplos~\ref{ex:funcquad} e \ref{ex:funcrec} ilustram algumas funções
+reais de uma variável. Cada função será
+descrita de duas maneiras: a abordagem por caixa preta, onde uma regra é
+dada para se encontrar o valor da função para cada número real, e o método
+pelo gráfico, onde uma equação é dada para o gráfico da função.
+
+\begin{example}\label{ex:funcquad}
+A \newdef[função!quadrática]{função quadrática}.
+
+A função quadrática é definida pela regra
+\[
+  f(x) = x^2
+\]
+para cada número real $x$. O valor de $f(a)$ é obtido tomando-se o
+quadrado de $a$. Por exemplo, os valores de $f(0)$, $f(2)$, $f(-3)$,
+$f(r)$ e $f(r+1)$ são
+\begin{eqnarray*}
+   f(0) = 0, && \hspace{0.1\textwidth} f(2) = 4,
+  \hspace{0.1\textwidth} f(-3) = 9,  \\
+ f(r) = r^2, && \hspace{0.1\textwidth} f(r+1) = r^2 + 2r + 1.
+\end{eqnarray*}
+O gráfico da função quadrática é a parábola com equação $y = x^2$.
+O gráfico de $y = x^2$, com vários pontos destacados, é mostrado
+na Figura~\ref{fig:grafquad}.
+\end{example}
+
+\begin{example}\label{ex:funcrec}
+A \newdef[função!recíproca]{função recíproca}.
+\end{example}
+
 \section{Retas}
 \label{sec:lines}
+
+\begin{defin}
+Seja $P(x_0,y_0)$ um ponto e $m$ um número real. A \newdef{reta} por $P$
+com inclinação $m$ é o conjunto de todos os pontos $Q(x,y)$ tais que
+\[
+  y - y_0 = m(x - x_0).
+\]
+Esta equação é chamada de \newdef[equação!por ponto e inclinação]{equação
+por ponto e inclinação} %
+\index{forma!por ponto e inclinação}%
+da reta.
+(Veja figura~\ref{fig:ptslopeeq})
+A \newdef[reta!vertical]{reta vertical} por $P$ é o conjunto de todos os
+pontos $Q(x,y)$ tais que $x = x_0$. Retas verticais não possuem valor
+real para a sua inclinação.
+\end{defin}
+
+A inclinação é a medida da direção que uma reta segue. A Figura%
+~\ref{fig:exslopes} mostra retas com inclinações: zero; positiva;
+e negativa.
+
+A linha que cruza o eixo $y$ no ponto $(0,b)$ e possui inclinação $m$
+tem a simples equação
+\[
+  y = mx + b.
+\]
+Esta é chamada a forma %
+\newdef[equação!por inclinação e intercepto]{por inclinação e intercepto} %
+\index{forma!por inclinação e intercepto}%
+da equação de uma reta. Podemos obtê-la a partir da forma por
+ponto e inclinação fazendo-se $x_0 = 0$ e $y_0 = b$.
 
 \section{Inclinação e Velocidade: a Reta Hiper-real}
 \label{sec:hyperrealline}
