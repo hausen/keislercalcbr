@@ -1,4 +1,4 @@
-NAME=keslercalcbr
+NAME=keislercalcbr
 TIFS=$(wildcard figuras/*/*.tif)
 IMGS=$(TIFS:.tif=.pdf)
 
@@ -20,4 +20,4 @@ figuras/%.pdf: figuras/%.tif
 	tiff2pdf $< > $@
 
 clean:
-	rm -f *.aux *.log *.idx *.toc *.out *.ilg *.ind $(NAME).oid $(IMGS)
+	rm -f *.aux *.log *.idx *.toc *.out *.ilg *.ind $(NAME).pdf $(NAME).oid $(IMGS)

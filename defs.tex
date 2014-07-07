@@ -2,10 +2,43 @@
 \footnote{N. do T.: #1}%
 }
 
-\newcommand{\problemsection}[1]{%
-\section*{Problemas Adicionais para o Capítulo~#1}
-\addcontentsline{toc}{section}{Problemas Adicionais para o Capítulo~#1}
+\newcounter{exerciseNo}
+
+\newcommand{\exer}[1]{%
+
+\noindent%
+\begin{minipage}[t]{0.1\textwidth}
+\hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
+\end{minipage}%
+\begin{minipage}[t]{0.9\textwidth}
+#1
+\end{minipage}\\[-10pt]
+
 }
+
+\newcommand{\hardex}[1]{%
+
+\noindent%
+\begin{minipage}[t]{0.1\textwidth}
+\begin{picture}(0,0)$\square$\end{picture}\hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
+\end{minipage}%
+\begin{minipage}[t]{0.9\textwidth}
+#1
+\end{minipage}
+
+}
+
+\newcommand{\sectionproblems}{%
+\section*{Problemas Para a Seção \the\value{chapter}.\the\value{section}}
+\setcounter{exerciseNo}{0}
+}
+
+\newcommand{\chapterproblems}{%
+\section*{Problemas Adicionais para o Capítulo~\the\value{chapter}}
+\addcontentsline{toc}{section}{Problemas Adicionais para o Capítulo~\the\value{chapter}}
+\setcounter{exerciseNo}{0}
+}
+
 
 \usepackage{ifthen}
 
@@ -25,6 +58,7 @@
 \def\lth{\hyper{<}}
 \def\definitionname{Definição}
 \def\theoremname{Teorema}
+\def\examplename{Exemplo}
 \spnewtheorem*{defin}{Definição}{\bfseries}{\rmfamily}
 \spnewtheorem*{theor}{Teorema}{\bfseries}{\rmfamily}
 
@@ -35,5 +69,53 @@
 \vspace{\baselineskip}
 
 }
+
+% \narrowfigure[caption]{label}{commands}
+\newcommand{\narrowfigure}[3][]{
+\begin{figure}
+#3
+\caption{#1}
+\label{#2}
+\end{figure}
+}
+
+% \widefigure[caption]{label}{commands}
+\newcommand{\widefigure}[3][]{
+\narrowfigure[#1]{#2}{\begin{center}#3\end{center}}
+}
+
+% \narrowfigurefile[caption]{label}{path}
+\newcommand{\narrowfigurefile}[3][]{
+\narrowfigure[#1]{#2}{\includegraphics{#3}}
+}
+
+\newcommand{\widefigurefile}[3][]{
+\narrowfigure[#1]{#2}{\begin{center}\includegraphics{#3}\end{center}}
+}
+
+% \narrowtable[caption]{label}{coldef}{table}
+\newcommand{\narrowtable}[4][]{
+\begin{table}
+\caption{#1}
+\label{#2}
+\begin{tabular}{#3}
+#4
+\end{tabular}
+\end{table}
+}
+
+% \widetable[caption]{label}{coldef}{table}
+\newcommand{\widetable}[4][]{
+\begin{table}
+\caption{#1}
+\label{#2}
+\begin{center}
+\begin{tabular}{#3}
+#4
+\end{tabular}
+\end{center}
+\end{table}
+}
+
 
 \DeclareMathOperator{\sen}{sen}
