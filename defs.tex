@@ -1,0 +1,39 @@
+\newcommand{\tnote}[1]{%
+\footnote{N. do T.: #1}%
+}
+
+\newcommand{\problemsection}[1]{%
+\section*{Problemas Adicionais para o Capítulo~#1}
+\addcontentsline{toc}{section}{Problemas Adicionais para o Capítulo~#1}
+}
+
+\usepackage{ifthen}
+
+\newcommand{\newdef}[2][]{%
+\ifthenelse{\equal{#1}{}}%
+{\emph{#2}\index{#2}}%
+{\emph{#2}\index{#1}}%
+}
+\newcommand{\hyper}[1]{{#1}^\#}
+
+\def\setR{\mathbb{R}}
+\def\setHR{\hyper{\setR}}
+\def\setN{\mathbb{N}}
+\def\setZ{\mathbb{Z}}
+\def\setQ{\mathbb{Q}}
+
+\def\lth{\hyper{<}}
+\def\definitionname{Definição}
+\def\theoremname{Teorema}
+\spnewtheorem*{defin}{Definição}{\bfseries}{\rmfamily}
+\spnewtheorem*{theor}{Teorema}{\bfseries}{\rmfamily}
+
+\newcommand\subpart[1]{
+
+\vspace{\baselineskip}
+\noindent\textbf{#1}
+\vspace{\baselineskip}
+
+}
+
+\DeclareMathOperator{\sen}{sen}
