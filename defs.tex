@@ -44,8 +44,8 @@
 
 \newcommand{\newdef}[2][]{%
 \ifthenelse{\equal{#1}{}}%
-{\emph{#2}\index{#2}}%
-{\emph{#2}\index{#1}}%
+{\textbf{#2}\index{#2}}%
+{\textbf{#2}\index{#1}}%
 }
 \newcommand{\hyper}[1]{{#1}^\#}
 
@@ -117,5 +117,11 @@
 \end{table}
 }
 
+\DeclareMathOperator{\std}{st}
+\newcommand\Std[1]{\std\left(#1\right)}
+
+\def\endproof{\hfill$\blacksquare$}
 
 \DeclareMathOperator{\sen}{sen}
+
+
