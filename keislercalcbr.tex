@@ -604,6 +604,8 @@ Por exemplo, o círculo de raio $3$ e centro em $P(2,-4)$ possui equação
 
 \sectionproblems
 
+%% TODO: conferir se a numeração é igual à do original
+
 \noindent Nos problemas de 1 a 6, encontre a distância entre
           os pontos $P$ e $Q$.
 
@@ -1127,12 +1129,69 @@ Temos aqui alguns exemplos de funções de duas ou mais variáveis
 que aparecem em aplicações.
 
 \emph{Geometria:}
+\begin{eqnarray*}
+  ab & = & \text{área de um retângulo com lados $a$, $b$} \\
+ abc & = & \text{volume do sólido retangular com arestas $a$, $b$, $c$} \\
+\textstyle
+\frac{1}{2}bh & = & \text{área de um triângulo com base $b$ e altura $h$} \\
+\pi r^2 h & = & \text{volume de um cilindro com base circular de raio $r$ e altura $h$} \\
+\textstyle
+\frac{1}{3} \pi r^2 h & = & \text{volume de um cone com base circular
+                            de raio $r$ e altura $h$} \\
+\textstyle
+\sqrt{x^2 + y^2} & = & \text{distância da origem ao ponto } (x,y)
+\end{eqnarray*}
 
 \emph{Física:}
+\begin{eqnarray*}
+ F = ma & = & \text{força requerida para dar à massa $m$ a aceleração $a$} \\
+\rho(x,y,z) & = & \text{densidade de um objeto tridimensional no ponto $(x,y,z)$} \\
+ F = G m_1 m_2 / s^2 & = &
+    \text{força gravitacional entre objetos com massas $m_1$ e $m_2$} \\
+                     &   &
+    \text{a uma distância $s$}\\
+ m = \frac{m_0}{\sqrt{1-v^2/c^2}} & = &
+    \text{massa relativística de um objeto com massa $m_0$ em repouso} \\[-8pt]
+                                  &   &
+    \text{e velocidade $v$}
+\end{eqnarray*}
 
 \emph{Economia:}
+\begin{eqnarray*}
+ c(x,y) & = & \text{custo de $x$ itens de um produto e $y$ itens de outro} \\
+        &   & \text{produto} \\
+ D_1(p_1,p_2) & = & \text{demanda para produto 1, quando produto 1 tem preço $p_1$}\\
+              &   & \text{e produto 2 tem preço $p_2$}
+\end{eqnarray*}
 
 \sectionproblems
+
+Para cada um dos problemas a seguir (Problemas 1--8), faça uma tabela
+mostrando o valor de $f(x)$ quando $x = -1, -\frac{1}{2}, 0, \frac{1}{2}, 1$.
+Coloque um * onde $f(x)$ é indefinido. Exemplo:
+$\displaystyle f(x) = \frac{1}{x}$%
+\SPC\SPC\SPC%
+\begin{tabular}{c @{\SPC} | @{\SPC} c @{\SPC} c @{\SPC} c @{\SPC} c @{\SPC} c}
+   $x$ & $-1$ & $-\frac{1}{2}$ & $0$ & $\frac{1}{2}$ & $1$ \\
+\hline
+$f(x)$ & $-1$ &     $-2$       &  *  &      $2$      & $1$
+\end{tabular}
+
+\begin{multicols}{2}
+\exer{$f(x) = x/3$}
+\exer{$f(x) = 3$}
+\exer{$f(x) = 3x^3 - 5x^2 + 2$}
+\exer{$f(x) = 1/(x-1)$}
+\exer{$f(x) = \sqrt{-x}$}
+\exer{$f(x) = |x|$}
+\end{multicols}
+\vspace{-8pt}
+\exer{$f(x) = \left|x-\frac{1}{2}\right| + \left|x+\frac{1}{2}\right|$}
+\exer{$f(x) = \sqrt{x^2-1}$}
+\exer{O conjunto de pares ordenados $\{ (3,2), (0,1), (4,2) \}$ é uma função?}
+\exer{O conjunto de pares ordenados $\{ (0,2), (3,6), (3,4) \}$ é uma função?}
+\exer{Seja $f$ a função tal que $f(x) = 1 + x + x^2$. Determine
+      $f(2)$, $f(t)$, $f(t + \Delta t)$, $f(1+t+t^2)$, $f(g(t))$.}
 
 \section{Retas}
 \label{sec:lines}
