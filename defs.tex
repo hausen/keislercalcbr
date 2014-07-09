@@ -61,6 +61,7 @@
 \def\examplename{Exemplo}
 \spnewtheorem*{defin}{Definição}{\bfseries}{\rmfamily}
 \spnewtheorem*{theor}{Teorema}{\bfseries}{\rmfamily}
+\spnewtheorem*{warning}{Cuidado}{\bfseries}{\rmfamily}
 
 \newcommand\subpart[1]{
 
@@ -89,8 +90,15 @@
 \narrowfigure[#1]{#2}{\includegraphics{#3}}
 }
 
+% \widefigurefile[caption]{label}{path}
 \newcommand{\widefigurefile}[3][]{
-\narrowfigure[#1]{#2}{\begin{center}\includegraphics{#3}\end{center}}
+\begin{figure}
+\begin{center}
+\includegraphics{#3}
+\caption{#1}
+\label{#2}
+\end{center}
+\end{figure}
 }
 
 % \narrowtable[caption]{label}{coldef}{table}
@@ -119,9 +127,18 @@
 
 \DeclareMathOperator{\std}{st}
 \newcommand\Std[1]{\std\left(#1\right)}
+\newcommand\st[1]{\std\left(#1\right)}
 
 \def\endproof{\hfill$\blacksquare$}
 
 \DeclareMathOperator{\sen}{sen}
 
+\def\SPC{\hspace{2ex}}
 
+\spnewtheorem{contexample}{Exemplo}{\itshape}{\rmfamily}
+
+\usepackage{refcount}
+
+\newenvironment{examplecont}[1]%
+{\setcounterref{contexample}{#1}\addtocounter{contexample}{-1}\begin{contexample}[continuação]}%
+{\end{contexample}}

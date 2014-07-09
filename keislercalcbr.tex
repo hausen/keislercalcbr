@@ -60,6 +60,48 @@ Abbott Way, Stanford, California, 93405, Estados Unidos.
 
 \newpage
 
+\chapter*{Prefácio à versão brasileira}
+
+Esta versão foi preparada pois atualmente, na segunda década do século XXI,
+nos deparamos com uma quase total ausência de materiais em língua portuguesa
+sobre cálculo pela abordagem de infinitésimos e análise hiper-real, por
+vezes também chamada de ``não padronizada.''
+
+Tentamos nos manter fiéis ao texto original, mas como este
+possui mais de três décadas e foi idealizado para um público ligeiramente
+diverso do nosso, algumas modificações se fizeram necessárias.
+
+Para alguns termos usados à época, expressões aproximadas em português
+tiveram de ser escolhidas. Um exemplo disso é
+o termo ``\emph{range},'' antigamente usado para, dependendo
+do contexto, denominar o contradomínio ou a imagem de uma função.
+Optamos por escrevê-lo como ``imagem'' nesta versão em português.
+
+Além disso, escolhemos uma notação ligeiramente diversa da usada no
+original para aproximá-la das notações usadas atualmente no Brasil,
+e também para evitar confusão com notações cujo uso mais comum
+nos dias de hoje indica outro significado.
+Por exemplo, enquanto que no original o conjunto dos reais é
+denotado simplesmente $R$, e o conjunto dos hiper-reais é
+denotado $R^*$, optamos por usar respectivamente os símbolos
+$\setR$ e $\setHR$.
+
+Foi também escolha do tradutor substituir o uso do asterisco ($*$)
+pela cerquilha ($\#$) para denotar as extensões de reais aos hiper-reais.
+Com esta substituição, procuramos evitar a confusão com a notação de
+exclusão do zero de um conjunto numérico. A escolha pelo símbolo
+$\#$ deu-se por este se assemelhar ao símbolo de sustenido em
+música, que eleva uma nota musical em um semitom; em um piano,
+os sustenidos (teclas pretas) encontram-se entre as notas musicais
+regulares (teclas brancas). Desta forma, sugerimos que os
+hiper-reais são um conjunto distinto dos reais, tendo uma infinidade
+de ``sustenidos,'' números hiper-reais que não são reais, entre as
+``notas regulares,'' os números reais.
+
+\hfill Rodrigo Hausen
+
+\newpage
+
 \chapter*{Prefácio à segunda edição americana}
 
 Nesta segunda edição, várias mudanças foram feitas baseadas em nove
@@ -288,8 +330,9 @@ para este curso. Uma revisão das regras da álgebra para números reais
 é dada no apêndice. Por conveniência, estas regras estão também listadas
 em uma tabela dentro da primeira capa deste livro. O símbolo
 $\setR$ é usado para o conjunto de todos os números reais.
-\tnote{Optamos por usar o negrito usado em lousa, ou dupla-cunhagem,
-por ser mais familiar aos leitores brasileiros.}
+%\tnote{Optamos por divergir da notação original e usar o negrito usado
+%em lousa, ou toque duplo (\emph{double-struck}), por ser mais familiar
+%aos leitores brasileiros.}
 Podemos pensar que os números reais estão dispostos ao longo de uma
 reta, com os inteiros marcados a intervalos regulares, como na Figura%
 ~\ref{fig:realline}. Esta reta é chamada \newdef{reta real}.
@@ -454,9 +497,19 @@ A partir de agora, simplificaremos as coisas por meio da identidade entre
 pontos no plano e pares de números reais, conforme mostramos na Figura%
 ~\ref{fig:identidadepontos}.
 
-\narrowfigurefile{fig:coordP}{figuras/chp_reals/px0y0}
-
-\narrowfigurefile{fig:identidadepontos}{figuras/chp_reals/xyisapoint}
+\begin{figure}
+\begin{minipage}[b]{2.2in}
+\includegraphics{figuras/chp_reals/px0y0}
+\caption{}
+\label{fig:coordP}
+\end{minipage}%
+\hfill%
+\begin{minipage}[b]{2.25in}
+\includegraphics{figuras/chp_reals/xyisapoint}
+\caption{}
+\label{fig:identidadepontos}
+\end{minipage}
+\end{figure}
 
 \begin{defin}
 O \newdef{plano} $(x,y)$ é o conjunto de todos os pares ordenados $(x,y)$
@@ -482,15 +535,25 @@ zero. Por exemplo, quando $x_2 > x_1$, temos que $\Delta x$ é positivo
 e quando $x_2 < x_1$, temos que $\Delta x$ é negativo. Usando $\Delta x$
 e $\Delta y$ definimos a noção básica de distância.
 
-\narrowfigurefile[Quadrantes]{fig:quadrants}{figuras/chp_reals/quadrants}
-
-\narrowfigurefile{fig:pyththeo}{figuras/chp_reals/pyththeo}
+\begin{figure}
+\begin{minipage}[b]{1.854in}
+\includegraphics{figuras/chp_reals/quadrants}
+\caption{Quadrantes}
+\label{fig:quadrants}
+\end{minipage}%
+\hfill%
+\begin{minipage}[b]{2.514in}
+\includegraphics{figuras/chp_reals/pyththeo}
+\caption{}
+\label{fig:pyththeo}
+\end{minipage}
+\end{figure}
 
 \begin{defin}
 A \newdef{distância} entre os pontos $P(x_1,y_1)$ e $Q(x_2,y_2)$ é
 o valor
 \[
-  dist\hat{a}ncia(P,Q) = \sqrt{(\Delta x)^2 + (\Delta y)^2} =
+  dist\hat{a}ncia(P,Q) = \sqrt{(\Delta x)^2 + (\Delta y)^2}
                        = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}.
 \]
 \end{defin}
@@ -514,7 +577,7 @@ Encontre a distância entre $P(7,2)$ e $Q(4,6)$
 \end{eqnarray*}
 \end{example}
 
-\narrowfigurefile{fig:exdist}{figuras/chp_reals/exdist}
+\widefigurefile{fig:exdist}{figuras/chp_reals/exdist}
 
 \begin{defin}[círculo]
 O conjunto de todos os pontos no plano que estão a distância $r$ de um ponto
@@ -532,7 +595,7 @@ o lugar geométrico da equação
 	(x-h)^2 + (y-k)^2 = r^2.
 \]
 
-\narrowfigurefile{fig:locuscirc}{figuras/chp_reals/locuscirc}
+\widefigurefile{fig:locuscirc}{figuras/chp_reals/locuscirc}
 
 Por exemplo, o círculo de raio $3$ e centro em $P(2,-4)$ possui equação
 \[
@@ -663,12 +726,413 @@ $f(r)$ e $f(r+1)$ são
 \end{eqnarray*}
 O gráfico da função quadrática é a parábola com equação $y = x^2$.
 O gráfico de $y = x^2$, com vários pontos destacados, é mostrado
-na Figura~\ref{fig:grafquad}.
+na Figura~\ref{fig:exparabola}.
 \end{example}
+
+\begin{figure}
+\begin{minipage}[b]{0.45\textwidth}
+\includegraphics{figuras/chp_reals/exparabola}
+\caption{}
+\label{fig:exparabola}
+\end{minipage}%
+\hfill%
+\begin{minipage}[b]{0.5\textwidth}
+\includegraphics{figuras/chp_reals/exreciprocal}
+\caption{}
+\label{fig:exreciprocal}
+\end{minipage}%
+\end{figure}
 
 \begin{example}\label{ex:funcrec}
 A \newdef[função!recíproca]{função recíproca}.
+
+A função recíproca é definida pela regra
+\[
+  g(x) = \frac{1}{x},
+\]
+$g(x)$ é definido para todo $x$ não nulo, mas é indefinido para
+$x = 0$. Encontre os seguintes valores, se estiverem definidos:
+$g(0)$, $g(2)$, $g\left(-\frac{1}{3}\right)$,
+$g\left(\frac{7}{4}\right)$, $g(r+1)$.
+\begin{eqnarray*}
+  g(0) \text{ é indefinido}, & \SPC & g(2) = \frac{1}{2}, \SPC g\left(-\frac{1}{3}\right) = -3, \\
+  g\left(\frac{7}{4}\right) = \frac{4}{7}, & & g(r+1) = \frac{1}{r + 1} \text{ se } r \ne -1.
+\end{eqnarray*}
+O gráfico da função recíproca possui equação $y = \frac{1}{x}$. Esta
+equação também pode ser escrita na forma $x y = 1$. O gráfico é
+mostrado na Figura~\ref{fig:exreciprocal}.
 \end{example}
+
+Nos exemplos~\ref{ex:funcquad} e~\ref{ex:funcrec} usamos as variáveis
+$x$ e $y$ para descrever uma função. Uma \newdef{variável} é uma
+letra que toma o significado de um número real arbitrário; isto é,
+que ``varia'' sobre a reta real. Na equação $y = x^2$ o valor de $y$
+depende do valor de $x$; por esta razão, dizemos que $x$ é a
+\newdef[variável!independente]{variável independente} e $y$ é a
+\newdef[variável!dependente]{variável dependente} da equação.
+
+Ao descrever uma função, nem sempre usamos $x$ e $y$;
+às vezes outras variáveis são mais convenientes, especialmente
+em problemas envolvendo várias funções. A variável $t$ é comumente
+usada para denotar o tempo.
+
+É importante fazer a distrinção entre os símbolos $f$ e 
+$f(x)$. O símbolo $f$ denomina a \emph{função}, enquanto que
+$f(x)$ é chamado de \emph{termo} e denota o valor da função
+em $x$. A necessidade desta distinção é ilustrada no exemplo~%
+\ref{ex:distinctfunc}
+
+\begin{example}\label{ex:distinctfunc}
+Seja $h$ a função dada pela regra
+\[
+  h(t) = t^3 + 1.
+\]
+Note que $t$ é uma variável, $h$ uma função e $h(t)$ um termo.
+As seguintes expressões também são termos: $h\left(\frac{1}{2}\right)$,
+$h(x)$, $h(t^3)$, $h(t^3) + 1$, $h(t^3+1)$, $h(x) - h(t)$, $h(t + \Delta t)$,
+$h(t+\Delta t) - h(t)$. Encontre os valores para cada um desses termos.
+
+Os valores podem ser encontrados por uma substituição cautelosa.
+\begin{eqnarray*}
+  h\left(\frac{1}{2}\right) & = & \left(\frac{1}{2}\right)^3 + 1 = 1 \frac{1}{8}. \\
+  h(x) & = & x^3 + 1. \\
+  h(t^3) & = & \left(t^3\right)^3 + 1 = t^9 + 1. \\
+  h(t^3) + 1 & = & \left[ \left( t^3 \right)^3 + 1 \right] + 1 = t^9 + 2. \\
+  h(t^3 +  1) & = & \left( t^3 + 1 \right)^3 + 1 = t^9 + 3t^6 + 3t^3 + 2. \\
+  h(x) - h(t) & = & \left[ x^3 + 1 \right] - \left[ t^3 + 1 \right] =
+                    x^3 - t^3. \\
+  h(t + \Delta t) & = & (t + \Delta t)^3 + 1 = t^3 + 3t^2 \Delta t +
+                        3t \Delta t^2 + \Delta t^3 + 1. \\
+  h(t + \Delta t) - h(t) & = &
+                \left[ (t + \Delta t)^3 + 1 \right] -
+                \left[ t^3 + 1 \right] \\
+                         & = &
+                \left[ t^3 + 3t^2 \Delta t +
+                       3t \Delta t^2 + \Delta t^3 + 1 \right] -
+                \left[ t^3 + 1 \right] \\
+                         & = & 3t^2 \Delta t + 3t \Delta t^2 + \Delta t^3.
+\end{eqnarray*}
+O gráfico de $h$ é dado pela equação $x = t^3 + 1$. Nesta equação,
+$t$ é a variável independente e $x$ é a variável dependente. Na Figura~%
+\ref{fig:excubic}, os cinco pontos
+\[
+\textstyle
+  h(-1) = 0, \SPC h\left(-\frac{1}{2}\right) = \frac{7}{8}, \SPC
+  h(0) = 1, \SPC, h\left(\frac{1}{2}\right) = 1 \frac{1}{8}, \SPC
+  h(1) = 2
+\]
+são marcados e o gráfico é desenhado.
+\end{example}
+
+\widefigurefile{fig:excubic}{figuras/chp_reals/excubic}
+
+\begin{defin}
+O \newdef{domínio} de uma função real $f$ de uma variável é o conjunto
+de todos os números reais $x$ para os quais $f(x)$ está definido.
+
+A \newdef{imagem} de $f$ é o conjunto de todo os valores $f(x)$
+tais que $x$ está no domínio de $f$.
+\end{defin}
+
+\begin{examplecont}{ex:funcquad}
+O domínio da função quadrática é o conjunto $\setR$ de todos os números
+reais. A imagem é o intervalo $[0,\infty)$ de todos os reais não negativos.
+\end{examplecont}
+
+\begin{examplecont}{ex:funcrec}
+Tanto o domínio quanto a imagem da função recíproca são iguais ao
+conjunto de todos os números reais $x$ que satisfazem $x \ne 0$.
+\end{examplecont}
+
+Quando uma função é descrita por uma regra, é entendido que o domínio
+é o conjunto de todos os números reais para os quais aquela regra faz
+sentido.
+
+\begin{examplecont}{ex:distinctfunc}
+A função $h$ dada pela regra
+\[
+  h(t) = t^3 + 1
+\]
+possui toda a reta real como domínio e como imagem.
+\end{examplecont}
+
+\begin{example}
+\label{ex:sqrt1x2}
+Seja $f$ a função dada pela regra
+\[
+  f(x) = \sqrt{1 - x^2}.
+\]
+Ou seja, $f(x)$ é a raiz quadrada positiva de $1 - x^2$. O domínio
+de $f$ é o intervalo fechado $[-1,1]$. A imagem de $f$ é $[0,1]$.
+
+Por exemplo,
+\begin{eqnarray*}
+\textstyle
+  f(-2) \text{ é indefinido}, \SPC f(-1) & = & 0, \SPC f(0) = 1, \\
+  f\left(\frac{1}{2}\right) = \sqrt{\frac{3}{4}}, \SPC f(1) & = & 0,
+                                   \SPC f(2) \text{ é indefinido}.
+\end{eqnarray*}
+
+O gráfico de $f$ é dado pela equação $y = \sqrt{1-x^2}$.
+
+A equação também pode ser escrita na forma
+\[
+  x^2 + y^2 = 1, y \ge 0.
+\]
+
+O gráfico é apenas a metade superior do semicírculo unitário, mostrado
+na Figura~\ref{fig:sqrt1x2}.
+\end{example}
+
+\widefigurefile{fig:sqrt1x2}{figuras/chp_reals/sqrt1x2}
+
+Às vezes uma função é descrita pela menção explícita ao domínio, além
+de uma regra.
+
+\begin{example}
+Seja $g$ uma função cujo domínio é o intervalo fechado $[1,2]$ e com
+a regra
+\[
+  g(x) = x^2.
+\]
+O domínio e a regra podem ser escritos de maneira concisa com uma
+equação e desigualdades,
+\[
+  g(x) = x^2, \SPC 1 \le x \le 2.
+\]
+\begin{eqnarray*}
+   & g(0) \text{ é indefinido} \SPC g(1) = 1 & \\
+   & g(2) = 4 \SPC g(3) \text{ é indefinido} &
+\end{eqnarray*}
+O gráfico é definido pelas fórmulas
+\[
+   y = x^2, \SPC 1 \le x \le 2
+\]
+e está desenhado na Figura~\ref{fig:truncparabola}
+\end{example}
+
+\begin{figure}
+\begin{minipage}[b]{1.754in}
+\includegraphics{figuras/chp_reals/truncparabola}
+\caption{}
+\label{fig:truncparabola}
+\end{minipage}%
+\hfill%
+\begin{minipage}[b]{2.18in}
+\includegraphics{figuras/chp_reals/constantfunc}
+\caption{}
+\label{fig:constantfunc}
+\end{minipage}
+\end{figure}
+
+Algumas funções especialmente importantes são as \emph{funções
+constantes}, a \emph{função identidade} e a \emph{função valor
+absoluto}.
+
+Um número real por vezes é chamado de \newdef{constante}. Este
+nome é usado para enfatizar a diferença entre um número real
+fixo e uma variável.
+
+Para um número real $c$ dado, a função $f$ com a regra
+\[
+  f(x) = c
+\]
+é chamada de \newdef[função!constante]{função constante} com
+valor $c$. Seu domínio é $\setR$ e sua imagem é $\{c\}$.
+
+\begin{example}
+\label{ex:constantfunc}
+A função constante com valor $5$ é descrita pela regra
+\[
+  f(x) = 5.
+\]
+Logo \SPC $f(0) = 5$, \SPC $f(-3) = 5$, \SPC $f(1\,000\,000) = 5$.
+
+O gráfico (Figura~\ref{fig:constantfunc}) da função constante com
+valor 5 é dado pela equação $y=5$.
+\end{example}
+
+\begin{example}
+\label{ex:identityfunc}
+A função $f$ dada pela regra
+\[
+  f(x) = x
+\]
+é chamada de \newdef[função!identidade]{função identidade}.
+
+O gráfico (Figura~\ref{fig:identityfunc}) da função identidade é a
+reta com equação $y=x$.
+\end{example}
+
+\widefigurefile{fig:identityfunc}{figuras/chp_reals/identityfunc}
+
+A \emph{função valor absoluto} é definida por uma regra que é
+dividida em dois casos.
+
+\begin{defin}
+\index{valor absoluto}\index{módulo}
+A \newdef[função!valor absoluto]{função valor absoluto} $|\SPC|$,
+por vezes também denominada \newdef[função!módulo]{função módulo}, é
+definida por
+\[
+  |x| = \left\{
+        \begin{array}{rl}
+         x & \SPC \text{se } x \ge 0,\\
+        -x & \SPC \text{se } x < 0.
+        \end{array}
+        \right.
+\]
+\end{defin}
+
+O valor absoluto de $x$ dá a distância entre $x$ e $0$. Ele
+é sempre positivo ou zero. Por exemplo,
+\[
+  |3| = 3, \SPC |-3| = 3, \SPC |0| = 0.
+\]
+O domínio da função valor absoluto é toda a reta real $\setR$,
+enquanto que a sua imagem é o intervalo $[0,\infty)$.
+
+A função valor absoluto também pode ser descrita pela regra
+\[
+  |x| = \sqrt{x^2}.
+\]
+Seu gráfico é dado pela equação $y = \sqrt{x^2}$. O gráfico é
+na forma de um ``V,'' conforme mostrado na Figura~\ref{fig:absfunc}.
+
+\widefigurefile{fig:absfunc}{figuras/chp_reals/absfunc}
+
+Se $a$ e $b$ são dois pontos na reta real, então da definição
+de $|x|$ podemos ver que
+\[
+  |a - b| = \left\{
+            \begin{array}{r l}
+              a - b & \SPC \text{se } a \ge b, \\
+              b - a & \SPC \text{se } b > a.
+            \end{array}
+            \right.
+\]
+Logo, $|a-b|$ é a diferença entre o maior e o menor
+dos dois números. Em outras palavras, $|a-b|$ é a
+\emph{distância} entre os pontos $a$ e $b$ na reta real,
+como ilustrado na Figura~\ref{fig:distAB}.
+
+\widefigurefile{fig:distAB}{figuras/chp_reals/distAB}
+
+Por exemplo, $|2-5| = 3$, $|4 - (-4)| = 8$. Eis aqui alguns
+fatos úteis sobre valores absolutos.
+
+\begin{theorem}
+\label{theo:absvalues}
+Sejam $a$ e $b$ números reais.
+\begin{enumerate}[(i)]
+  \item $|-a| = |a|$.
+  \item $|ab| = |a|\cdot|b|$.
+  \item Se $b \ne 0$, $\displaystyle\left|\frac{a}{b}\right| = \frac{|a|}{|b|}$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Usaremos a equação $|x| = \sqrt{x^2}$.
+\begin{enumerate}[(i)]
+  \item $|-a| = \sqrt{(-a)^2} = \sqrt{a^2} = |a|.$
+  \item $|ab| = \sqrt{(ab)^2} = \sqrt{a^2b^ 2} = \sqrt{a^2}\sqrt{b^2}
+         = |a|\cdot|b|.$
+  \item Prova similar a (ii).
+\end{enumerate}
+\end{proof}
+
+\begin{warning}
+A equação $|a + b| = |a|+|b|$ é \emph{falsa} em geral. Por exemplo,
+$|2 + (-3)| = 1$, enquanto que $|2| + |(-3)| = 5$.
+\end{warning}
+
+Funções emergem em uma grande variedade de situações. Temos aqui
+alguns exemplos.
+
+\emph{Geometria:}
+\begin{eqnarray*}
+     \pi r^2 & = & \text{área de um círculo com raio } r \\
+   4 \pi r^2 & = & \text{área da superfície de uma esfera com raio } r \\
+\textstyle
+   \frac{4}{3}\pi r^3 & = & \text{volume de uma esfera com raio } r \\
+   \sen \theta & = & \text{o seno de um ângulo } \theta
+\end{eqnarray*}
+
+\emph{Física:}
+\begin{eqnarray*}
+  s(t) & = & \text{distância percorrida por uma partícula do instante } 0 \text{ até } t \\
+  v(t) & = & \text{velocidade de uma partícula no instante } t \\
+  a(t) & = & \text{aceletação de uma partícula no instante } t \\
+  p(y) & = & \text{pressão da água à profundidade } y \text{ abaixo da superfície} \\
+     C & = &\textstyle \frac{5}{9}(F - 32) = \text{ temperatura em graus Celsius como}\\
+       &   & \text{função da temperatura em graus Fahrenheit}
+\end{eqnarray*}
+
+\emph{Economia:}
+\begin{eqnarray*}
+  f(t) & = & \text{população no instante } t \\
+  p(t) & = & \text{preço de um produto no instante } t \\
+  c(x) & = & \text{custo de } x \text{ itens de um produto} \\
+  D(p) & = & \text{demanda de um produto a um preço } p \text{, i. e.,} \\
+       &   & \text{a quantidade que pode ser vendida a preço } p
+\end{eqnarray*}
+
+Funções de duas ou mais variáveis podem ser tratadas de maneira
+similar. A seguir temos a definição precisa de uma função de
+duas variáveis.
+
+\begin{defin}
+Uma \newdef{função real de duas variáveis} é um conjunto $f$ de
+triplas ordenadas de números reais tal que, para cada par ordenado
+de números reais $(a,b)$, uma das seguintes coisas acontece:
+\begin{enumerate}[(i)]
+\item Há exatamente um número real $c$ para o qual a tripla
+      ordenada $(a,b,c)$ é um membro de $f$. Neste caso, $f(a,b)$
+      é definido e escrevemos:
+\[
+  f(a,b) = c.
+\]
+\item Não há nenhum número real $c$ para o qual a tripla
+      ordenada $(a,b,c)$ é um membro de $f$. Neste caso,
+      dizemos que $f(a,b)$ é indefinido.
+\end{enumerate}
+\end{defin}
+
+Se $f$ é uma função real de duas variáveis, então o valor
+de $f(x,y)$ depende tanto do valor de $x$ quanto do valor
+de $y$ quando $f(x,y)$ está definido.
+
+Uma função real $f$ de duas variáveis pode ser visualizada
+como uma caixa preta com \emph{duas} retas de entrada e uma
+reta de saída, como na Figura~\ref{fig:func2box}.
+
+\widefigurefile{fig:func2box}{figuras/chp_reals/func2box}
+
+O \emph{domínio} de uma função real $f$ de duas variáveis é
+o conjunto de todos os pares de números reais $(x,y)$ para os
+quais $f(x,y)$ está definido.
+
+Os exemplos mais importantes de funções reais de duas variáveis
+são as funções soma, diferença, produto e quociente:
+\begin{eqnarray*}
+  f(x,y) = x+y, & \SPC & f(x,y) = xy, \\
+  f(x,y) = x-y, & \SPC & \textstyle f(x,y) = \frac{x}{y},
+\end{eqnarray*}
+
+As funções soma, diferença e produto possuem o plano inteiro
+como domínio. O domínio da função quociente é o conjunto de
+todos os pares ordenados $(x,y)$ tais que $y \ne 0$.
+
+Temos aqui alguns exemplos de funções de duas ou mais variáveis
+que aparecem em aplicações.
+
+\emph{Geometria:}
+
+\emph{Física:}
+
+\emph{Economia:}
+
+\sectionproblems
 
 \section{Retas}
 \label{sec:lines}
@@ -955,7 +1419,7 @@ ponto e inclinação fazendo-se $x_0 = 0$ e $y_0 = b$.
 
 \chapterproblems
 
-\chapter{Differential Equations}
+\chapter{Equações Diferenciais}
 \label{chp:diffeq}
 
 \chapterproblems
@@ -1337,6 +1801,7 @@ e foram incluídas pelo tradutor por se tratarem de propriedades
 importantes vistas na abordagem tradicional do cálculo.
 
 \section{Teorema do Confronto}
+\index{teorema!do confronto}
 
 \begin{theorem}
 Sejam $(a,b)$ um intervalo aberto não vazio tal que $x_0 \in (a,b)$, $L$ um
@@ -1368,7 +1833,184 @@ infinitesimal, portanto $\hyper{f}(\hyper{x}) \approx \hyper{g}(\hyper{x})$, log
 
 \backmatter
 
-
 \printindex
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+\textsc{Regras de Integração}
+
+{\small
+\begin{multicols}{2}
+$\displaystyle \int du = u + C$
+
+$\displaystyle \int du + dv = \int u +\int dv$ (Regra da Soma)
+
+$\displaystyle \int k \; du = k \int du$ (Regra da Constante)
+
+$\displaystyle \int u \; dv = uv - \int v \; du$ (Integração por Partes)
+\end{multicols}
+}
+
+\textsc{Tabela de Integrais}
+
+\def\dx{\;dx}
+
+{\small
+(A constante de integração foi omitida.)
+
+\begin{multicols}{2}
+$\displaystyle \int x^r \dx = \frac{x^{r+1}}{r+1}, r \ne -1$
+
+$\displaystyle \int e^x \dx = e^x$
+
+$\displaystyle \int \sen x \dx = - \cos x$
+
+$\displaystyle \int \tan x \dx = \ln|\sec x|$
+\end{multicols}
+}
+
+\newpage
+
+\textsc{Álgebra Elementar dos Números Reais}
+
+\begin{multicols}{2}
+$a + b = b + a$
+
+$a + (b + c) = (a + b) + c$
+
+$a(b+c) = ab+ac$
+
+$a + 0 = a \cdot 1 = a$
+
+$a - a = 0$
+
+$-(-a) = a$
+
+$-(a-b) = b - a$
+
+$\displaystyle \frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}$ $(b,d \ne 0)$
+
+$a^1 = a$
+
+$1^a = a$
+
+$a^{m+n} = a^m a^n$
+
+$\displaystyle a^{m-n} = \frac{a^m}{a^n}$ $(a \ne 0)$
+
+$a^m b^m = (ab)^m$
+
+$\displaystyle \sqrt[n]{-a} = -\sqrt[n]{a}, (-a)^{m/n} = \sqrt[n]{(-a)^m},$ ($a > 0$,\\
+\hspace*{\fill} $n$ ímpar) \hspace*{2ex}
+
+Se $a < b$, então $a + c < b + c$.
+
+Se $a < b$, então $-b < -a$.
+
+$ab = ba$
+
+$a(bc) = (ab)c$
+
+$a(-b) = (-a)b = -ab$
+
+$a \cdot 0 = 0$
+
+$a/a = 1$ ($a \ne 0$)
+
+$\displaystyle \frac{1}{1/a} = a$ ($a \ne 0$)
+
+$\displaystyle \frac{1}{a/b} = \frac{b}{a}$ ($a,b \ne 0$)
+
+$\displaystyle \frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$ ($b,d \ne 0$)
+
+$\displaystyle a^0 = 1$ ($a \ne 0$)
+
+$\displaystyle 0^n = 0$ ($n > 0$)
+
+$\displaystyle a^{mn} = \left(a^m\right)^n$
+
+$\displaystyle a^{m/n} = \sqrt[n]{a^m}$ ($a > 0$)
+
+$\displaystyle \sqrt[m]{a} \sqrt[m]{b} = \sqrt[m]{ab}$ ($a,b > 0$)
+
+Se $a < b$ e $0 < c$, então $ac < bc$.
+
+Se $0 < a < b$, então $1/b < 1/a$.
+\end{multicols}
+
+$|-a| = |a|$ \hspace{4ex} $|a|\cdot|b| = |ab|$ \hspace{4ex}
+$\displaystyle \frac{|a|}{|b|} = \left| \frac{a}{b} \right|$ ($b \ne 0$)
+
+As seguintes formas são indefinidas:
+$a/0$, $0^0$, $0^{-m}$, $\sqrt[n]{-a}$ ($a,m$ positivos, $n$ par)
+
+\emph{Fórmula Quadrática}: $\displaystyle a x^2 + b x + c = 0$ se, e somente se,
+$\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+
+
+\textsc{Álgebra dos Números Hiper-reais}
+
+Notação:
+\begin{itemize}
+\item $\epsilon, \delta$ são infinitesimais positivos
+\item $b,c$ são positivos e finitos, mas não infinitesimais
+\item $H,K$ são positivos infinitos
+\end{itemize}
+
+Os seguintes são infinitesimais:
+\[
+ -\epsilon, \SPC  1/H, \SPC  \epsilon/b, \SPC  \epsilon/H, \SPC  b/H, \SPC  \epsilon + \delta, \SPC  \epsilon - \delta, \SPC  \epsilon \cdot \delta, \SPC  b \cdot \epsilon, \SPC  \sqrt[n]{\epsilon}
+\]
+
+Os seguintes são finitos, mas não infinitesimais:
+\[
+ -b, \SPC 1/b, \SPC b/c, \SPC b + \epsilon, \SPC b \cdot c, \SPC \sqrt[n]{b},
+ \SPC b+c
+\]
+$b-c$ é finito (possivelmente infinitesimal)
+
+Os seguintes são infinitos:
+\[
+ -H, \SPC  1/\epsilon, \SPC  b/\epsilon, \SPC  H/\epsilon, \SPC  H/b, \SPC  H+\epsilon, \SPC  H+b, \SPC  H\cdot K, \SPC  \sqrt[n]{H}, \SPC  H+K
+\]
+
+Cada um destes pode ser infinitesimal, finito mas não infinitesimal,
+ou infinito:
+\[
+ \epsilon/\delta, \SPC H/K, \SPC H\epsilon, \SPC H - K
+\]
+
+\textsc{Partes Padronizadas}
+
+Considere $b$, $c$ finitos (possivelmente infinitesimais),
+$\epsilon$ infinitesimal e $H$ infinito.
+
+\begin{multicols}{2}
+$\st{b + c} = \st{b} + \st{c}$
+
+$\st{b c} = \st{b} \st{c}$
+
+$\st{\sqrt[n]{b}} = \sqrt[n]{\st{b}}$ se $b > 0$ e $n > 0$
+
+$b \approx \st{b}$
+
+$b = \st{b}$ se, e somente se, $b$ é real
+
+$\st{\epsilon} = 0$, \SPC $\st{H}$ é indefinido
+
+$\st{b - c} = \st{b} - \st{c}$
+
+$\st{b/c} = \st{b} / \st{c}$ se $\st{c} \ne 0$
+
+$\st{b^c} = \st{b}^{\st{c}}$ se $\st{b} > 0$
+
+$b \approx c$ se, e somente se, $\st{b} = \st{c}$
+
+se $b \le c$, então $\st{b} \le \st{c}$\\
+\end{multicols}
+
 
 \end{document}
