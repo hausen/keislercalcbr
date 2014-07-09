@@ -2,23 +2,58 @@
 \footnote{N. do T.: #1}%
 }
 
+% isto faz com que os contadores de exemplos e teoremas sejam
+% reiniciados a cada seção
+\makeatletter
+\@addtoreset{theorem}{section}
+\@addtoreset{example}{section}
+\makeatother
+
+% coloca o número da seção nas figuras
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% commands to typeset the problem sections
+% \exer - typeset one exercise
+% \twoexer - typeset two exercises side by side
+% \hardex - typeset a hard exercise
 \newcounter{exerciseNo}
 
 \newcommand{\exer}[1]{%
 
-\noindent%
+\noindent\par%
 \begin{minipage}[t]{0.1\textwidth}
 \hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
 \end{minipage}%
 \begin{minipage}[t]{0.9\textwidth}
 #1
-\end{minipage}\\[-10pt]
+\end{minipage}
 
 }
 
+\newcommand{\twoexer}[2]{%
+
+\noindent\par%
+\begin{minipage}[t]{0.1\textwidth}
+\hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+#1
+\end{minipage}%
+\begin{minipage}[t]{0.1\textwidth}
+\hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+#2
+\end{minipage}
+
+}
+
+
 \newcommand{\hardex}[1]{%
 
-\noindent%
+\noindent\par%
 \begin{minipage}[t]{0.1\textwidth}
 \begin{picture}(0,0)$\square$\end{picture}\hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
 \end{minipage}%
@@ -28,17 +63,44 @@
 
 }
 
-\newcommand{\sectionproblems}{%
-\section*{Problemas Para a Seção \the\value{chapter}.\the\value{section}}
-\setcounter{exerciseNo}{0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% sectionproblems environment
+
+\newlength{\SectionProblemsSaveLengthA}
+\newlength{\SectionProblemsSaveLengthB}
+
+\newenvironment{sectionproblems}{%
+  \setlength{\SectionProblemsSaveLengthA}{\parindent}
+  \setlength{\SectionProblemsSaveLengthB}{\parskip}
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{2pt}
+
+  \section*{Problemas Para a Seção \the\value{chapter}.\the\value{section}}
+  \setcounter{exerciseNo}{0}
+
+}
+{
+  \setlength{\parindent}{\SectionProblemsSaveLengthA}
+  \setlength{\parskip}{\SectionProblemsSaveLengthB}
 }
 
-\newcommand{\chapterproblems}{%
-\section*{Problemas Adicionais para o Capítulo~\the\value{chapter}}
-\addcontentsline{toc}{section}{Problemas Adicionais para o Capítulo~\the\value{chapter}}
-\setcounter{exerciseNo}{0}
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newenvironment{chapterproblems}
+{
+  \setlength{\SectionProblemsSaveLengthA}{\parindent}
+  \setlength{\SectionProblemsSaveLengthB}{\parskip}
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{2pt}
+
+  \section*{Problemas Adicionais para o Capítulo~\the\value{chapter}}
+  \addcontentsline{toc}{section}{Problemas Adicionais para o Capítulo~\the\value{chapter}}
+  \setcounter{exerciseNo}{0}
+}
+{
+  \setlength{\parindent}{\SectionProblemsSaveLengthA}
+  \setlength{\parskip}{\SectionProblemsSaveLengthB}
+}
 
 \usepackage{ifthen}
 
@@ -100,6 +162,68 @@
 \end{center}
 \end{figure}
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \includefig[caption]{filename}
+%   this command creates a float, includes a picture from a file
+%   and defines a label fig:filename
+%   must have \graphicspath set beforehand
+\newcommand{\includefig}[2][]{
+\begin{figure}
+\begin{center}
+\includegraphics{#2}
+\caption{#1}
+\label{fig:#2}
+\end{center}
+\end{figure}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \captions{left}{right}
+% \includefigs{filenameleft}{filenameright}
+%   these two commands define the captions, creates a float with
+%   two pictures side by side and define the labels fig:filenameleft
+%   and fig:filenameright
+\def\TheLeftCaption{}
+\def\TheRightCaption{}
+
+\newcommand{\captions}[2]{
+\def\TheLeftCaption{#1}
+\def\TheRightCaption{#2}
+}
+
+\newsavebox{\IncludeFigLeftBox}
+\newsavebox{\IncludeFigRightBox}
+
+\newlength{\IncludeFigLeftBoxWidth}
+\newlength{\IncludeFigRightBoxWidth}
+
+\newcommand{\includefigs}[2]{
+\savebox{\IncludeFigLeftBox}{\includegraphics{#1}}
+\savebox{\IncludeFigRightBox}{\includegraphics{#2}}
+\settowidth{\IncludeFigLeftBoxWidth}{\usebox{\IncludeFigLeftBox}}
+\settowidth{\IncludeFigRightBoxWidth}{\usebox{\IncludeFigRightBox}}
+\begin{figure}
+\begin{minipage}[b]{\IncludeFigLeftBoxWidth}
+\usebox{\IncludeFigLeftBox}
+\caption{\TheLeftCaption}
+\label{fig:#1}
+\end{minipage}%
+\hfill%
+\begin{minipage}[b]{\IncludeFigRightBoxWidth}
+\usebox{\IncludeFigRightBox}
+\caption{\TheRightCaption}
+\label{fig:#2}
+\end{minipage}
+\end{figure}
+\def\TheLeftCaption{}
+\def\TheRightCaption{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \narrowtable[caption]{label}{coldef}{table}
 \newcommand{\narrowtable}[4][]{
