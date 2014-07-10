@@ -1577,7 +1577,7 @@ isto pode ser simplificado para
              \frac{2 x_0 \Delta x + (\Delta x)^2}%
                   {\Delta x} = 2x_0 + \Delta x.
 \end{eqnarray*}
-Logo a inclinação média é
+Logo, a inclinação média é
 \[
   \frac{\Delta y}{\Delta x} = 2x_0 + \Delta x.
 \]
@@ -1603,6 +1603,230 @@ a inclinação é $2$; e no ponto $(-3,9)$ a inclinação é $-6$.
 (Veja Figura~\ref{fig:slopeparabolapoints}.)
 
 \includefig{slopeparabolapoints}
+
+O processo completo pode também ser visualizado de outra maneira.
+Considere que $t$ representa o tempo, e suponha que uma partícula
+está se movendo ao longo do eixo $y$ de acordo com a equação
+$y = t^2$. Ou seja, a cada instante $t$ a partícula está no ponto
+$t^2$ no eixo $y$. Perguntamos: o que podemos entender pela
+\emph{velocidade}\index{velocidade} da partícula no instante $t_0$?
+Novamente, temos
+uma dificuldade no fato de a velocidade ser differente a instantes
+diferentes, e precisamos do cálculo para responder essa pergunta
+de uma maneira satisfatória. Consideremos o que a acontece com
+a partícula entre o instante $t_0$ e um outro instante
+$t_0 + \Delta t$. O tempo transcorrido entre os dois instantes
+é $\Delta t$ e a distância percorrida é
+$\Delta y = (t_0 + \Delta t)^2 - (t_0)^2 = 2t_0 \Delta t + \Delta t^2$.
+Se a velocidade fosse \emph{constante} durante todo o intervalo de tempo,
+ela seria apenas a razão $\Delta y / \Delta t$. Entretanto, a velocidade
+muda durante todo o intervalo. Chamaremos a razão $\Delta y / \Delta t$,
+entre a distância percorrida e o tempo transcorrido, de ``velocidade
+média''\index{velocidade!média} para esse intervalo;
+\[
+  v_{\text{méd}} = \frac{\Delta y}{\Delta t} = 2t_0 + \Delta t.
+\]
+A velocidade média não é a mesma coisa que a velocidade no instante
+$t_0$, a qual procuramos. Na verdade, para $t_0 > 0$, a partícula
+está acelerando; a velocidade no instante $t_0$ será um pouco menor
+que a velocidade média no intervalo entre $t_0$ e $t_0 + \Delta t$,
+e a velocidade no instante $t_0 + \Delta t$ será um pouco maior do
+que a média.
+
+Mas para um incremento de tempo $\Delta t$ bem pequeno, a velocidade
+mudará muito pouco, e a velocidade média $\Delta y/\Delta t$ estará
+próxima da velocidade no instante $t_0$. Para obter a velocidade
+$v_0$ no instante $t_0$, desprezamos o pequeno termo $\Delta t$ na
+fórmula
+\[
+  v_{\text{méd}} = 2 t_0 + \Delta t,
+\]
+e obtemos
+\[
+  v_0 = 2t_0.
+\]
+Ao traçarmos $y$ versus $t$, a velocidade $v_0$ é o mesmo que a
+inclinação da curva $y = t^2$ no ponto $(t_0,t_0^2)$, e a velocidade
+média é o mesmo que a inclinação média.
+
+O problema com o argumento intuitivo acima, seja dito em termos de
+inclinação ou velocidade, é que não está claro quando algo deve ser
+``desprezado.'' De qualquer forma, a ideia básica pode ser transformada
+em um método útil e matematicamente correto de se encontrar a
+inclinação de uma curva ou a velocidade. O que precisamos é de uma
+clara distinção entre números que são pequenos o suficiente para serem
+desprezados e números que não são. Na verdade, à exceção do zero, nenhum
+número real é pequeno o suficiente para ser desprezado. Para contornarmos
+essa dificuldade, tomaremos a iniciativa de introduzir um novo tipo de
+números, que são infinitamente pequenos e, mesmo assim, não iguais a zero.
+
+Dizemos que $\epsilon$ é um \newdef[número!infinitamente pequeno]{número
+infinitamente pequeno}, \newdef[número!infinitesimal]{número infinitesimal},
+ou simplesmente um \newdef{infinitésimo}, se
+\[
+  -a < \epsilon < a
+\]
+para todo e qualquer número real $a$. O único número \emph{real} que
+também é infinitesimal é o zero. Usaremos um novo sistema de números
+chamado de \newdef{números hiper-reais}, que contêm todos os números
+reais, e também os infinitesimais diferentes de zero. Da mesma forma
+que os números reais podem ser construídos a partir dos números
+racionais, os números hiper-reais podem ser construídos a partir dos
+números reais. Esta construção detalhada está esboçada no Epílogo ao
+final do livro. Neste capítulo, nós simplesmente iremos listar as
+propriedades dos números hiper-reais que se mostrarem necessárias para
+o cálculo.
+
+Primeiro, daremos um panorama intuitivo dos números hiper-reais e
+mostraremos como eles podem ser usados para a determinação da
+inclinação de uma curva. O conjunto de todos os números hiper-reais
+é denotado por $\setHR$. Todo número real é um elemento de $\setHR$,
+mas o conjunto $\setHR$ também possui outros elementos. Os infinitésimos
+em $\setHR$ são divididos em três tipos: positivos, negativos, e o
+número real 0. Os símbolos $\Delta x$, $\Delta y$, \ldots e as letras
+gregas $\epsilon$ (épsilon minúsculo) e $\delta$ (delta minúsculo)
+serão geralmente usados para infinitésimos. Se $a$ e $b$ são números
+hiper-reais cuja diferença $a-b$ é infinitesimal, dizemos que
+\newdef[infinitamente próximo]{$a$ está infinitamente próximo de $b$}.
+Por exemplo, se $\Delta x$ é infinitesimal, então $x_0 + \Delta x$ está
+infinitamente próximo de $x_0$. Se $\epsilon$ é um infinitésimo
+positivo, então: $-\epsilon$ será um infinitésimo negativo; $1/\epsilon$
+será um \newdef[número!infinito positivo]{número infinito positivo},
+ou seja, ele será maior do que qualquer número real%
+\tnote{Observe que, por ser maior do que qualquer número real,
+$1/\epsilon$ é um número hiper-real que não pode ser real.};
+e $-1/\epsilon$ será um \newdef[número!infinito negativo]{número
+infinito negativo}, isto é, um número menor do que qualquer número
+real%
+\tnote{Da mesma forma, $-1/\epsilon$ é hiper-real mas não real.}.
+Números hiper-reais que não são infinitos são denominados
+\newdef[número!finito]{números finitos}. A Figura~\ref{fig:hyperrealline}
+mostra um diagrama da reta hiper-real. Os círculos representam
+``microscópios infinitesimais'' \index{microscópio infinitesimal}
+que são potentes o suficiente
+para mostrar uma porção infinitapente pequena da reta hiper-real.
+O conjunto $\setR$ dos números reais está espalhado entre os
+números finitos. Próxima de cada número real $c$ está uma
+porção da reta hiper-real composta dos números infinitamente próximos
+de $c$ (mostrada na Figura~\ref{fig:hyperrealline} como vista sob um
+microscópio infinitesimal para $c = 0$ e $c = 100$). Os números
+infinitamente próximos de $0$ são os infinitesimais.
+
+\includefig{hyperrealline}
+
+Na Figura~\ref{fig:hyperrealline}, as partes finitas e
+infinitas da reta hiper-real foram separadas por uma linha tracejada.
+Uma outra maneira de representar as partes infinitas da reta
+hiper-real é por meio de um ``telescópio infinito,''
+\index{telescópio infinito} conforme mostrado na Figura~%
+\ref{fig:infinitetelescope}. O campo de visão de um telescópio
+infinito tem a mesma escala que a porção finita da reta hiper-real,
+enquanto que o campo de visão de um microscópio infinitesimal
+é uma visão ampliada de uma porção infinitamente pequena da reta
+hiper-real.
+
+\includefig{infinitetelescope}
+
+% XXX: adicionada explicação, entre parênteses, para a afirmação
+%      do autor original
+Não temos nenhuma maneira de saber como uma reta se pareceria no
+espaço físico (dado que a reta é um objeto abstrato, que possui
+uma única dimensão; no espaço físico, todos os objetos possuem
+três dimensões: largura, comprimento e espessura). Poderia se
+assemelhar à reta real, à reta hiper-real, ou a nenhuma delas.
+Entretanto, em aplicações do cálculo é útil imaginar uma reta no
+espaço físico como uma reta hiper-real. A reta hiper-real é,
+como a reta real, um modelo matemático útil para o que seria
+uma reta no espaço físico.
+
+Os números hiper-reais podem ser manipulados algebricamente da
+mesma forma que os números reais. Vamos tentar usá-los para
+determinar inclinações de curvas. Comecemos pela parábola
+$y = x^2$.
+
+Considere um ponto real $(x_0,y_0)$ sobre a curva $y = x^2$.
+Seja $\Delta x$ um infinitésimo positivo ou negativo (mas
+não nulo), e seja $\Delta y$ a mudança correspondente em $y$.
+Então, a inclinação da curva em $(x_0,y_0)$ é \emph{definida}
+\index{inclinação!de uma curva} da seguinte forma:
+\[
+  [\text{inclinação em } (x_0,y_0)] =
+  \left[ \text{o número real infinitamente próximo de } \frac{\Delta y}{\Delta x} \right].
+\]
+Calculamos $\displaystyle \frac{\Delta y}{\Delta x}$ como antes:
+$\displaystyle \frac{\Delta y}{\Delta x} =
+\frac{(x_0 + \Delta x)^2 - x_0^2}{\Delta x} = 2x_0 + \Delta x.$
+Este é um número hiper-real que não é real. Como $\Delta x$ é
+infinitesimal, o número hiper-real $2x_0 + \Delta x$ está
+infinitamente próximo do número real $2x_0$. Concluímos que
+\[
+  [\text{inclinação em } (x_0,y_0)] = 2x_0.
+\]
+O processo pode ser ilustrado pelo desenho na Figura~%
+\ref{fig:slopex2infinitesimals}, com as mudanças
+infinitesimais $\Delta x$ e $\Delta y$ mostradas como se
+fossem vistas através de um microscópio infinitesimal.
+
+\includefigs{slopex2infinitesimals}{yeqx3}
+
+\includefig{slopex3infinitesimals}
+
+O mesmo método pode ser aplicado a outras curvas. A curva de
+terceiro grau $y = x^3$ é mostrada na Figura~\ref{fig:yeqx3}.
+Seja $(x_0,y_0)$ um ponto qualquer sobre a curva $y = x^3$,
+e seja $\Delta x$ um infinitésimo positivo ou negativo (mas
+não nulo). Seja $\Delta y$ a mudança correspondente em $y$ ao
+longo da curva. Na Figura~\ref{fig:slopex3infinitesimals} os
+incrementos $\Delta x$ e $\Delta y$ são mostrados sob um
+microscópio infinitesimal. Novamente, definimos a inclinação da
+curva em $(x_0,y_0)$ por
+\[
+  [\text{inclinação em } (x_0,y_0)] =
+  \left[ \text{o número real infinitamente próximo de } \frac{\Delta y}{\Delta x} \right].
+\]
+Procederemos ao cálculo do número hiper-real
+$\displaystyle \frac{\Delta y}{\Delta x}.$
+\begin{eqnarray*}
+             y_0 & = & x_0^3, \\
+  y_0 + \Delta y & = & (x_0 + \Delta x)^3, \\
+        \Delta y & = & (x_0 + \Delta x)^3 - x_0^3, \\
+  \frac{\Delta y}{\Delta x}
+                 & = & \frac{(x_0 + \Delta x)^3 - x_0^3}
+                            {\Delta x}, \\
+                 & = & \frac{x_0^3 + 3 x_0^2 \Delta x + 3x_0(\Delta x)^2
+                             + (\Delta x)^3 - x_0^3}
+                            {\Delta x}, \\
+                 & = & \frac{3 x_0^2 \Delta x + 3x_0(\Delta x)^2
+                             + (\Delta x)^3}
+                            {\Delta x},
+\end{eqnarray*}
+e finalmente, \SPC $\displaystyle \frac{\Delta y}{\Delta x} =
+3x_0^2 + 3x_0 \Delta x + (\Delta x)^2.$
+
+Na próxima seção, desenvolveremos algumas regras sobre
+infinitésimos que nos permitirão demonstrar que, como
+$\Delta x$ é infinitesimal, o número
+\[
+  3x_0\Delta x + (\Delta x)^2
+\]
+também é infinitesimal. Assim, o número hiper-real
+\[
+  3 x_0^2 + 3 x_0 \Delta x + (\Delta x)^2
+\]
+está infinitamente próximo do número real $3x_0^2$, logo
+\[
+  [\text{inclinação em } (x_0,y_0)] = 3 x_0^2.
+\]
+
+Por exemplo, em $(0,0)$ a inclinação da curva $y = x^3$ é
+zero, em $(1,1)$ a inclinação é $3$ e em $(2,8)$ a inclinação
+é $12$.
+
+Retornaremos ao estudo da inclinação de uma curva no
+Capítulo~\ref{chp:diff}, após aprendermos mais sobre
+números hiper-reais. Do último exemplo, fica evidente que
+precisamos saber mais quando dois números estão infinitamente
+próximos um do outro. Esse é o nosso próximo tópico.
 
 \section{Números Infinitesimais, Finitos e Infinitos}
 \label{sec:infnumbers}
