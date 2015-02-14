@@ -1,0 +1,177 @@
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+\textsc{Regras de Integração}
+
+{\small
+\begin{multicols}{2}
+$\displaystyle \int du = u + C$
+
+$\displaystyle \int du + dv = \int u +\int dv$ (Regra da Soma)
+
+$\displaystyle \int k \; du = k \int du$ (Regra da Constante)
+
+$\displaystyle \int u \; dv = uv - \int v \; du$ (Integração por Partes)
+\end{multicols}
+}
+
+\textsc{Tabela de Integrais}
+
+\def\dx{\;dx}
+
+{\small
+(A constante de integração foi omitida.)
+
+\begin{multicols}{2}
+$\displaystyle \int x^r \dx = \frac{x^{r+1}}{r+1}, r \ne -1$
+
+$\displaystyle \int e^x \dx = e^x$
+
+$\displaystyle \int \sen x \dx = - \cos x$
+
+$\displaystyle \int \tan x \dx = \ln|\sec x|$
+\end{multicols}
+}
+
+\newpage
+
+\textsc{Álgebra Elementar dos Números Reais}
+
+\begin{multicols}{2}
+$a + b = b + a$
+
+$a + (b + c) = (a + b) + c$
+
+$a(b+c) = ab+ac$
+
+$a + 0 = a \cdot 1 = a$
+
+$a - a = 0$
+
+$-(-a) = a$
+
+$-(a-b) = b - a$
+
+$\displaystyle \frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}$ $(b,d \ne 0)$
+
+$a^1 = a$
+
+$1^a = a$
+
+$a^{m+n} = a^m a^n$
+
+$\displaystyle a^{m-n} = \frac{a^m}{a^n}$ $(a \ne 0)$
+
+$a^m b^m = (ab)^m$
+
+$\displaystyle \sqrt[n]{-a} = -\sqrt[n]{a}, (-a)^{m/n} = \sqrt[n]{(-a)^m},$ ($a > 0$,\\
+\hspace*{\fill} $n$ ímpar) \hspace*{2ex}
+
+Se $a < b$, então $a + c < b + c$.
+
+Se $a < b$, então $-b < -a$.
+
+$ab = ba$
+
+$a(bc) = (ab)c$
+
+$a(-b) = (-a)b = -ab$
+
+$a \cdot 0 = 0$
+
+$a/a = 1$ ($a \ne 0$)
+
+$\displaystyle \frac{1}{1/a} = a$ ($a \ne 0$)
+
+$\displaystyle \frac{1}{a/b} = \frac{b}{a}$ ($a,b \ne 0$)
+
+$\displaystyle \frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$ ($b,d \ne 0$)
+
+$\displaystyle a^0 = 1$ ($a \ne 0$)
+
+$\displaystyle 0^n = 0$ ($n > 0$)
+
+$\displaystyle a^{mn} = \left(a^m\right)^n$
+
+$\displaystyle a^{m/n} = \sqrt[n]{a^m}$ ($a > 0$)
+
+$\displaystyle \sqrt[m]{a} \sqrt[m]{b} = \sqrt[m]{ab}$ ($a,b > 0$)
+
+Se $a < b$ e $0 < c$, então $ac < bc$.
+
+Se $0 < a < b$, então $1/b < 1/a$.
+\end{multicols}
+
+$|-a| = |a|$ \hspace{4ex} $|a|\cdot|b| = |ab|$ \hspace{4ex}
+$\displaystyle \frac{|a|}{|b|} = \left| \frac{a}{b} \right|$ ($b \ne 0$)
+
+As seguintes formas são indefinidas:
+$a/0$, $0^0$, $0^{-m}$, $\sqrt[n]{-a}$ ($a,m$ positivos, $n$ par)
+
+\emph{Fórmula Quadrática}: $\displaystyle a x^2 + b x + c = 0$ se, e somente se,
+$\displaystyle x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+
+
+\textsc{Álgebra dos Números Hiper-reais}
+
+Notação:
+\begin{itemize}
+\item $\epsilon, \delta$ são infinitesimais positivos
+\item $b,c$ são positivos e finitos, mas não infinitesimais
+\item $H,K$ são positivos infinitos
+\end{itemize}
+
+Os seguintes são infinitesimais:
+\[
+ -\epsilon, \SPC  1/H, \SPC  \epsilon/b, \SPC  \epsilon/H, \SPC  b/H, \SPC  \epsilon + \delta, \SPC  \epsilon - \delta, \SPC  \epsilon \cdot \delta, \SPC  b \cdot \epsilon, \SPC  \sqrt[n]{\epsilon}
+\]
+
+Os seguintes são finitos, mas não infinitesimais:
+\[
+ -b, \SPC 1/b, \SPC b/c, \SPC b + \epsilon, \SPC b \cdot c, \SPC \sqrt[n]{b},
+ \SPC b+c
+\]
+$b-c$ é finito (possivelmente infinitesimal)
+
+Os seguintes são infinitos:
+\[
+ -H, \SPC  1/\epsilon, \SPC  b/\epsilon, \SPC  H/\epsilon, \SPC  H/b, \SPC  H+\epsilon, \SPC  H+b, \SPC  H\cdot K, \SPC  \sqrt[n]{H}, \SPC  H+K
+\]
+
+Cada um destes pode ser infinitesimal, finito mas não infinitesimal,
+ou infinito:
+\[
+ \epsilon/\delta, \SPC H/K, \SPC H\epsilon, \SPC H - K
+\]
+
+\textsc{Partes Padronizadas}
+
+Considere $b$, $c$ finitos (possivelmente infinitesimais),
+$\epsilon$ infinitesimal e $H$ infinito.
+
+\begin{multicols}{2}
+$\st{b + c} = \st{b} + \st{c}$
+
+$\st{b c} = \st{b} \st{c}$
+
+$\st{\sqrt[n]{b}} = \sqrt[n]{\st{b}}$ se $b > 0$ e $n > 0$
+
+$b \approx \st{b}$
+
+$b = \st{b}$ se, e somente se, $b$ é real
+
+$\st{\epsilon} = 0$, \SPC $\st{H}$ é indefinido
+
+$\st{b - c} = \st{b} - \st{c}$
+
+$\st{b/c} = \st{b} / \st{c}$ se $\st{c} \ne 0$
+
+$\st{b^c} = \st{b}^{\st{c}}$ se $\st{b} > 0$
+
+$b \approx c$ se, e somente se, $\st{b} = \st{c}$
+
+se $b \le c$, então $\st{b} \le \st{c}$\\
+\end{multicols}
+

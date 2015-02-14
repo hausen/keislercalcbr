@@ -1,0 +1,37 @@
+\chapter{Demonstrações Adicionais}
+
+As demonstrações a seguir não estão na versão original deste texto,
+e foram incluídas pelo tradutor por se tratarem de propriedades
+importantes vistas na abordagem tradicional do cálculo.
+
+\section{Teorema do Confronto}
+\index{teorema!do confronto}
+
+\begin{theorem}
+Sejam $(a,b)$ um intervalo aberto não vazio tal que $x_0 \in (a,b)$, $L$ um
+número real e $f,g,h$ funções reais que satisfazem as propriedades
+abaixo:
+\begin{itemize}
+\item $g(x) \le f(x) \le h(x)$ para todo $x \in (a,b) \setminus \{ x_0 \}$
+\item $\lim_{x \rightarrow x_0} g(x) = \lim_{x \rightarrow x_0} h(x) = L.$
+\end{itemize}
+Então $\lim_{x \rightarrow x_0} f(x) = L$.
+\end{theorem}
+
+\begin{proof}
+Seja $\hyper{x}$ um número hiper-real tal que $\hyper{x} \approx x_0$ mas
+$\hyper{x} \ne x_0$. Como $a < x_0 < b$, tal número existe e
+$a < \hyper{x} < b$. Considere as
+extensões naturais de $f,g,h$ aos hiper-reais, denotadas respectivamente
+por $\hyper{f}$, $\hyper{g}$ e $\hyper{h}$.
+
+Como vale $g(x) \le f(x) \le h(x)$ para todo real $x \ne x_0$ tal que
+$a < x < b$, pelo Princípio da Extensão também vale
+$\hyper{g}(\hyper{x}) \le \hyper{f}(\hyper{x}) \le \hyper{h}(\hyper{x})$.
+
+Consequentemente, 
+$0 \le \hyper{f}(\hyper{x}) - \hyper{g}(\hyper{x}) \le \hyper{h}(\hyper{x}) - \hyper{g}(\hyper{x})$. Como $\hyper{g}(\hyper{x}) \approx L$ e $\hyper{h}(\hyper{x}) \approx L$, então existem infinitésimos $\epsilon_1, \epsilon_2$ tais que
+$\hyper{g}(\hyper{x}) = L + \epsilon_1$ e $\hyper{h}(\hyper{x}) = L + \epsilon_2$. Seja $\epsilon = \epsilon_1 - \epsilon_2$ um infinitésimo. Temos que $0 \le \hyper{f}(\hyper{x}) - \hyper{g}(\hyper{x}) \le \epsilon < r$ para todo número real $r > 0$. Isto implica que a diferença $\hyper{f}(\hyper{x}) - \hyper{g}(\hyper{x})$ é
+infinitesimal, portanto $\hyper{f}(\hyper{x}) \approx \hyper{g}(\hyper{x})$, logo $\hyper{f}(\hyper{x}) \approx L$. Disto decorre que $\lim_{x \rightarrow x_0} f(x) = L$.
+\end{proof}
+

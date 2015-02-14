@@ -1,0 +1,225 @@
+% Front matter
+\frontmatter
+
+% r.1 blank page
+\newpage
+
+\setcounter{page}{3}
+
+Dedicado a meus filhos, Randall, Jeffrey, e Thomas.
+
+\hfill H. Jerome Keisler
+
+\vfill
+
+\emph{Haters gonna hate.}
+
+\hfill Autor desconhecido
+
+\vfill
+
+Copyright © 2000 by H. Jerome Keisler.
+
+Versão traduzida a partir da segunda edição americana, revista
+em fevereiro de 2012. Traduzida em 2014 por Rodrigo Hausen.
+
+Este trabalho está registrado sob a licença Creative Commons
+por Atribuição-NãoComercial-CompartilhaIgual 3.0, de acordo
+com o desejo original do autor. Para ver uma cópia desta licença,
+visite \url{https://creativecommons.org/licenses/by-nc-sa/3.0/br/}
+ou envie uma carta a Creative Commons, 559 Nathan
+Abbott Way, Stanford, California, 93405, Estados Unidos.
+
+\newpage
+
+\chapter*{Prefácio à versão brasileira}
+
+Esta versão foi preparada pois atualmente, na segunda década do século XXI,
+nos deparamos com uma quase total ausência de materiais em língua portuguesa
+sobre cálculo pela abordagem de infinitésimos e análise hiper-real, por
+vezes também chamada de ``não padronizada.''
+
+Tentamos nos manter fiéis ao texto original, mas como este
+possui mais de três décadas e foi idealizado para um público ligeiramente
+diverso do nosso, algumas modificações se fizeram necessárias.
+
+Para alguns termos usados à época, expressões aproximadas em português
+tiveram de ser escolhidas. Um exemplo disso é
+o termo ``\emph{range},'' antigamente usado para, dependendo
+do contexto, denominar o contradomínio ou a imagem de uma função.
+Optamos por escrevê-lo como ``imagem'' nesta versão em português.
+
+Além disso, escolhemos uma notação ligeiramente diversa da usada no
+original para aproximá-la das notações usadas atualmente no Brasil,
+e também para evitar confusão com notações cujo uso mais comum
+nos dias de hoje indica outro significado.
+Por exemplo, enquanto que no original o conjunto dos reais é
+denotado simplesmente $R$, e o conjunto dos hiper-reais é
+denotado $R^*$, optamos por usar respectivamente os símbolos
+$\setR$ e $\setHR$.
+
+Foi também escolha do tradutor substituir o uso do asterisco ($*$)
+pela cerquilha ($\#$) para denotar as extensões de reais aos hiper-reais.
+Com esta substituição, procuramos evitar a confusão com a notação de
+exclusão do zero de um conjunto numérico. A escolha pelo símbolo
+$\#$ deu-se por este se assemelhar ao símbolo de sustenido em
+música, que eleva uma nota musical em um semitom; em um piano,
+os sustenidos (teclas pretas) encontram-se entre as notas musicais
+regulares (teclas brancas). Desta forma, sugerimos que os
+hiper-reais são um conjunto distinto dos reais, tendo uma infinidade
+de ``sustenidos,'' números hiper-reais que não são reais, entre as
+``notas regulares,'' os números reais.
+
+\hfill Rodrigo Hausen
+
+\newpage
+
+\chapter*{Prefácio à segunda edição americana}
+
+Nesta segunda edição, várias mudanças foram feitas baseadas em nove
+anos de experiência em sala de aula. Há revisões substanciais aos seis
+primeiros capítulos e ao Epílogo, e há um capítulo completamente novo,
+Capítulo 14, sobre equações diferenciais. Além disso, os Capítulos 11
+e 12 originais foram reorganizados como três capítulos: Capítulo 11
+sobre diferenciação parcial, Capítulo 12 sobre integração múltipla, e
+Capítulo 13 sobre cálculo vetorial.
+
+O Capítulo 1 foi encurtado, e a maior parte do material teórico da
+primeira edição foi movida para o Epílogo. O cálculo de funções
+transcendentais foi totalmente integrado ao curso, começando pelo
+Capítulo 2 sobre derivadas. O Capítulo 3 foca em aplicações de
+derivadas. O material sobre problemas com palavras e sobre taxas
+relacionadas foi movido dos dois primeiros capítulos para o começo
+do Capítulo 3. Os resultados teóricos sobre funções contínuas,
+incluindo os Teoremas do Valor Intermediário, Extremo e Médio,
+foram compilados em uma única seção ao final do Capítulo 2. O
+desenvolvimenot da integral no Capítulo 4 foi simplificado. A 
+%% TODO: "regra do trapézio"?
+Regra do Trapézio foi trazida do Capítulo 5 para o Capítulo 4, e
+uma discussão da Regra de Simpson foi adicionada. A seção sobre a
+área entre duas curvas foi movida do Capítulo 4 para o Capítulo 4.
+O Capítulo 5 lida com limites, aproximações e geometria analítica.
+Um tratamento amplo às seções cônicas e uma seção sobre o método de
+Newton foram adicionados. O Capítulo 6 começa com um novo material
+sobre determinação de volume por integração de áreas de seções
+transversais.
+
+Apenas pequenas mudanças e correções foram feitas nos Capítulos 7
+a 13. O novo Capítulo 14 fornece uma primeira introdução a equações
+diferenciais, com ênfase na solução de equações diferenciais lineares
+de primeira e segunda ordens. Na Seção 14.2, infinitésimos são usados
+para dar uma prova simples à afirmação de que toda equação diferencial
+$y' = f(t,y)$, onde $f$ é contínua, possui uma solução. A prova deste
+fato está além do escopo de um curso de cálculo elementar, mas é alcançável
+quando se usam infinitésimos.
+
+Desejo agradecer todos os meus amigos e colegas que sugeriram correções
+e aperfeiçoamentos à primeira edição deste livro. 
+
+\hfill H. Jerome Keisler
+
+\chapter*{Prefácio à primeira edição americana}
+
+O cálculo foi originalmente desenvolvido usando-se o conceito intuitivo
+de infinitésimo, ou um número infinitamente pequeno. Porém, nos últimos
+cem anos, infinitésimos foram banidos do curso de cálculo por razões de
+rigor matemático. Estudantes tiveram que aprender o assunto sem a
+intuição original. Este livro de cálculo é baseado no trabalho de
+Abraham Robinson, que em 1960 encontrou um modo de tratar com rigor os
+infinitésimos. Enquanto que o curso tradicional começa com o conceito
+difícil de limite, este curso inicia-se com infinitésimos, que são mais
+fáceis de se compreender. Destina-se ao estudante médio que inicia em
+cálculo e cobre a sequência usual de três ou quatro semestres.
+
+A abordagem por infinitésimos tem três vantagens importantes para o
+estudante. Primeiramente, é mais próxima da intuição que levou originalmente
+ao cálculo. Em segundo lugar, os conceitos centrais de derivada e integral
+tornam-se mais acessíveis a compreensão e uso pelo estudante. Por último,
+ela ensina ambas as abordagens por infinitésimos e tradicional, dando ao
+estudante uma ferramenta extra, a qual pode se tornar cada vez mais
+importante no futuro.
+
+Antes de descrever este livro, eu gostaria de inserir o trabalho de A.
+Robinson no contexto histórico. Na década de 1670, Leibinitz e Newton
+desenvolveram o cálculo com base na noção intuitiva de infinitésimos.
+Os infinitésimos foram usados por mais duzentos anos, até que o
+primeiro tratamento rigorozo do cálculo foi aperfeiçoado por
+Weierstrass na década de 1870. O curso padrão de cálculo dos dias
+de hoje ainda é baseado nas definições dadas por Weierstrass para o limite
+``usando epsilons e deltas.'' Em 1960, Robinson resolveu um
+problema de trezentos anos ao dar um tratamento preciso ao cálculo
+usando infinitésimos. A conquista de Robinson provavelmente será
+considerada um dos maiores avanços matemáticos do século XX.
+
+Recentemente, infinitésimos tiveram empolgantes aplicações fora
+da matemática, notadamente nos campos de economia e física. Como
+é natural o uso de infinitésimos na modelagem de processos físicos
+e sociais, tais aplicações certamente vão crescer em variedade
+e importância. Esta é uma oportunidade única para encontrarmos
+novos usos para a matemática, mas poucas pessoas foram atualmente
+preparadas por meio de um treinamento que tire vantagem desta
+oportunidade.
+
+Sendo nova esta abordagem ao cálculo, alguns instrutores podem
+precisar de materiais suplementares de apoio. Um volume do instrutor,
+``\emph{Foundations of Infinitesimal Calculus}%
+\tnote{Ainda não traduzido para o português.}%
+,'' provê o suporte necessário e desenvolve a teoria em detalhe. O
+volume do instrutor é atrelado a este livro, mas é autocontido
+e destina-se ao público matemático geral.
+
+Este livro contém todos os tópicos comuns de cálculo, incluindo a
+definição tradicional de limite, além de uma ferramenta adicional
+-- os infinitésimos. Assim, o estudante estará preparado para
+cursos mais avançados da maneira que eles são ensinados atualmente.
+Nos Capítulos de 1 até 4 os conceitos básicos de derivada, continuidade
+e integral são desenvolvidos rapidamente pelo uso de infinitésimos. O
+conceito tradicional de limite é adiado até o Capítulo 5, onde ele
+é motivado por problemas de aproximação. Os últimos capítulos desenvolvem
+funções transcendentais, séries, vetores, derivadas parciais e integrais
+múltiplas. A teoria difere de um curso tradicional, mas a notação e os
+métodos de solução de problemas são os mesmos na prática. Há uma variedade
+de aplicações tanto a ciências naturais quanto sociais.
+
+Eu incluí a seguinte inovação para instrutores que desejam introduzir
+funções transcendentais cedo em seus cursos. No fim do Capítulo 2 sobre
+derivadas, há um seção que começa um caminho alternativo sobre funções
+transcendentais, e cada um dos Capítulos entre o 3 e o 6 possuem
+caminhos alternativos com conjuntos de problemas sobre funções
+transcendentais. Esta rota alternativa pode ser usada para fornecer
+uma maior variedade nos problemas iniciais, ou pode ser omitida de
+forma a se chegar às integrais o mais rápido possível. Nos Capítulos
+7 e 8, as funções transcendentais são novamente desenvolvidas em um
+ritmo mais lento.
+
+Este livro é escrito para o estudante médio. Os problemas precedidos pelo
+símbolo de um quadrado vão além dos exemplos trabalhados no texto e
+destinam-se aos mais aventurosos.
+
+Eu fui originalmente guiado a escrever este livro quando se tornou claro
+para mim que o cálculo infinitesimal de Robinson poderia se tornar
+disponível aos alunos de primeiro ano de um curso superior. A teoria é
+apresentada de maneira simples; por exemplo, o trabalho de Robinson
+usava lógica matemática, mas não este livro. Eu usei uma versão preliminar
+deste livro em um curso de um semestre na Universidade de Wisconsin em
+1969. Em 1971, foi publicada uma versão experimental para um curso em
+dois semestres. Ela foi usada em várias faculdades e no colégio Nicolet,
+próximo de Milwaukee, e foi testada em cinco escolas em um experimento
+controlado, liderado pela Irmã Kathleen Sullivan entre 1972 e 1974. Os
+resultados (publicados em 1974 na sua tese de doutoramento pela Universidade
+do Wisconsin) mostram a viabilidade da abordagem por infinitésimos e serão
+sumariados em um artigo no periódico American Mathematical Monthly\tnote{Sullivan, K. ``The Teaching of Elementary Calculus Using the Nonstandard Analysis Approach'', \emph{The American Mathematical Monthly}, v. 83, n. 5, 370--375, 1976.}.
+
+Encontro-me em dívida com muitos colegas e estudantes que me encorajaram,
+me deram conselhos e que cuidadosamente leram e usaram este manuscrito
+em seus vários estágios de preparação. Devo agradecimentos especiais a
+Jon Barwise, Universidade de Wisconsin; G. R. Blakley, Universidade de
+Texas A \& M; Kenneth A. Bowen, Universidade de Syracuse; William P.
+Francis, Universidade Tecnológica de Michigan; A. W. M. Glass,
+Universidade de Bowling Green; Peter Loeb, Universidade de Illinois em
+Urbana; Eugene Madison e Keith Stroyan, Faculdade Barat; e Frank Wattenberg,
+Universidade de Massachusetts.
+
+\hfill H. Jerome Keisler
+
+
