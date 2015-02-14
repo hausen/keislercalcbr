@@ -8,6 +8,8 @@
 \usepackage{amsmath,amssymb,amsfonts,mathptmx,helvet,courier,makeidx,graphicx,multicol}
 \usepackage[bottom]{footmisc}
 \usepackage{makeidx}
+\usepackage{gensymb}
+\usepackage{commath}
 
 \input{defs.tex}
 
@@ -2236,8 +2238,14 @@ próximos um do outro. Esse é o nosso próximo tópico.
 \begin{chapterproblems}
 \end{chapterproblems}
 
+\graphicspath{ {./figuras/epilogo/} }
+
 \chapter*{Epílogo}
 \addcontentsline{toc}{chapter}{Epílogo}
+
+\setcounter{chapter}{5}% Equivalent to "letter E"
+\renewcommand{\thechapter}{\Alph{chapter}}%
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
 
 \markboth{Epílogo}{Epílogo}
 
@@ -2247,7 +2255,7 @@ se relaciona com a abordagem tradicional para o cálculo, por meio de
 Para vermos as coisas pela perspectiva correta,
 esboçaremos a história do cálculo.
 
-Muitos problemas envolvendo inclinaçoes de retas, áreas e volumes, os quais
+Muitos problemas envolvendo inclinações de retas, áreas e volumes, os quais
 chamaríamos hoje de problemas de cálculo, foram resolvidos por antigos
 matemáticos gregos. O maior de todos foi Arquimedes (287--212 A.C.).
 Arquimedes antecipou tanto a abordagem por infinitésimos quanto a
@@ -2429,6 +2437,7 @@ axiomas.
 
 \subpart{I. Axiomas Algébricos dos Números Reais}
 
+\index{axioma!algébrico para os reais}
 \begin{enumerate}[A]
 \item Leis de fecho: $0$ e $1$ são números reais. Se $a$ e $b$ são
       números reais, também serão $a+b$, $ab$ e $-a$. Se $a$ é um
@@ -2447,6 +2456,7 @@ $3 = 1+1+1$, $4 = 1+1+1+1$ e daí em diante.
 
 \subpart{II. Axiomas de Ordem para Números Reais}
 
+\index{axioma!de ordem para os reais}
 \begin{enumerate}[A]
 \item $0 < 1$
 \item Lei da transitividade: Se $a < b$ e $b < c$ então $a < c$.
@@ -2459,9 +2469,12 @@ $3 = 1+1+1$, $4 = 1+1+1+1$ e daí em diante.
 
 \subpart{III. Axioma da Completude}
 
+\index{axioma!da completude}
+\emph{
 Seja $A$ um conjunto de números reais tal que, toda vez que $x$ e $y$
 estão em $A$, qualquer número real entre $x$ e $y$ também estará em $A$.
 Então $A$ é um intervalo.
+}
 
 \begin{theor}
 Uma sequência crescente $\langle S_n \rangle$ ou converge, ou diverge para
@@ -2496,6 +2509,8 @@ ao Princípio da Extensão e ao Princípio da Transferência da Seção%
 
 \subpart{I*. Axioma da Extensão}
 
+\index{axioma!da extensão}
+\emph{
 \begin{enumerate}[(a)]
 \item O conjunto $\setR$ dos números reais é um subconjunto do conjunto
       $\setHR$ dos números hiper-reais.
@@ -2512,6 +2527,7 @@ ao Princípio da Extensão e ao Princípio da Transferência da Seção%
       com o mesmo número de variáveis, chamada \emph{extensão natural}
       de $f$ aos hiper-reais.
 \end{enumerate}
+}
 
 A parte (c) do Axioma da Extensão afirma que há pelo menos um infinitésimo
 positivo. A parte (d) nos dá a extensão natural para cada função real.
@@ -2568,7 +2584,8 @@ exemplo, a fórmula $x+y = 5$ será verdadeira quando $(x,y) = (4,1)$
 e falsa quando $(x,y) = (7,-2)$.
 
 \begin{defin}
-Uma \newdef{proposição sobre os reais} é ou um conjunto finito e não vazio
+Uma \newdef[proposição!sobre os reais]{proposição sobre os reais}
+é ou um conjunto finito e não vazio
 de fórmulas $T$, ou uma combinação envolvendo dois conjuntos finitos e
 não vazios de fórmulas $S$ e $T$ que afirma que ``sempre que todas as
 fórmulas em $S$ forem verdadeiras, então todas as fórmulas em $T$ serão
@@ -2602,7 +2619,348 @@ pois não é construído a partir de equações e desigualdades entre
 termos.
 
 Um exemplo típico de proposição sobre os reais é a inequação para expoentes
-discutida na Seção~\ref{sec:expfunc}
+discutida na Seção~\ref{sec:expfunc}:
+$$
+  \text{se } a \ge 0 \text{ e } q \ge 1\text{, então } (a+1)^q \ge aq + 1.
+$$
+Esta proposição é verdadeira para todos os números reais $a$, $q$.
+
+Um significado para essa fórmula pode ser dado tanto no sistema de números
+hiper-reais quanto no sistema de números reais. Considere uma fórmula com
+as duas variáveis $x$ e $y$. Quando $x$ e $y$ são substituídos por números
+reais particulares, a fórmula ou será verdadeira, ou será falsa no sistema de
+números reais. Para dar um significado à fórmula no sistema de números
+hiper-reais, substituimos cada função real pela sua extenção e substituimos
+a relação de ordem real $<$ pela relação hiper-real $\hyper{<}$. Quando
+$x$ e $y$ são substituídos por números reais, cada função real $f$ é
+substituída por sua extensão natural $\hyper{f}$, e a relação de ordem
+real $<$ é substituída por $\hyper{<}$, a fórmula ou será verdadeira, ou
+será falsa no sistema de números hiper-reais.
+
+Por exemplo, a fórmula $x + y = 5$ é verdadeira no sistema de números
+hiper-reais quando $(x,y) = (2 - \epsilon, 3 + \epsilon)$, mas falsa
+quando $(x,y) = (2+\epsilon, 3 + \epsilon)$, se $\epsilon$ não é nulo.
+
+Estamos prontos para enunciar o Axioma da Transferência.
+
+\subpart{II*. Axioma da Transferência}
+
+\index{axioma!da transferência}
+\emph{Cada proposição real que é aplicável para todos os números reais
+também é aplicável para todos os números hiper-reais.}
+
+É possível desenvolver todo o curso de cálculo como apresentado neste
+livro a partir destes axiomas para os números reais e hiper-reais. Pelo
+Axioma de Transferência, todos os Axiomas Algébricos para os Números
+Reais também são verdadeiros para os números hiper-reais. Podemos
+transferir todos os Axiomas de Ordem dos números reais para os números
+hiper-reais. A Lei de Tricotomia é parte do Axioma da Extensão. Cada um
+dos demais Axiomas de Ordem é uma proposição real e, como tal, é
+transponível aos números hiper-reais pelo Axioma da Transferência. Desta
+forma, podemos computar com os números hiper-reais da mesma forma que
+fazemos para os números reais.
+
+Há um fato de fundamental importância que será enunciado a seguir como
+um teorema.
+
+\begin{theor}[Princípio da Parte Padronizada]
+\index{princípio!da Parte Padronizada}
+Para todo número hiper-real finito $b$, existe exatamente um único
+número real $r$ que está infinitamente próximo de $b$.
+\end{theor}
+
+\begin{proof}
+Primeiramente, demonstraremos que não pode haver mais de um número real
+infinitamente próximo de $b$. Suponha que $r$ e $s$ são números reais
+tais que $r \approx b$ and $s \approx b$. Então, $r \approx s$ e como
+$r$ e $s$ são reais, $r$ deve ser igual a $s$. Portanto, há no máximo
+um número real infinitamente próximo de $b$.
+
+Demonstraremos agora que há um número real infinitamente próximo de $b$.
+Seja $A$ o conjunto de todos os números reais menores do que $b$. Então,
+todo número real entre dois elementos de $A$ é um elemento de $A$. Pelo
+Axioma da Completude para os números reais, $A$ é um intervalo. Como o
+número hiper-real $b$ é finito, $A$ deve ser um intervalo da forma
+$(-\infty, r)$ ou $(-\infty, r]$ para algum número real $r$. Todo número
+real $s < r$ é um elemento de $A$, portanto $s < b$. Além disso, todo
+número real $t > r$ não pertence a $A$, logo $t \ge b$. Isto demonstra
+que $r$ está infinitamente próximo de $b$.
+\end{proof}
+
+Frisamos anteriormente que o Axioma da Completude não se qualifica como
+uma proposição real. Por esta razão, o Princípio da Transferência não
+pode ser usado para transferir o Axioma da Completude aos números
+hiper-reais. Na verdade, o Axioma da Completude \emph{não é verdadeiro}
+para os números hiper-reais. Dizemos que um \emph{intervalo hiper-real
+fechado} é um conjunto de números hiper-reais na forma $[a,b]$, ou seja,
+o conjunto de todos os números hiper-reais $x$ tais que $a \le x \le b$,
+onde $a, b$ são constantes hiper-reais. Intervalos hiper-reais abertos
+e semiabertos são definidos de maneira similar. Quando dizemos que o
+Axioma da Completude não é válido para os números hiper-reais, queremos
+dizer que efetivamente há conjuntos $A$ de números hiper-reais tais que:
+
+\begin{enumerate}[(a)]
+\item Toda vez que $x$ e $y$ pertencem a $A$, qualquer número hiper-real
+entre $x$ e $y$ está em $A$.
+\item $A$ não é um intervalo hiper-real.
+\end{enumerate}
+
+Eis aqui dois exemplos bem familiares.
+
+\begin{example}
+O conjunto $A$ de todos os infinitésimos possui a propriedade (a) acima
+mas não é um intervalo hiper-real. Ele satisfaz a propriedade (a) pois
+qualquer número hiper-real que está entre dois infinitésimos é também um
+infinitésimo. Mostraremos que $A$ não é um intervalo hiper-real. Veja que
+$A$ não pode ser da forma $[a,+\infty)$, nem $(a,+\infty)$, pois se $b$
+é um infinitésimo positivo, então $2 \cdot b$ é um infinitésimo maior.
+Por outro lado, $A$ não pode ser da forma $[a,b)$, nem $(a,b)$, pois se
+$b$ é positivo mas não infinitesimal, então $b/2$ é menor do que $b$, mas
+ainda assim positivo e não infinitesimal.
+\end{example}
+
+O conjunto $B$ de todos os números hiper-reais finitos é um outro exemplo
+de um conjunto que possui a propriedade (a) acima, mas não é um intervalo.
+
+Aqui temos alguns exemplos que podem ajudar a ilustrar a natureza do
+sistema de números hiper-reais e o uso do Axioma de Transferência.
+
+\begin{example}
+Seja $f$ a função real dada pela equação
+$$
+  f(x) = \sqrt{1-x^2}.
+$$
+Seu gráfico é o semicírculo unitário com centro na origem. As duas proposições
+reais a seguir são válidas para todo número real $x$:
+\begin{eqnarray*}
+  \text{sempre que } 1-x^2 \ge 0, & & f(x) = \sqrt{1-x^2}; \\
+  \text{sempre que } 1-x^2 < 0,   & & f(x) \text{ está indefinido.} \\
+\end{eqnarray*}
+Pelo Axioma de Transferência, estas proposições reais também são válidas
+para todo número hiper-real $x$. Portanto, a extensão natural de $\hyper{f}$
+de $f$ é dada pela mesma equação
+$$
+  \hyper{f}(x) = \sqrt{1-x^2}.
+$$
+O domínio de $\hyper{f}$ é o conjunto de todos os números hiper-reais entre
+$-1$ e $1$. O gráfico hiper-real de $\hyper{f}$, ilustrado na
+Figura~\ref{fig:exhyperunitcirc}, pode ser traçado no papel desenhando-se
+o gráfico real de $f(x)$ e apontando-se um microscópio infinitesimal para
+alguns pontos chave.
+\end{example}
+
+\includefig[Gráfico hiper-real de $f(x) = \sqrt{1-x^2}$]{exhyperunitcirc}
+
+\begin{example}
+Seja $f$ a função identidade para os números reais, $f(x) = x$. Pelo
+Axioma de Transferência, a equação $f(x) = x$ é verdadeira para todo
+número hiper-real $x$. Assim, a extensão natural $\hyper{f}$ de $f$
+está bem definida, e $\hyper{f}(x) = x$ para todo hiper-real $x$. A
+Figura~\ref{fig:exhyperidentity} ilustra o gráfico hiper-real de
+$\hyper{f}$. Sob um microscópio, a sua inclinação é de $45\degree$.
+\end{example}
+
+\includefig[Gráfico hiper-real de $y = x$]{exhyperidentity}
+
+Vejamos a seguir um exemplo de uma função hiper-real que não é uma
+extensão natural de uma função real.
+
+\begin{example}
+Uma função hiper-real, a qual já estudamos em detalhe, é a \emph{função
+parte padronizada} $\st{x}$. Para números reais, a função parte padronizada
+assume os mesmos valores que a função identidade, ou seja,
+$$
+  \st{x} = x \; \text{ para todo real } x.
+$$
+Entretando, o gráfico hiper-real de $\st{x}$, mostrado na
+Figura~\ref{fig:exstandardpart}, é muito diferente do gráfico hiper-real
+da função identidade $\hyper{f}$. O domínio da função parte padronizada
+é o conjunto de todos os números finitos, enquanto que $\hyper{f}$ tem
+como domínio $\setHR$. Logo, para $x$ infinito temos que $\hyper{f}(x) = x$
+mas $\st{x}$ é indefinido. Se $x$ é finito mas não real, $\hyper{f}(x) = x$
+mas $\st{x} \ne x$. Sob o miscroscópio, uma porção infinitesimal do gráfico
+da função parte padronizada é horizontal, enquanto que a função identidade
+tem inclinação de $45\degree$.
+
+A função parte padronizada não é a extensão natural da função identidade,
+nem sequer a extensão natural de alguma função real.
+\end{example}
+
+\includefig[Gráfico hiper-real de $y = \st{x}$]{exstandardpart}
+
+A função parte padronizada é a única função hiper-real estudada neste
+livro que não é a extensão natural de uma função real.
+
+Concluímos com algumas palavras sobre a construção dos números reais e dos
+numeros hiper-reais. Antes de Weierstrass, os números racionais já se
+assentavam sobre uma base bem sólida, mas os números reais eram algo novo.
+Antes que se pudesse usar os axiomas de números reais com segurança, era
+necessário mostrar que esses axiomas não levavam a alguma contradição.
+Isto foi feito a partir dos números racionais, construindo-se uma estrutura
+que satisfazia todos os axiomas para os números reais. Como qualquer coisa
+demonstrada a partir de axiomas é verdadeira nessa estrutura, os axiomas
+não podem levar a uma contradição.
+
+A ideia é construir números \emph{reais} a partir de sequências de Cauchy
+de números \emph{racionais}.
+
+\begin{defin}
+\index{sequência!de Cauchy}
+Uma \newdef[sequência!de Cauchy]{Sequência de Cauchy} é uma sequência de
+números $\langle a_1, a_2, \ldots \rangle$ tal que, para cada real
+$\epsilon > 0$ existe um inteiro $n$ tal que os números
+$$
+  \langle a_{n_\epsilon}, a_{n_\epsilon + 1}, a_{n_\epsilon + 2}, \ldots \rangle
+$$
+estão todos a uma distância máxima de $\epsilon$ entre eles.
+\end{defin}
+
+Duas sequências de Cauchy
+$$
+  \langle a_1, a_2, \ldots \rangle, \;\;\; \langle b_1, b_2, \ldots \rangle
+$$
+de números racionais são chamadas
+\newdef[Cauchy equivalentes]{Cauchy equivalentes},
+\index{equivalência!de Cauchy}
+ou simbolicamente $\langle a_1, a_2, \ldots \rangle \equiv \langle b_1, b_2, \ldots \rangle$,
+se a sequência das diferenças
+$$\langle a_1 - b_1, a_2 - b_2, \ldots \rangle$$
+converge a zero. Intuitivamente, isto significa que as duas sequências
+possuem o mesmo limite.
+
+\subpart{Propriedades da Equivalência de Cauchy}
+
+\begin{enumerate}[(1)]
+\item Se $\langle a_1 , a_2, \ldots \rangle \equiv \langle a'_1 , a'_2, \ldots \rangle$ e $\langle b_1 , b_2, \ldots \rangle \equiv \langle b'_1 , b'_2, \ldots \rangle$ então as sequências de somas são equivalentes,
+$$
+  \langle a_1+b_1 , a_2+b_2, \ldots \rangle \equiv \langle a'_1+b'_1 , a'_2+b'_2, \ldots \rangle.
+$$
+\item Sob as mesmas hipóteses, as sequências de produtos são equivalentes,
+$$
+  \langle a_1 \cdot b_1 , a_2 \cdot b_2, \ldots \rangle \equiv \langle a'_1 \cdot b'_1 , a'_2 \cdot b'_2, \ldots \rangle.
+$$
+\item Se $a_n = b_n$ para todo $n$, exceto, possivelmente, para uma quantidade
+      finita de valores, então
+      $$
+        \langle a_1, a_2, \ldots \rangle \equiv
+        \langle b_1, b_2, \ldots \rangle
+      $$
+\end{enumerate}
+
+O conjunto de números reais é definido, portanto, como o conjunto de todas
+as classes de equivalência de sequências de Cauchy de números racionais. Um
+número racional $r$ corresponde à classe de equivalência da sequência
+constante $\langle r, r, r, \ldots \rangle$. A soma entre a classe de
+equivalência de $\langle a_1, a_2, \ldots \rangle$ e a classe de
+equivalência de $\langle b_1, b_2, \ldots \rangle$ é definida como a classe
+de equivalência da sequência de somas
+$$
+  \langle a_1+b_1 , a_2+b_2, \ldots \rangle.
+$$
+O produto é definido de forma similar. Pode-se demonstrar que todos os
+axiomas para números reais são válidos para esta estrutura.
+
+Hoje em dia, os números reais estão estabelecidos em bases bem sólidas,
+enquanto que os números hiper-reais podem ser considerados uma nova
+ideia. Robinson usou a construção de ultraproduto\index{ultraproduto}
+de Skolem para demonstrar
+que os axiomas para os números hiper-reais (por exemplo, como usados neste
+livro) não levam a uma contradição. Os método é similar à construção dos
+números reais a partir dos racionais. Contudo, desta vez, o sistema de
+números reais é o ponto de partida. Construímos os números \emph{hiper-reais}
+a partir de sequências \emph{arbitrárias} (não apenas de Cauchy) de números
+\emph{reais}.
+
+Uma \newdef[equivalência!de ultraproduto]{equivalência de ultraproduto}
+é uma relação de equivalência $\equiv$ no conjunto de todas as sequências
+de números reais que possuem as propriedades de Cauchy (1)--(3) e, além disso,
+\begin{enumerate}[(1)]
+\setcounter{enumi}{4}
+\item Se cada $a_n$ pertence ao conjunto $\{0,1\}$, então
+      $\langle a_1, a_2, \ldots \rangle$ é equivalente a exatamente uma das
+      sequências constantes $\langle 0,0,0, \ldots \rangle$ ou
+      $\langle 1,1,1,\ldots \rangle$.
+\end{enumerate}
+
+Dado uma relação de equivalência de ultraproduto, o conjunto dos números
+hiper-reais é definido como o conjunto de todas as classes de equivalências
+de sequências de números reais. Um número real $r$ corresponde à classe de
+equivalência da sequência constante $\langle r,r,r,\ldots \rangle$. Somas
+e produtos são definidos da mesma forma que para sequências de Cauchy.
+A extensão natural $\hyper{f}$ de uma função real $f$ é definida de tal forma
+que a imagem da classe de equivalência de $\langle a_1,a_2,\ldots \rangle$ é
+a classe de equivalência de $\langle f(a_1),f(a_2),\ldots \rangle$. Pode-se
+demonstrar que existem relações de equivalência de ultraproduto, e que todos
+os axiomas para números reais e hiper-reais são válidos para a estrutura
+definida desta forma.
+
+Quando números hiper-reais são construidos como classes de equivalência de
+de sequências de números reais, podemos dar exemplos específicos de números
+hiper-reais infinitos. A classe de equivalência de
+$$
+  \langle 1,2,3,\ldots,n,\ldots \rangle
+$$
+é um número hiper-real infinito positivo. A classe de equivalência de
+$$
+  \langle 1,4,9,\ldots,n^9,\ldots \rangle
+$$
+é maior do que a anterior, e a classe de equivalencia de
+$$
+  \langle 1,2,4,\ldots,2^n,\ldots \rangle
+$$
+é um número hiper-real infinito ainda maior.
+
+Podemos ainda dar exemplos de infinitésimos não nulos. As classes de
+equivalência de
+$$
+  \begin{array}{rcl}
+            & \langle 1,1/2,1/3,\ldots,1/n,\ldots \rangle & , \\
+            & \langle 1,1/4,1/9,\ldots,1/n^2,\ldots \rangle & , \\
+  \text{e } & \langle 1,1/2,1/4,\ldots,2^{-n},\ldots \rangle &
+  \end{array}
+$$
+são infinitésimos positivos progressivamente menores.
+
+O equívoco de Leibniz e seus contemporâneos foi identificar todos os
+infinitésimos com o zero. Isto leva a uma contradição imediata, pois
+$\dif{x}/\dif{y}$ torna-se $0/0$. De acordo com a presente abordagem,
+as classes de equivalência de
+$$
+  \begin{array}{rcl}
+            & \langle 1,1/2,1/3,\ldots,1/n,\ldots \rangle & , \\
+  \text{e } & \langle 0, 0,  0, \ldots, 0, \ldots \rangle &
+  \end{array}
+$$
+são números hiper-reais distintos. Eles não são iguais, apenas têm a
+mesma parte padronizada, que é zero. Isto evita a contradição e, uma
+vez mais, torna a abordagem por infinitésimos um método consistente
+do ponto de vista matemático.
+
+Para maiores informações sobre as ideias aborddas neste epílogo, veja
+o suplemento do instrutor, \emph{Foundations of Infinitesimal Calculus}%
+\tnote{ainda não traduzido para o português.}, que traz uma
+abordagem autocontida de ultraprodutos e números hiper-reais.
+
+\subpart{Para ler mais sobre a história do cálculo, veja:}
+
+\begin{enumerate}[]
+\item \emph{Tópicos de História da Matemática para Uso em Sala de Aula, vol. 6 -- Cálculo}; Carl B. Boyer, Atual Editora, São Paulo, 1993.
+\item \emph{The History of the Calculus and its Conceptual Development}; Carl B. Boyer, Dover, Nova Iorque, 1949.
+\item \emph{Mathematical Thought from Ancient to Modern Times}; Morris Kline, Oxford Univ. Press, Nova Iorque, 1972.
+\item \emph{Non-standard Analysis}; Abraham Robinson, North-Holland, Amsterdã e Londres, 1966.
+\end{enumerate}
+
+\subpart{Para leituras mais avançadas sobre análise infinitesimal,
+veja \emph{Non-standard Analysis} de Abraham Robinson e:}
+
+\begin{enumerate}[]
+\item \emph{Lectures on Non-standard Analysis}; M. Machover e J. Hirschfeld, Springer-Verlag, Berlim, Heidelberg, Nova Iorque, 1969.
+\item \emph{Victoria Symposium on Nonstandard Analysis}; A. Hurd e P. Loeb, Springer-Verlag, Berlim, Heidelberg, Nova Iorque, 1973.
+\item \emph{Studies in Model Theory}; M. Morley (editor), Mathematical Association of America, Providence, 1973.
+\item \emph{Applied Nonstandard Analysis}; M. Davis, Wiley, Nova Iorque, 1977.
+\item \emph{Introduction to the Theory of Infinitesimals}; K. D. Stroyan e W. A. Luxemburg, Academic Press, Nova Iorque e Londres, 1976.
+\item \emph{Foundations of Infinitesimal Stochastic Analysis}; K. D. Stroyan e J. M. Bayod (editores). In: Studies in Logic and the Foundations of Mathematics, vol. 119, North-Holland, Amsterdã e Londres, 1986.
+\end{enumerate}
 
 \appendix
 
