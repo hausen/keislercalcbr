@@ -1,3 +1,5 @@
+\usepackage[nobottomtitles]{titlesec}
+
 \newcommand{\tnote}[1]{%
 \footnote{N. do T.: #1}%
 }
@@ -125,13 +127,7 @@
 \spnewtheorem*{theor}{Teorema}{\bfseries}{\rmfamily}
 \spnewtheorem*{warning}{Cuidado}{\bfseries}{\rmfamily}
 
-\newcommand\subpart[1]{
-
-\vspace{\baselineskip}
-\noindent\textbf{#1}
-\vspace{\baselineskip}
-
-}
+\newcommand\subpart[1]{ \paragraph{\textbf{#1}} }
 
 % \narrowfigure[caption]{label}{commands}
 \newcommand{\narrowfigure}[3][]{

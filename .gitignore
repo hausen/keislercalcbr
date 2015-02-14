@@ -1,4 +1,5 @@
 figuras/*/*.pdf
+refs/
 *.aux
 *.idx
 *.ilg
