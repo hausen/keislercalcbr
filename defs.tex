@@ -1,4 +1,6 @@
-\usepackage[nobottomtitles]{titlesec}
+\newcommand{\Cdot}{\raisebox{-0.5ex}{\scalebox{2}{$\cdot$}}}
+\newcommand{\hypersymb}{\#}
+\newcommand{\hyper}[1]{{#1}^\hypersymb}
 
 \newcommand{\tnote}[1]{%
 \footnote{N. do T.: #1}%
@@ -111,7 +113,6 @@
 {\textbf{#2}\index{#2}}%
 {\textbf{#2}\index{#1}}%
 }
-\newcommand{\hyper}[1]{{#1}^\#}
 
 \def\setR{\mathbb{R}}
 \def\setHR{\hyper{\setR}}

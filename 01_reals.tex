@@ -1529,11 +1529,190 @@ próximos um do outro. Este será o nosso próximo tópico.
 \section{Números Infinitesimais, Finitos e Infinitos}
 \label{sec:infnumbers}
 
+Vamos resumir a descrição intuitiva dos números hiper-reais feita
+na Seção~\ref{sec:hyperrealline}. A reta real é um subconjunto da
+reta hiper-real; isto é, cada número real pertence ao conjunto dos
+números hiper-reais. Ao redor de cada número real $r$, introduzimos
+uma coleção de números hiper-reais infinitamente próximos de $r$. Os
+números hiper-reais infinitamente próximos de zero são chamados
+infinitésimos. Os números que são recíprocos de infinitésimos não nulos
+são chamados números hiper-reais infinitos. A coleção de todos os números
+hiper-reais satisfaz as mesmas regras algébricas que os números reais.
+Nesta seção descreveremos os números hiper-reais mais precisamente
+e desenvolveremos um artifício para fazer cálculos com eles.
+
+Este curso de cálculo é inteiramente desenvolvido a partir de três
+princípios básicos que relacionam os números reais e os hiper-reais:
+o Princípio da Extensão, o Princípio da Traasferência e o Princípio
+da Parte Padronizada. Os dois primeiros são apresentados nesta seção
+e o terceiro na próxima seção.
+
+Comecaremos pelo Princípio da Extensão, o qual nos dá novos números,
+chamados hiper-reais, e estende todas as funções reais para esses números.
+O princípio da Extensão irá lidar com \emph{funções hiper-reais}, além
+das funções reais. Nossa discussão de funções reais na
+Seção~\ref{sec:funcreal} pode ser imediatamente transposta às funções
+hiper-reais. Recorde que, para cada número real $a$, uma função real $f$
+de uma variável ou o associa a outro número real $b = f(a)$, ou $f(a)$
+é indefinido. Agora, para cada número hiper-real $H$, uma função hiper-real
+$F$ de uma variável ou o associa a outro número hiper-real $K = F(H)$, ou
+$F(H)$ é indefinido. Para cada par de números hiper-reais $H$ e $J$, uma
+função hiper-real $G$ de duas variáveis ou os associa a um outro número
+hiper-real $K = G(H,J)$, ou $G(H,J)$ é indefinido. Funções hiper-reais
+de três ou mais variáveis são definidas de maneira similar.
+
 \subsection{O Princípio da Extensão}
 \label{sec:extprinciple}
+\index{princípio!da extensão}
+
+\emph{
+\begin{enumerate}[(a)]
+\item Os números reais são um subconjunto dos números hiper-reais
+      e a relação de ordem $x < y$ para os números reais é um
+      subconjunto da relação de ordem para os números hiper-reais.
+\item Existe um número hiper-real que é maior do que zero, mas menor
+      do que qualquer número real positivo.
+\item Para cada função real $f$ de uma ou mais variáveis, existe
+      uma função hiper-real correspondente $\hyper{f}$ para o mesmo
+      número de variáveis. A função $\hyper{f}$ é chamada a extensão
+      natural de $f$.
+\end{enumerate}
+}
+
+A parte (a) do Princípio da Extensão diz que a reta real é uma parte
+da reta hiper-real. Para explicar a parte (b) do Princípio da Extensão,
+daremos uma definição cautelosa de um infinitésimo.
+
+\begin{defin}
+Dizemos que um número hiper-real é:
+
+\newdef[infinitesimal!positivo]{infinitesimal positivo} se $b$ é
+positivo porém menor do que qualquer número real positivo.
+
+\newdef[infinitesimal!negativo]{infinitesimal negativo} se $b$ é
+negativo porém maior do que qualquer número real negativo.
+
+\newdef{infinitesimal} se $b$ é infinitesimal positivo, infinitesimal
+negativo, ou zero.
+\end{defin}
+
+Com esta definição, a parte (b) do Princípio da Extensão afirma que há
+ao menos um número infinitesimal positivo. Veremos mais tarde que há
+infinitos infinitésimos positivos. Um infinitésimo positivo é um número
+hiper-real, porém não pode ser um número real, logo a parte (b) nos
+assegura que há números hiper-reais que não são números reais.
+
+A parte (c) do Princípio da Extensão nos permite aplicar funções reais
+a números hiper-reais. Como a função de adição $+$ é uma função real
+de duas variáveis, a sua extensão natural $\hyper{+}$ é uma função
+hiper-real de duas variáveis. Se $x$ e $y$ são números hiper-reais, a
+soma de $x$ e $y$ é o número $x \hyper{+} y$ construído a partir da
+extensão natural de $+$. Analogamente, o produto de $x$ e $y$ é o número
+$x \hyper{\Cdot} y$ construído a partir da extensão natural da função
+produto $\Cdot$. Para facilitar a leitura, vamos omitir o símbolo
+$\hypersymb$ e escrever apenas $x + y$ e $x \Cdot y$ para a soma e o
+produto de dois números hiper-reais $x$ e $y$. Usando as extensões
+naturais das funções soma e produto seremos capazer de desenvolver a
+álgebra para os números hiper-reais. A parte (c) do Princípio da Extensão
+também nos permite trabalhar com expressões como $\cos(x)$ ou
+$\sen(x + \cos(y))$, as quais envolvem uma ou mais funções reais.
+Chamamos tais expressões de \newdef[expressões!reais]{expressões reais}.
+Estas expressões podem ser usadas mesmo que $x$ e $y$ sejam números
+hiper-reais, ao invés de números reais. Por exemplo, quando $x$ e $y$ forem
+hiper-reais, $\sen(x + \cos(y))$ significará
+$\hyper{\sen}(x + \hyper{\cos}(y))$, onde $\hyper{\sen}$ e $\hyper{\cos}$
+são as extensões naturais de $\sen$ e $\cos$. Os símbolos $\hypersymb$
+serão omitidos, como mencionamos anteriomente.
+
+Enunciaremos agora o Princípio da Transferência, o qual nos permite efetuar
+operações com os números hiper-reais da mesma forma que fazemos com os números
+reais. Intuitivamente, o Princípio da Transferência diz que a extensão
+natural de cada função real tem as mesmas propriedades que a função original.
 
 \subsection{O Princípio da Transferência}
 \label{sec:transferprinciple}
+\index{princípio!da transferência}
+
+\emph{Cada proposição real que é válida para uma ou mais funções reais
+também será válida para as extensões hiper-reais naturais dessas funções.}
+
+Eis aqui sete exemplos que ilustram o significado de \newdef{proposição real}.
+Em geral, uma proposição real é uma combinação de equações ou inequações
+sobre expressões reais e afirmações que especificam se uma expressão real
+é definida ou indefinida. Uma proposição real poderá envolver variáveis
+reais e funções reais particulares.
+
+\begin{enumerate}[(1)]
+\item Fecho aditivo: para todo $x$ e $y$, a soma $x+y$ é definida.
+\item Comutatividade da adição: $x + y = y + x$.
+\item Uma regra para a ordem: Se $0 < x < y$, então $0 < 1/y < 1/x$.
+\item A divisão por zero nunca é permitisa: $x/0$ é indefinido.
+\item Uma identidade algébrica: $(x-y)^2 = x^2 - 2xy + y^2$.
+\item Uma identidade trigonométrica: $\sin^2 x + \cos^2 x = 1$.
+\item Uma regra para logaritmos: Se $x > 0$ e $y > 0$, então $\log_{10}(xy) =
+      \log_{10} x + \log_{10} y$
+\end{enumerate}
+
+Cada exemplo tem duas variáveis, $x$ e $y$, e é verdadeiro sempre que $x$ e
+$y$ são números reais. O Princípio de Transferência nos diz que cada exemplo
+também é verdade sempre que $x$ e $y$ forem números hiper-reais. Por exemplo,
+de acordo com o Exemplo (4), $x/0$ é indefinido, mesmo que $x$ seja
+hiper-real. Pelo Exemplo (6), $\sin^2 x + \cos^2 x = 1$ mesmo para $x$
+hiper-real.
+
+Note que os primeiros cinco exemplos envolvem apenas as funções soma,
+diferença, produto e quociente. Entretanto, os dois últimos exemplos
+são proposições reais envolvendo as funções transcendentais $\sen$,
+$\cos$ e $\log_{10}$. O Princípio da Transferência estende todas
+as regras familiares da trigonometria, expoentes e logaritmos para os
+números hiper-reais.
+
+No cálculo, frequentemente fazemos operações envolvendo um ou mais
+números reais desconhecidos. O Princípio da Transferência nos permite
+operar exatamente da mesma forma com números hiper-reais. Ele ``transfere''
+fatos sobre os números reais para fatos sobre os números hiper-reais. Em
+particular, o Princípio da Transferência implica que uma função real e sua
+extensão natural sempre assumirão o mesmo valor quando aplicadas a um número
+real. É por isto que geralmente omitimos o símbolo $\hypersymb$ quando
+efetuamos operações com números hiper-reais.
+
+Uma proposição real é geralmente usada para definir uma nova função real
+a partir de funções reais anteriores. Pelo Princípio da Transferência,
+toda vez que uma proposição real define uma nova função real, a mesma
+proposição real também define a extensão hiper-real natural dessa função.
+Eis aqui três outros exemplos:
+\begin{enumerate}[(1)]
+\setcounter{enumi}{8}
+\item A função raiz quadrada é definida pela proposição real $y = \sqrt{x}$
+      se, e somente se, $y^2 = x$ e $y \ge 0$.
+\item A função valor absoluto é definida pela proposição real $y = |x|$
+      se, e somente se, $y = \sqrt{x^2}$.
+\item A função logaritmo decimal é definida pela proposição real
+      $y = \log_{10} x$ se, e somente se, $10^y = x$.
+\end{enumerate}
+Em cada caso, a extensão hiper-real natural é a função definida pela
+proposição real dada quando $x$ e $y$ variam entre os números
+hiper-reais. Por exemplo, a extensão hiper-real natural da função
+raiz quadrada $\hyper{\sqrt{\phantom{x}}}$ é definida pelo Exemplo (8) quando
+$x$ e $y$ são hiper-reais.
+
+Um uso importante do Princípio da Transferência é a execução de operações
+com infinitésimos. Por exemplo, a operação com infinitésimos foi usada
+no cálculo da inclinação na Seção~\ref{sec:hyperrealline}. O Princípio da
+Extensão nos diz que existe ao menos um número infinitesimal hiper-real
+positivo, a dizer, $\epsilon$. A partir de $\epsilon$, podemos usar o
+Princípio da Transferência para construir uma infinidade de outros
+infinitésimos positivos. Por exemplo, $\epsilon^2$ é um infinitésimo
+positivo que é menor do que $\epsilon$, $0 < \epsilon^2 < \epsilon$.
+(Isto é decorrência do Princípio da Transferência pois $0 < x^2 < x$
+para qualquer número real $x$ entre $0$ e $1$.) Eis aqui vários infinitésimos
+positivos, listados em ordem crescente:
+$$
+  \epsilon^3, \epsilon^2, \epsilon/100, \epsilon, 75\epsilon,
+  \sqrt{\epsilon}, \epsilon + \sqrt{\epsilon}.
+$$
+% parei na página 39 do pdf (30 do livro)
+
 
 \section{Partes Padronizadas}
 \label{sec:standardparts}
