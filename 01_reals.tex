@@ -1561,11 +1561,11 @@ função hiper-real $G$ de duas variáveis ou os associa a um outro número
 hiper-real $K = G(H,J)$, ou $G(H,J)$ é indefinido. Funções hiper-reais
 de três ou mais variáveis são definidas de maneira similar.
 
-\subsection{O Princípio da Extensão}
-\label{sec:extprinciple}
+\subpart{I. O Princípio da Extensão}
+%\label{sec:extprinciple}
 \index{princípio!da extensão}
 
-\emph{
+\begin{quote}
 \begin{enumerate}[(a)]
 \item Os números reais são um subconjunto dos números hiper-reais
       e a relação de ordem $x < y$ para os números reais é um
@@ -1577,7 +1577,7 @@ de três ou mais variáveis são definidas de maneira similar.
       número de variáveis. A função $\hyper{f}$ é chamada a extensão
       natural de $f$.
 \end{enumerate}
-}
+\end{quote}
 
 A parte (a) do Princípio da Extensão diz que a reta real é uma parte
 da reta hiper-real. Para explicar a parte (b) do Princípio da Extensão,
@@ -1629,12 +1629,14 @@ operações com os números hiper-reais da mesma forma que fazemos com os númer
 reais. Intuitivamente, o Princípio da Transferência diz que a extensão
 natural de cada função real tem as mesmas propriedades que a função original.
 
-\subsection{O Princípio da Transferência}
-\label{sec:transferprinciple}
+\subpart{II. O Princípio da Transferência}
+%\label{sec:transferprinciple}
 \index{princípio!da transferência}
 
-\emph{Cada proposição real que é válida para uma ou mais funções reais
-também será válida para as extensões hiper-reais naturais dessas funções.}
+\begin{quote}
+Cada proposição real que é válida para uma ou mais funções reais
+também será válida para as extensões hiper-reais naturais dessas funções.
+\end{quote}
 
 Eis aqui sete exemplos que ilustram o significado de \newdef{proposição real}.
 Em geral, uma proposição real é uma combinação de equações ou inequações
@@ -1711,14 +1713,549 @@ $$
   \epsilon^3, \epsilon^2, \epsilon/100, \epsilon, 75\epsilon,
   \sqrt{\epsilon}, \epsilon + \sqrt{\epsilon}.
 $$
-% parei na página 39 do pdf (30 do livro)
+Podemos também construir infinitésimos negativos, como $-\epsilon$ e
+$-\epsilon^2$, e outros números hiper-reais como $1 + \sqrt{epsilon}$,
+$(10 - \epsilon)^2$ e $1/\epsilon$.
 
+Daremos agora uma lista de regras para decidir se um número hiper-real
+dado é infinitesimal, finito ou infinito. Todas estas regras decorrem
+apenas do Princípio da Transferência. Primeiramente, observe a
+Figura~\ref{fig:hyperrealline2}, uma ilustração da reta hiper-real.
+
+\includefig{hyperrealline2}
+
+\begin{defin}
+Dizemos que um número hiper-real é:
+\begin{description}
+\item[\newdef{finito}] se $b$ está entre dois números reais.
+\item[\newdef{infinito positivo}] se $b$ é maior do que qualquer número real.
+\item[\newdef{infinito negativo}] se $b$ é menor do que qualquer número real.
+\end{description}
+\end{defin}
+
+Note que todo número infinitesimal é finito. Antes de apresentarmos a
+lista completa de regras, vamos observar em detalhes duas delas.
+
+\emph{Se $\epsilon$ é infinitesimal e $a$ é finito, então o produto
+$a \cdot \epsilon$ é infinitesimal.} Por exemplo, $\frac{1}{2}\epsilon$,
+$-6\epsilon$, $1000\epsilon, (5-\epsilon)\epsilon$ são infinitesimais.
+Isto pode ser intuitivamente observado a partir da
+Figura~\ref{fig:infinitesimalarea}; um retângulo infinitamente fino de
+comprimento $a$ possui área infinitesimal.
+
+\includefig{infinitesimalarea}
+
+\emph{Se $\epsilon$ é infinitesimal positivo, então $1/\epsilon$ é infinito
+positivo.} Por experiência, sabemos que os recíprocos de números pequenos
+são grandes, então intuitivamente esperamos que $1/\epsilon$ seja infinito
+positivo. Podemos usar o Princípio da Transferência para demonstrar que
+$1/\epsilon$ é positivo infinito. Seja $r$ um número real positivo qualquer.
+Como $\epsilon$ é infinitesimal positivo, $0 < \epsilon < 1/r$. Aplicando
+o Princípio da Transferência, $1/\epsilon > r > 0$. Portanto, $1/\epsilon$
+é infinito positivo.
+
+\subpart{Regras para Números Infinitesimais, Finitos e Infinitos}
+
+\begin{quote}
+Sejam $\epsilon$, $\delta$ números hiper-reais infinitesimais; $b$, $c$
+números hiper-reais finitos mas não infinitesimais; e $H$, $K$ números
+hiper-reais infinitos.
+
+\begin{enumerate}[(i)]
+\item Números reais:\\
+      O único número real infinitesimal é $0$.\\
+      Todo número real é finito.
+\item Números negativos:\\
+      $-\epsilon$ é infinitesimal.\\
+      $-b$ é finito mas não infinitesimal.\\
+      $-H$ é infinito.
+\item Recíprocos:\\
+      Se $\epsilon \ne 0$, $1/\epsilon$ é infinito.\\
+      $1/b$ é finito mas não infinitesimal.\\
+      $1/H$ é infinitesimal.
+\item Somas:\\
+      $\epsilon + \delta$ é infinitesimal.\\
+      $b + \epsilon$ é finito mas não infinitesimal.\\
+      $b + c$ é finito (possivelmente infinitesimal).\\
+      $H + \epsilon$ e $H + b$ são infinitos.
+\item Produtos:\\
+      $\delta \cdot \epsilon$ e $b \cdot \epsilon$ são infinitesimais.\\
+      $b \cdot c$ é finito mas não infinitesimal.\\
+      $H \cdot b$ e $H \cdot K$ são infinitos.
+\item Quocientes:\\
+      $\epsilon/b$, $\epsilon/H$ e $b/H$ são infinitesimais.\\
+      $b/c$ é finito mas não infinitesimal.\\
+      $b/\epsilon$, $H/\epsilon$ e $H/b$ são infinitos, desde que $\epsilon \ne 0$.
+\item Raízes:\\
+      Se $\epsilon > 0$, $\sqrt[n]{\epsilon}$ é infinitesimal.\\
+      Se $b > 0$, $\sqrt[n]{\epsilon}$ é finito mas não infinitesimal.\\
+      Se $H > 0$, $\sqrt[n]{H}$ é infinito.
+\end{enumerate}
+\end{quote}
+
+Note que não fornecemos nenhuma regra para as combinações a seguir:
+\begin{enumerate}[\hspace{4ex}]
+\item $\epsilon/\delta$, o quociente entre dois infinitésimos.
+\item $H/K$, o quociente entre dois números infinitos.
+\item $H\epsilon$, o produto de um número infinito e um infinitésimo.
+\item $H+K$, a soma de dois números infinitos.
+\end{enumerate}
+Cada uma dessas combinações pode ser tanto um número infinitesimal quanto
+um número finito mas não infinitesimal, ou mesmo um número infinito,
+dependendo das particularidades de $\epsilon$, $\delta$, $H$ e $K$. Por
+esta razão, essas combinações são chamadas \newdef{formas indeterminadas}.
+
+Aqui temos alguns quocientes de infinitésimos bem distintos:
+\begin{enumerate}[\hspace{4ex}]
+\item $\displaystyle \frac{\epsilon^2}{\epsilon}$ é infinitesimal (igual a $\epsilon$)\\[0.5ex]
+\item $\displaystyle \frac{\epsilon}{\epsilon}$ é finito mas não infinitesimal (igual a $1$)\\[0.5ex]
+\item $\displaystyle \frac{\epsilon}{\epsilon^2}$ é infinito $\displaystyle \left(\text{igual a }\frac{1}{\epsilon}\right)$.
+\end{enumerate}
+
+A Tabela~\ref{tab:indeterminateforms} mostra as três possibilidades para cada
+forma indeterminada. Os exemplos a seguir mostrarão como usar as nossas regras.
+
+\begin{table}
+\caption{}
+\label{tab:indeterminateforms}
+\begin{center}
+{\everymath{\displaystyle}
+\begin{tabular}{c|c|c|c}
+\hline
+              & \multicolumn{3}{|c}{Exemplos} \\
+\cline{2-4}
+forma         &                     & finito            &          \\
+indeterminada & \; infinitesimal \; & (igual a $1$)     & \; infinito \; \\
+\hline & & & \\[-1.2ex]
+
+$\frac{\epsilon}{\delta}$ &
+    $\frac{\epsilon^2}{\epsilon}$ &
+        $\frac{\epsilon}{\epsilon}$ &
+            $\frac{\epsilon}{\epsilon^2}$ \\[2.2ex]
+
+$\frac{H}{K}$ &
+    $\frac{H}{H^2}$ &
+        $\frac{H}{H}$ &
+            $\frac{H^2}{H}$ \\[2.2ex]
+
+$\frac{H}{\epsilon}$ &
+    $H\cdot\frac{1}{H^2}$ &
+        $H \cdot \frac{1}{H}$ &
+            $H^2 \cdot \frac{1}{H}$ \\[2.2ex]
+
+$H + K$ &
+    $H + (-H)$ &
+        \; $(H + 1) + (-H)$ \; &
+            $H + H$ \\[2.2ex]
+\hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+\begin{example}
+Considere $(b - 3\epsilon)/(c + 2\epsilon)$. O número $\epsilon$ é
+infinitesimal, logo $-3\epsilon$ é infinitesimal e $b - 3\epsilon$ é
+finito mas não infinitesimal. Analogamente, $c + 2\epsilon$ é finito mas
+não infinitesimal. Portanto, o quociente
+$$
+  \frac{b - 3\epsilon}{c + 2\epsilon}
+$$
+é finito mas não infinitesimal.
+\end{example}
+
+\begin{example}
+O quociente
+$$
+  \frac{5\epsilon^4 - 8\epsilon^3 + \epsilon^2}{3\epsilon}
+$$
+é infinitesimal se $\epsilon \ne 0$.
+O número dado é igual a
+\begin{eqnarray}
+  & \frac{5}{3}\epsilon^3 - \frac{8}{3}\epsilon^2 + \frac{1}{3}\epsilon. &
+  \label{eq:example2sec1.5}
+\end{eqnarray}
+Veja que $\epsilon$, $\epsilon^2$, $\epsilon^3$, $\frac{1}{3}\epsilon$,
+$-\frac{8}{3}\epsilon^2$, $\frac{5}{3}\epsilon^3$ são infinitesimais;
+logo, a soma~(\ref{eq:example2sec1.5}) é infinitesimal.
+\end{example}
+
+\begin{example}
+Se $\epsilon \ne 0$, o quociente
+$$
+  \frac{3\epsilon^3 + \epsilon^2 - 6\epsilon}%
+       {2\epsilon^2 + \epsilon}
+$$
+é finito mas não infinitesimal.
+Cancelando um fator $\epsilon$ do numerador com um do denominador, obtemos
+\begin{eqnarray}
+  &\displaystyle \frac{3\epsilon^2 + \epsilon - 6}%
+                      {2\epsilon + 1} &
+  \label{eq:example3sec1.5}
+\end{eqnarray}
+Como $3\epsilon^2 + \epsilon$ é infinitesimal, ao passo que $-6$ é finito
+mas não infinitesimal, o numerador
+$$
+  3\epsilon^2 + \epsilon - 6
+$$
+é finito mas não infinitesimal. Analogamente, o denominador $2\epsilon + 1$,
+e portanto o quociente~(\ref{eq:example3sec1.5}), são finitos mas não
+infinitesimais.
+\end{example}
+
+\begin{example}
+Se $\epsilon \ne 0$, o quociente
+$$
+  \frac{\epsilon^4 - \epsilon^3 + 2\epsilon^2}%
+       {5\epsilon^4 + \epsilon^3}
+$$
+é infinito.
+
+Note, primeiramente, que o denominador $5\epsilon^4 + \epsilon^3$ é
+diferente de zero pois pode ser escrito como um produto de fatores
+não nulos,
+$$
+  5\epsilon^4 + \epsilon^3 =
+  \epsilon \cdot \epsilon \cdot \epsilon \cdot (5\epsilon + 1).
+$$
+Quando cancelamos o fator $\epsilon^2$ do numerador com o do denominador,
+obtemos
+$$
+  \frac{\epsilon^2 - \epsilon + 2\epsilon}%
+       {5\epsilon^2 + \epsilon}.
+$$
+Deste modo, vemos que:
+\begin{description}
+\item[] $\epsilon^2 - \epsilon + 2$ é finito mas não infinitesimal,
+\item[] $5\epsilon^2 + \epsilon$ é infinitesimal, portanto
+\item[] $\displaystyle \frac{\epsilon^2 - \epsilon + 2\epsilon}%
+                            {5\epsilon^2 + \epsilon}$
+        é infinito.
+\end{description}
+\end{example}
+
+\begin{example}
+$\displaystyle \frac{2H^2 + H}{H^2 - H + 2}$ é finito mas não infinitesimal.
+
+Neste exemplo, o truque é multiplicar tanto o numerador quanto o denominador
+por $1/H^2$. Obtemos
+$$
+  \frac{2 + 1/H}{1 - 1/H + 2/H^2}.
+$$
+Agora, $1/H$ e $1/H^2$ são infinitesimais. Assim, tanto o numerador quanto
+o denominador são finitos mas não infinitesimais, e por consequência o
+quociente.
+\end{example}
+
+No próximo teorema listaremos fatos sobre a ordem dos hiper-reais.
+
+\begin{theorem}
+\par\noindent
+\begin{enumerate}[(i)]
+\item Todo número hiper-real que está entre dois infinitésimos é um
+      infinitésimo.
+\item Todo número hiper-real que está entre dois números hiper-reais
+      finitos é finito.
+\item Todo número hiper-real que é maior do que algum número infinito
+      positivo é infinito positivo.\label{teo:hyperordposinf}
+\item Todo número hiper-real que é menor do que algum número infinito
+      negativo é infinito negativo.
+\end{enumerate}
+\end{theorem}
+
+Todas as demonstrações são fáceis. Demonstraremos (\ref{teo:hyperordposinf}),
+a qual é especialmente útil. Assuma que $H$ é infinito positivo e que $H < K$.
+Então, para todo número real $r$, é verdade que $r < H < K$. Logo,
+$r < K$ e $K$ é infinito positivo.
+
+\begin{example}
+Se $H$ e $K$ são números hiper-reais infinitos positivos, então $H+K$
+é infinito positivo. Isto é verdade pois $H+K$ é maior do que $H$.
+\end{example}
+
+Nosso último exemplo diz respeito a raízes quadradas.
+
+\begin{example}
+Se $H$ é infinito positivo então, surpreendentemente,
+$$
+  \sqrt{H + 1} - \sqrt{H - 1}
+$$
+é infinitesimal.
+
+Isto é demonstrado usando-se um truque algébrico:
+\begin{eqnarray*}
+  \sqrt{H + 1} - \sqrt{H - 1} & = &
+    \frac{(\sqrt{H + 1} - \sqrt{H - 1})(\sqrt{H + 1} + \sqrt{H - 1})}%
+         {\sqrt{H + 1} + \sqrt{H - 1}} \\
+  & = &
+    \frac{(H + 1) - (H - 1)}{\sqrt{H + 1} + \sqrt{H - 1}} =
+      \frac{2}{\sqrt{H + 1} + \sqrt{H - 1}}.
+\end{eqnarray*}
+Os números $H+1$, $H-1$, e suas raízes quadradas são infinitos positivos, e
+logo a soma $\sqrt{H + 1} + \sqrt{H - 1}$ é infinita positiva. Portanto, o
+quociente
+$$
+  \sqrt{H + 1} - \sqrt{H - 1} = \frac{2}{\sqrt{H + 1} + \sqrt{H - 1}}
+$$
+é um número finito dividido por um número infinito, ou seja, um infinitésimo.
+\end{example}
+
+\begin{sectionproblems}
+Nos Problemas 1--44 abaixo, assuma que: $\epsilon$, $\delta$ são infinitésimos
+positivos; $H$, $K$ são infinitos positivos. Determine se a expressão
+dada é um número infinitesimal, finito mas não infinitesimal ou infinito.
+
+\begingroup
+\def\eps{\epsilon}
+\everymath{\displaystyle}
+\twoexer{$\fnum{76 000 000}\epsilon$}{$3\epsilon + 4\delta$}
+
+\twoexer{$1 + 1/\epsilon$}{$3\epsilon^3 - 2\epsilon^2 + \epsilon + 1$}
+
+\twoexer{$1/\sqrt{\epsilon}$}{$\epsilon/H$}
+
+\twoexer{$H/\fnum{1 000 000}$}{$(3 + \epsilon)^2 - 9$}
+
+\twoexer{$(3+\epsilon)(4+\delta)-12$}%
+        {$\frac{1+\epsilon+3\epsilon^2}{2-\epsilon-8\epsilon^3}$}
+
+\twoexer{$\frac{2\eps^3-\eps^4}{4\eps-\eps^2+\eps^3}$}%
+        {$\frac{2\eps^3-\eps^4}{4\eps^3+\eps^4}$}
+
+\twoexer{$\frac{3\eps-4\eps^2}{\eps^2+5\eps}$}%
+        {$\frac{\sqrt{\eps}+\eps}{\sqrt{\eps}+1}$}
+
+\twoexer{$\frac{1}{\sqrt{\eps}-\eps}$}{$\frac{1}{\eps}\cdot\sqrt{\eps}$}
+
+\twoexer{$\frac{1}{\eps}\cdot5\eps$}{$\frac{1}{\eps}\cdot\eps^3$}
+
+\twoexer{$\frac{1}{\eps}\left(\frac{1}{3+\eps}-\frac{1}{3}\right)$}%
+        {$\frac{2H+1}{3H+2}$}
+
+\twoexer{$\frac{2H^4 + 3H - 6}{4H^3+5}$}{$\frac{H+4+\eps}{H^2+2\eps}$}
+
+\twoexer{$\frac{H+K}{HK}$}{$\frac{H-K}{H^2+K^2}$}
+
+\twoexer{$H^2-H$}{$\sqrt{H+1}-\sqrt{H}$}
+
+\twoexer{$\left(H+\frac{1}{H}\right)^2 - \left(H-\frac{1}{H}\right)^2$}%
+        {$\left(H+\frac{\eps}{H}\right)^2 - \left(H-\frac{\eps}{H}\right)^2$}
+
+\twoexer{$\frac{\sqrt{4+\eps}-2}{\eps}$}%
+        {$\frac{1}{\eps}\left(1-\frac{1}{\sqrt{1+\eps}}\right)$}
+
+\twoexer{$H\left(\sqrt{3+\frac{1}{H}}-\sqrt{3}\right)$}%
+        {$\frac{\sqrt{H}}{\sqrt{H+1}+\sqrt{H+2}}$}
+
+\twoexer{$H\left(\sqrt{H+2}-\sqrt{H}\right)$}%
+        {$\frac{1-\sqrt[3]{1+\eps}}{\eps}$}
+
+\twoexer{$\sqrt[3]{H} - \sqrt[3]{H+1}$}%
+        {$H-\sqrt{H+1}\sqrt{H+2}$}
+
+\twoexer{$\frac{(3+\eps)(4+\delta)-12}{\eps\delta}$}%
+        {$\frac{5+\eps}{7+\delta} - \frac{5}{7}$}
+
+\twoexer{$\frac{\epsilon + \delta}{\sqrt{\epsilon^2 + \delta^2}}$\\[4pt]
+         (Dica: assuma $\epsilon \ge \delta$ e divida tudo por $\epsilon$.)}%
+        {$\frac{H+K}{\sqrt{H^2+K^2}}$}
+
+\exer{%
+Nos itens (a)--(f) abaixo, determine qual dos dois números é maior.
+
+\begin{tabular}{cl@{\hspace*{6ex}}cl@{\hspace*{6ex}}cl}
+  (a) & $\eps$ ou $\eps^2$ &
+  (b) & $\frac{1}{\eps^3}$ ou $\frac{1}{\eps^2}$ &
+  (c) & $H$ ou $H^2$ \\[2ex]
+  (d) & $\eps$ ou $\sqrt{\eps}$ &
+  (e) & $H$ ou $\sqrt{H}$ &
+  (f) & $\sqrt{H}$ ou $\sqrt[3]{H}$
+\end{tabular}%
+}
+
+\hardex{%
+Sejam $x$, $y$ números hiper-reais positivos. É possível que
+$\frac{x}{y} + \frac{y}{x}$ sejam infinitos? Finitos? Infinitésimos?%
+}
+
+\hardex{%
+Sejam $a$, $b$ reais. Sob quais condições a fração
+$\frac{3\eps^2 - \eps + a}{4\eps^2 + 2\eps + b}$ é\ldots
+\begin{enumerate}[(a)]
+\item \ldots infinitesimal?
+\item \ldots finito mas não infinitesimal?
+\item \ldots infinito?
+\end{enumerate}%
+}
+
+\hardex{%
+Sejam $a$, $b$ reais. Sob quais condições a fração
+$\frac{aH^2 - 2H + 5}{bH^2 + H - 2}$ é\ldots
+\begin{enumerate}[(a)]
+\item \ldots infinitesimal?
+\item \ldots finito mas não infinitesimal?
+\item \ldots infinito?
+\end{enumerate}%
+}
+
+\endgroup
+
+\end{sectionproblems}
 
 \section{Partes Padronizadas}
 \label{sec:standardparts}
 
-\subsection{O Princípio da Parte Padronizada}
-\label{sec:stpartprinciple}
+Nesta seção, desenvolveremos um método que nos permitirá calcular a inclinação
+de uma curva por meio de infinitésimos. Usaremos o método para encontrar
+inclinações de curvas no Capítulo~\ref{chp:diff} e para encontrar áreas no
+Capítulo~\ref{chp:integration}. O passo chave será encontrar a parte
+padronizada de um número hiper-real dado, ou seja, o número real que está
+infinitamente próximo a ele.
+
+\begin{defin}
+Dizemos que dois números hiper-reais $b$ e $c$ estão \newdef{infinitamente
+próximos} entre eles, ou simbolicamente $b \approx c$, se a diferença
+$b - c$ é um infinitésimo. Usaremos $b \not\approx c$ para indicar que
+$b$ não está infinitamente próximo de $c$.
+\end{defin}
+
+Três consequências imediatas da definição são:
+\begin{enumerate}[(1)]
+\item \emph{Se $\epsilon$ é um infinitésimo, então $b \approx b + \epsilon$.}
+      Isto é verdadeiro pois a diferença $b - (b+\epsilon) = -\epsilon$
+      é um infinitésimo.
+\item \emph{$b$ é um infinitésimo se, e somente se, $b \approx 0$.} A
+      fórmula $b \approx 0$ será usada como uma maneira abreviada para
+      escrever que ``$b$ é um infinitésimo.''
+\item \emph{Se $b$ e $c$ são reais e $b$ está infinitamente pŕoximo de $c$,
+      então $b$ é igual a $c$.} Como $b-c$ é real e infinitesimal, então
+      ele é igual a zero; logo $b=c$.
+\end{enumerate}
+
+A relação $\approx$ entre números hiper-reais se comporta de maneira
+um pouco parecida com a igualdade, mas, é claro, não é a mesma coisa
+que a igualdade. O teorema a seguir lista três propriedades básicas de
+$\approx$.
+
+\begin{theorem} Sejam $a$, $b$, $c$ números hiper-reais.
+\begin{enumerate}[(i)]
+\item $a \approx a$.
+\item Se $a \approx b$, então $b \approx a$.
+\item Se $a \approx b$ e $b \approx c$, então $a \approx c$.
+\end{enumerate}
+\end{theorem}
+
+Estas propriedades são úteis quando desejamos mostrar que dois números
+estão infinitamente próximos entre eles.
+
+A razão para (i) é que $a-a$ é infinitesimal, a saber, zero. Para (ii),
+notemos que $a-b$ é um infinitésimo $\epsilon$, então $b-a = -\epsilon$,
+que também é um infinitésimo. Finalmente, (iii) é verdadeira pois $a-c$
+é a soma de dois infinitésimos, a saber, $(a-b) + (b-c)$.
+
+\begin{theorem}
+\label{teo:propinfinitelyclose2}
+Assuma que $a \approx b$. Então:
+\begin{enumerate}[(i)]
+\item $a$ é infinitesimal se, e somente se, $b$ é infinitesimal.
+\item $a$ é finito se, e somente se, $b$ é finito.
+\item $a$ é infinito se, e somente se, $b$ é infinito.
+\end{enumerate}
+\end{theorem}
+
+Os números reais são, por vezes, chamados de números ``padronizados\tnote{do inglês ``standard.''},'' enquanto que os números hiper-reais que não são reais
+são chamados números ``não padronizados.'' Por este motivo, o número real
+que está infinitamente próximo de $b$ é chamado de ``parte padronizada'' de
+$b$. Um número infinito não pode ter uma parte padronizada, pois não pode
+estar infinitamente próximo de um número finito (Teorema~\ref{teo:propinfinitelyclose2}). Nosso terceiro princípio sobre números hiper-reais,
+enunciado a seguir, é que todo número finito possui uma parte padronizada.
+
+\subpart{III. O Princípio da Parte Padronizada}
+
+\begin{quote}
+Todo número hiper-real finito está infinitamente próximo de um único
+número real.
+\end{quote}
+
+\begin{defin}
+Seja $b$ um número hiper-real finito. A
+\newdef[parte padronizada!definição]{parte padronizada} de $b$,
+denotada por $\st{b}$, é o número real que está infinitamente próximo de
+$b$. Números hiper-reais infinitos não possuem partes padronizadas.
+\end{defin}
+
+Eis aqui alguns fatos que decorrem diretamente da definição:
+\begin{quote}
+Seja $b$ um número hiper-real finito.
+\begin{enumerate}[(1)]
+\item $\st{b}$ é um número real.
+\item $b = \st{b} + \epsilon$ para algum infinitésimo $\epsilon$.
+\item Se $b$ é real, então $b = \st{b}$.
+\end{enumerate}
+\end{quote}
+
+Nossa próxima meta será desenvolver algumas habilidades no cálculo de partes
+padronizadas. Este será um dos métodos básicos usados ao longo deste curso
+de Cálculo. O próximo teorema é a ferramenta principal.
+
+\begin{theorem}
+\label{teo:stpartrules}
+\index{parte padronizada!regras}
+Sejam $a$, $b$ números hiper-reais finitos. Então:
+\begin{enumerate}[(i)]
+\item $\st{-a} = -\st{a}$.
+\item $\st{a+b} = \st{a}+\st{b}$.
+\item $\st{a-b} = \st{a}-\st{b}$.
+\item\label{teo:stpartrules:iv} $\st{a \cdot b} = \st{a} \cdot \st{b}$.
+\item Se $\st{b} \ne 0$, então $\st{a/b} = \st{a}/\st{b}$.
+\item $\st{a^n} = \left(\st{a}\right)^n.$
+\item Se $a \ge 0$, então $\st{\sqrt[n]{a}} = \sqrt[n]{\st{a}}$.
+\item Se $e \le b$, então $\st{a} \le \st{b}$.
+\end{enumerate}
+\end{theorem}
+
+Este teorema nos dá fórmulas para as partes padronizadas das expressões
+mais simples.
+
+Todas as regras no Teorema~\ref{teo:stpartrules} decorrem de nossos três
+princípios para números hiper-reais. Como ilustração, vamos demonstrar a
+fórmula~(\ref{teo:stpartrules:iv}) para $\st{a \cdot b}$. Seja $r$ a parte
+padronizada de $a$ e $s$ a parte padronizada de $b$, logo
+$$
+  a = r + \epsilon, \; \; b = s + \delta,
+$$
+onde $\epsilon$, $\delta$ são infinitésimos. Então
+\begin{eqnarray*}
+a \cdot b & = & (r + \epsilon)(s + \delta) \\
+          & = & rs + r\delta + s\epsilon + \epsilon\delta \approx rs.
+\end{eqnarray*}
+Logo, $\st{a\cdot b} = rs = \st{a} \cdot \st{b}$.
+
+É comum o uso dos símbolos $\Delta{x}$, $\Delta{y}$, etd. para denotar
+infinitésimos. Nos exemplos a seguir, usaremos as regras do
+Teorema~\ref{teo:stpartrules} como ponto de partida para determinarmos
+partes padronizadas de expressões mais complicadas.
+
+\begin{example}
+Quando $\Delta{x}$ é um infinitésimo e $x$ é real, determine a parte
+padronizada de
+$$
+  3x^2 + 3x\Delta{x} + (\Delta{x})^2.
+$$
+
+Usando as regras do Teorema~\ref{teo:stpartrules}, podemos escrever
+\begin{eqnarray*}
+  \st{3x^2 + 3x\Delta{x} + (\Delta{x})^2} & = &
+     \st{3x^2} + \st{3x\Delta{x}} + \st{(\Delta{x})^2} \\
+  & = &
+    3x^2 + \st{3x}\cdot\st{\Delta{x}} + \left(\st{\Delta{x}}\right)^2 \\
+  & = &
+    3x^2 + \st{3x}\cdot 0 + 0^2 = 3x^2.
+\end{eqnarray*}
+\end{example}
+
+\begin{sectionproblems}
+\end{sectionproblems}
 
 \begin{chapterproblems}
 \end{chapterproblems}

@@ -16,6 +16,9 @@
 % coloca o número da seção nas figuras
 \usepackage{chngcntr}
 \counterwithin{figure}{section}
+\counterwithin{table}{section}
+\counterwithin{equation}{section}
+\renewcommand{\theequation}{\arabic{equation}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % commands to typeset the problem sections
@@ -128,7 +131,7 @@
 \spnewtheorem*{theor}{Teorema}{\bfseries}{\rmfamily}
 \spnewtheorem*{warning}{Cuidado}{\bfseries}{\rmfamily}
 
-\newcommand\subpart[1]{ \paragraph{\textbf{#1}} }
+\newcommand\subpart[1]{\paragraph{\textbf{#1}}}
 
 % \narrowfigure[caption]{label}{commands}
 \newcommand{\narrowfigure}[3][]{

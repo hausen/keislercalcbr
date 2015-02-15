@@ -740,7 +740,8 @@ passing it to article class \MessageBreak
                 \list{}{\leftmargin=12\p@%
                 \rightmargin\leftmargin
                 \parsep=3\p@
-                \small}%
+%                \small}% commented by hausen
+                \it}%
                 \item\relax}
                {\endlist}
 
