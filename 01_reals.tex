@@ -2384,12 +2384,132 @@ $$
 \end{example}
 
 \begin{sectionproblems}
+\begingroup
+\def\eps{\epsilon}
+\def\dx{\Delta{x}}
+\def\dy{\Delta{y}}
+\def\spc{\hspace{3ex}}
+\everymath{\displaystyle}
+\def\Exer#1#2{\exer{\hspace{0em}\rlap{#1}\hspace{0.4\textwidth}\rlap{#2}}}
+
 
 Determine as partes padronizadas nos seguintes exercícios.
 
-\exer{$2 + \epsilon + 3\epsilon$, \; onde $\epsilon$ é um infinitésimo}
-\exer{$b + 2\epsilon - \epsilon^2$, \; onde $\std(b) = 5$ e $\epsilon$ é um infinitésimo}
+\Exer{$2 + \eps + 3\eps^2$,}%
+     {$\eps$ infinitésimo}
 
+\Exer{$b + 2\eps - \eps^2$,}%
+     {$\std(b) = 5$, \spc $\eps$ infinitésimo}
+
+\Exer{$\frac{2-3\eps}{5 + 4\eps}$,}%
+     {$\eps$ infinitésimo}
+
+\Exer{$y^4 + 2y^2\dy + \dy^3$,}%
+     {$y$ real, \spc $\dy$ infinitésimo}
+
+\Exer{$(x^2 + 3x^2\dx + \dx^2)^6$,}%
+     {$x$ real, \spc $\dx$ infinitésimo}
+
+\Exer{$\sqrt{x + \dx} + \sqrt{x - \dx}$,}%
+     {$x$ real positivo, \spc $\dx$ infinitésimo}
+
+\Exer{$\frac{\eps^3 - \eps^2 + 4\eps}{3\eps^2 + 2\eps - 3}$,}%
+     {$\eps$ infinitésimo}
+
+\Exer{$\frac{\eps^4 - \eps^3 + \eps^2}{2\eps^2}$,}%
+     {$\eps \ne 0$ infinitésimo}
+
+\Exer{$\frac{4\eps^4 - 3\eps^3 + 2\eps^2}{3\eps^4 - 2\eps^3 + \eps^2}$,}%
+     {$\eps \ne 0$ infinitésimo}
+
+\Exer{$(2 + \eps + \delta)(3-\eps\delta)$,}%
+     {$\eps$, $\delta$ infinitésimos}
+
+\Exer{$\sqrt{a + \eps}\sqrt{a + \delta}$,}%
+     {$\std(a) = 3$, \spc $\eps$, $\delta$ infinitésimos}
+
+\Exer{$\frac{2H+4}{3H-6}$,}%
+     {$H$ infinito}
+
+\Exer{$\frac{6H-7}{H^2+2}$,}%
+     {$H$ infinito}
+
+\Exer{$\frac{3H^2-5H+2}{H^2+1}$,}%
+     {$H$ infinito}
+
+\Exer{$\frac{H+1+\eps}{2H-1+3\eps}$,}%
+     {$H$ infinito, \spc $\eps$ infinitésimo}
+
+\Exer{$\frac{H^4+3H^2+1}{4H^4+2H^2-1}$}%
+     {$H$ infinito}
+
+\Exer{$\frac{2b^2+c+1}{3c^2+6b+1}$}%
+     {$\std(b) = 2$, \spc $\std(c) = -1$}
+
+\Exer{$\sqrt{b^2 + bc + b - c}$}%
+     {$\std(b) = 3$, \spc $\std(c) = 2$}
+
+\Exer{$\frac{(x+\eps)(y+\eps)-xy}{\eps}$}%
+     {$x$, $y$ real, \spc $\eps \ne 0$ infinitésimo}
+
+\Exer{$\frac{(x + \dx)^2 - x^2}{\dx}$}%
+     {$x$ real, \spc $\dx \ne 0$ infinitésimo}
+
+\Exer{$\frac{(x + \dx)^3 - x^3}{\dx}$}%
+     {$x$ real, \spc $\dx \ne 0$ infinitésimo}
+
+\Exer{$\frac{1/(a+\eps) - 1/a}{\eps}$}%
+     {$a \ne 0$ real, \spc $\eps \ne 0$ infinitésimo}
+
+\Exer{$\frac{b^2-25}{b-5}$}%
+     {$b \ne 5$ \; e \; $\std(b) = 5$}
+
+\Exer{$\frac{4-a}{2-\sqrt{a}}$}%
+     {$a \ne 4$ \; e \; $\std(a) = 4$}
+
+\Exer{$\frac{3-\sqrt{c+2}}{c-7}$}%
+     {$c \ne 7$ \; e \; $\std(c) = 7$}
+
+\Exer{$\frac{3-\sqrt{c+2}}{c-7}$}%
+     {$\std(c) = 5$}
+
+\Exer{$\frac{a^2-5a+6}{a-3}$}%
+     {$a \ne 3$ \; e \; $\std(a) = 3$}
+
+\Exer{$\frac{2b^2-b-6}{b^2-3b+2}$}%
+     {$b \ne 2$ \; e \; $\std(b) = 2$}
+
+\Exer{$\frac{c^2+5c+6}{c^2+4c+3}$}%
+     {$c \ne -3$ \; e \; $\std(c) = -3$}
+
+\Exer{$\frac{\sqrt{25-\eps}-5}{\eps}$}%
+     {$\eps \ne 0$ \; e \; $\eps$ infinitésimo}
+
+\Exer{$\frac{1}{\eps} \left(\frac{1}{\sqrt{4+\eps}}-\frac{1}{2}\right)$}%
+     {$\eps \ne 0$ \; e \; $\eps$ infinitésimo}
+
+\Exer{$2H\left(\sqrt{1+\frac{1}{H}}-1\right)$}%
+     {$H$ infinito positivo}
+
+\Exer{$\frac{\sqrt{H+1}}{\sqrt{2H}+\sqrt{H-1}}$}%
+     {$H$ infinito positivo}
+
+\Exer{$\sqrt{H^2+H+1}-H$}%
+     {$H$ infinito positivo}
+
+Nos problemas a seguir, sejam $a$, $b$, $a_1$, $b_1$ números hiper-reais
+tais que $a \approx a_1$ e $b \approx b_1$.
+
+\hardex{Mostre que $a+b \approx a_1 + b_1$. \spc \emph{Dica:} Considere
+        $a_1 = a + \eps$, $b_1 = b + \delta$ e calcule a diferença
+        $(a_1 + b_1) - (a+b)$.}
+
+\hardex{Mostre que, se $a$, $b$ são finitos, então $ab \approx a_1b_1$.}
+
+\hardex{Mostre que, se $a = b = H$, $a_1 = b_1 = H + 1/H$, então
+        $a b \not\approx a_1b_1$. ($H$ positivo infinito)}
+
+\endgroup
 \end{sectionproblems}
 
 \begin{chapterproblems}
