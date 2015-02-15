@@ -14,7 +14,7 @@ de uma lição introdutória. O conteúdo principal do Capítulo~\ref{chp:reals}
 está nas suas duas útimas seções, \ref{sec:infnumbers} e
 \ref{sec:standardparts}. Nestas seções, o estudante aprenderá como
 trabalhar com números hiper-reais e, em particular, como calcular
-partes padrões. Partes padronizadas são usadas no início do próximo
+partes padronizadas. Partes padronizadas são usadas no início do próximo
 capítulo para encontrar derivadas de funções. As Seções \ref{sec:infnumbers} e 
 \ref{sec:standardparts} substituem os capítulos iniciais sobre limites,
 encontrados nos textos tradicionais de cálculo.
@@ -2231,7 +2231,7 @@ a \cdot b & = & (r + \epsilon)(s + \delta) \\
 \end{eqnarray*}
 Logo, $\st{a\cdot b} = rs = \st{a} \cdot \st{b}$.
 
-É comum o uso dos símbolos $\Delta{x}$, $\Delta{y}$, etd. para denotar
+É comum o uso dos símbolos $\Delta{x}$, $\Delta{y}$, etc. para denotar
 infinitésimos. Nos exemplos a seguir, usaremos as regras do
 Teorema~\ref{teo:stpartrules} como ponto de partida para determinarmos
 partes padronizadas de expressões mais complicadas.
@@ -2246,7 +2246,7 @@ $$
 Usando as regras do Teorema~\ref{teo:stpartrules}, podemos escrever
 \begin{eqnarray*}
   \st{3x^2 + 3x\Delta{x} + (\Delta{x})^2} & = &
-     \st{3x^2} + \st{3x\Delta{x}} + \st{(\Delta{x})^2} \\
+     \std(3x^2) + \std(3x\Delta{x}) + \std((\Delta{x})^2) \\
   & = &
     3x^2 + \st{3x}\cdot\st{\Delta{x}} + \left(\st{\Delta{x}}\right)^2 \\
   & = &
@@ -2254,7 +2254,142 @@ Usando as regras do Teorema~\ref{teo:stpartrules}, podemos escrever
 \end{eqnarray*}
 \end{example}
 
+\begin{example}
+\label{ex:stpartfrac}
+Se $\st{c} = 4$ e $c \ne 4$, determine
+$$
+  \st{\frac{c^2 + 2c - 24}{c^2 - 16}}.
+$$
+Notemos que o denominador possui parte padronizada $0$,
+$$
+  \std(c^2 - 16) = \left(\std(c)\right)^2 - 16 = 4^2 - 16 = 0.
+$$
+Entretanto, como $c \ne 4$, a fração está definida, e pode ser simplificada
+fatorando-se o numerador e o denominador,
+$$
+  \frac{c^2 + 2c - 24}{c^2 - 16} =
+  \frac{(c+6)(c-4)}{(c+4)(c-4)} =
+  \frac{c+6}{c+4}.
+$$
+Então,
+\begin{eqnarray*}
+  \st{\frac{c^2 + 2c - 24}{c^2 - 16}} & = & \st{\frac{c+6}{c+4}} =
+    \frac{\st{c+6}}{\st{c+4}} \\
+  & = & \frac{\st{c} + 6}{\st{c} + 4} = \frac{4 + 6}{4 + 4} = \frac{10}{8}.
+\end{eqnarray*}
+\end{example}
+
+\newlength\minipageindent
+\setlength{\minipageindent}{\parindent}
+
+\begin{absolutelynopagebreak}
+Agora, possuímos três classes de operações disponíveis.
+Em primeiro lugar, temos as operações envolvendo números hiper-reais.
+No Exemplo~\ref{ex:stpartfrac},
+os três passos que deram origem à equivalência
+$$
+  \st{\frac{c^2 + 2c - 24}{c^2 - 16}} = \frac{\st{c}+6}{\st{c}+4}
+$$
+são desta classe. A segunda classe de operações depende do
+Teorema~\ref{teo:stpartrules}.
+\end{absolutelynopagebreak}
+
+Em terceiro lugar, há as operações com números reais comuns. Às vezes, os
+números reais vão aparecer como partes padronizadas. No
+Exemplo~\ref{ex:stpartfrac}, os dois últimos passes que nos dão
+$$
+  \frac{\st{c} + 6}{\st{c}+4} = \frac{10}{8}
+$$
+são operações com números reais comuns.
+
+Comumente, na determinação da parte padronizada de um número hiper-real,
+usamos a primeira classe de operações, depois a segunda classe, e então
+a terceira classe, nesta ordem. Daremos mais dois exemplos ligeiramente
+diferentes e evidenciaremos as três etapas de operações.
+
+\begin{example}
+Se $H$ é um número hiper-real positivo infinto, determine a parte padronizada 
+de
+$$
+  c = \frac{2H^3+5H^2-3H}{7H^3-2H^2+4H}.
+$$
+Neste exemplo, tanto o numerador quanto o denominador são infinitos, e
+temos que usar a primeira classe de operações para transformar a equação
+em uma forma diferente antes de obter as partes padronizadas.
+
+\emph{Primeira etapa:}
+$$
+ c = \frac{2H^3+5H^2-3H}{7H^3-2H^2+4H} = \frac{H^{-3}\cdot(2H^3+5H^2-3H)}{H^{-3}\cdot(7H^3-2H^2+4H)} = \frac{2+5H^{-1}-3H^{-2}}{7-2H^{-1}+4H^{-2}}.
+$$
+
+\emph{Segunda etapa:} $H^{-1}$ e $H^{-2}$ são infinitésimos, portanto
+\begin{eqnarray*}
+  \st{c} & = & \st{\frac{2+5H^{-1}-3H^{-2}}{7-2H^{-1}+4H^{-2}}} =
+               \frac{\std(2+5H^{-1}-3H^{-2})}{\std(7-2H^{-1}+4H^{-2})} \\
+  & = & \frac{\std(2)+\std(5H^{-1})-\std(3H^{-2})}{\std(7)-\std(2H^{-1})+\std(4H^{-2})}
+        = \frac{2+0-0}{7-0+0}.
+\end{eqnarray*}
+
+\emph{Terceira etapa:}
+$$
+  \st{c} = \frac{2+0-0}{7-0+0} = \frac{2}{7}.
+$$
+\end{example}
+
+\begin{example}
+Se $\epsilon$ é um infinitésimo não nulo, encontre a parte padronizada de
+$$
+  b - \frac{\epsilon}{5 - \sqrt{25 + \epsilon}}.
+$$
+Note que tanto o numerador quanto o denominador são infinitésimos não
+nulos.
+
+\emph{Primeira etapa:} Multiplicamos o numerador e o denominador por
+$5 + \sqrt{25 + \epsilon}$.
+\begin{eqnarray*}
+  b & = & \frac{\epsilon}{5 - \sqrt{25 + \epsilon}} =
+          \frac{\epsilon(5 + \sqrt{25 + \epsilon})}%
+               {(5-\sqrt{25+\epsilon})(5+\sqrt{25+\epsilon})} \\
+    & = & \frac{\epsilon(5 + \sqrt{25 + \epsilon})}%
+               {25 - (25 + \epsilon)} =
+          \frac{\epsilon(5 + \sqrt{25 + \epsilon})}{-\epsilon} \\
+    & = & -5 - \sqrt{25 + \epsilon}.
+\end{eqnarray*}
+
+\emph{Segunda etapa:}
+\begin{eqnarray*}
+  \st{b} & = & \std(-5 - \sqrt{25 + \epsilon}) = 
+               \st{-5} -\std(\sqrt{25 + \epsilon}) \\
+         & = & -5 - \sqrt{\st{25 + \epsilon}} = -5 - \sqrt{25}.
+\end{eqnarray*}
+
+\emph{Terceira etapa:} $\st{b} = -5 - \sqrt{25} = -10.$
+\end{example}
+
+\begin{example}
+Recorde que números hiper-reais infinitos não possuem partes padronizadas.
+Considere o número hiper-real infinito
+$$
+  \frac{3 + \epsilon}{4\epsilon + \epsilon^2},
+$$
+onde $\epsilon$ é um infinitésimo não nulo. As partes padronizadas do
+numerador e do denominador são, respectivamente,
+$$
+  \st{3+\epsilon} = 3, \; \; \std(4\epsilon + \epsilon^2) = 0.
+$$
+Entretanto, o quociente não possui parte padrão. Em outras palavras,
+$$
+  \st{\frac{3 + \epsilon}{4\epsilon + \epsilon^2}} \text{ é indefinido.}
+$$
+\end{example}
+
 \begin{sectionproblems}
+
+Determine as partes padronizadas nos seguintes exercícios.
+
+\exer{$2 + \epsilon + 3\epsilon$, \; onde $\epsilon$ é um infinitésimo}
+\exer{$b + 2\epsilon - \epsilon^2$, \; onde $\std(b) = 5$ e $\epsilon$ é um infinitésimo}
+
 \end{sectionproblems}
 
 \begin{chapterproblems}
