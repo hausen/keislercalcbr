@@ -1,4 +1,4 @@
-NAME=keislercalcbr
+NAME=keislercalcbr1
 TIFS=$(wildcard figuras/*/*.tif)
 SVGS=$(wildcard figuras/*/*.svg)
 IMGS=$(SVGS:.svg=.pdf) $(TIFS:.tif=.pdf)
