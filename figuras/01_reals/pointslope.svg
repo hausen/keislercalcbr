@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   width="270"
+   height="150.3"
+   xml:space="preserve"
+   sodipodi:docname="pointslope.pdf"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><font
+       id="Times New Roman;font-style:italic"
+       horiz-adv-x="0"><font-face
+         id="font-face2996"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" /><glyph
+         id="glyph2998"
+         vert-adv-y="444"
+         unicode="y"
+         horiz-adv-x="444"
+         glyph-name="y"
+         d="M15 400C28 403 35 404 46 404C103 404 118 379 164 207C181 142 205 25 205 8C205 -8 199 -24 184 -42C153 -83 133 -109 122 -121C101 -143 89 -151 76 -151C70 -151 63 -148 52 -140C37 -128 26 -123 15 -123C-7 -123 -24 -140 -24 -162C-24 -187 -2 -206 27 -206C91 -206 222 -56 330 142C398 265 426 337 426 386C426 416 401 441 371 441C348 441 332 426 332 404C332 389 340 378 360 365C379 354 386 345 386 331C386 291 349 213 264 72L244 188C229 276 173 441 158 441H154C153 440 149 440 145 440C136 439 100 433 47 423C42 422 29 419 15 417V400Z" /></font><font
+       id="Times New Roman;font-style:italic-7"
+       horiz-adv-x="0"><font-face
+         id="font-face3020"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" /><glyph
+         id="glyph3022"
+         vert-adv-y="722"
+         unicode="O"
+         horiz-adv-x="722"
+         glyph-name="O"
+         d="M474 666C390 666 300 626 220 553C119 460 60 338 60 221C60 81 151 -18 278 -18C486 -18 688 192 699 418C706 559 608 666 474 666ZM465 633C544 633 594 575 594 481C594 373 547 227 482 133C427 54 365 15 295 15C211 15 165 76 165 184C165 278 215 427 275 514C331 595 392 633 465 633Z" /></font><font
+       id="Times New Roman;font-style:italic-0"
+       horiz-adv-x="0"><font-face
+         id="font-face3044"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" /><glyph
+         id="glyph3046"
+         vert-adv-y="444"
+         unicode="x"
+         horiz-adv-x="444"
+         glyph-name="x"
+         d="M402 111C394 102 389 96 380 84C357 54 345 44 334 44C319 44 310 57 303 85C301 93 300 99 299 102C274 203 263 249 263 264C307 341 343 385 361 385C367 385 375 382 385 377C397 370 404 368 412 368C433 368 447 383 447 404S430 441 406 441C362 441 324 405 255 298L244 353C230 421 219 441 192 441C170 441 136 432 75 412L64 408L68 393C106 402 115 404 124 404C149 404 155 395 169 335L198 212L116 95C96 65 76 47 65 47C59 47 49 50 39 56C26 63 15 66 7 66C-12 66 -27 51 -27 31C-27 5 -7 -11 23 -11C54 -11 66 -2 116 59C143 91 164 118 206 176L236 56C249 5 262 -11 294 -11C332 -11 358 13 416 103L402 111Z" /></font><font
+       id="font3088"
+       horiz-adv-x="0"><font-face
+         id="font-face3090"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-250"
+         ascent="750" /><glyph
+         id="glyph3092"
+         vert-adv-y="277"
+         unicode=","
+         horiz-adv-x="277"
+         glyph-name="comma"
+         d="M203 1C203 67 178 106 139 106C106 106 86 81 86 53C86 26 106 0 139 0C151 0 164 4 174 13C177 15 178 16 179 16S181 15 181 1C181 -73 146 -133 113 -166C102 -177 102 -179 102 -182C102 -189 107 -193 112 -193C123 -193 203 -116 203 1Z" /></font><font
+       id="cmr10"
+       horiz-adv-x="0"><font-face
+         id="font-face3082"
+         units-per-em="1000"
+         font-family="cmr10"
+         descent="-250"
+         ascent="750" /><glyph
+         id="glyph3084"
+         vert-adv-y="388"
+         unicode="("
+         horiz-adv-x="388"
+         glyph-name="parenleft"
+         d="M331 -240C331 -237 331 -235 314 -218C189 -92 157 97 157 250C157 424 195 598 318 723C331 735 331 737 331 740C331 747 327 750 321 750C311 750 221 682 162 555C111 445 99 334 99 250C99 172 110 51 165 -62C225 -185 311 -250 321 -250C327 -250 331 -247 331 -240Z" /><glyph
+         id="glyph3086"
+         vert-adv-y="388"
+         unicode=")"
+         horiz-adv-x="388"
+         glyph-name="parenright"
+         d="M289 250C289 328 278 449 223 562C163 685 77 750 67 750C61 750 57 746 57 740C57 737 57 735 76 717C174 618 231 459 231 250C231 79 194 -97 70 -223C57 -235 57 -237 57 -240C57 -246 61 -250 67 -250C77 -250 167 -182 226 -55C277 55 289 166 289 250Z" /></font><font
+       id="Times New Roman"
+       horiz-adv-x="0"><font-face
+         id="font-face3077"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-281"
+         ascent="924" /><glyph
+         id="glyph3079"
+         vert-adv-y="500"
+         unicode="0"
+         horiz-adv-x="500"
+         glyph-name="zero"
+         d="M254 676C199 676 157 659 120 624C62 568 24 453 24 336C24 227 57 110 104 54C141 10 192 -14 250 -14C301 -14 344 3 380 38C438 93 476 209 476 330C476 535 385 676 254 676ZM251 650C335 650 380 537 380 328S336 12 250 12S120 119 120 327C120 539 165 650 251 650Z" /></font><font
+       id="Times New Roman;font-style:italic-5"
+       horiz-adv-x="0"><font-face
+         id="font-face3068"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" /><glyph
+         id="glyph3070"
+         vert-adv-y="611"
+         unicode="P"
+         horiz-adv-x="611"
+         glyph-name="P"
+         d="M146 637C203 630 217 621 217 595C217 581 213 560 200 515L82 90C64 30 57 24 0 16V0H245V16C182 25 177 28 177 62C177 74 179 84 189 120L242 313C267 307 293 305 334 305C416 305 483 322 526 353C576 390 605 445 605 504C605 600 530 653 394 653H146V637ZM322 595C328 616 340 623 368 623C407 623 445 613 465 599C491 581 502 551 502 504C502 439 479 393 435 367C404 350 365 342 303 342C286 342 278 343 251 347L322 595Z" /><glyph
+         id="glyph3072"
+         vert-adv-y="444"
+         unicode="x"
+         horiz-adv-x="444"
+         glyph-name="x"
+         d="M402 111C394 102 389 96 380 84C357 54 345 44 334 44C319 44 310 57 303 85C301 93 300 99 299 102C274 203 263 249 263 264C307 341 343 385 361 385C367 385 375 382 385 377C397 370 404 368 412 368C433 368 447 383 447 404S430 441 406 441C362 441 324 405 255 298L244 353C230 421 219 441 192 441C170 441 136 432 75 412L64 408L68 393C106 402 115 404 124 404C149 404 155 395 169 335L198 212L116 95C96 65 76 47 65 47C59 47 49 50 39 56C26 63 15 66 7 66C-12 66 -27 51 -27 31C-27 5 -7 -11 23 -11C54 -11 66 -2 116 59C143 91 164 118 206 176L236 56C249 5 262 -11 294 -11C332 -11 358 13 416 103L402 111Z" /><glyph
+         id="glyph3074"
+         vert-adv-y="444"
+         unicode="y"
+         horiz-adv-x="444"
+         glyph-name="y"
+         d="M15 400C28 403 35 404 46 404C103 404 118 379 164 207C181 142 205 25 205 8C205 -8 199 -24 184 -42C153 -83 133 -109 122 -121C101 -143 89 -151 76 -151C70 -151 63 -148 52 -140C37 -128 26 -123 15 -123C-7 -123 -24 -140 -24 -162C-24 -187 -2 -206 27 -206C91 -206 222 -56 330 142C398 265 426 337 426 386C426 416 401 441 371 441C348 441 332 426 332 404C332 389 340 378 360 365C379 354 386 345 386 331C386 291 349 213 264 72L244 188C229 276 173 441 158 441H154C153 440 149 440 145 440C136 439 100 433 47 423C42 422 29 419 15 417V400Z" /></font><font
+       id="font3156"
+       horiz-adv-x="0"><font-face
+         id="font-face3158"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-281"
+         ascent="924" /><glyph
+         id="glyph3160"
+         vert-adv-y="500"
+         unicode="0"
+         horiz-adv-x="500"
+         glyph-name="zero"
+         d="M254 676C199 676 157 659 120 624C62 568 24 453 24 336C24 227 57 110 104 54C141 10 192 -14 250 -14C301 -14 344 3 380 38C438 93 476 209 476 330C476 535 385 676 254 676ZM251 650C335 650 380 537 380 328S336 12 250 12S120 119 120 327C120 539 165 650 251 650Z" /></font><font
+       id="Times New Roman;font-style:italic-6"
+       horiz-adv-x="0"><font-face
+         id="font-face3152"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" /><glyph
+         id="glyph3154"
+         vert-adv-y="444"
+         unicode="x"
+         horiz-adv-x="444"
+         glyph-name="x"
+         d="M402 111C394 102 389 96 380 84C357 54 345 44 334 44C319 44 310 57 303 85C301 93 300 99 299 102C274 203 263 249 263 264C307 341 343 385 361 385C367 385 375 382 385 377C397 370 404 368 412 368C433 368 447 383 447 404S430 441 406 441C362 441 324 405 255 298L244 353C230 421 219 441 192 441C170 441 136 432 75 412L64 408L68 393C106 402 115 404 124 404C149 404 155 395 169 335L198 212L116 95C96 65 76 47 65 47C59 47 49 50 39 56C26 63 15 66 7 66C-12 66 -27 51 -27 31C-27 5 -7 -11 23 -11C54 -11 66 -2 116 59C143 91 164 118 206 176L236 56C249 5 262 -11 294 -11C332 -11 358 13 416 103L402 111Z" /></font><font
+       id="Times New Roman-9"
+       horiz-adv-x="0"><font-face
+         id="font-face3147"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-960"
+         ascent="775" /><glyph
+         id="glyph3149"
+         vert-adv-y="777"
+         unicode="−"
+         horiz-adv-x="777"
+         glyph-name="minus"
+         d="M659 230C676 230 694 230 694 250S676 270 659 270H118C101 270 83 270 83 250S101 230 118 230H659Z" /></font><font
+       id="font3206"
+       horiz-adv-x="0"><font-face
+         id="font-face3208"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-281"
+         ascent="924" /><glyph
+         id="glyph3210"
+         vert-adv-y="500"
+         unicode="0"
+         horiz-adv-x="500"
+         glyph-name="zero"
+         d="M254 676C199 676 157 659 120 624C62 568 24 453 24 336C24 227 57 110 104 54C141 10 192 -14 250 -14C301 -14 344 3 380 38C438 93 476 209 476 330C476 535 385 676 254 676ZM251 650C335 650 380 537 380 328S336 12 250 12S120 119 120 327C120 539 165 650 251 650Z" /></font><font
+       id="Times New Roman;font-style:italic-70"
+       horiz-adv-x="0"><font-face
+         id="font-face3202"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" /><glyph
+         id="glyph3204"
+         vert-adv-y="444"
+         unicode="y"
+         horiz-adv-x="444"
+         glyph-name="y"
+         d="M15 400C28 403 35 404 46 404C103 404 118 379 164 207C181 142 205 25 205 8C205 -8 199 -24 184 -42C153 -83 133 -109 122 -121C101 -143 89 -151 76 -151C70 -151 63 -148 52 -140C37 -128 26 -123 15 -123C-7 -123 -24 -140 -24 -162C-24 -187 -2 -206 27 -206C91 -206 222 -56 330 142C398 265 426 337 426 386C426 416 401 441 371 441C348 441 332 426 332 404C332 389 340 378 360 365C379 354 386 345 386 331C386 291 349 213 264 72L244 188C229 276 173 441 158 441H154C153 440 149 440 145 440C136 439 100 433 47 423C42 422 29 419 15 417V400Z" /></font><font
+       id="Times New Roman-0"
+       horiz-adv-x="0"><font-face
+         id="font-face3197"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-960"
+         ascent="775" /><glyph
+         id="glyph3199"
+         vert-adv-y="777"
+         unicode="−"
+         horiz-adv-x="777"
+         glyph-name="minus"
+         d="M659 230C676 230 694 230 694 250S676 270 659 270H118C101 270 83 270 83 250S101 230 118 230H659Z" /></font><font
+       id="Times New Roman-95"
+       horiz-adv-x="0"><font-face
+         id="font-face3263"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-250"
+         ascent="750" /><glyph
+         id="glyph3265"
+         vert-adv-y="277"
+         unicode=","
+         horiz-adv-x="277"
+         glyph-name="comma"
+         d="M203 1C203 67 178 106 139 106C106 106 86 81 86 53C86 26 106 0 139 0C151 0 164 4 174 13C177 15 178 16 179 16S181 15 181 1C181 -73 146 -133 113 -166C102 -177 102 -179 102 -182C102 -189 107 -193 112 -193C123 -193 203 -116 203 1Z" /></font><font
+       id="cmr10-3"
+       horiz-adv-x="0"><font-face
+         id="font-face3256"
+         units-per-em="1000"
+         font-family="cmr10"
+         descent="-250"
+         ascent="750" /><glyph
+         id="glyph3258"
+         vert-adv-y="388"
+         unicode="("
+         horiz-adv-x="388"
+         glyph-name="parenleft"
+         d="M331 -240C331 -237 331 -235 314 -218C189 -92 157 97 157 250C157 424 195 598 318 723C331 735 331 737 331 740C331 747 327 750 321 750C311 750 221 682 162 555C111 445 99 334 99 250C99 172 110 51 165 -62C225 -185 311 -250 321 -250C327 -250 331 -247 331 -240Z" /><glyph
+         id="glyph3260"
+         vert-adv-y="388"
+         unicode=")"
+         horiz-adv-x="388"
+         glyph-name="parenright"
+         d="M289 250C289 328 278 449 223 562C163 685 77 750 67 750C61 750 57 746 57 740C57 737 57 735 76 717C174 618 231 459 231 250C231 79 194 -97 70 -223C57 -235 57 -237 57 -240C57 -246 61 -250 67 -250C77 -250 167 -182 226 -55C277 55 289 166 289 250Z" /></font><font
+       id="Times New Roman;font-style:italic-1"
+       horiz-adv-x="0"><font-face
+         id="font-face3247"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" /><glyph
+         id="glyph3249"
+         vert-adv-y="722"
+         unicode="Q"
+         horiz-adv-x="722"
+         glyph-name="Q"
+         d="M279 -16C356 -11 394 -1 450 30C598 113 699 275 699 433C699 568 603 666 470 666C390 666 300 625 220 553C119 459 60 338 60 221C60 139 90 71 144 29C170 8 192 -2 236 -12C145 -92 136 -100 59 -154L69 -169C107 -148 145 -138 184 -138C204 -138 233 -144 277 -156C338 -173 392 -183 429 -183C484 -183 554 -157 605 -117C629 -99 642 -85 668 -49L653 -38C597 -96 556 -115 484 -115C458 -115 437 -111 361 -93C309 -80 262 -71 256 -72C252 -73 250 -73 250 -73H225L279 -16ZM465 633C545 633 594 575 594 480C594 374 547 227 483 135C428 56 366 17 293 17C212 17 165 78 165 183C165 278 214 427 275 514C331 595 392 633 465 633Z" /><glyph
+         id="glyph3251"
+         vert-adv-y="444"
+         unicode="x"
+         horiz-adv-x="444"
+         glyph-name="x"
+         d="M402 111C394 102 389 96 380 84C357 54 345 44 334 44C319 44 310 57 303 85C301 93 300 99 299 102C274 203 263 249 263 264C307 341 343 385 361 385C367 385 375 382 385 377C397 370 404 368 412 368C433 368 447 383 447 404S430 441 406 441C362 441 324 405 255 298L244 353C230 421 219 441 192 441C170 441 136 432 75 412L64 408L68 393C106 402 115 404 124 404C149 404 155 395 169 335L198 212L116 95C96 65 76 47 65 47C59 47 49 50 39 56C26 63 15 66 7 66C-12 66 -27 51 -27 31C-27 5 -7 -11 23 -11C54 -11 66 -2 116 59C143 91 164 118 206 176L236 56C249 5 262 -11 294 -11C332 -11 358 13 416 103L402 111Z" /><glyph
+         id="glyph3253"
+         vert-adv-y="444"
+         unicode="y"
+         horiz-adv-x="444"
+         glyph-name="y"
+         d="M15 400C28 403 35 404 46 404C103 404 118 379 164 207C181 142 205 25 205 8C205 -8 199 -24 184 -42C153 -83 133 -109 122 -121C101 -143 89 -151 76 -151C70 -151 63 -148 52 -140C37 -128 26 -123 15 -123C-7 -123 -24 -140 -24 -162C-24 -187 -2 -206 27 -206C91 -206 222 -56 330 142C398 265 426 337 426 386C426 416 401 441 371 441C348 441 332 426 332 404C332 389 340 378 360 365C379 354 386 345 386 331C386 291 349 213 264 72L244 188C229 276 173 441 158 441H154C153 440 149 440 145 440C136 439 100 433 47 423C42 422 29 419 15 417V400Z" /></font></defs><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="2.6444444"
+     inkscape:cx="131.55023"
+     inkscape:cy="113.34734"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10" /><g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="pointslope"
+     transform="matrix(1.25,0,0,-1.25,0,150.3)"><g
+       id="page1"
+       transform="matrix(0.80599998,0,0,-0.80599998,-1.8381688,165.71477)"><text
+         id="text3003"
+         y="65.753403"
+         x="56.4133"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">y</text>
+</g><g
+       id="page1-8"
+       transform="matrix(0.80599996,0,0,-0.80599996,-3.2440348,79.218466)"><text
+         id="text3027"
+         y="65.753403"
+         x="56.4133"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">O</text>
+</g><g
+       id="page1-4"
+       transform="matrix(0.806,0,0,-0.806,163.42989,78.970382)"><text
+         id="text3051"
+         y="65.753403"
+         x="56.4133"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">x</text>
+</g><g
+       id="page1-5"
+       transform="matrix(0.806,0,0,-0.806,9.375018,117.20666)"><text
+         id="text3097"
+         y="65.753403"
+         x="56.4133"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">P</text>
+<text
+         id="text3099"
+         y="65.753403"
+         x="63.696201"
+         class="f11"
+         style="font-size:11.91049957px;font-family:cmr10">(</text>
+<text
+         id="text3101"
+         y="65.753403"
+         x="68.317299"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">x</text>
+<text
+         id="text3103"
+         y="67.639397"
+         x="73.605499"
+         class="f6"
+         style="font-size:8.9328804px;font-family:Times New Roman">0</text>
+<text
+         id="text3105"
+         y="65.753403"
+         x="78.5868"
+         class="f2"
+         style="font-size:11.91049957px;font-family:Times New Roman">,</text>
+<text
+         id="text3107"
+         y="65.753403"
+         x="83.214203"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">y</text>
+<text
+         id="text3109"
+         y="67.639397"
+         x="88.502403"
+         class="f6"
+         style="font-size:8.9328804px;font-family:Times New Roman">0</text>
+<text
+         id="text3111"
+         y="65.753403"
+         x="93.483704"
+         class="f11"
+         style="font-size:11.91049957px;font-family:cmr10">)</text>
+</g><g
+       id="page1-40"
+       transform="matrix(0.806,0,0,-0.806,67.992709,100.74158)"><text
+         id="text3165"
+         y="65.753403"
+         x="56.4133"
+         class="f8"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">x</text>
+<text
+         id="text3167"
+         y="65.753403"
+         x="63.397598"
+         class="f1"
+         style="font-size:11.91049957px;font-family:Times New Roman">−</text>
+<text
+         id="text3169"
+         y="65.753403"
+         x="74.312401"
+         class="f8"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">x</text>
+<text
+         id="text3171"
+         y="67.639397"
+         x="79.600601"
+         class="f11"
+         style="font-size:8.9328804px;font-family:Times New Roman">0</text>
+</g><g
+       id="page1-54"
+       transform="matrix(0.80599996,0,0,-0.80599996,121.46646,125.47946)"><text
+         id="text3215"
+         y="65.753403"
+         x="56.4133"
+         class="f8"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">y</text>
+<text
+         id="text3217"
+         y="65.753403"
+         x="63.3619"
+         class="f1"
+         style="font-size:11.91049957px;font-family:Times New Roman">−</text>
+<text
+         id="text3219"
+         y="65.753403"
+         x="74.276604"
+         class="f8"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">y</text>
+<text
+         id="text3221"
+         y="67.639397"
+         x="79.564796"
+         class="f11"
+         style="font-size:8.9328804px;font-family:Times New Roman">0</text>
+</g><g
+       id="page1-6"
+       transform="matrix(0.806,0,0,-0.806,86.922997,146.5512)"><text
+         id="text3270"
+         y="65.753403"
+         x="56.4133"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">Q</text>
+<text
+         id="text3272"
+         y="65.753403"
+         x="65.012604"
+         class="f7"
+         style="font-size:11.91049957px;font-family:cmr10">(</text>
+<text
+         id="text3274"
+         y="65.753403"
+         x="69.633797"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">x</text>
+<text
+         id="text3276"
+         y="65.753403"
+         x="74.957703"
+         class="f2"
+         style="font-size:11.91049957px;font-family:Times New Roman">,</text>
+<text
+         id="text3278"
+         y="65.753403"
+         x="79.585098"
+         class="f3"
+         style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">y</text>
+<text
+         id="text3280"
+         y="65.753403"
+         x="84.873299"
+         class="f7"
+         style="font-size:11.91049957px;font-family:cmr10">)</text>
+</g><path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:0.53100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 63.907563,2.8210114 0,134.9999986 0,7.7521"
+       id="path3306"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.8,0,0,-0.8,0,120.24)" /><path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:0.53100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 3.4033613,106.81261 263.5714287,0"
+       id="path3308"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.8,0,0,-0.8,0,120.24)" /><path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:0.53100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 106.95733,78.3712 95.45941,0 0,-39.841605"
+       id="path3310"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.8,0,0,-0.8,0,120.24)" /><path
+       sodipodi:type="arc"
+       style="fill:#000000;stroke:none"
+       id="path3312"
+       sodipodi:cx="40.911179"
+       sodipodi:cy="156.98483"
+       sodipodi:rx="9.3587666"
+       sodipodi:ry="9.3587666"
+       d="m 50.269945,156.98483 a 9.3587666,9.3587666 0 1 1 -18.717533,0 9.3587666,9.3587666 0 1 1 18.717533,0 z"
+       transform="matrix(0.181732,0,0,-0.181732,76.355667,86.168638)" /><path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:1.06299213;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 12.567486,116.07366 243.06053,21.951209"
+       id="path3314"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.8,0,0,-0.8,0,120.24)" /><path
+       transform="matrix(0.181732,0,0,-0.181732,154.48799,117.98844)"
+       d="m 50.269945,156.98483 a 9.3587666,9.3587666 0 1 1 -18.717533,0 9.3587666,9.3587666 0 1 1 18.717533,0 z"
+       sodipodi:ry="9.3587666"
+       sodipodi:rx="9.3587666"
+       sodipodi:cy="156.98483"
+       sodipodi:cx="40.911179"
+       id="path4084"
+       style="fill:#000000;stroke:none"
+       sodipodi:type="arc" /></g><style
+     id="style3000"
+     type="text/css">
+text.f3 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+</style><style
+     id="style3024"
+     type="text/css">
+text.f3 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+</style><style
+     id="style3048"
+     type="text/css">
+text.f3 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+</style><style
+     id="style3094"
+     type="text/css">
+text.f2 {font-family:Times New Roman;font-size:11.9105px}
+text.f3 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+text.f6 {font-family:Times New Roman;font-size:8.93288px}
+text.f11 {font-family:cmr10;font-size:11.9105px}
+</style><style
+     id="style3162"
+     type="text/css">
+text.f1 {font-family:Times New Roman;font-size:11.9105px}
+text.f8 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+text.f11 {font-family:Times New Roman;font-size:8.93288px}
+</style><style
+     id="style3212"
+     type="text/css">
+text.f1 {font-family:Times New Roman;font-size:11.9105px}
+text.f8 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+text.f11 {font-family:Times New Roman;font-size:8.93288px}
+</style><style
+     id="style3267"
+     type="text/css">
+text.f2 {font-family:Times New Roman;font-size:11.9105px}
+text.f3 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+text.f7 {font-family:cmr10;font-size:11.9105px}
+</style></svg>
