@@ -1110,19 +1110,18 @@ Toda equação linear define uma linha reta.
 \end{theorem}
 
 \begin{proof}
-
-\begin{case} $B = 0$. A equação $Ax + C = 0$ pode ser resolvida
+\begin{caseanalysis}
+\item $B = 0$. A equação $Ax + C = 0$ pode ser resolvida
 para $x$, logo $x = -C/A$. Isto define uma reta vertical.
-\end{case}
 
-\begin{case} $B \ne 0$. Neste caso, podemos resolver a equação
+\item $B \ne 0$. Neste caso, podemos resolver a equação
 dada para $y$, e o resultado é
 \[
   y = \frac{-Ax - C}{B}, \SPC y = -\frac{A}{B}x - \frac{C}{B}.
 \]
 Isto é uma reta com inclinação $-A/B$, cruzando o eixo $y$ em
 $-C/B$.
-\end{case}
+\end{caseanalysis}
 \end{proof}
 
 \begin{example}
