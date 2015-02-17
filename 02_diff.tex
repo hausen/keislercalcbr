@@ -1,8 +1,256 @@
+\graphicspath{ {./figuras/02_diff/} }
 \chapter{Diferenciação}
 \label{chp:diff}
 
 \section{Derivadas}
 \label{sec:derivatives}
+
+Estamos prontos para explicar o que significa a inclinação de uma curva
+ou a velocidade de um ponto em movimento. Considere uma função real $f$
+e um número real $a$ no domínio de $f$. Quando $x$ assume o valor $a$,
+a imagem $f(x)$ assume o valor $f(a)$. Agora, suponha que o valor de $x$
+é alterado de $a$ para um número hiper-real $a + \Delta{x}$, o qual está
+infinitamente próximo mas não é igual a $a$. Então o novo valor de $f(x)$
+será $f(a+\Delta{x})$. Neste processo, o valor de $x$ será alterado por
+uma quantidade infinitesimal não nula $\Delta{x}$, enquanto que a mudança
+no valor de $f(x)$ será
+$$
+  f(a+\Delta{x})-f(a).
+$$
+A razão entre a mudança no valor de $f(x)$ e a mudança no valor de $x$ é
+$$
+  \frac{f(a+\Delta{x}-f(a)}{\Delta{x}}.
+$$
+Esta razão é usada na definição da inclinação de $f$, a qual daremos agora.
+
+\begin{defin}
+Dizemos que $S$ é a \newdef{inclinação} de $f$ em $a$ se
+$$
+  S = \st{\frac{f(a+\Delta{x})-f(a)}{\Delta{x}}}.
+$$
+para todo infinitésimo não nulo $\Delta{x}$.
+\end{defin}
+
+A inclinação, quando existe, está infinitamente próxima para a razão entre a
+mudança em $f(x)$ e uma mudança infinitamente pequena em $x$. Dada uma curva
+$y = f(x)$, a inclinação de $f$ em $a$ é também chamada de inclinação da
+curva $y=f(x)$ em $x=a$. A Figura~\ref{fig:slopehyperrealline} mostra um
+infinitésimo não nulo $\Delta{x}$ e uma reta hiper-real por dois pontos na
+curva, em $a$ e em $a + \Delta{x}$. A quantidade
+$$
+  \frac{f(a+\Delta{x})-f(a)}{\Delta{x}}
+$$
+é a inclinação desta reta, e sua parte padronizada é a inclinação da curva.
+
+\includefig{slopehyperrealline}
+
+A inclinação de $f$ em $a$ nem sempre existe. Temos a seguir uma lista de
+todas as possibilidades.
+
+\begin{enumerate}[(1)]
+\item A inclinação de $f$ em $a$ existe se a razão
+$$
+  \frac{f(a+\Delta{x})-f(a)}{\Delta{x}}
+$$
+é finita e possui a mesma parte padronizada para todo infinitésimo
+$\Delta{x} \ne 0$. Ela tem valor
+$$
+  S = \st{\frac{f(a+\Delta{x})-f(a)}{\Delta{x}}}.
+$$
+
+\item A inclinação de $f$ em $a$ não existe em quaisquer um dos
+      quatro casos a seguir:
+      \begin{enumerate}[(a)]
+        \item $f(a)$ não está definido.
+        \item $f(a+\Delta{x})$ não está definido para algum infinitésimo
+              $\Delta{x} \ne 0$.
+        \item O termo $\displaystyle \frac{f(a+\Delta{x})-f(a)}{\Delta{x}}$
+              é infinito para algum infinitésimo $\Delta{x} \ne 0$.
+        \item A parte padronizada de $\displaystyle \frac{f(a+\Delta{x})-f(a)}{\Delta{x}}$
+              assume valores diferentes para infinitésimos distintos
+              $\Delta{x} \ne 0$.
+      \end{enumerate}
+\end{enumerate}
+
+Podemos considerar a inclinação de $f$ em qualquer ponto $x$, o que nos
+dá uma nova função de $x$.
+
+\begin{defin}
+Sja $f$ uma função real de uma variável. A \newdef{derivada} de $f$ é a
+nova função $f'$ cujo valor em $x$ é a inclinação de $f$ em $x$.
+Simbolicamente,
+$$
+  f'(x) = \st{\frac{f(x+\Delta{x})-f(x)}{\Delta{x}}},
+$$
+sempre que a inclinação existe.
+\end{defin}
+
+O valor da derivada $f'(x)$ é indefinido se a inclinação de $f$ não
+existe em $x$.
+
+Para um dado ponto $a$, a inclinação de $f$ em $a$ e a derivada de $f$ em
+$a$ são a mesma coisa. Geralmente usamos a palavra ``inclinação'' para
+destacar a intuição geométrica, e usamos ``derivada'' para ressaltar o
+fato que $f'$ é uma função.
+
+O processo de se encontrar a derivada de $f$ é chamado \newdef{differenciação}
+ou \newdef{derivação}. Dizemos que $f$ é \newdef{diferenciável}, ou
+\newdef{derivável}, em $a$ se o valor $f'(a)$ está definido; ou seja,
+se existe inclinação de $f$ em $a$.
+
+Variáveis independentes e dependentes são úteis no estudo de derivadas.
+Vamos recapitular brevemente o que são. Um \newdef{sistema de fórmulas}
+é um conjunto finito de equações e inequações. Dado um sistema de fórmulas,
+cujo gráfico é o mesmo da equação simples $y = f(x)$, dizemos que
+\emph{$y$ é uma função de $x$}, ou que \emph{$y$ depende de $x$}, e chamamos
+$x$ a \newdef[variável!independente]{variável independente} e $y$ a
+\newdef[variável!dependente]{variável dependente}.
+
+Quando $y = f(x)$, podemos introduzir uma nova variável independente
+$\Delta{x}$ e uma nova variável dependente $\Delta{y}$, com a equação
+\begin{eqnarray}
+  \Delta{y} & = & f(x+\Delta{x}) - f(x). \label{eq:chpdiff:deltay}
+\end{eqnarray}
+
+Esta equação determina $\Delta{y}$ como uma função real de duas variáveis
+$x$ e $\Delta{x}$, quando $x$ e $\Delta{x}$ variam entre os números reais.
+Geralmente, desejaremos usar a Equação~\ref{eq:chpdiff:deltay} para
+$\Delta{y}$ quando $x$ é um numero real e $\Delta{x}$ é um infinitésimo
+não nulo. O Princípio da Transferência implica que a
+Equação~\ref{eq:chpdiff:deltay} também determina $\Delta{y}$ como uma
+função hiper-real de duas variáveis quando permitimos que $x$ e $\Delta{x}$
+variem entre os números hiper-reais.
+
+O valor $\Delta{y}$ é chamado de \newdef{incremento} de $y$. Geometricamente,
+o incremento $\Delta{y}$ é a variação em $y$ ao longo da curva, correspondendo
+a uma variação de $\Delta{x}$ em $x$. O símbolo $y'$ é por vezes usado para
+a derivada $y' = f'(x)$. Assim, a equação hiper-real
+$$
+  f'(x) = \st{\frac{f(x+\Delta{x})-f(x)}{\Delta{x}}}
+$$
+pode assumir a forma abreviada
+$$
+  y' = \st{\frac{\Delta{y}}{\Delta{x}}}.
+$$
+
+O infinitésimo $\Delta{x}$ pode ser tanto positivo quanto negativo, mas
+nunca pode ser zero. As várias possibilidades são ilustradas na
+Figura~\ref{fig:slopecases} com o uso de um microscópio infinitesimal.
+Os sinais de $\Delta{x}$ e $\Delta{y}$ são indicados nas legendas.
+
+\includefig{slopecases}
+
+Nossas regras para partes padronizadas podem ser usadas em muitos casos
+para encontrarmos a derivada de uma função. Há duas partes no problema de
+se encontrar a derivada $f'$ de uma função $f$:
+\begin{enumerate}[(1)]
+\item Encontre o domínio de $f'$.
+\item Encontre o valor de $f'(x)$ quando este for definido.
+\end{enumerate}
+
+\begin{example}
+Encontre a derivada da função
+$$
+  f(x) = x^3.
+$$
+Neste exemplo, assim como nos próximos, deixaremos $x$ variar entre os números
+reais e $\Delta{x}$ variar entre os infinitésimos não nulos. Vamos introduzir
+a nova variável $y$ com a equação $y=x^3$. Primeiramente, determinamos
+$\Delta{y}/\Delta{x}$.
+\begin{eqnarray*}
+  y           & = & x^3, \\
+  y+\Delta{y} & = & (x+\Delta{x})^3, \\
+  \Delta{y}   & = & (x+\Delta{x})^3 - x^3, \\
+  \frac{\Delta{y}}{\Delta{x}} & = &
+    \frac{(x+\Delta{x})^3 - x^3}{\Delta{x}}.
+\end{eqnarray*}
+A seguir, simplificamos a expressão para $\Delta{y}/\Delta{x}$.
+\begin{eqnarray*}
+  \frac{\Delta{y}}{\Delta{x}} & = &
+    \frac{(x^3+3x^2\Delta{x}+3x(\Delta{x})^2+(\Delta{x})^3)-x^3}
+         {\Delta{x}} \\
+  & = &
+    \frac{3x^2\Delta{x}+3x(\Delta{x})^2+(\Delta{x})^3}
+         {\Delta{x}} \\
+  & = &
+    3x^2+3x\Delta{x}+(\Delta{x})^2
+\end{eqnarray*}
+Então, tomamos a parte padronizada,
+\begin{eqnarray*}
+  \st{\frac{\Delta{y}}{\Delta{x}}} & = &
+    \st{3x^2+3x\Delta{x}+(\Delta{x})^2} \\
+  & = &
+    \std(3x^2)+\std(3x\Delta{x})+\std((\Delta{x})^2) \\
+  & = & 3x^2 + 0 + 0 = 3x^2.
+\end{eqnarray*}
+Portanto, $f'(x) = \st{\frac{\Delta{y}}{\Delta{x}}} = 3x^2.$
+\end{example}
+
+Demonstramos que a derivada da função $f(x) = x^3$ é a função $f'(x) = 3x^2$,
+cujo domínio é toda a reta real. Os gráficos de $f$ e $f'$ são mostrados na
+Figura~\ref{fig:cap2ex1}.
+
+\includefig{cap2ex1}
+
+\begin{example}
+Determine $f'(x)$, onde $f(x) = \sqrt{x}$.
+\begin{caseanalysis}
+\item $x < 0$. Como $\sqrt{x}$ não está definido, $f'(x)$ não existe.
+\item $x = 0$. Quando $\Delta{x}$ é um infinitésimo negativo, o termo
+      $$
+        \frac{\sqrt{x+\Delta{x}}-\sqrt{x}}{\Delta{x}} =
+          \frac{\sqrt{0+\Delta{x}}-\sqrt{0}}{\Delta{x}}
+      $$
+      não está definido pois $\sqrt{\Delta{x}}$ é indefinido. Quando
+      $\Delta{x}$ é um infinitésimo positivo, o termo
+      $$
+        \frac{\sqrt{x+\Delta{x}}-\sqrt{x}}{\Delta{x}} =
+          \frac{\sqrt{\Delta{x}}}{\Delta{x}} =
+            \frac{1}{\sqrt{\Delta{x}}}
+      $$
+      está definido, mas é um hiper-real infinito. Por duas razões
+      (apenas uma delas bastaria), $f'(x)$ não existe.
+\item $x>0$. Seja $y=\sqrt{x}$. Então
+      \begin{eqnarray*}
+        y+\Delta{y}                 & = & \sqrt{x + \Delta{x}}, \\
+        \Delta{y}                   & = & \sqrt{x + \Delta{x}} - \sqrt{x}, \\
+        \frac{\Delta{y}}{\Delta{x}} & = &
+          \frac{\sqrt{x + \Delta{x}} - \sqrt{x}}{\Delta{x}}.
+      \end{eqnarray*}
+      Calculemos agora
+      \begin{eqnarray*}
+        \frac{\Delta{y}}{\Delta{x}} & = &
+          \frac{\sqrt{x + \Delta{x}} - \sqrt{x}}{\Delta{x}} \cdot
+          \frac{(\sqrt{x + \Delta{x}} + \sqrt{x})}
+               {(\sqrt{x + \Delta{x}} + \sqrt{x})} \\
+        & = &
+          \frac{(x+\Delta{x})-x}{\Delta{x}(\sqrt{x + \Delta{x}} + \sqrt{x})} \\
+        & = &
+          \frac{\Delta{x}}{\Delta{x}(\sqrt{x + \Delta{x}} + \sqrt{x})} =
+          \frac{1}{\sqrt{x + \Delta{x}} + \sqrt{x}}.
+      \end{eqnarray*}
+      Tomando partes padronizadas,
+      \begin{eqnarray*}
+        \st{\frac{\Delta{y}}{\Delta{x}}} & = &
+          \st{\frac{1}{\sqrt{x + \Delta{x}} + \sqrt{x}}} \\
+        & = &
+          \frac{1}{\std(\sqrt{x + \Delta{x}} + \sqrt{x})} \\
+        & = &
+          \frac{1}{\std(\sqrt{x + \Delta{x}}) + \std(\sqrt{x})} \\
+        & = &
+          \frac{1}{\sqrt{x} + \sqrt{x}} = \frac{1}{2\sqrt{x}}.
+      \end{eqnarray*}
+      Portanto, quando $x > 0$,
+      $$
+        f'(x) = \frac{1}{2\sqrt{x}}.
+      $$
+\end{caseanalysis}
+Assim, a derivada de $f(x) = \sqrt{x}$ é a função
+$f'(x) = \frac{1}{2\sqrt{x}}$, e seu domínio é o conjunto de todos os
+$x$ tais que $x > 0$ (veja Figura~\ref{fig:cap2ex2}).
+\end{example}
+
+\includefig{cap2ex2}
 
 \section{Diferenciais e Retas Tangentes}
 \label{sec:tglines}
