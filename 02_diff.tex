@@ -252,6 +252,114 @@ $x$ tais que $x > 0$ (veja Figura~\ref{fig:cap2ex2}).
 
 \includefig{cap2ex2}
 
+\begin{example}
+Encontre a derivada de $f(x) = 1/x.$
+\begin{caseanalysis}
+\item $x = 0$. Neste caso, $1/x$ é indefinido, logo $f'(x)$ é indefinido.
+\item $x \ne 0$.
+      \begin{eqnarray*}
+        y & = & 1/x, \\
+        y+\Delta{y} & = & \frac{1}{x + \Delta{x}}, \\
+        \Delta{y} & = & \frac{1}{x + \Delta{x}} - \frac{1}{x}, \\
+        \frac{\Delta{y}}{\delta{x}} & = &
+          \frac{1/(x + \Delta{x}) - 1/x}{\Delta{x}}.
+      \end{eqnarray*}
+      Simplificando,
+      \begin{eqnarray*}
+        \frac{1/(x + \Delta{x}) - 1/x}{\Delta{x}} & = &
+          \frac{x-(x+\Delta{x})}{x(x+\Delta{x})\Delta{x}} =
+            \frac{-\Delta{x}}{x(x+\Delta{x})\Delta{x}} \\
+        & = & \frac{-1}{x(x+\Delta{x})}.
+      \end{eqnarray*}
+      Tomando a parte padrão,
+      \begin{eqnarray*}
+        \st{\frac{\Delta{y}}{\delta{x}}} & = &
+          \st{-\frac{1}{x(x+\Delta{x})}} =
+            -\frac{1}{\std(x(x+\Delta{x}))} \\
+        & = &
+          -\frac{1}{\std(x)\std(x+\Delta{x})} =
+            -\frac{1}{x \cdot x} =
+            -\frac{1}{x^2} .
+      \end{eqnarray*}
+      Logo, $f'(x) = -1/x^2.$
+\end{caseanalysis}
+A derivada da função $f(x) = 1/x$ é a função $f'(x) = -1/x^2$, cujo
+domínio é o conjunto de todos os $x$ tais que $x \ne 0$. Os gráficos
+de ambas as funções estão na Figura~\ref{fig:cap2ex3}.
+\end{example}
+
+\includefig{cap2ex3}
+
+\begin{example}
+Encontre a derivada de $f(x) = |x|$.
+
+\begin{caseanalysis}
+\item $x > 0$. Neste caso, $|x| = x$, e temos
+      \begin{eqnarray*}
+        y & = & x, \\
+        y + \Delta{y} & = & x + \Delta{x}, \\
+        \Delta{y} & = & \Delta{x}, \\
+        \frac{\Delta{y}}{\Delta{x}} & = & 1, \hspace{4ex} f'(x) = 1.
+      \end{eqnarray*}
+\item $x < 0$. Agora, $|x| = -x$, e
+      \begin{eqnarray*}
+        y & = & -x, \\
+        y + \Delta{y} & = & -(x + \Delta{x}), \\
+        y & = & -(x + \Delta{x}) - (-x) = -\Delta{x}, \\
+        \frac{\Delta{y}}{\Delta{x}} = -\frac{\Delta{x}}{\Delta{x}}
+          & = & -1, \hspace{4ex} f'(x) = -1.
+      \end{eqnarray*}
+\item $x = 0$. Então,
+      \begin{eqnarray*}
+        y & = & 0, \\
+        y + \Delta{y} & = & |0 + \Delta{x}| = |\Delta{x}|, \\
+        \Delta{y} & = & |\Delta{x}|, \\
+        \frac{\Delta{y}}{\Delta{x}} = \frac{|\Delta{x}|}{\Delta{x}}
+          & = & \left\{
+                  \begin{array}{lll}
+                      & 1 & \text{ se } \Delta{x} > 0, \\
+                    - & 1 & \text{ se } \Delta{x} < 0. \\
+                  \end{array}
+                \right.
+      \end{eqnarray*}
+      A parte padronizada de $\Delta{y}/\Delta{x}$ é $1$ para alguns
+      valores de $\Delta{x}$ e $-1$ para outros. Portanto, $f'(x)$ não
+      existe quando $x = 0$.
+
+      Em suma,
+      $$
+        f'(x) \left\{
+          \begin{array}{rll}
+               & 1 & \text{ se } x > 0, \\
+             - & 1 & \text{ se } x < 0, \\
+             \multicolumn{2}{l}{\text{indefinido}} & \text{ se } x = 0.
+          \end{array}
+        \right.
+      $$
+      A Figura~\ref{fig:cap2ex4} mostra os gráficos de $f$ e $f'$.
+\end{caseanalysis}
+\end{example}
+
+\includefig{cap2ex4}
+
+A derivada possui uma variedade de aplicações na física e nas ciências
+da vida e sociais. Ela pode aparecer em um dos contextos a seguir.
+
+\emph{Velocidade}: se um objeto se move de acordo com a equação $s = f(t)$,
+onde $t$ é o tempo e $s$ é a distância, a derivada $v = f'(t)$ é a
+\emph{velocidade} do objeto no instante $t$.
+
+\emph{Taxas de crescimento}: uma população $y$ (de pessoas, bactérias,
+moléculas, etc.) cresce de acordo com a equação $y = f(t)$, onde $t$ é
+o tempo. Então, a derivada $y' = f'(t)$ é a \emph{taxa de crescimento}
+da população $y$ no instante $t$.
+
+\emph{Custo marginal} (economia): suponha que o custo total (ou lucro,
+etc.) de produção de $x$ itens é $y = f(x)$ reais. Então, o custo de
+se produzir um item adicional é aproximadamente a derivada $y' = f'(x)$,
+pois $y'$ é a alteração em $y$ por unidade de alteração em $x$. Esta
+derivada é chamada \emph{custo marginal}.
+
 \section{Diferenciais e Retas Tangentes}
 \label{sec:tglines}
 
