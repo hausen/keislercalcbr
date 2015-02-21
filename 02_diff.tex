@@ -435,6 +435,181 @@ Encontre a derivada da função dada nos Problemas 1--21.
 \section{Diferenciais e Retas Tangentes}
 \label{sec:tglines}
 
+Dados uma curva $y = f(x)$ e um ponto $(a,b)$ sobre a curva, a inclinação
+$f'(a)$ está definida. Assim, a \newdef{reta tangente} à curva no ponto
+$(a,b)$, ilustrada na Figura\ref{fig:tangentline}, é definida como a reta
+que passa pelo ponto $(a,b)$ e que possui a mesma inclinação que a curva em
+$x = a$. Deste modo, a reta tangente é definida pela equação
+$$
+  r(x) - b = f'(a)(x-a),
+$$
+ou pela equação
+$$
+  r(x) = f'(a)(x-a) + b.
+$$
+
+\includefig[Retas tangentes.]{tangentline}
+
+\begin{example}
+Para a curva $y = x^3$, encontre as retas tangentes nos pontos $(0,0)$,
+$(1,1)$ e $(-\frac{1}{2}, -\frac{1}{8})$. (Figura~\ref{fig:cap2p2ex1}).
+
+\includefig{cap2p2ex1}
+
+A inclinação é dada por $f'(x) = 3x^2$. Em $x = 0$, $f'(0) = 3 \cdot 0^2 = 0$.
+A reta tangente tem equação
+$$
+  y = 0 (x - 0) + 0 \text{, \; ou seja, \; } y = 0.
+$$
+Em $x = 1$, $f'(1) = 3$, logo a reta tangente é
+$$
+  y = 3(x-1)+1 \text{, \; ou seja, \; } y =  3x-2.
+$$
+Em $x = -\frac{1}{2}$, $f'(-\frac{1}{2}) = 3 \cdot (-\frac{1}{2})^2 =
+\frac{3}{4}$, logo a reta tangente é
+$$
+  y = \frac{3}{4} \left(x - \left(-\frac{1}{2}\right)\right) + \left(-\frac{1}{8}\right) \text{, \; ou seja, \; } y =  \frac{3}{4}x + \frac{1}{4}.
+$$
+\end{example}
+
+Dada uma curva $y = f(x)$, suponha que $x$ comece com o valor $a$ e então
+varie uma quantidade infinitesimal $\Delta x$. O que acontece com $y$?
+Ao longo da curva, a variação em $y$ será
+$$
+  f(a + \Delta x) - f(a) = \Delta y.
+$$
+Mas ao longo da reta tangente, a variação em $y$ será
+\begin{eqnarray*}
+  r(a + \Delta x) - r(a) & = &
+    [f'(a)(a + \Delta x - a) + b] - [f'(a)(a-a) + b]\\
+                         & = & f'(a) \Delta x.
+\end{eqnarray*}
+Quando $x$ varia de $a$ para $a + \Delta x$, vemos que:
+\begin{eqnarray*}
+  \text{variação em $y$ ao longo da curva} & = &
+    f(a+\Delta x) - f(a), \\
+  \text{variação em $y$ ao longo da reta tangente} & = &
+    f'(a) \Delta x.
+\end{eqnarray*}
+Na última seção, introduzimos a variável dependente $\Delta y$, o incremento
+de $y$, a partir da equação
+$$
+  \Delta y = f(x + \Delta x) - f(x).
+$$
+O valor $\Delta y$ é igual à variação em $y$ ao longo da curva quando
+$x$ varia para $x + \Delta x$.
+
+O teorema a seguir nos dá uma fórmula simples, porém útil, para o cálculo
+do incremento $\Delta y$
+
+\begin{theorem}[Teorema do Incremento]
+Seja $y = f(x)$. Suponha que $f'(x)$ existe para um certo ponto $x$ e que
+$\Delta x$ é um infinitésimo. Então $\Delta y$ é um infinitésimo e
+$$
+  \Delta y = f'(x) \Delta x + \epsilon \Delta x
+$$
+para algum infinitésimo $\epsilon$, o qual depende de $x$ e $\Delta x$.
+\end{theorem}
+
+\begin{proof}
+\begin{caseanalysis}
+\item $\Delta x = 0$. Neste caso, $\Delta y = f'(x) \Delta x = 0$, e fazemos
+      $\epsilon = 0$.
+\item $\Delta x \ne 0$. Então
+$$
+  \frac{\Delta y}{\Delta x} \approx f'(x);
+$$
+logo, para algum infinitésimo $\epsilon$,
+$$
+  \frac{\Delta y}{\Delta x} = f'(x) + \epsilon.
+$$
+Multiplicando ambos os lados por $\Delta x$,
+$$
+  \Delta y = f'(x) \Delta x + \epsilon \Delta x.
+$$
+\end{caseanalysis}
+\end{proof}
+
+\begin{example}
+Seja $y = x^3$, logo $y' = 3x^2$. De acordo com o Teorema do Incremento,
+$$
+  \Delta y = 3x^2 \Delta x + \epsilon \Delta x
+$$
+para algum infinitésimo $\epsilon$. Encontraremos $\epsilon$ em termo de
+$x$ e $\Delta x$, para $\Delta x \ne 0$. Temos
+\begin{eqnarray*}
+  \Delta y & = & 3x^2 \Delta x + \epsilon \Delta x, \\
+  \frac{\Delta y}{\Delta x} & = & 3x^2 + \epsilon, \\
+  \epsilon & = & \frac{\Delta y}{\Delta x} - 3x^2.
+\end{eqnarray*}
+Ainda precisamos eliminar $\Delta y$. Do Exemplo~\ref{ex:cap2ex1} na
+Seção~\ref{sec:derivatives},
+\begin{eqnarray*}
+  \Delta y = (x + \Delta x)^3 - x^3,
+  \frac{\Delta y}{\Delta x} = 3x^2 + 3x\Delta x + (\Delta x)^2.
+\end{eqnarray*}
+Substituindo, obtemos $\epsilon = (3x^2 + 3x\Delta x + (\Delta x)^2) - 3x^2$.
+Como $3x^2$ se cancela, temos
+$$
+  \epsilon = 3x \Delta x + (\Delta x)^2.
+$$
+\end{example}
+
+Iremos agora introduzir uma nova variável dependente $\dif y$, chamada
+diferencial de $y$, com a equação
+$$
+  \dif y = f'(x) \Delta x.
+$$
+O valor $\dif y$ é igual à variação em $y$ ao longo da reta tangente quando
+$x$ varia para $x + \Delta x$. Na Figura~\ref{fig:dymicroscope}, vemos
+$\dif y$ e $\Delta y$ sob o microscópio.
+
+\includefig{dymicroscope}
+
+Para manter a uniformidade da notação, introduziremos também o símbolo
+$\dif x$ como outro nome para $\Delta x$. Para uma variável \emph{independente}
+$x$, os valores de $\Delta x$ e $\dif x$ são iguais, mas para uma variável
+\emph{dependente} $y$, is valores de $\Delta y$ e $\dif y$ diferem.
+
+\begin{defin}
+Suponha que $y$ depende de $x$, na forma $y = f(x)$.
+\begin{enumerate}[(i)]
+\item O \newdef{diferencial de $x$} é a variável independente $\dif x = \Delta x$
+\item O \newdef{diferencial de $y$} é a variável dependente $\dif y$ dada
+      por
+      $$
+        \dif y = f'(x) \dif x.
+      $$
+\end{enumerate}
+\end{defin}
+
+Quando $\dif x \ne 0$, a equação acima pode ser reescrita como
+$$
+  \frac{\dif y}{\dif x} = f'(x).
+$$
+Compare esta equação com
+$$
+  \frac{\Delta y}{\Delta x} \approx f'(x).
+$$
+O quociente $\dif y/\dif x$ é um símbolo alternativo muito conveniente para
+a derivada $f'(x)$. Na verdade, escreveremos a derivada na forma
+$\dif y/\dif x$ na maior parte do tempo.
+
+O diferencial $\dif y$ depende de duas variáveis independentes $x$ e $\dif x$.
+Em notação de função,
+$$
+  \dif y = \dif f(x,\dif x)
+$$
+onde $\dif f$ é a função real de duas variáveis definida por
+$$
+  \dif f(x,\dif x) = f'(x) \dif x.
+$$
+Quando $\dif x$ é substituído por $\Delta x$ e $\dif y$ por $f'(x) \dif x$,
+o Teorema do Incremento assume a forma abreviada 
+$$
+  \Delta y = \dif y + \epsilon \dif x.
+$$
+
 \section{Derivadas de Funções Racionais}
 \label{sec:derivratfunc}
 
