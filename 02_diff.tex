@@ -149,6 +149,7 @@ se encontrar a derivada $f'$ de uma função $f$:
 \end{enumerate}
 
 \begin{example}
+\label{ex:cap2ex1}
 Encontre a derivada da função
 $$
   f(x) = x^3.
@@ -193,6 +194,7 @@ Figura~\ref{fig:cap2ex1}.
 \includefig{cap2ex1}
 
 \begin{example}
+\label{ex:cap2ex2}
 Determine $f'(x)$, onde $f(x) = \sqrt{x}$.
 \begin{caseanalysis}
 \item $x < 0$. Como $\sqrt{x}$ não está definido, $f'(x)$ não existe.
@@ -359,6 +361,76 @@ etc.) de produção de $x$ itens é $y = f(x)$ reais. Então, o custo de
 se produzir um item adicional é aproximadamente a derivada $y' = f'(x)$,
 pois $y'$ é a alteração em $y$ por unidade de alteração em $x$. Esta
 derivada é chamada \emph{custo marginal}.
+
+\begin{example}
+Suponha que uma cultura de bactérias se reproduz de tal maneira que
+no instante $t$ há $t^3$ indivíduos na colônia. Encontre a taxa de
+crescimento no instante $t = 1000$ segundos.
+
+Como $y = t^3$, então $y' = 3t^2$ de acordo com o Exemplo~\ref{ex:cap2ex1}.
+No instante $t = 1000$, temos $y' = \fnum{3000000}$ indivíduos por segundo.
+\end{example}
+
+\begin{example}
+Suponha que o custo de produção de $x$ agulas é de $\sqrt{x}$ reais. Qual é
+o custo marginal após $\fnum{10000}$ agulhas serem produzidas.
+
+Como $y = \sqrt{x}$, então $\displaystyle y' = \frac{1}{2\sqrt{x}}$ de acordo com o Exemplo~\ref{ex:cap2ex2}. Quando $x = \fnum{10000}$, temos $\displaystyle y' = \frac{1}{2\sqrt{\fnum{10000}}} = \frac{1}{200} = 0,005$ reais por agulha.
+
+Ou seja, o custo marginal é de metade de um centavo por agulha.
+\end{example}
+
+\begin{sectionproblems}
+Encontre a derivada da função dada nos Problemas 1--21.
+
+\twoexer{$f(x) = x^2$}{$f(t) = t^2 + 3$}
+
+\twoexer{$f(x) = 1-2x^2$}{$f(x) = 3x^2 + 2$}
+
+\twoexer{$f(t) = 4t$}{$f(x) = 2-5x$}
+
+\twoexer{$f(t) = 4t^3$}{$f(t) = -t^3$}
+
+\twoexer{$f(u) = 5\sqrt{u}$}{$f(u) = \sqrt{u+2}$}
+
+\twoexer{$g(x) = x\sqrt{x}$}{$g(x) = 1/\sqrt{x}$}
+
+\twoexer{$g(t) = t^{-2}$}{$g(t) = t^{-3}$}
+
+\twoexer{$f(y) = 3y^{-1} + 4y$}{$f(y) = 2y^{3} + 4y^{2}$}
+
+\twoexer{$f(x) = a x + b$}{$f(x) = a x^{2}$}
+
+\twoexer{$f(x) = \sqrt{a x + b}$}{$f(x) = 1/(x + 2)$}
+
+\exer{$f(x) = 1/(3-2x)$}
+
+\exer{Encontre a derivada de $f(x) = 2x^2$ no ponto $x = 3$.}
+
+\exer{Encontre a inclinação da curva $f(x) = \sqrt{x-1}$ no ponto $x = 5$.}
+
+\exer{Um objeto se move de acordo com a equação $y = 1/(t+2)$, onde $t \ge 0$.
+      Encontre a velocidade como função de $t$.}
+
+\exer{Uma partícula se move de acordo com a equação $y = t^4$. Encontre a
+      velocidade em função de $t$.}
+
+\exer{Suponha que a população de uma cidade cresce de acordo com a equação
+      $y = 100t + t^2$, onde $t$ é o tempo em anos. Encontre a taxa de
+      crescimento populacional em $t = 100$ anos.}
+
+\exer{Suponha que uma empresa lucra $1000x - x^2$ reais sobre a venda de
+      $x$ itens. Encontre o lucro marginal, em reais por item, quando
+      $x = 200$, $x = 500$ e $x = 1000$.}
+
+\exer{Encontre a derivada da função $f(x) = |x+1|$.}
+
+\exer{Encontre a derivada da função $f(x) = |x^3|$.}
+
+\exer{Encontre a inclinação da parábola $y = ax^2 + bx + c$, onde
+      $a$, $b$, $c$ são constantes.}
+
+\end{sectionproblems}
 
 \section{Diferenciais e Retas Tangentes}
 \label{sec:tglines}
