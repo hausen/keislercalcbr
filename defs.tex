@@ -8,6 +8,9 @@
 \newcommand{\dy}{\dif y}
 \newcommand{\dx}{\dif x}
 \newcommand{\dz}{\dif z}
+\newcommand{\du}{\dif u}
+\newcommand{\dv}{\dif v}
+
 
 
 \newcommand{\tnote}[1]{%
@@ -45,31 +48,38 @@
 
 \newcommand{\exer}[1]{%
 
+\begingroup%
 \noindent\par%
-\begin{minipage}[t]{0.1\textwidth}
-\hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
+\refstepcounter{exerciseNo}%
+\begin{minipage}[t]{0.1\textwidth}%
+\hspace{3ex}\textbf{\arabic{exerciseNo}}%
 \end{minipage}%
-\begin{minipage}[t]{0.9\textwidth}
+\begin{minipage}[t]{0.9\textwidth}%
 #1
 \end{minipage}
+\endgroup%
 
 }
 
 \newcommand{\twoexer}[2]{%
 
+\begingroup%
 \noindent\par%
+\refstepcounter{exerciseNo}%
 \begin{minipage}[t]{0.1\textwidth}
-\hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
+\hspace{3ex}\textbf{\arabic{exerciseNo}}
 \end{minipage}%
 \begin{minipage}[t]{0.4\textwidth}
 #1
 \end{minipage}%
+\refstepcounter{exerciseNo}%
 \begin{minipage}[t]{0.1\textwidth}
-\hspace{3ex}\addtocounter{exerciseNo}{1}\textbf{\arabic{exerciseNo}}
+\hspace{3ex}\textbf{\arabic{exerciseNo}}
 \end{minipage}%
 \begin{minipage}[t]{0.4\textwidth}
 #2
 \end{minipage}
+\endgroup%
 
 }
 
