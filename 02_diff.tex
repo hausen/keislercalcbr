@@ -791,6 +791,435 @@ uma curva e um ponto, encontre a equação da reta tangente.
 \section{Derivadas de Funções Racionais}
 \label{sec:derivratfunc}
 
+Um termo da forma
+$$
+  a_1 x + a_0,
+$$
+onde $a_1$, $a_0$ são números reais, é chamado um \newdef[termo!linear]{termo
+linear} em $x$; se $a_1 \ne 0$, também é chamado \newdef[polinômio!de grau
+$1$]{polinômio de grau um} em $x$. Um termo da forma
+$$
+  a_2 x^2 + a_1 x + a_0, \hspace{1.5em} a_2 \ne 0
+$$
+é chamdo \newdef[polinômio!de grau $2$]{polinômio de grau dois} em $x$ e,
+em geral, um termo da forma
+$$
+  a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0, \hspace{1.5em} a_n \ne 0
+$$
+é chamado \newdef[polinômio!de grau $n$]{polinômio de grau $n$} em $x$.
+
+Um \newdef[termo!racional]{termo racional} em $x$ é qualquer termo
+construído a partir da variável $x$ e números reais usando-se as
+operações de adição, multiplicação, subtração e divisão. Por exemplo,
+todo polinômio é um termo racional, assim como os termos
+$$
+  \frac{(3x^2- 5)(x+2)^3}{5x - 11}, \hspace{1.5em} \frac{(1+1/x)^9}{x^3 + 1/(2-x)}.
+$$
+
+Uma \newdef[função!linear]{função linear},
+\newdef[função!polinomial]{função polinomial} ou
+\newdef[função!racional]{função racional} é uma função que é dada por
+um termo linear, polinomial ou racional, respectivamente. Nesta seção,
+estabeleceremos um conjunto de regras que nos permitirão rapidamente
+diferenciar qualquer função racional. As regras também serão úteis mais
+tarde, quando calcularemos as derivadas de outras funções.
+
+\begin{theorem}\label{teo:difflinear}
+A derivada de uma função linear é igual ao coefficiente de $x$. Ou seja,
+$$
+  \frac{\dif(bx + c)}{\dx} = b, \hspace{1.5em} \dif(bx + c) = b \dx.
+$$
+\end{theorem}
+
+\begin{proof}
+Seja $y = bx + c$ e seja $\Dx \ne 0$ um infinitésimo. Então,
+\begin{eqnarray*}
+  y + \Dy & = & b(x + \Dx) + c, \\
+      \Dy & = & (b(x + \Dx) + c) - (bx + c) = b \Dx, \\
+ \frac{\Dy}{\Dx} & = & \frac{b \Dx}{\Dx} = b.
+\end{eqnarray*}
+Portanto, $\displaystyle\frac{\dif(bx + c)}{\dx} = \std(b) = b$.
+
+Multiplicando por $\dy$, obtemos
+$$
+  \dy = b \dx.
+$$
+\end{proof}
+
+Se, no Teorema~\ref{teo:difflinear}, fixarmos $b = 1$, $c = 0$, veremos que
+a derivada da função identidade $f(x) = 1$ é $f'(x) = 1$, ou seja,
+$$
+  \frac{\dx}{\dx} = 1, \hspace{1.5em} \dx = \dx.
+$$
+
+Por outro lado, se fixarmos $b = 0$ no Teorema~\ref{teo:difflinear}, então
+o termo $b x + c$ é apenas a constante $c$, e encontramos que a derivada
+de uma função constante $g(x) = c$ é $g'(x) = 0$, ou seja,
+$$
+  \frac{\dif c}{\dx} = 0 \hspace{1.5em} \dif c = 0.
+$$
+
+\begin{theorem}[Regra da Soma]\label{teo:diffsum}
+Suponha que $u$ e $v$ dependem de uma variável independente $x$. Então,
+para qualquer valor de $x$ onde $\du/\dx$ e $\dv/\dx$ existam,
+$$
+  \frac{\dif(u+v)}{\dx} = \frac{\du}{\dx} + \frac{\dv}{\dx},
+  \hspace{1.5em}
+  \dif(u+v) = \du + \dv.
+$$
+Em outras palavras, a derivada da soma é a soma das derivadas.
+\end{theorem}
+
+\begin{proof} Seja $y = u + v$ e seja $\Dx \ne 0$ um infinitésimo. Então
+\begin{eqnarray*}
+  y + \Dy & = & (u + \Du) + (v + \Dv), \\
+  \Dy & = & [(u + \Du) + (v + \Dv)] - [u + v] = \Du + \Dv, \\
+  \frac{\Dy}{\Dx} & = & \frac{\Du + \Dv}{\Dx} = \frac{\Du}{\Dx} + \frac{\Dv}{\Dx}.
+\end{eqnarray*}
+Tomando as partes padronizadas,
+$$
+  \st{\frac{\Dy}{\Dx}} = \st{\frac{\Du}{\Dx} + \frac{\Dv}{\Dx}} =
+    \st{\frac{\Du}{\Dx}} + \st{\frac{\Dv}{\Dx}}.
+$$
+Portanto, $$\frac{\dy}{\dx} = \frac{\du}{\dx} + \frac{\dv}{\dx}.$$
+\end{proof}
+
+Aplicando-se a Regra da Soma $n-1$ vezes, vemos que
+$$
+  \frac{\dif(u_1 + \cdots + u_n)}{\dx} =
+  \frac{\dif u_1}{\dx} + \cdots + \frac{\dif u_n}{\dx},
+  \hspace{1.5em} \text{ou} \hspace{1.5em}
+  \dif(u_1 + \cdots + u_n) = \dif u_1 + \cdots + \dif u_n.
+$$
+
+\begin{theorem}[Regra da Constante]
+Suponha que $x$ depende de $x$, e que $c$ é um número real. Então, para
+qualquer valor de $x$ onde $\du/\dx$ existe,
+$$
+  \frac{\dif(cu)}{\dx} = c\frac{\du}{\dx},
+  \hspace{1.5em}
+  \dif(cu) = c \du.
+$$
+\end{theorem}
+
+\begin{proof} Seja $y = cu$ e seja $\Dx \ne 0$ um infinitésimo. Então,
+\begin{eqnarray*}
+  y + \Dy & = & c(u + \Du), \\
+  \Dy & = & c(u + \Du) - cu = c \Du, \\
+  \frac{\Dy}{\Dx} & = & \frac{c \Du}{\Dx} = c \frac{\Du}{\Dx}.
+\end{eqnarray*}
+Tomando as partes padronizadas,
+$$
+  \st{\frac{\Dy}{\Dx}} = \st{c\frac{\Du}{\Dx}} = c \st{\frac{\Du}{\Dx}},
+$$
+logo, $$\displaystyle \frac{\dy}{\dx} = c \frac{\du}{\dx}.$$
+\end{proof}
+
+A Regra da Constante nos mostra que, quando estamos calculando derivadas,
+um fator constante pode ser movido ``para fora'' da derivada. Isto só é
+verdade quando $c$ é uma constante. Para produtos de duas funções de $x$,
+temos a regra a seguir.
+
+\begin{theorem}[Regra do Produto]
+Suponha que $u$ e $v$ dependam de $x$. Então, para qualquer valor $x$ onde
+$\du/\dx$ e $\dv/dx$ estejam definidos,
+$$
+  \frac{\dif(u,v)}{\dx} = u \frac{\dv}{\dx} + v \frac{\du}{\dx},
+  \hspace{1.5em}
+  \dif(u,v) = u \dv + v \du.
+$$
+\end{theorem}
+
+\begin{proof}
+Seja $y = uv$ e seja $\Dx \ne 0$ um infinitésimo.
+\begin{eqnarray*}
+  y + \Dy & = & (u + \Du)(v + \Dv), \\
+  \Dy & = & (u + \Du)(v + \Dv) - uv = u \Dv + v \Du + \Du \Dv, \\
+  \frac{\Dy}{\Dx} & = & \frac{u \Dv + v \Du + \Du \Dv}{\Dx} =
+    u \frac{\Dv}{\Dx} + v \frac{\Du}{\Dx} + \Du \frac{\Dv}{\Dx}.
+\end{eqnarray*}
+Pelo Teorema do Incremento, $\Du$ é um infinitésimo, portanto
+\begin{eqnarray*}
+  \st{\frac{\Dy}{\Dx}} = \st{u \frac{\Dv}{\Dx} + v \frac{\Du}{\Dx} + \Du \frac{\Dv}{\Dx}} \\
+  & = & u \cdot \st{\frac{\Dv}{\Dx}} + v \cdot \st{\frac{\Du}{\Dx}} + 0 \cdot \st{\frac{\Dv}{\Dx}}
+\end{eqnarray*}
+Logo, $\displaystyle \frac{\dy}{\dx} = u \frac{\dv}{\dx} + v \frac{\du}{\dx}$.
+\end{proof}
+
+A Regra da Constante é, na realidade, um caso especial da Regra do Produto,
+onde $v$ é uma função constante com relação a $x$, ou seja, $v = c$. Para
+verificar esta afirmação, seja $v$ uma constante $c$ e observe que a
+Regra do Produto nos dá:
+$$
+  \frac{\dif(u \cdot c)}{\dx} = u \frac{\dif c}{\dx} + c \frac{\du}{\dx}
+    = u \cdot 0 + c \frac{\du}{\dx} = c \frac{\du}{\dx}.
+$$
+Esta igualdade é justamente a Regra da Constante.
+
+A Regra do Produto também pode ser usada para encontrarmos a derivada de
+uma potência de $u$.
+
+\begin{theorem}[Regra da Potência]
+\label{teo:diffpower}
+Suponha que $u$ depende de $x$ e seja $n$ um inteiro positivo. Para todo
+valor de $x$ onde $\du/\dx$ existe,
+$$
+  \frac{\dif(u^n)}{\dx} = n u^{n-1} \frac{\du}{\dx},
+  \hspace{1.5em}
+  \dif(u^n) = n u^{n-1} \du.
+$$
+\end{theorem}
+
+\begin{proof}
+Para vermos o que acontece, primeiro demonstraremos a Regra do Produto
+para $n = 1, 2, 3, 4$.
+\begin{enumerate}[$n =$ 1:]
+\item Temos $u^n = u$ e $u^0 = 1$, portanto
+$$
+  \frac{\dif(u^n)}{\dx} = \frac{\du}{\dx} = 1 \cdot u^0 \cdot \frac{\du}{\dx}.
+$$
+\item Usamos a Regra do Produto,
+$$
+  \frac{\dif(u^2)}{\dx} = \frac{\dif(u \cdot u)}{\dx} = u \frac{\du}{\dx} + u \frac{\du}{\dx} = 2 \cdot u^2 \cdot \frac{\du}{\dx}.
+$$
+\item Escrevemos $u^3 = u \cdot u^2$, usamos novamente a Regra do Produto e
+      então usamos o resultado para $n = 2$.
+\begin{eqnarray*}
+  \frac{\dif(u^3)}{\dx} & = & \frac{\dif(u \cdot u^3)}{\dx} =
+    u \frac{\dif(u^2)}{\dx} + u^2 \frac{\du}{\dx} \\
+  & = & u \cdot 2u \frac{\du}{\dx} + u^2 \frac{\du}{\dx} =
+    3 u^2 \frac{\du}{\dx}.
+\end{eqnarray*}
+\item Usando a Regra do Produto e então o resultado para $n = 3$,
+\begin{eqnarray*}
+  \frac{\dif(u^4)}{\dx} & = & \frac{\dif(u \cdot u^3)}{\dx} =
+    u \frac{\dif(u^3)}{\dx} + u^3 \frac{\du}{\dx} \\
+  & = & u \cdot 3u^2 \frac{\du}{\dx} + u^3 \frac{\du}{\dx} =
+    4 u^3 \frac{\du}{\dx}.
+\end{eqnarray*}
+\end{enumerate}
+Podemos continuar este processo indefinidamente e provar o teorema para
+todo inteiro positivo $n$. Para ver isto, assuma que demonstramos o teorema
+para $m$. Ou seja, assuma que
+\begin{eqnarray}
+  \frac{\dif(u^m)}{\dx} = m u^{m-1} \frac{\du}{\dx}. \label{eq:diffpower}
+\end{eqnarray}
+Em seguida, demonstramos que a afirmação também é verdade para $m+1$. Usando
+a Regra do Produto e a Equação~\ref{eq:diffpower}, temos
+\begin{eqnarray*}
+  \frac{\dif(u^{m+1})}{\dx} & = & \frac{\dif(u \cdot u^m)}{\dx} =
+    u \frac{\dif(u^m)}{\dx} + u^m \frac{\du}{\dx} \\
+  & = & u \cdot m u^{m-1} \frac{\du}{\dx} + u^m \frac{\du}{\dx} =
+    (m + 1)u^m \frac{\du}{\dx}.
+\end{eqnarray*}
+Logo,
+$$
+  \frac{\dif(u^{m+1})}{\dx} = (m + 1)u^m \frac{\du}{\dx}.
+$$
+Isto mostra que o teorema é verdadeiro para $m + 1$.
+
+Mostramos que o teorema é válido para $1, 2, 3, 4$. Fixe $m = 4$; então,
+o teorema será válido para $m + 1 = 5$. Fixe $m = 5$; então, o teorema é
+válido para $m + 1 = 6$. E assim em diante. Portanto, o teorema é válido
+para todo inteiro positivo $n$.
+\end{proof}
+
+Na prova da Regra da Potência usamos o princípio a seguir.
+
+\subpart{Princípio da Indução}
+
+\begin{quote}
+       Suponha que uma proposição $P(n)$ sobre um inteiro arbitrário $n$
+       é verdadeira quando $n = 1$. Suponha, além disto, que para cada
+       inteiro positivo $m$ tal que $P(m)$ seja verdade, $P(m+1)$ também
+       seja verdade. Então, a proposição $P(n)$ é verdadeira para todo
+       inteiro positivo $n$.
+\end{quote}
+
+Na demonstração anterior, a proposição $P(n)$ era a Regra da Potência,
+$$
+  \frac{\dif(u^n)}{\dx} = n u^{n-1} \frac{\du}{\dx}.
+$$
+
+O Princípio da Indução pode se tornar plausível da seguinte forma. Seja $n$
+um inteiro positivo dado. Fixe $m = 1$; como $P(1)$ é verdade, então $P(2)$
+é verdade. Agora, fixe $m = 2$; como $P(2)$ é verdade, $P(3)$ é verdade.
+Continuamos a repetir o raciocíonio deste modo por $n$ passos e concluímos
+que $P(n)$ é verdade.
+
+A Regra da Potência também é verdade para $n = 0$ pois, quando $u \ne 0$,
+temos que $u^0 = 1$ e $\dif 1/\dif x = 0$.
+
+Usando as Regras da Soma, Constante e Potência, podemos calcular a derivada
+de uma função polinomial facilmente. Temos que
+\begin{eqnarray*}
+  \frac{\dif(x^n)}{\dx} & = & n x^{n-1}, \\
+  \frac{\dif(c x^n)}{\dx} & = & c n x^{n-1},
+\end{eqnarray*}
+e então
+$$
+  \frac{\dif(a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0)}{\dx} =
+    a_n \cdot n x^{n-1} + a_{n-1}(n-1)x^{n-2} + \cdots + a_1.
+$$
+
+\begin{example}
+$\displaystyle
+  \frac{\dif(-3x^5)}{\dx} = -3 \cdot 5x^4 = -15x^4.
+$
+\end{example}
+
+\begin{example}
+$\displaystyle
+  \frac{\dif(6x^4 - 2x^3 + x - 1)}{\dx} = 24x^3 - 6x^2 + 1.
+$
+\end{example}
+
+A seguir, apresentaremos dois fatos úteis como corolários.
+
+\begin{corollary}
+A derivada de um polinômio de grau $n > 0$ é um polinômio de grau $n-1$.
+\end{corollary}
+
+\begin{corollary}
+Se $u$ depende de $x$, então
+$$
+  \frac{\dif(u + c)}{\dx} = \frac{\du}{\dx}
+$$
+sempre que $\du/\dx$ existir. Ou seja, adicionar uma constante a uma função
+não altera a sua derivada.
+\end{corollary}
+
+Na Figura~\ref{fig:addconst}, vemos que o efeito de se adicionar uma constante
+é mover a curva para cima ou para baixo no eixo $y$, sem alterações de
+inclinação.
+
+\includefig{addconst}
+
+Para as próximas duas regras nesta seção, precisaremos da fórmula para a
+derivada de $1/v$.
+
+\begin{lemma}\label{lem:diff1overV}
+Suponha que $v$ depende de $x$. Então, para todo valor de $x$ tal que
+$v \ne 0$ e $\dv/\dx$ existe,
+$$
+  \frac{\dif(1/v)}{\dx} = -\frac{1}{v^2} \frac{\dv}{\dx},
+  \hspace{1.5em}
+  \dif\left(\frac{1}{x}\right) = -\frac{1}{v^2} \dv.
+$$
+\end{lemma}
+
+\begin{proof} Seja $y = 1/v$ e seja $\Dx \ne 0$ um infinitésimo.
+\begin{eqnarray*}
+  y + \Dy & = & \frac{1}{v + \Dv}, \\
+  \Dy & = & \frac{1}{v + \Dv} - \frac{1}{v}, \\
+  \frac{\Dy}{\Dx} & = & \frac{1/(v + \Dv) - 1/v}{\Dx} \\
+  & = & \frac{v - (v + \Dv)}{\Dx \cdot v(v + \Dv)} \\
+  & = & -\frac{1}{v(v + \Dv)} \frac{\Dv}{\Dx}.
+\end{eqnarray*}
+Tomando partes padronizadas,
+\begin{eqnarray*}
+  \st{\frac{\Dy}{\Dx}} & = & \st{-\frac{1}{v(v+\Dv)} \frac{\Dv}{\Dx}} \\
+  & = & \st{-\frac{1}{v(v+\Dv)}} \st{\frac{\Dv}{\Dx}} \\
+  & = & -\frac{1}{v^2} \st{\frac{\Dv}{\Dx}}.
+\end{eqnarray*}
+Portanto,
+$$
+  \frac{\dy}{\dx} = -\frac{1}{v^2} \frac{\dv}{\dx}.
+$$
+\end{proof}
+
+\begin{theorem}[Regra do Quociente]
+Suponha que $u$, $v$ dependem de $x$. Então, para todo valor de $x$ tal
+que $\du/\dx$, $\dv/\dx$ existem e $v \ne 0$,
+$$
+  \frac{\dif(u/v)}{\dx} = \frac{v \du/\dx - u \dv/\dx}{v^2},
+  \hspace{1.5em}
+  \dif\left(\frac{u}{v}\right) = \frac{v \du - u \dv}{v^2}.
+$$
+\end{theorem}
+
+\begin{proof} Combine a Regra do Produto com a fórmula para $\dif(1/v)$
+no Lema~\ref{lem:diff1overV}. Seja $y = u/v$. Escreva $y$ na forma
+$$
+  y = \frac{1}{v} \cdot u.
+$$
+Então,
+\begin{eqnarray*}
+  \dy & = & \dif\left(\frac{1}{v} u\right) =
+    \frac{1}{v} \du + u \dif\left( \frac{1}{v} \right) \\
+  & = & \frac{1}{v} \du + u (-v^{-2}) \dv \\
+  & = & \frac{v \du - u \dv}{v^2}.
+\end{eqnarray*}
+\end{proof}
+
+\begin{theorem}[Regra da Potência para Expoentes Negativos]
+Suponha que $u$ dependa de $x$ e seja $n$ um inteiro negativo. Então, para
+todo valor de $x$ tal que $\du/\dx$ existe e $u \ne 0$, temos que
+$\dif(u^n)/\dx$ existe e
+$$
+  \frac{\dif(u^n)}{\dx} = n u^{n-1} \frac{\du}{\dx},
+  \hspace{1.5em}
+  \dif(u^n) = n u^{n-1} \du.
+$$
+\end{theorem}
+
+\begin{proof} Como $n$ é negativo, $n = -m$ onde $m$ é positivo. Seja
+$y = u^n = u^{-m}$. Então, $y = 1/u^m$. Pelo Lema~\ref{lem:diff1overV}
+e pela Regra da Potência,
+\begin{eqnarray*}
+ \frac{\dy}{\dx} = -\frac{1}{(u^m)^2} \cdot \frac{\dif(u^m)}{\dx} \\
+ & = & -\frac{1}{u^{2m}} \cdot m u^{m-1} \frac{\du}{\dx} \\
+ & = & (-m) u^{-2m} u^{m-1} \frac{\du}{\dx} \\
+ & = & (-m) u^{-m-1} \frac{\du}{\dx} = n u^{n-1} \frac{\du}{\dx}.
+\end{eqnarray*}
+\end{proof}
+
+A Regra do Quociente em conjunto com as Regras da Constante, Soma, Produto e
+Potência tornam fácil diferenciar qualquer função racional.
+
+\begin{example} Encontre $\dy$ quando
+$$
+  y = \frac{1}{x^2 - 3x + 1}.
+$$
+
+Introduza uma nova variável $u$ com a equação
+$$
+  u = x^2 - 3x + 1.
+$$
+Então $y = 1/u$ e $\du = (2x - 3) \dx$, logo
+$$
+  \dy = -\frac{1}{u^2} \du = \frac{-(2x - 3)}{(x^2 - 3x + 1)^2} \dx.
+$$
+\end{example}
+
+\begin{example}
+Seja $\displaystyle y = \frac{(x^4 - 2)^3}{5x - 1}$ e encontre $\dy$.
+
+Considere $u = (x^4 - 2)^3$, \hspace{1.5em} $v = 5x - 1$.
+
+Então,
+$$
+  y = \frac{u}{v}, \hspace{1.5em} \dy = \frac{v \du - u \dv}{v^2}.
+$$
+
+Também temos que
+\begin{eqnarray*}
+  \du & = & 3 \cdot (x^4 - 2)^2 \cdot 4x^3 \dx = 12(x^4 - 2)^2 \cdot x^3 \dx, \\
+  \dv & = & 5 \dx.
+\end{eqnarray*}
+
+Deste modo,
+\begin{eqnarray*}
+  \dy & = & \frac{(5x - 1) \cdot 12 \cdot (x^4 - 2)^2 x^3 \dx -
+                  (x^4-2)^3 \cdot 5 \dx}{(5x-1)^2} \\
+  & = & \frac{(x^4-2)^2[12(5x-1)x^3-5(x^4-2)]}{(5x-1)^2} \dx.
+\end{eqnarray*}
+
+\end{example}
+
+\section{Funções Inversas}
+\label{sec:invfunc}
+
 \section{Funções Transcendentais}
 \label{sec:transcfunc}
 
