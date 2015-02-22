@@ -13,6 +13,7 @@ cat <<EOF > /tmp/tmp.latex/tmp.tex
 \usepackage[portuguese,brazil]{babel}
 \usepackage{mathptmx}
 \usepackage{amsmath,amssymb}
+\usepackage{commath}
 
 \pagestyle{plain}
 \pagenumbering{gobble}
