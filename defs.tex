@@ -5,6 +5,8 @@
 \newcommand{\Dy}{\Delta y}
 \newcommand{\Dx}{\Delta x}
 \newcommand{\Dz}{\Delta z}
+\newcommand{\Du}{\Delta u}
+\newcommand{\Dv}{\Delta v}
 \newcommand{\dy}{\dif y}
 \newcommand{\dx}{\dif x}
 \newcommand{\dz}{\dif z}
@@ -30,6 +32,8 @@
 \makeatletter
 \@addtoreset{theorem}{section}
 \@addtoreset{example}{section}
+\@addtoreset{corollary}{section}
+\@addtoreset{lemma}{section}
 \makeatother
 
 % coloca o número da seção nas figuras
@@ -154,9 +158,13 @@
 \def\definitionname{Definição}
 \def\theoremname{Teorema}
 \def\examplename{Exemplo}
+\def\corollaryname{Corolário}
+\def\lemmaname{Lema}
 \spnewtheorem*{defin}{Definição}{\bfseries}{\rmfamily}
 \spnewtheorem*{theor}{Teorema}{\bfseries}{\rmfamily}
 \spnewtheorem*{warning}{Cuidado}{\bfseries}{\rmfamily}
+
+\newtheorem*{lemma*}{Lema.}
 
 \newcommand\subpart[1]{\paragraph{\textbf{#1}}}
 
