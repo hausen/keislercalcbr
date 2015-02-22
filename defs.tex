@@ -2,6 +2,14 @@
 \newcommand{\hypersymb}{\#}
 \newcommand{\hyper}[1]{{#1}^\hypersymb}
 
+\newcommand{\Dy}{\Delta y}
+\newcommand{\Dx}{\Delta x}
+\newcommand{\Dz}{\Delta z}
+\newcommand{\dy}{\dif y}
+\newcommand{\dx}{\dif x}
+\newcommand{\dz}{\dif z}
+
+
 \newcommand{\tnote}[1]{%
 \footnote{N. do T.: #1}%
 }
@@ -9,6 +17,10 @@
 \newenvironment{caseanalysis}%
   {\par\indent\begin{enumerate}[\emph{Caso} \itshape1:]}%
   {\end{enumerate}}
+
+\newenvironment{enumeratewithspaces}[1][]%
+  {\begingroup\setlength{\parskip}{1ex}\begin{enumerate}[#1]}%
+  {\end{enumerate}\endgroup}%
 
 % isto faz com que os contadores de exemplos e teoremas sejam
 % reiniciados a cada seção

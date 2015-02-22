@@ -609,6 +609,124 @@ o Teorema do Incremento assume a forma abreviada
 $$
   \Delta y = \dif y + \epsilon \dif x.
 $$
+O Teorema do Incremento pode ser explicado graficamente usando-se um
+microscópio infinitesimal. Sob o microscópio, um segmento de comprimento
+$\Delta x$ é ampliado para um segmento de comprimento unitário, mas um
+segmento de comprimento $\epsilon \Delta x$ é apenas ampliado para um
+comprimento infinitesimal $\epsilon$. Assim, o Teorema do Incremento mostra
+que, quando $f'(x)$ existe:
+\begin{enumerate}[(1)]
+\item O diferencial $\dif y$ e o incremento
+      $\Delta y = \dif y + \epsilon \dif x$ estão tão próximos que eles
+      não há distinção entre eles sob um microscópio infinitesimal.
+\item A curva $y = f(x)$ e a reta tangente em $(x,y)$ estão tão próximas
+      que não há distinção entre elas sob um microscópio infinitesimal;
+      ambas se assemelham a uma reta com inclinação $f'(x)$.
+\end{enumerate}
+
+A Figura~\ref{fig:dymicroscope} não é totalmente precisa. A curvatura teve
+de ser exagerada de maneira que pudéssemos distinguir a curva da reta
+tangente sob o microscópio. Para dar uma visão precisa, é necessário um
+desenho mais complicado como o da Figura~\ref{fig:incrementtheo}, a qual
+possui um segundo microscópio infinitesimal centrado no ponto
+$(a + \Delta x, b + \Delta y)$ dentro do campo de visão do microscópio
+original. Este segundo microscópio aumenta $\epsilon \dif x$ para um
+comprimento unitário e amplia $\Delta x$ para um comprimento infinito.
+
+\includefig{incrementtheo}
+
+\begin{example}
+Sempre que uma derivada $f'(x)$ é conhecida, podemos encontrar o diferencial
+$\dif y$ imediatamente apenas multiplicando a derivada por $\dif x$, usando
+a fórmula $\dif y = f'(x) \dif x$. Os exemplos na última seção nos dão os
+seguintes diferenciais:
+\def\itab#1{\hspace{1em}\rlap{#1}}
+\def\tab#1{\hspace{.25\textwidth}\rlap{#1}}
+\begin{enumerate}[(a)]
+\item \itab{$y = x^3$,} \tab{$\dy = 3x^2 \dx$.}
+\item \itab{$y = \sqrt{x}$,} \tab{$\displaystyle \dy = \frac{\dx}{2\sqrt{x}}$,
+                                  onde $x > 0$.}
+\item \itab{$y = 1/x$,} \tab{$\dy = -\dx/x^2$, onde $x \ne 0$.}
+\item \itab{$y = |x|$,} \tab{$\displaystyle
+                              \dif y = \left\{ \begin{array}{rll}
+                                          & \dif x & \text{ quando } x > 0, \\
+                                        - & \dif x & \text{ quando } x < 0, \\
+                                        \multicolumn{2}{l}{\text{indefinido}} &
+                                           \text{ quando } x = 0.
+                                       \end{array} \right.$.}
+\item \itab{$y = bt - 16t^2$,} \tab{$\dif y = (b - 32t) \dif t$.}
+\end{enumerate}
+\end{example}
+
+A notação de diferencial também pode ser usada quando um sistema de fórmulas
+nos é dado, no qual duas ou mais variáveis dependem de uma variável
+independente. Por exemplo, se $y$ e $z$ são funções de $x$,
+\begin{eqnarray*}
+  y = f(x), &  & z = g(x),
+\end{eqnarray*}
+então $\Dy$, $\Dz$, $\dy$, $\dz$ são determinados por
+\begin{eqnarray*}
+  \Dy = f(x + \Dx) - f(x), &  & \Dz = g(x + \Dx) - g(x), \\
+  \dy = f'(x) \dx,         &  & \dz = g'(x) \dx.
+\end{eqnarray*}
+
+\begin{example}
+Sejam dados $y = \frac{1}{2}x$, $z = x^3$, com $x$ sendo a variável
+independente, então
+\begin{eqnarray*}
+  \Dy & = & \frac{1}{2}(x + \Dx) - \frac{1}{2}x = \frac{1}{2}\Dx, \\
+  \dy & = & \frac{1}{2}\dx, \\
+  \Dz & = & 3x^2\Dx + 3x(\Dx)^2 + (\Dx)^3, \\
+  \dz & = & 3x^2 \dx. 
+\end{eqnarray*}
+O significado dos símbolos para incremento e diferencial neste exemplo
+seriam diferentes se tomássemos $y$ como a variável independente. Assim,
+$x$ e $z$ seriam funções de $y$, onde
+\begin{eqnarray*}
+  x = 2y, &  & z = 8y^3.
+\end{eqnarray*}
+Agora, $\Dy = \dy$ é apenas uma variável independente, enquanto que
+\begin{eqnarray*}
+  \Dx & = & 2(y + \Dy) - 2y = 2\Dy, \\
+  \Dz & = & 8(y+\Dy)^3 - 8y^3 \\
+      & = & 8[3y^2 \Dy + 3y(\Dy)^2 + (\Dy)^3] \\
+      & = & 24y^2 \Dy + 24y(\Dy)^2 + 8(\Dy)^3.
+\end{eqnarray*}
+Além disso, $\dx = 2\dy$ \; e \; $\dz = 24y^2\dy$.
+\end{example}
+
+Podemos também aplicar a notação de diferencial a termos. Se $\tau(x)$ é
+um termo com a variável $x$, então $\tau(x)$ determina uma função $f(x)$,
+$$
+  \tau(x) = f(x),
+$$
+e o diferencial $\dif(\tau(x))$ tem o significado
+$$
+  \dif(\tau(x)) = f'(x) \dx.
+$$
+
+\begin{example}
+\par\indent
+\begin{enumeratewithspaces}[(a)]
+\item $\dif(x^3) = 3x^2 \dx.$
+\item $\displaystyle \dif(\sqrt{x}) = \frac{\dx}{2\sqrt{x}}$, \hspace{1.5em} $x > 0$
+\item $\dif(1/x) = -\frac{\dx}{x^2}$, \hspace{1.5em} $x \ne 0$
+\item $\dif(|x|) = \left\{ \begin{array}{rll}
+                       & \dx & \text{ quando } x > 0, \\
+                     - & \dx & \text{ quando } x < 0, \\
+                     \multicolumn{2}{l}{\text{indefinido}} &
+                       \text{ quando } x = 0.
+                   \end{array} \right.$
+\item Seja $u = bt$ e $w = -16t^2$. Então
+\begin{eqnarray*}
+  u + w & = & bt - 16t^2. \\
+  \dif(u + w) & = & (b - 32t)\dif t.
+\end{eqnarray*}
+\end{enumeratewithspaces}
+\end{example}
+
+\begin{sectionproblems}
+\end{sectionproblems}
 
 \section{Derivadas de Funções Racionais}
 \label{sec:derivratfunc}
