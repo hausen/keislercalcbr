@@ -1434,6 +1434,61 @@ o mesmo que o gráfico de $y = f(X)$; veja Figura~\ref{fig:graphinv}).
 Por exemplo, a função $y = x^2$, $x \ge 0$, possui função inversa
 $x = \sqrt{y}$; a função $y = x^3$ possui como inversa $x = \sqrt[3]{y}$.
 
+Se pensarmos em $f$ como uma caixa preta que transforma uma entrada $x$
+em uma saída $f(x)$, a função inversa $g$ é a caixa preta que transforma
+$f(x)$, desfazendo o trabalho de $f$, produzindo a entrada original $x$.
+(veja Figura~\ref{fig:invfuncboxes}).
+
+\includefig{invfuncboxes}
+
+Muitas funções, como $y = x^2$ para $x \in \setR$, não possuem funções
+inversas. Na Figura~\ref{fig:noinvfuncx2}, podemos ver que $x$ não é
+função de $y$, pois em $y = 1$ temos que $x$ assume os valores $x = 1$ e
+$x = -1$.
+
+\includefig{noinvfuncx2}
+
+Comumente, podemos dizer se uma função $f$ possui inversa pela observação
+do seu gráfico. Se existe alguma reta horizontal $y = c$ que corta o gráfico
+de $f$ em mais de um ponto, então a função $f$ não tem inversa.
+(Veja Figura~\ref{fig:noinvfuncx2}). Se nenhuma reta horizontal
+corta o gráfico em mais de um ponto, então $f$ possui uma função inversa
+$g$. Usando esta regra, podemos ver na Figura~\ref{fig:noinvfuncexamples}
+que as funções $y = |x|$ e $y = \sqrt{1 - x^2}$ não possuem inversas.
+
+\includefig[Funções que não possuem inversas.]{noinvfuncexamples}
+
+A Tabela~\ref{tab:noinvfuncexamples} mostra algumas funções familiares que
+possuem inversas. Note que, em cada caso,
+$\dfrac{\dy}{\dx} = \dfrac{1}{\dy/\dx}$.
+
+\begin{table}
+\caption{Exemplos de funções que possuem inversas.}
+\def\SPC{\hspace{1em}}
+\def\ISPC{\hspace{-1em}}
+\label{tab:noinvfuncexamples}
+\begin{tabular}{@{\SPC}l@{\SPC}|@{\SPC}c@{\SPC}|@{\SPC}l@{\SPC}|@{\SPC}c@{\SPC}}
+ \hline
+ & & & \\[-1em]
+ \multirow{2}{*}{função $y = f(x)$} &
+   \multirow{2}{*}{$\dfrac{\dy}{\dx}$} &
+   \multirow{2}{*}{função inversa $x=g(y)$} &
+   \multirow{2}{*}{$\dfrac{\dy}{\dx} = \dfrac{1}{\dy/\dx}$} \\
+ & & & \\
+ \hline
+ & & & \\
+ $y = x + c$               & $1$   & $x = y - c$     & $1$ \\[1.5em]
+ $y = kx$, \; $k \ne 0$    & $k$   & $x = y/k$       & $1/k$ \\[1.5em]
+ $y = x^2$, \; $x \ge 0$   & $2x$  & $x = \sqrt{y}$  & $\dfrac{1}{2\sqrt{y}} =
+                                                        \dfrac{1}{2x}$ \\[1.5em]
+ $y = x^2$, \; $x \le 0$   & $2x$  & $x = -\sqrt{y}$ & $-\dfrac{1}{2\sqrt{y}} =
+                                                        \dfrac{1}{2x}$ \\[1.5em]
+ $y = \dfrac{1}{x}$ & $-\dfrac{1}{x^2}$ & $x = \dfrac{1}{y}$ &
+                                          $-\dfrac{1}{y^2} = -x^2$\\[1.5em]
+ \hline
+\end{tabular}
+\end{table}
+
 \section{Funções Transcendentais}
 \label{sec:transcfunc}
 
