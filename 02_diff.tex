@@ -1460,7 +1460,7 @@ que as funções $y = |x|$ e $y = \sqrt{1 - x^2}$ não possuem inversas.
 
 A Tabela~\ref{tab:noinvfuncexamples} mostra algumas funções familiares que
 possuem inversas. Note que, em cada caso,
-$\dfrac{\dy}{\dx} = \dfrac{1}{\dy/\dx}$.
+$\dfrac{\dx}{\dy} = \dfrac{1}{\dy/\dx}$.
 
 \begin{table}
 \caption{Exemplos de funções que possuem inversas.}
@@ -1473,7 +1473,7 @@ $\dfrac{\dy}{\dx} = \dfrac{1}{\dy/\dx}$.
  \multirow{2}{*}{função $y = f(x)$} &
    \multirow{2}{*}{$\dfrac{\dy}{\dx}$} &
    \multirow{2}{*}{função inversa $x=g(y)$} &
-   \multirow{2}{*}{$\dfrac{\dy}{\dx} = \dfrac{1}{\dy/\dx}$} \\
+   \multirow{2}{*}{$\dfrac{\dx}{\dy} = \dfrac{1}{\dy/\dx}$} \\
  & & & \\
  \hline
  & & & \\
@@ -1515,7 +1515,7 @@ $$
 $$
 ou seja,
 $$
-  \frac{\dy}{\dx} = \frac{1}{\dy/\dx}
+  \frac{\dy}{\dx} = \frac{1}{\dx/\dy}
 $$.
 \end{quote}
 
@@ -1529,6 +1529,126 @@ padronizadas,
   & = & \st{\frac{\Dy}{\Dx} \cdot \frac{\Dx}{\Dy}} = \std(1) = 1.
 \end{eqnarray*}
 Logo, $f'(x) = \dfrac{1}{g'(y)}$.
+\end{proof}
+
+A fórmula
+$$
+  \frac{\dy}{\dx} = \frac{1}{\dx/\dy}
+$$
+na Regra da Função Inversa não é tão trivial quanto parece. Uma afirmação
+mais completa é
+$$
+  \begin{array}{rl}
+  \dfrac{\dy}{\dx} & \text{ calculado com $x$ sendo variável independente} \\
+                  & = \dfrac{1}{\dx/\dy} \text{ calculado com $y$ sendo variável independente}
+  \end{array}
+$$
+
+Às vezes é mais fácil calcular $\dx/\dy$ do que $\dy/\dx$; nesses casos, a
+Regra da Função Inversa é um método útil.
+
+\begin{example}
+Encontre $\dy/\dx$ onde $x = 1 + y^{-3}$.
+
+Antes de resolver o problema, note que
+$$
+  y = \frac{1}{\sqrt[3]{x-1}}
+$$
+logo $x$ e $y$ são funções inversas uma da outra. Queremos encontrar
+$$
+  \frac{\dy}{\dx} = \frac{\dif(1/\sqrt[3]{x - 1})}{\dx}
+$$
+onde $x$ é a variável independente. Isto parece difícil, mas é fácil
+calcular
+$$
+  \frac{\dx}{\dy} = \frac{\dif(1 + y^{-3})}{\dy}
+$$
+onde $y$ é a variável independente.
+
+\begin{exsolution} $\dfrac{\dx}{\dy} = -3y^{-4}$, logo, pela Regra da
+Função Inversa, $\dfrac{\dy}{\dx} = \dfrac{1}{-3y^{-4}} = -\dfrac{1}{3}y^4$.
+Podemos escrever $\dy/\dx$ em termos de $x$ por substituição,
+$$
+  \frac{\dy}{\dx} = -\frac{1}{3}(x - 1)^{-4/3}.
+$$
+\end{exsolution}
+\end{example}
+
+\begin{example}
+Encontre $\dy/\dx$ onde $x = y^5 + y^3 + y$. Calcule $\dy/\dx$ no ponto
+$(3,1)$. Apesar de não podermos resolver a equação explicitamente para
+$y$ em função de $x$, podemos ver pelo gráfico na
+Figura~\ref{fig:grafinvfuncexample} que há uma função inversa $y = f(x)$.
+
+\includefig{grafinvfuncexample}
+
+Pela Regra da Função Inversa,
+\begin{eqnarray*}
+  \frac{\dx}{\dy} & = & 5y^4 + 3y^2 + 1, \\
+  \frac{\dy}{\dx} & = & \frac{1}{5y^4 + 3y^2 + 1}.
+\end{eqnarray*}
+Desta vez, devemos deixar a resposta em termos de $y$. No ponto $(3,1)$,
+substituímos $1$ por $y$ e obtemos $\dy/\dx = 1/9$.
+\end{example}
+
+Para $y \ge 0$, a função $x = y^n$ possui a função inversa $y = x^{1/n}$.
+No próximo teorema, usamos a Regra da Função Inversa para encontrar uma
+nova derivada, esta para $y = x^{1/n}$.
+
+\begin{theorem}\label{teo:diffsqrtn}
+Sejam $n$ um inteiro positivo e
+$$
+  y = x^{1/n},
+$$
+então,
+$$
+  \frac{\dy}{\dx} = \frac{1}{n} x^{(1/n)-1}.
+$$
+\end{theorem}
+
+Lembre que $y = x^{1/n}$ está definido para todo $x$ se $n$ é ímpar e para
+$x \ge 0$ se $n$ é par. A derivada $\dfrac{1}{n} x^{(1/n)-1}$ está definida
+para $x \ne 0$ se $n$ é ímpar e para $x > 0$ se $n$ é par.
+
+Se considerarmos que $\dy/\dx$ existe, então podemos imediatamente
+encontrar $\dy/\dx$ pela Regra da Função Inversa.
+\begin{eqnarray*}
+  x & = & y^n, \\
+  \frac{\dx}{\dy} & = & n y^{n-1}, \\
+  \frac{\dy}{\dx} & = & \frac{1}{\dx/\dy} = \frac{1}{n y^{n-1}} =
+                        \frac{1}{n}y^{1-n} \\
+  & = & \frac{1}{n}(x^{1/n})^{1-n} = \frac{1}{n}x^{(1-n)/n} =
+        \frac{1}{n}x^{(1/n)-1}.
+\end{eqnarray*}
+Apresentaremos a seguir uma prova mais comprida, porém completa,
+que demonstra que $\dy/\dx$ existe além de calcular o seu valor.
+
+\begin{proof}[para o Teorema~\ref{teo:diffsqrtn}]
+Seja $x \ne 0$ e seja $\Dx$ um infinitésimo não nulo. Primeiramente,
+demonstraremos que
+$$
+  \Dy = (x + \Dx)^{1/n} - x^{1/n}
+$$
+é um infinitésimo não nulo. Veja que $\Dy \ne 0$ pois $x + \Dx \ne x$.
+A parte padronizada de $\Dy$ é
+\begin{eqnarray*}
+  \std(\Dy) & = & \std[(x + \Dx)^{1/n}] - \std(x^{1/n}) \\
+            & = & x^{1/n} - x^{1/n} = 0.
+\end{eqnarray*}
+Logo, $\Dy$ é um infinitésimo não nulo.
+Agora,
+\begin{eqnarray*}
+  x & = & y^n, \\
+  \frac{\dx}{\dy} & = & n y^{n-1}, \\
+  \frac{\Dx}{\Dy} & \approx & n y^{n-1}.
+\end{eqnarray*}
+Portanto,
+\begin{eqnarray*}
+  \frac{\Dy}{\Dx} & \approx & \frac{1}{n y^{n-1}} =
+                              \frac{1}{n} x^{(1/n)-1}, \\
+  \frac{\dy}{\dx} & = & \frac{1}{n} x^{(1/n)-1}
+\end{eqnarray*}
+
 \end{proof}
 
 \section{Funções Transcendentais}
