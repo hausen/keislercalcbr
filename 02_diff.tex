@@ -1489,6 +1489,48 @@ $\dfrac{\dy}{\dx} = \dfrac{1}{\dy/\dx}$.
 \end{tabular}
 \end{table}
 
+Suponha que o plano $(x,y)$ seja invertido ao redor da reta diagonal
+$y = x$. Isto fará com que os eixos $x$ e $y$ troquem de lugar, formando
+o plano $(y,x)$. Se $f$ possui uma função inversa $g$, o gráfico da
+função $y = f(x)$ se tornará o gráfico da função inversa $x = g(y)$ no
+plano $(y,x)$, conforme mostrado na Figura~\ref{fig:invfuncgraphplane}.
+
+\includefig{invfuncgraphplane}
+
+A regra a seguir mostra que as derivadas de funções inversas são sempre
+as recíprocas de cada uma.
+
+\subpart{Regra da Função Inversa}
+
+\begin{quote}
+Suponha que $f$ e $g$ sejam funções inversas, de tal forma que as
+equações
+$$
+  y = f(x) \hspace{1.5em} \text{e} \hspace{1.5em} x = g(y)
+$$
+possuam os mesmos gráficos. Se ambas as derivadas $f'(x)$ e
+$g'(x)$ existem e não são nulas, então
+$$
+  f'(x) = \frac{1}{g'(y)},
+$$
+ou seja,
+$$
+  \frac{\dy}{\dx} = \frac{1}{\dy/\dx}
+$$.
+\end{quote}
+
+\begin{proof}
+Seja $\Dx$ um infinitésimo não nulo e seja $\Dy$ a variação correspondente
+em $y$. Então $\Dy$ também é um infinitésimo, pois $f'(x)$ existe e não é
+nula, já que $f(x)$ possui uma função inversa. Pelas regras de partes
+padronizadas,
+\begin{eqnarray*}
+  f'(x) \cdot g'(y) & = & \st{\frac{\Dy}{\Dx}} \cdot \st{\frac{\Dx}{\Dy}} \\
+  & = & \st{\frac{\Dy}{\Dx} \cdot \frac{\Dx}{\Dy}} = \std(1) = 1.
+\end{eqnarray*}
+Logo, $f'(x) = \dfrac{1}{g'(y)}$.
+\end{proof}
+
 \section{Funções Transcendentais}
 \label{sec:transcfunc}
 
