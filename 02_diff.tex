@@ -1648,8 +1648,71 @@ Portanto,
                               \frac{1}{n} x^{(1/n)-1}, \\
   \frac{\dy}{\dx} & = & \frac{1}{n} x^{(1/n)-1}
 \end{eqnarray*}
-
 \end{proof}
+
+\includefig{graphxpow1over3}
+
+A Figura~\ref{fig:graphxpow1over3} mostra os gráficos de $y = x^{1/3}$ e
+$y = x^{1/4}$. Em $x = 0$, as curvas são verticais e não possuem inclinação.
+
+\begin{example}
+Encontre as derivadas de $y = x^{1/n}$ para $n = 2,3,4$.
+\begin{eqnarray*}
+  \frac{\dif(x^{1/2}}{\dx} & = & \frac{1}{2} x^{-1/2}, \hspace{1.5em} x > 0,\\
+  \frac{\dif(x^{1/3}}{\dx} & = & \frac{1}{3} x^{-2/3}, \hspace{1.5em} x \ne 0,\\
+  \frac{\dif(x^{1/4}}{\dx} & = & \frac{1}{3} x^{-3/4}, \hspace{1.5em} x > 0.
+\end{eqnarray*}
+\end{example}
+
+Usando o Teorema~\ref{teo:diffsqrtn}, podemos mostrar que a Regra da Potência
+é válida quando o expoente é qualquer número racional.
+
+\subpart{Regra da Potência para Expoentes Racionais}
+
+\begin{quote}
+  Seja $y = x^r$, onde $r$ é um número racional. Então, toda vez que $x > 0$,
+  $$
+    \frac{\dy}{\dx} = r x^{r-1}.
+  $$
+\end{quote}
+
+\begin{proof} Seja $r = m/n$, onde $m$ e $n$ são inteiros e $n > 0$. Seja
+$$
+  u = x^{1/n}, \hspace{1.5em} y = u^m.
+$$
+Então,
+\begin{eqnarray*}
+  \frac{\du}{\dx} & = & \frac{1}{n} x^{(1/n)-1}, \hspace{1.5em} \text{e} \\
+  \frac{\dy}{\dx} & = & m u m^{m-1} \frac{\du}{\dx} \\
+  & = & m(x^{1/n})^{m-1} \left(\frac{1}{n} x^{(1/n)-1} \right) \\
+  & = & \frac{m}{n}x^{(m/n)-1} = r x^{r-1}.
+\end{eqnarray*}
+\end{proof}
+
+\begin{example} Encontre $\dy/\dx$ onde $y = x^{-3/7}$.
+\begin{eqnarray*}
+  \frac{\dy}{\dx} & = & -\frac{3}{7}x^(-3/7)-1 = -\frac{3}{7}x^{-10/7}
+\end{eqnarray*}
+\end{example}
+
+\begin{example} Encontre $\dy/\dx$ onde
+$$
+  y = \frac{1}{2 + x^{3/2}}.
+$$
+
+Sejam $u = 2 + x^{3/2}$ \hspace{1.5em} e \hspace{1.5em} $y = u^{-1}$.
+
+Então,
+\begin{eqnarray*}
+  \frac{\du}{\dx} & = & \frac{3}{2} x^{1/2}, \\
+  \frac{\dy}{\dx} & = & -u^{-2} \frac{\du}{\dx} \\
+  & = & -u^{-2} \left(\frac{3}{2}x^{1/2}\right) =
+    -\frac{3}{2} \frac{x^{1/2}}{2(2 + x^{3/2})^2}.
+\end{eqnarray*}
+\end{example}
+
+\begin{sectionproblems}
+\end{sectionproblems}
 
 \section{Funções Transcendentais}
 \label{sec:transcfunc}
