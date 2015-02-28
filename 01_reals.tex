@@ -80,35 +80,35 @@ ou \newdef{pontos} em $C$.
 Um conjunto simples, mas importante, é um \newdef{intervalo}. Dados dois
 números reais $a$ e $b$ tais que $a < b$, o
 \newdef[intervalo!fechado]{intervalo fechado}
-$[a,b]$ é definido como o conjunto de todos os números reais $x$
+$[a, b]$ é definido como o conjunto de todos os números reais $x$
 que satisfazem $a \le x$ e $x \le b$, ou de maneira mais concisa,
 $a \le x \le b$.
-O \newdef[intervalo!aberto]{intervalo aberto} $(a,b)$ é definido como o conjunto de todos
-os números reais $x$ que satisfazem $a < x < b$. Intervalos fechados e
-abertos estão ilustrados na Figura~\ref{fig:intervals}. 
+O \newdef[intervalo!aberto]{intervalo aberto} $(a, b)$ é definido como o
+conjunto de todos os números reais $x$ que satisfazem $a < x < b$.
+Intervalos fechados e abertos estão ilustrados na Figura~\ref{fig:intervals}. 
 
 \widefigure{fig:intervals}
 {
 	\includegraphics{closedinter}\\
-	O intervalo fechado $[a,b]$\\[\baselineskip]
+	O intervalo fechado $[a, b]$\\[\baselineskip]
 	\includegraphics{openinter}\\
-	O intervalo aberto $(a,b)$
+	O intervalo aberto $(a, b)$
 }
 
-Tanto para o intervalo aberto $(a,b)$, quanto para o intervalo
-fechado $[a,b]$, o número $a$ é chamado de
+Tanto para o intervalo aberto $(a, b)$, quanto para o intervalo
+fechado $[a, b]$, o número $a$ é chamado de
 \newdef[extremo!inferior]{extremo inferior},
 e $b$ é o \newdef[extremo!superior]{extremo superior}. A diferença entre o
-intervalo fechado $[a,b]$ e o intervalo aberto $(a,b)$ é que os extremos $a$
-e $b$ são elementos de $[a,b]$, mas não elementos de $(a,b)$. Quando
+intervalo fechado $[a, b]$ e o intervalo aberto $(a, b)$ é que os extremos $a$
+e $b$ são elementos de $[a, b]$, mas não elementos de $(a, b)$. Quando
 $a \le x \le b$, dizemos que $x$ está \newdef{entre} $a$ e $b$; quando
 $a < x < b$, dizemos que $x$ está \newdef{estritamente entre} $a$ e $b$.
 
 Três outros tipos de conjuntos também são considerados intervalos
-abertos: o conjunto $(a,\infty)$ dos números reais $x$ maiores do que $a$;
-o conjunto $(-\infty,b)$ dos números reais $x$ menores do que $b$,
+abertos: o conjunto $(a, \infty)$ dos números reais $x$ maiores do que $a$;
+o conjunto $(-\infty, b)$ dos números reais $x$ menores do que $b$,
 e toda a reta real $\setR$. A reta real $\setR$ é, às vezes, denotada
-$(-\infty,\infty)$. Os símbolos $\infty$ e $-\infty$, lidos respectivamente
+$(-\infty, \infty)$. Os símbolos $\infty$ e $-\infty$, lidos respectivamente
 como ``infinito''  e ``menos infinito,'' não representam números reais; eles
 só são usados, neste contexto, para indicar intervalos sem extremo
 superior ou inferior.
@@ -117,8 +117,8 @@ Além dos intervalos fechados e abertos, há um outro tipo de intervalo,
 chamado \newdef[intervalo!semiaberto]{intervalo semiaberto}. O conjunto
 de todos os números
 reais $x$ tais que $a \le x < b$ é um intervalo semiaberto denotado
-$[a,b)$. O conjunto de todos os números reais $x$ tais que $a < x \le b$
-é também um intervalo semiaberto denotado $(a,b]$.
+$[a, b)$. O conjunto de todos os números reais $x$ tais que $a < x \le b$
+é também um intervalo semiaberto denotado $(a, b]$.
 A Tabela~\ref{tab:intervaltypes} mostra os vários tipos de intervalos.
 \tnote{Nesta tradução, optamos por fazer correções sobre as classificações de intervalos neste parágrafo e na tabela.}
 
@@ -129,15 +129,15 @@ A Tabela~\ref{tab:intervaltypes} mostra os vários tipos de intervalos.
   \hline
   Tipo            & Símbolo         & Definição              \\
   \hline
-  Fechado          & $[a,b]$         & $\{ x \in \setR | a \le x \le b \}$ \\
-  Fechado          & $[a,\infty)$    & $\{ x \in \setR | a \le x \}$ \\
-  Fechado          & $(-\infty,b]$   & $\{ x \in \setR | x \le b \}$ \\
-  Aberto           & $(a,b)$         & $\{ x \in \setR | a < x < b \}$ \\
-  Aberto           & $(a,\infty)$    & $\{ x \in \setR | a < x \}$ \\
-  Aberto           & $(-\infty,b)$   & $\{ x \in \setR | x < b \}$ \\
-  Semiaberto       & $(a,b]$         & $\{ x \in \setR | a < x \le b \}$ \\
-  Semiaberto       & $[a,b)$         & $\{ x \in \setR | a \le x < b \}$ \\
-  Fechado e aberto & $(-\infty,\infty)$ & $\setR$
+  Fechado          & $[a, b]$         & $\{ x \in \setR | a \le x \le b \}$ \\
+  Fechado          & $[a, \infty)$    & $\{ x \in \setR | a \le x \}$ \\
+  Fechado          & $(-\infty, b]$   & $\{ x \in \setR | x \le b \}$ \\
+  Aberto           & $(a, b)$         & $\{ x \in \setR | a < x < b \}$ \\
+  Aberto           & $(a, \infty)$    & $\{ x \in \setR | a < x \}$ \\
+  Aberto           & $(-\infty, b)$   & $\{ x \in \setR | x < b \}$ \\
+  Semiaberto       & $(a, b]$         & $\{ x \in \setR | a < x \le b \}$ \\
+  Semiaberto       & $[a, b)$         & $\{ x \in \setR | a \le x < b \}$ \\
+  Fechado e aberto & $(-\infty, \infty)$ & $\setR$
 }
 
 Listamos a seguir alguns outros conjuntos importantes de números reais.
@@ -164,12 +164,13 @@ no cálculo, e de como traduzir problemas da física para a linguagem do
 cálculo. É o ponto de partida da disciplina conhecida como
 \newdef{geometria analítica}.
 
-Um \newdef{par ordenado} de números reais, $( a,b )$, é dado
-pelo primeiro número $a$ e pelo segundo número $b$. Por exemplo, $( 1,3 )$, $( 3,1 )$ e $( 1,1 )$ são três pares ordenados
+Um \newdef{par ordenado} de números reais, $(a, b)$, é dado
+pelo primeiro número $a$ e pelo segundo número $b$. Por exemplo, $(1, 3)$,
+$(3, 1)$ e $(1, 1)$ são três pares ordenados
 diferentes. Seguindo a tradição, usaremos o mesmo símbolo para o intervalo
-aberto $(a,b)$ e para o par ordenado $(a, b)$. Entretanto, o intervalo
-aberto e o par ordenado são coisas compleramente diferente. Será sempre
-óbvio pelo contexto se $(a,b)$ significa um intervalo aberto ou
+aberto $(a, b)$ e para o par ordenado $(a, b)$. Entretanto, o intervalo
+aberto e o par ordenado são coisas compleramente diferentes. Será sempre
+óbvio pelo contexto se $(a, b)$ significa um intervalo aberto ou
 um par ordenado.
 
 Explicaremos como pares ordenados de números reais correspondem a
@@ -179,16 +180,16 @@ real, que se cruzam no zero. A reta horizontal é chamada \newdef{eixo
 horizontal} ou \emph{eixo $x$}, enquanto que a reta vertical é chamada
 \newdef{eixo vertical} ou \emph{eixo $y$}. O ponto onde os dois
 eixos se encontram é chamado \emph{origem} e corresponde ao par
-ordenado $(0,0)$. Considere agora um ponto qualquer $P$ no plano. Uma
+ordenado $(0, 0)$. Considere agora um ponto qualquer $P$ no plano. Uma
 reta vertical passando por $P$ cruzará o eixo $x$ em um número real
 $x_0$, e uma reta horizontal por $P$ cruzará o eixo $y$ em um número
-real $y_0$. O par ordenado $(x_0,y_0)$  obtido desta maneira corresponde
+real $y_0$. O par ordenado $(x_0, y_0)$  obtido desta maneira corresponde
 ao ponto $P$. (Ver Figura~\ref{fig:px0y0}) Às vezes chamamos $P$ de ponto
-$(x_0,y_0)$, e escreveremos $P(x_0,y_0)$. O número $x_0$ é dito
+$(x_0, y_0)$, e escreveremos $P(x_0, y_0)$. O número $x_0$ é dito
 \newdef{coordenada $x$} de $P$, e $y_0$ é a \newdef{coordenada $y$} de $P$.
 
-Por outro lado, dado um par ordenado $(x_0,y_0)$ de números reais, há um
-ponto correspondente $P(x_0,y_0)$ no plano. Determinamos $P(x_0,y_0)$ pelo
+Por outro lado, dado um par ordenado $(x_0, y_0)$ de números reais, há um
+ponto correspondente $P(x_0, y_0)$ no plano. Determinamos $P(x_0, y_0)$ pelo
 ponto de interseção entre a reta vertical que cruza o eixo $x$ em $x_0$
 e a reta horizontal que cruza o eixo $y$ em $y_0$. Descrevemos uma
 correspondência biunívoca entre todos os pontos no plano e todos os
@@ -201,18 +202,18 @@ pontos no plano e pares de números reais, conforme mostramos na Figura%
 \includefigs{px0y0}{xyisapoint}
 
 \begin{defin}
-O \newdef{plano} $(x,y)$ é o conjunto de todos os pares ordenados $(x,y)$
-de números reais. A \newdef{origem} é o ponto $(0,0)$. O \newdef{eixo $x$}
-é o conjunto de todos os pontos na forma $(x,0)$, e o \newdef{eixo $y$} é
-o conjunto de todo os pontos na forma $(0,y)$. 
+O \newdef{plano} $(x, y)$ é o conjunto de todos os pares ordenados $(x, y)$
+de números reais. A \newdef{origem} é o ponto $(0, 0)$. O \newdef{eixo $x$}
+é o conjunto de todos os pontos na forma $(x, 0)$, e o \newdef{eixo $y$} é
+o conjunto de todo os pontos na forma $(0, y)$. 
 \end{defin}
 
 Os eixos $x$ e $y$ dividem o resto do plano em quatro partes chamadas
 \newdef{quadrantes}. Os quadrantes são numerados de I a IV, conforme
 Figura~\ref{fig:quadrants}.
 
-Na Figura~\ref{fig:pyththeo}, $P(x_1,y_1)$ e $Q(x_2,y,2)$ são dois
-pontos diferentes no plano $(x,y)$. Conforme nos deslocamos de $P$
+Na Figura~\ref{fig:pyththeo}, $P(x_1, y_1)$ e $Q(x_2, y_2)$ são dois
+pontos diferentes no plano $(x, y)$. Conforme nos deslocamos de $P$
 a $Q$, as coordenadas $x$ e $y$ mudarão por quantidades que
 denotaremos $\Delta x$ e $\Delta y$. Logo,
 \begin{eqnarray*}
@@ -228,17 +229,17 @@ e $\Delta y$ definimos a noção básica de distância.
 \includefigs{quadrants}{pyththeo}
 
 \begin{defin}
-A \newdef{distância} entre os pontos $P(x_1,y_1)$ e $Q(x_2,y_2)$ é
+A \newdef{distância} entre os pontos $P(x_1, y_1)$ e $Q(x_2, y_2)$ é
 o valor
 \[
-  dist\hat{a}ncia(P,Q) = \sqrt{(\Delta x)^2 + (\Delta y)^2}
-                       = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}.
+  dist\hat{a}ncia(P, Q) = \sqrt{(\Delta x)^2 + (\Delta y)^2}
+                        = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}.
 \]
 \end{defin}
 
 Elevando os dois lados da fórmula da distância ao quadrado, obtemos
 \[
-  [dist\hat{a}ncia(P,Q)]^2 = (\Delta x)^2 + (\Delta y)^2.
+  [dist\hat{a}ncia(P, Q)]^2 = (\Delta x)^2 + (\Delta y)^2.
 \]
 
 Também é possível obtermos esta fórmula pelo Teorema de Pitágoras
@@ -247,11 +248,11 @@ retângulo é a soma dos quadrados dos catetos.}
 
 \begin{example}
 \label{ex:distance}
-Encontre a distância entre $P(7,2)$ e $Q(4,6)$
+Encontre a distância entre $P(7, 2)$ e $Q(4, 6)$
 (Veja Figura~\ref{fig:exdist}).
 \begin{eqnarray*}
 \Delta x = 4 - 7 = -3 &,\phantom{,} & \Delta y = 6 - 2 = 4, \\
- dist\hat{a}ncia(P,Q) & =           & \sqrt{(-3)^2 + 4^2} = 5.
+ dist\hat{a}ncia(P, Q) & =           & \sqrt{(-3)^2 + 4^2} = 5.
 \end{eqnarray*}
 \end{example}
 
@@ -267,7 +268,7 @@ origem (Figura~\ref{fig:locuscirc}) é o lugar geométrico da equação
 \[
 	x^2 + y^2 = r^2.
 \]
-O círculo de raio $r$ e centro em $P(h,k)$ (Figura~\ref{fig:locuscirc}) é
+O círculo de raio $r$ e centro em $P(h, k)$ (Figura~\ref{fig:locuscirc}) é
 o lugar geométrico da equação
 \[
 	(x-h)^2 + (y-k)^2 = r^2.
@@ -275,7 +276,7 @@ o lugar geométrico da equação
 
 \includefig{locuscirc}
 
-Por exemplo, o círculo de raio $3$ e centro em $P(2,-4)$ possui equação
+Por exemplo, o círculo de raio $3$ e centro em $P(2, -4)$ possui equação
 \[
 	(x-2)^2 + (y+4)^2 = 9.
 \]
@@ -287,14 +288,14 @@ Por exemplo, o círculo de raio $3$ e centro em $P(2,-4)$ possui equação
 \noindent Nos problemas de 1 a 6, encontre a distância entre
           os pontos $P$ e $Q$.
 
-\twoexer{$P(2,9),   Q(-1,13)$}%
-        {$P(1,-2),  Q( 2,10)$}
+\twoexer{$P(2, 9),   Q(-1, 13)$}%
+        {$P(1, -2),  Q( 2, 10)$}
 
-\twoexer{$P(0,0),   Q(-2,-3)$}%
-        {$P(-1,-1), Q( 4, 4)$}
+\twoexer{$P(0, 0),   Q(-2, -3)$}%
+        {$P(-1, -1), Q( 4, 4)$}
 
-\twoexer{$P(6,-1),  Q(-7, 1)$}%
-        {$P(5,10),  Q( 9,10)$}
+\twoexer{$P(6, -1),  Q(-7, 1)$}%
+        {$P(5, 10),  Q( 9, 10)$}
 
 \noindent Esboce os círculos dados nos problemas de 7 a 12.
 
@@ -307,18 +308,18 @@ Por exemplo, o círculo de raio $3$ e centro em $P(2,-4)$ possui equação
 \twoexer{$(x - 1)^2 + (y - 1)^2 = 2$}%
         {$(x+3)^2 + (y-4)^2 = 25$}
 
-\exer{Encontre a equação do círculo de raio $2$ e centro $(3,0)$.}
+\exer{Encontre a equação do círculo de raio $2$ e centro $(3, 0)$.}
 
-\exer{Encontre a equação do círculo de raio $\sqrt{3}$ e centro $(-1,-2)$.}
+\exer{Encontre a equação do círculo de raio $\sqrt{3}$ e centro $(-1, -2)$.}
 
 \hardex{Há dois círculos de raio $2$ que possuem centro na reta
         $x = 1$ e que passam pela origem. Encontre suas equações.}
 
 \hardex{Encontre a equação do círculo que passa pelos pontos
-        $(0,0)$, $(0,1)$ e $(2,0)$.}
+        $(0, 0)$, $(0, 1)$ e $(2, 0)$.}
 
 \hardex{Encontre a equação do círculo tal que o segmento de reta
-        entre $(-1,0)$ e $(5,8)$ seja seu diâmetro.}
+        entre $(-1, 0)$ e $(5, 8)$ seja seu diâmetro.}
 
 \end{sectionproblems}
 
@@ -339,15 +340,15 @@ ordenados de números reais tal que, para cada número real $a$, uma
 das seguintes coisas acontece:
 
 \begin{enumerate}[(i)]
-\item Há exatamente um número real $b$ para o qual o par ordenado $(a,b)$
+\item Há exatamente um número real $b$ para o qual o par ordenado $(a, b)$
 é um membro de $f$. Neste caso, dizemos que $f(a)$ é definido e
 escrevemos $f(a) = b$. O número $b$ é chamado o valor de $f$ em $a$.
-\item Não há nenhum número real $b$ para o qual o par ordenado $(a,b)$
+\item Não há nenhum número real $b$ para o qual o par ordenado $(a, b)$
 é um membro de $f$. Neste caso, dizemos que $f(a)$ é indefinido.
 \end{enumerate}
 \end{defin}
 
-Logo, $f(a) = b$ significa que o par ordenado $(a,b)$ é um elemento
+Logo, $f(a) = b$ significa que o par ordenado $(a, b)$ é um elemento
 de $f$.
 
 Uma maneira de visualizar uma função é imaginar uma caixa preta, a qual
@@ -363,7 +364,7 @@ nos dizer que $f(a) = b$, ou nada irá acontecer no caso em que $f(a)$
 
 Uma segunda maneira de visualizar uma função é desenhando o seu gráfico.
 O \newdef{gráfico} de uma função real $f$ de uma variável é o conjunto de
-todos os pontos no plano $P(x,y)$ tais que $y = f(x)$. Para desenhar o
+todos os pontos no plano $P(x, y)$ tais que $y = f(x)$. Para desenhar o
 gráfico, localizamos o valor de $x$ no eixo horizontal (eixo $x$) e
 o valor de $f(x)$ no eixo vertical (eixo $y$). Como podemos dizer se
 um conjunto de pontos no plano é o gráfico de alguma função? Lendo-se
@@ -378,7 +379,7 @@ condições é verdadeira:
 \end{enumerate}
 
 Uma reta vertical cruzando o eixo $x$ em um ponto $a$ irá encontrar
-o conjunto $C$ em exatamente um ponto $(a,b)$ se $f(a)$ está definido
+o conjunto $C$ em exatamente um ponto $(a, b)$ se $f(a)$ está definido
 e $f(a) = b$, e a reta não encontrará o conjunto $C$ de nenhuma forma
 se $f(a)$ for indefinido. Experimente usar essa regra para os conjuntos
 de pontos mostrados na Figura~\ref{fig:grafrule}.
@@ -508,7 +509,7 @@ tais que $x$ está no domínio de $f$.
 
 \begin{examplecont}{ex:funcquad}
 O domínio da função quadrática é o conjunto $\setR$ de todos os números
-reais. A imagem é o intervalo $[0,\infty)$ de todos os reais não negativos.
+reais. A imagem é o intervalo $[0, \infty)$ de todos os reais não negativos.
 \end{examplecont}
 
 \begin{examplecont}{ex:funcrec}
@@ -535,7 +536,7 @@ Seja $f$ a função dada pela regra
   f(x) = \sqrt{1 - x^2}.
 \]
 Ou seja, $f(x)$ é a raiz quadrada positiva de $1 - x^2$. O domínio
-de $f$ é o intervalo fechado $[-1,1]$. A imagem de $f$ é $[0,1]$.
+de $f$ é o intervalo fechado $[-1, 1]$. A imagem de $f$ é $[0, 1]$.
 
 Por exemplo,
 \begin{eqnarray*}
@@ -562,7 +563,7 @@ na Figura~\ref{fig:sqrt1x2}.
 de uma regra.
 
 \begin{example}
-Seja $g$ uma função cujo domínio é o intervalo fechado $[1,2]$ e com
+Seja $g$ uma função cujo domínio é o intervalo fechado $[1, 2]$ e com
 a regra
 \[
   g(x) = x^2.
@@ -604,7 +605,7 @@ valor $c$. Seu domínio é $\setR$ e sua imagem é $\{c\}$.
 \label{ex:constantfunc}
 A função constante com valor $5$ é descrita pela regra $f(x) = 5.$
 
-Logo \SPC $f(0) = 5$, \SPC $f(-3) = 5$, \SPC $f(1\,000\,000) = 5$.
+Logo \SPC $f(0) = 5$, \SPC $f(-3) = 5$, \SPC $f(\fnum{1000000}) = 5$.
 
 O gráfico (Figura~\ref{fig:constantfunc}) da função constante com
 valor 5 é dado pela equação $y=5$.
@@ -648,7 +649,7 @@ O valor absoluto de $x$ dá a distância entre $x$ e $0$. Ele
   |3| = 3, \SPC |-3| = 3, \SPC |0| = 0.
 \]
 O domínio da função valor absoluto é toda a reta real $\setR$,
-enquanto que a sua imagem é o intervalo $[0,\infty)$.
+enquanto que a sua imagem é o intervalo $[0, \infty)$.
 
 A função valor absoluto também pode ser descrita pela regra
 \[
@@ -744,23 +745,23 @@ duas variáveis.
 \begin{defin}
 Uma \newdef{função real de duas variáveis} é um conjunto $f$ de
 triplas ordenadas de números reais tal que, para cada par ordenado
-de números reais $(a,b)$, uma das seguintes coisas acontece:
+de números reais $(a, b)$, uma das seguintes coisas acontece:
 \begin{enumerate}[(i)]
 \item Há exatamente um número real $c$ para o qual a tripla
-      ordenada $(a,b,c)$ é um membro de $f$. Neste caso, $f(a,b)$
+      ordenada $(a, b, c)$ é um membro de $f$. Neste caso, $f(a, b)$
       é definido e escrevemos:
 \[
-  f(a,b) = c.
+  f(a, b) = c.
 \]
 \item Não há nenhum número real $c$ para o qual a tripla
-      ordenada $(a,b,c)$ é um membro de $f$. Neste caso,
-      dizemos que $f(a,b)$ é indefinido.
+      ordenada $(a, b, c)$ é um membro de $f$. Neste caso,
+      dizemos que $f(a, b)$ é indefinido.
 \end{enumerate}
 \end{defin}
 
 Se $f$ é uma função real de duas variáveis, então o valor
-de $f(x,y)$ depende tanto do valor de $x$ quanto do valor
-de $y$ quando $f(x,y)$ está definido.
+de $f(x, y)$ depende tanto do valor de $x$ quanto do valor
+de $y$ quando $f(x, y)$ está definido.
 
 Uma função real $f$ de duas variáveis pode ser visualizada
 como uma caixa preta com \emph{duas} retas de entrada e uma
@@ -769,19 +770,19 @@ reta de saída, como na Figura~\ref{fig:func2box}.
 \includefig{func2box}
 
 O \emph{domínio} de uma função real $f$ de duas variáveis é
-o conjunto de todos os pares de números reais $(x,y)$ para os
-quais $f(x,y)$ está definido.
+o conjunto de todos os pares de números reais $(x, y)$ para os
+quais $f(x, y)$ está definido.
 
 Os exemplos mais importantes de funções reais de duas variáveis
 são as funções soma, diferença, produto e quociente:
 \begin{eqnarray*}
-  f(x,y) = x+y, & \SPC & f(x,y) = xy, \\
-  f(x,y) = x-y, & \SPC & \textstyle f(x,y) = \frac{x}{y},
+  f(x, y) = x+y, & \SPC & f(x, y) = xy, \\
+  f(x, y) = x-y, & \SPC & \textstyle f(x, y) = \frac{x}{y},
 \end{eqnarray*}
 
 As funções soma, diferença e produto possuem o plano inteiro
 como domínio. O domínio da função quociente é o conjunto de
-todos os pares ordenados $(x,y)$ tais que $y \ne 0$.
+todos os pares ordenados $(x, y)$ tais que $y \ne 0$.
 
 Temos aqui alguns exemplos de funções de duas ou mais variáveis
 que aparecem em aplicações.
@@ -797,13 +798,13 @@ que aparecem em aplicações.
 \frac{1}{3} \pi r^2 h & = & \text{volume de um cone com base circular
                             de raio $r$ e altura $h$} \\
 \textstyle
-\sqrt{x^2 + y^2} & = & \text{distância da origem ao ponto } (x,y)
+\sqrt{x^2 + y^2} & = & \text{distância da origem ao ponto } (x, y)
 \end{eqnarray*}
 
 \emph{Física:}
 \begin{eqnarray*}
  F = ma & = & \text{força requerida para dar à massa $m$ a aceleração $a$} \\
-\rho(x,y,z) & = & \text{densidade de um objeto tridimensional no ponto $(x,y,z)$} \\
+\rho(x, y, z) & = & \text{densidade de um objeto tridimensional no ponto $(x, y, z)$} \\
  F = G m_1 m_2 / s^2 & = &
     \text{força gravitacional entre objetos com massas $m_1$ e $m_2$} \\
                      &   &
@@ -816,9 +817,9 @@ que aparecem em aplicações.
 
 \emph{Economia:}
 \begin{eqnarray*}
- c(x,y) & = & \text{custo de $x$ itens de um produto e $y$ itens de outro} \\
-        &   & \text{produto} \\
- D_1(p_1,p_2) & = & \text{demanda para produto 1, quando produto 1 tem preço $p_1$}\\
+ c(x, y) & = & \text{custo de $x$ itens de um produto e $y$ itens de outro} \\
+         &   & \text{produto} \\
+ D_1(p_1, p_2) & = & \text{demanda para produto 1, quando produto 1 tem preço $p_1$}\\
               &   & \text{e produto 2 tem preço $p_2$}
 \end{eqnarray*}
 
@@ -845,8 +846,8 @@ $f(x)$ & $-1$ &     $-2$       &  *  &      $2$      & $1$
         {$f(x) = |x|$}
 \exer{$f(x) = \left|x-\frac{1}{2}\right| + \left|x+\frac{1}{2}\right|$}
 \exer{$f(x) = \sqrt{x^2-1}$}
-\exer{O conjunto de pares ordenados $\{ (3,2), (0,1), (4,2) \}$ é uma função?}
-\exer{O conjunto de pares ordenados $\{ (0,2), (3,6), (3,4) \}$ é uma função?}
+\exer{O conjunto de pares ordenados $\{ (3, 2), (0, 1), (4, 2) \}$ é uma função?}
+\exer{O conjunto de pares ordenados $\{ (0, 2), (3, 6), (3, 4) \}$ é uma função?}
 \exer{Seja $f$ a função tal que $f(x) = 1 + x + x^2$. Determine
       $f(2)$, $f(t)$, $f(t + \Delta t)$, $f(1+t+t^2)$, $f(g(t))$.}
 \exer{Seja $f(x) = 1/x$. Determine $f(t), f(t+\Delta t), f(t^2),
@@ -890,9 +891,9 @@ Determine o domínio das funções abaixo (Problemas 21--25)
 \label{sec:lines}
 
 \begin{defin}
-Seja $P(x_0,y_0)$ um ponto e $m$ um número real. A \newdef{linha reta},
+Seja $P(x_0, y_0)$ um ponto e $m$ um número real. A \newdef{linha reta},
 ou apenas \newdef{reta}, por $P$
-com inclinação $m$ é o conjunto de todos os pontos $Q(x,y)$ tais que
+com inclinação $m$ é o conjunto de todos os pontos $Q(x, y)$ tais que
 \[
   y - y_0 = m(x - x_0).
 \]
@@ -902,7 +903,7 @@ por ponto e inclinação} %
 da reta.
 (Veja figura~\ref{fig:pointslope})
 A \newdef[reta!vertical]{reta vertical} por $P$ é o conjunto de todos os
-pontos $Q(x,y)$ tais que $x = x_0$. Retas verticais não possuem valor
+pontos $Q(x, y)$ tais que $x = x_0$. Retas verticais não possuem valor
 real para a sua inclinação.
 \end{defin}
 
@@ -942,8 +943,8 @@ e negativa.
 \hspace*{\fill}
 }
 
-A reta que cruza o eixo $y$ no ponto $(0,b)$ e possui inclinação $m$
-tem a simples equação
+A reta que cruza o eixo $y$ no ponto $(0, b)$ e possui inclinação $m$
+tem a equação simples
 \[
   y = mx + b.
 \]
@@ -954,7 +955,7 @@ da equação de uma reta. Podemos obtê-la a partir da forma por
 ponto e inclinação fazendo-se $x_0 = 0$ e $y_0 = b$.
 
 \begin{example}
-A reta pelo ponto $P(-1,2)$ com inclinação $m = - \frac{1}{2}$
+A reta pelo ponto $P(-1, 2)$ com inclinação $m = - \frac{1}{2}$
 (Figura~\ref{fig:expointslope}) tem a seguinte equação por
 ponto e inclinação
 \[
@@ -962,7 +963,7 @@ ponto e inclinação
   \SPC y-1 = -\frac{1}{2}(x+1).
 \]
 A equação por inclinação e intercepto é
-% hausen: substituí a equação mista por imprópria 1 1/2 -> 3/2
+% hausen: substituí a fração mista por imprópria 1 1/2 -> 3/2
 \[
   y = -\frac{1}{2}x + \frac{3}{2}
 \]
@@ -985,15 +986,15 @@ inclinação e intercepto é
 \[
   y = mx+b,
 \]
-ou seja, a reta por $(0,b)$ com inclinação $m$.
+ou seja, a reta por $(0, b)$ com inclinação $m$.
 
 Se dois pontos em uma reta são conhecidos, a inclinação pode ser
 determinada da seguinte maneira.
 
 \begin{theorem}
 \label{theo:slope}
-Suponha que uma reta $L$ passa por dois pontos distintos $P(x_1,y_1)$
-e $Q(x_2,y_2)$. Se $x_1 = x_2$ e $y_1 \ne y_2$, então a reta é vertical.
+Suponha que uma reta $L$ passa por dois pontos distintos $P(x_1, y_1)$
+e $Q(x_2, y_2)$. Se $x_1 = x_2$ e $y_1 \ne y_2$, então a reta é vertical.
 Se $x_1 \ne x_2$ e $y_1 \ne y_2$, então a inclinação da reta $L$ é
 igual à mudança em $y$ dividida pela mudança em $x$, ou seja,
 \[
@@ -1026,9 +1027,9 @@ ilustrados na Figura~\ref{fig:slopeanalysis}.
 \includefig{slopeanalysis}
 
 % XXX: há um erro na página 18 do livro do Keisler, no parágrafo
-%      abaixo. P(x1,y2) corrigido para P(x1,y1) na versão em português
+%      abaixo. P(x1, y2) corrigido para P(x1, y1) na versão em português
 Há exatamente uma reta $L$ que passa por dois pontos distintos
-$P(x_1,y_1)$ e $Q(x_2, y_2)$. Se $x_1 \ne x_2$, vemos pelo
+$P(x_1, y_1)$ e $Q(x_2, y_2)$. Se $x_1 \ne x_2$, vemos pelo
 Teorema~\ref{theo:slope} que $L$ tem equação
 \[
   y - y_1 = \left( \frac{y_2 - y_1}{x_2 - x_1} \right) (x - x_1).
@@ -1037,7 +1038,7 @@ Esta é chamada a \newdef[equação!da reta por dois pontos]%
 {equação da reta por dois pontos}.
 
 \begin{example}
-Dados $P(3,1)$ e $Q(1,4)$, determine as mudanças em $x$ e $y$,
+Dados $P(3, 1)$ e $Q(1, 4)$, determine as mudanças em $x$ e $y$,
 a inclinação e a equação da reta por $P$ e $Q$. (Veja
 Figura~\ref{fig:exslope2}.)
 \[
@@ -1053,7 +1054,7 @@ e sua equação é
 \includefig{exslope2}
 
 \begin{example}
-Dados $P(1,-1)$ e $Q(1,2)$ como na Figura~\ref{fig:exslope3},
+Dados $P(1, -1)$ e $Q(1, 2)$ como na Figura~\ref{fig:exslope3},
 \[
   \Delta x = 1 - 1 = 0, \SPC \Delta y = 2 - (-1) = 3.
 \]
@@ -1077,9 +1078,9 @@ pelo tempo transcorrido. Como a velocidade é constante:
   v = \frac{\Delta y}{\Delta x} = \frac{11-3}{2-0} = 4 \text{m/s}.
 \]
 
-Se o movimento da partícula for desenhado no plano $(t,y)$
+Se o movimento da partícula for desenhado no plano $(t, y)$
 conforme a Figura~\ref{fig:exslope4}, o resultado é uma reta
-pelos pontos $P(0,3)$ e $Q(2,11)$. A velocidade média,
+pelos pontos $P(0, 3)$ e $Q(2, 11)$. A velocidade média,
 sendo a razão de $\Delta y$ para $\Delta x$, é apenas a
 inclinação desta reta. A reta possui equação
 \[
@@ -1093,8 +1094,8 @@ Suponha que uma partícula se deslocando com velocidade
 constante está sobre o ponto $y = y_1$ no instante
 $t = t_1$, e sobre o ponto $y = y_2$ no instante $t = t_2$.
 Então a velocidade é $v = \Delta y / \Delta t$. O movimento
-da partícula traçado no plano $(t,y)$ é a reta passando pelos
-dois pontos $(t_1,y_1)$ e $(t_2, y_2)$, e a velocidade é a
+da partícula traçado no plano $(t, y)$ é a reta passando pelos
+dois pontos $(t_1, y_1)$ e $(t_2, y_2)$, e a velocidade é a
 inclinação desta linha.
 
 Uma equação da forma
@@ -1148,8 +1149,8 @@ Quando \SPC $x = 0, \SPC y = -\frac{3}{2}$.
 
 Quando \SPC $x = 1, \SPC y = -\frac{7}{2}$.
 
-Finalmente, trace os dois pontos $\left(0,-\frac{3}{2}\right)$ e
-$\left(1,-\frac{7}{2}\right)$ e desenhe a reta através deles.
+Finalmente, trace os dois pontos $\left(0, -\frac{3}{2}\right)$ e
+$\left(1, -\frac{7}{2}\right)$ e desenhe a reta através deles.
 (Veja Figura~\ref{fig:exslope6}.)
 \end{example}
 
@@ -1160,18 +1161,18 @@ $\left(1,-\frac{7}{2}\right)$ e desenhe a reta através deles.
 Nos Problemas 1--8, determine a inclinação e a equação da reta
 por $P$ e $Q$.
 
-\twoexer{$P( 1, 2), \SPC Q( 3, 4)$}{$P( 1,-3), \SPC Q( 0, 2)$}
+\twoexer{$P( 1, 2), \SPC Q( 3, 4)$}{$P(1, -3), \SPC Q( 0, 2)$}
 \twoexer{$P(-4, 1), \SPC Q(-4, 2)$}{$P( 2, 5), \SPC Q( 2, 7)$}
 \twoexer{$P( 3, 0), \SPC Q( 0, 1)$}{$P( 0, 0), \SPC Q(10, 4)$}
-\twoexer{$P( 1, 3), \SPC Q( 3, 3)$}{$P( 6,-2), \SPC Q( 1,-2)$}
+\twoexer{$P( 1, 3), \SPC Q( 3, 3)$}{$P(6, -2), \SPC Q(1, -2)$}
 
 Nos Problemas 9--16, determine a equação da reta com inclinação $m$
 que passa pelo ponto $P$.
 
-\twoexer{$m =  2, \SPC P( 3, 3)$}{$m =  3, \SPC P(-2, 1)$}
-\twoexer{$m = -\frac{1}{2}, \SPC P( 1,-4)$}{$m = -1, \SPC P( 2, 4)$}
-\twoexer{$m = 5, \SPC P( 0, 0)$}{$m = -2, \SPC P( 0, 0)$}
-\twoexer{$m = 0, \SPC P( 7, 4)$}{reta vertical, \SPC $P(4,5)$}
+\twoexer{$m =  2, \SPC P(3, 3)$}{$m =  3, \SPC P(-2, 1)$}
+\twoexer{$m = -\frac{1}{2}, \SPC P(1, -4)$}{$m = -1, \SPC P(2, 4)$}
+\twoexer{$m = 5, \SPC P(0, 0)$}{$m = -2, \SPC P(0, 0)$}
+\twoexer{$m = 0, \SPC P(7, 4)$}{reta vertical, \SPC $P(4, 5)$}
 
 Nos Problemas 17--22, uma partícula se move com velocidade constante
 e ocupou posições $y$ nos instantes $t$ dados. Encontre a velocidade
@@ -1244,7 +1245,7 @@ A inclinação medirá a direção de uma curva da mesma forma que ela
 mede a direção de uma reta. A inclinação desta curva será diferente
 em diferentes pontos do eixo $x$, pois a direção da curva muda.
 
-Se $(x_0,y_0)$ e $(x_0 + \Delta x, y_0 + \Delta y)$ são dois pontos
+Se $(x_0, y_0)$ e $(x_0 + \Delta x, y_0 + \Delta y)$ são dois pontos
 sobre a curva, então a ``inclinação média'' da curva entre esses
 dois pontos é definida como a razão de mudança em $y$ em relação
 à mudança em $x$,
@@ -1252,7 +1253,7 @@ dois pontos é definida como a razão de mudança em $y$ em relação
   \text{inclinação média} = \frac{\Delta y}{\Delta x}.
 \]
 Isto é exatamente a mesma coisa que a inclinação da reta pelos pontos
-$(x_0,y_0)$ e $(x_0 + \Delta x, y_0 + \Delta y)$, conforme
+$(x_0, y_0)$ e $(x_0 + \Delta x, y_0 + \Delta y)$, conforme
 ilustrado na Figura~\ref{fig:slopeparabola}.
 
 \includefig{slopeparabola}
@@ -1285,21 +1286,21 @@ Note que este cálculo só pode ser executado quando $\Delta x \ne 0$, pois
 caso $\Delta x = 0$, o quociente $\Delta y / \Delta x$ é indefinido.
 
 Raciocinando de uma maneira não rigorosa, a verdadeira inclinação da
-curva no ponto $(x_0,y_0)$ poderia ser encontrada como se segue.
+curva no ponto $(x_0, y_0)$ poderia ser encontrada como se segue.
 Seja $\Delta x$ um valor pequeno (mas não zero). Então o ponto
-$(x_0 + \Delta x, y_0 + \Delta y)$ está próximo de $(x_0,y_0)$,
+$(x_0 + \Delta x, y_0 + \Delta y)$ está próximo de $(x_0, y_0)$,
 de tal forma que a inclinação média entre esses dois pontos está
-próxima da inclinação da curva em $(x_0,y_0)$;
+próxima da inclinação da curva em $(x_0, y_0)$;
 \[
-  [\text{inclinação em } (x_0,y_0)] \text{ está próxima de } 2x_0 + \Delta x.
+  [\text{inclinação em } (x_0, y_0)] \text{ está próxima de } 2x_0 + \Delta x.
 \]
 Desprezando-se o termo $\Delta x$, por ser muito pequeno, chegamos
 a
 \[
-  [\text{inclinação em } (x_0,y_0)] = 2x_0.
+  [\text{inclinação em } (x_0, y_0)] = 2x_0.
 \]
-Por exemplo, no ponto $(0,0)$ a inclinação é zero; no ponto $(1,1)$
-a inclinação é $2$; e no ponto $(-3,9)$ a inclinação é $-6$.
+Por exemplo, no ponto $(0, 0)$ a inclinação é zero; no ponto $(1, 1)$
+a inclinação é $2$; e no ponto $(-3, 9)$ a inclinação é $-6$.
 (Veja Figura~\ref{fig:slopeparabolapoints}.)
 
 \includefig{slopeparabolapoints}
@@ -1346,7 +1347,7 @@ e obtemos
   v_0 = 2t_0.
 \]
 Ao traçarmos $y$ versus $t$, a velocidade $v_0$ é o mesmo que a
-inclinação da curva $y = t^2$ no ponto $(t_0,t_0^2)$, e a velocidade
+inclinação da curva $y = t^2$ no ponto $(t_0, t_0^2)$, e a velocidade
 média é o mesmo que a inclinação média.
 
 O problema com o argumento intuitivo acima, seja dito em termos de
@@ -1444,13 +1445,13 @@ mesma forma que os números reais. Vamos tentar usá-los para
 determinar inclinações de curvas. Comecemos pela parábola
 $y = x^2$.
 
-Considere um ponto real $(x_0,y_0)$ sobre a curva $y = x^2$.
+Considere um ponto real $(x_0, y_0)$ sobre a curva $y = x^2$.
 Seja $\Delta x$ um infinitésimo positivo ou negativo (mas
 não nulo), e seja $\Delta y$ a mudança correspondente em $y$.
-Então, a inclinação da curva em $(x_0,y_0)$ é \emph{definida}
+Então, a inclinação da curva em $(x_0, y_0)$ é \emph{definida}
 \index{inclinação!de uma curva} da seguinte forma:
 \[
-  [\text{inclinação em } (x_0,y_0)] =
+  [\text{inclinação em } (x_0, y_0)] =
   \left[ \text{o número real infinitamente próximo de } \frac{\Delta y}{\Delta x} \right].
 \]
 Calculamos $\displaystyle \frac{\Delta y}{\Delta x}$ como antes:
@@ -1460,7 +1461,7 @@ Este é um número hiper-real que não é real. Como $\Delta x$ é
 infinitesimal, o número hiper-real $2x_0 + \Delta x$ está
 infinitamente próximo do número real $2x_0$. Concluímos que
 \[
-  [\text{inclinação em } (x_0,y_0)] = 2x_0.
+  [\text{inclinação em } (x_0, y_0)] = 2x_0.
 \]
 O processo pode ser ilustrado pelo desenho na Figura~%
 \ref{fig:slopex2infinitesimals}, com as mudanças
@@ -1473,15 +1474,15 @@ fossem vistas através de um microscópio infinitesimal.
 
 O mesmo método pode ser aplicado a outras curvas. A curva de
 terceiro grau $y = x^3$ é mostrada na Figura~\ref{fig:yeqx3}.
-Seja $(x_0,y_0)$ um ponto qualquer sobre a curva $y = x^3$,
+Seja $(x_0, y_0)$ um ponto qualquer sobre a curva $y = x^3$,
 e seja $\Delta x$ um infinitésimo positivo ou negativo (mas
 não nulo). Seja $\Delta y$ a mudança correspondente em $y$ ao
 longo da curva. Na Figura~\ref{fig:slopex3infinitesimals} os
 incrementos $\Delta x$ e $\Delta y$ são mostrados sob um
 microscópio infinitesimal. Novamente, definimos a inclinação da
-curva em $(x_0,y_0)$ por
+curva em $(x_0, y_0)$ por
 \[
-  [\text{inclinação em } (x_0,y_0)] =
+  [\text{inclinação em } (x_0, y_0)] =
   \left[ \text{o número real infinitamente próximo de } \frac{\Delta y}{\Delta x} \right].
 \]
 Procederemos ao cálculo do número hiper-real
@@ -1515,11 +1516,11 @@ também é infinitesimal. Assim, o número hiper-real
 \]
 está infinitamente próximo do número real $3x_0^2$, logo
 \[
-  [\text{inclinação em } (x_0,y_0)] = 3 x_0^2.
+  [\text{inclinação em } (x_0, y_0)] = 3 x_0^2.
 \]
 
-Por exemplo, em $(0,0)$ a inclinação da curva $y = x^3$ é
-zero, em $(1,1)$ a inclinação é $3$ e em $(2,8)$ a inclinação
+Por exemplo, em $(0, 0)$ a inclinação da curva $y = x^3$ é
+zero, em $(1, 1)$ a inclinação é $3$ e em $(2, 8)$ a inclinação
 é $12$.
 
 Retornaremos ao estudo da inclinação de uma curva no
@@ -1560,7 +1561,7 @@ de uma variável ou o associa a outro número real $b = f(a)$, ou $f(a)$
 $F$ de uma variável ou o associa a outro número hiper-real $K = F(H)$, ou
 $F(H)$ é indefinido. Para cada par de números hiper-reais $H$ e $J$, uma
 função hiper-real $G$ de duas variáveis ou os associa a um outro número
-hiper-real $K = G(H,J)$, ou $G(H,J)$ é indefinido. Funções hiper-reais
+hiper-real $K = G(H, J)$, ou $G(H, J)$ é indefinido. Funções hiper-reais
 de três ou mais variáveis são definidas de maneira similar.
 
 \subpart{I. O Princípio da Extensão}
@@ -2515,25 +2516,25 @@ tais que $a \approx a_1$ e $b \approx b_1$.
 
 \begin{chapterproblems}
 
-\exer{Encontre a distância entre os pontos $P(2,7)$ e $Q(1,-4)$.}
+\exer{Encontre a distância entre os pontos $P(2, 7)$ e $Q(1, -4)$.}
 
-\exer{Encontre a inclinação da reta que passa pelos pontos $P(2,-6)$ e
-      $Q(3,4)$.}
+\exer{Encontre a inclinação da reta que passa pelos pontos $P(2, -6)$ e
+      $Q(3, 4)$.}
 
-\exer{Encontre a inclinação da reta por $P(3,5)$ e $Q(6,0)$.}
+\exer{Encontre a inclinação da reta por $P(3, 5)$ e $Q(6, 0)$.}
 
-\exer{Encontre a equação da reta por $P(4,4)$ e $Q(5,9)$.}
+\exer{Encontre a equação da reta por $P(4, 4)$ e $Q(5, 9)$.}
 
-\exer{Encontre a equação da reta por $P(4,5)$ com inclinação $m = -2$.}
+\exer{Encontre a equação da reta por $P(4, 5)$ com inclinação $m = -2$.}
 
 \exer{Determine a velocidade e equação de movimento de uma partícula que
       se move com velocidade constante e tem posição $y = 2$ em
       $t=0$ e $y=5$ em $t=2$.}
 
-\exer{Encontre a equação do círculo com raio $\sqrt{5}$ e centro $(1,3)$.}
+\exer{Encontre a equação do círculo com raio $\sqrt{5}$ e centro $(1, 3)$.}
 
-\exer{Encontre a equação do círculo com centro $(1,0)$ e que passa pelo
-      ponto $(0,1)$.}
+\exer{Encontre a equação do círculo com centro $(1, 0)$ e que passa pelo
+      ponto $(0, 1)$.}
 
 \begin{absolutelynopagebreak}
 Seja $\eps$ um infinitésimo positivo. Determine se os números a seguir são

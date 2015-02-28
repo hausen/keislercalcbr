@@ -11,7 +11,7 @@
 
 Como o cálculo por infinitésimos, da maneira como desenvolvido neste livro,
 se relaciona com a abordagem tradicional para o cálculo, por meio de
-épsilons e deltas ($\epsilon,\delta$)?
+épsilons e deltas ($\epsilon, \delta$)?
 Para vermos as coisas pela perspectiva correta,
 esboçaremos a história do cálculo.
 
@@ -19,10 +19,10 @@ Muitos problemas envolvendo inclinações de retas, áreas e volumes, os quais
 chamaríamos hoje de problemas de cálculo, foram resolvidos por antigos
 matemáticos gregos. O maior de todos foi Arquimedes (287--212 A.C.).
 Arquimedes antecipou tanto a abordagem por infinitésimos quanto a
-abordagem por $\epsilon,\delta$. Por vezes, ele descobria seus resultados
+abordagem por $\epsilon$, $\delta$. Por vezes, ele descobria seus resultados
 através do raciocínio por infinitésimos, mas sempre publicava suas provas
 usando o ``método da exaustão,'' que é similar à abordagem moderna por
-$\epsilon,\delta$.
+$\epsilon$, $\delta$.
 
 Problemas de cálculo tornaram-se importantes no início do século
 XVII com o desenvolvimento da física e da astronomia. As regras
@@ -101,14 +101,14 @@ estavam evoluindo.
 
 Um tratamento completamente rigoroso do cálculo foi formulado finalmente
 por Karl Weierstrass nos anos de 1870. Ele introduziu a condição
-$\epsilon,\delta$ como a definição de limite. Aproximadamente nessa
+$\epsilon$, $\delta$ como a definição de limite. Aproximadamente nessa
 época, alguns matemáticos (incluindo Weierstrass), foram bem sucedidos
 na construção dos números reais a partir dos inteiros positivos. O
 problema de construção do sistema de números reais também levou ao
 desenvolvimento da teoria de conjuntos por Georg Cantor na mesma
 década. A abordagem de Weierstrass tornou-se o tratamento tradicional,
 ou ``padrão,'' para o cálculo como ele é apresentado hoje. Tudo começa
-com a condição $\epsilon,\delta$ como a definição de limite e continua
+com a condição $\epsilon$, $\delta$ como a definição de limite e continua
 com o desenvolvimento do cálculo apenas em termos do sistema de
 números reais (sem mensão a infinitésimos). Entretanto, mesmo quando
 o cálculo é apresentado na forma padrão, costuma-se argumentar
@@ -251,7 +251,7 @@ para todo e qualquer número real $x$. Então $S_H$ é infinito positivo e
 $\langle S_n \rangle$ diverge para $\infty$.
 
 \item $T$ não é toda a reta real. Pelo Axioma de Completude,
-$T$ é um intervalo $(-\infty,b]$ ou $(-\infty,b)$. Para todo número
+$T$ é um intervalo $(-\infty, b]$ ou $(-\infty, b)$. Para todo número
 real $x$ tal que $x < b$, temos
 \[
 	x \le S_n \le S_{n+1} \le S_{n+2} \le \ldots \le b
@@ -279,7 +279,7 @@ ao Princípio da Extensão e ao Princípio da Transferência da Seção%
       \item a relação de ordem $<$ em $\setR$ é a restrição de $\lth$
             aos reais;
       \item $\lth$ é transitiva ($a \lth b$ e $b \lth c$ implica $a \lth c)$; e
-      \item $\lth$ satisfaz a Lei da Tricotomia (para quaisquer $a,b$ em $\setHR$, exatamente uma das afirmações $a \lth b$, $a = b$ ou $b \lth a$ é verdadeira).
+      \item $\lth$ satisfaz a Lei da Tricotomia (para quaisquer $a$, $b$ em $\setHR$, exatamente uma das afirmações $a \lth b$, $a = b$ ou $b \lth a$ é verdadeira).
       \end{itemize}
 \item Existe um número hiper-real $\epsilon$ tal que $0 \lth \epsilon$ e
       $\epsilon \lth r$ para todo número real positivo $r$.
@@ -318,7 +318,7 @@ mais longas. Alguns exemplos de expressões reais, onde $x$ e $y$ são
 variáveis:
 \[
 2, \hspace{3ex} x+y, \hspace{3ex} |x-4|, \hspace{3ex} \sen(\pi y^2),
-\hspace{3ex} \frac{\sqrt{x} + \sqrt{y}}{\sqrt{3}}, \hspace{3ex} g(x,f(0)),
+\hspace{3ex} \frac{\sqrt{x} + \sqrt{y}}{\sqrt{3}}, \hspace{3ex} g(x, f(0)),
 \hspace{3ex} 1/0.
 \]
 
@@ -334,14 +334,14 @@ Eis aqui alguns exemplos de fórmulas:
 \begin{eqnarray*}
   x + y & = & 5, \\
   f(x)  & = & \frac{1 - x^2}{1 + x}, \\
- g(x,y) & < & f(t), \\
- f(x,x) & \text{é} & \text{indefinido}.
+ g(x, y) & < & f(t), \\
+ f(x, x) & \text{é} & \text{indefinido}.
 \end{eqnarray*}
 Se cada variável em uma fórmula for substituída por um número real, a
 fórmula será ou verdadeira, ou falsa. Ordinariamente, a fórumula será
 verdadeira para alguns valores de variáveis e falsa para outros. Por
-exemplo, a fórmula $x+y = 5$ será verdadeira quando $(x,y) = (4,1)$
-e falsa quando $(x,y) = (7,-2)$.
+exemplo, a fórmula $x+y = 5$ será verdadeira quando $(x, y) = (4, 1)$
+e falsa quando $(x, y) = (7, -2)$.
 
 \begin{defin}
 Uma \newdef[proposição!sobre os reais]{proposição sobre os reais}
@@ -398,8 +398,8 @@ real $<$ é substituída por $\hyper{<}$, a fórmula ou será verdadeira, ou
 será falsa no sistema de números hiper-reais.
 
 Por exemplo, a fórmula $x + y = 5$ é verdadeira no sistema de números
-hiper-reais quando $(x,y) = (2 - \epsilon, 3 + \epsilon)$, mas falsa
-quando $(x,y) = (2+\epsilon, 3 + \epsilon)$, se $\epsilon$ não é nulo.
+hiper-reais quando $(x, y) = (2 - \epsilon, 3 + \epsilon)$, mas falsa
+quando $(x, y) = (2+\epsilon, 3 + \epsilon)$, se $\epsilon$ não é nulo.
 
 Estamos prontos para enunciar o Axioma da Transferência.
 
@@ -452,7 +452,7 @@ uma proposição real. Por esta razão, o Princípio da Transferência não
 pode ser usado para transferir o Axioma da Completude aos números
 hiper-reais. Na verdade, o Axioma da Completude \emph{não é verdadeiro}
 para os números hiper-reais. Dizemos que um \emph{intervalo hiper-real
-fechado} é um conjunto de números hiper-reais na forma $[a,b]$, ou seja,
+fechado} é um conjunto de números hiper-reais na forma $[a, b]$, ou seja,
 o conjunto de todos os números hiper-reais $x$ tais que $a \le x \le b$,
 onde $a, b$ são constantes hiper-reais. Intervalos hiper-reais abertos
 e semiabertos são definidos de maneira similar. Quando dizemos que o
@@ -472,9 +472,9 @@ O conjunto $A$ de todos os infinitésimos possui a propriedade (a) acima
 mas não é um intervalo hiper-real. Ele satisfaz a propriedade (a) pois
 qualquer número hiper-real que está entre dois infinitésimos é também um
 infinitésimo. Mostraremos que $A$ não é um intervalo hiper-real. Veja que
-$A$ não pode ser da forma $[a,+\infty)$, nem $(a,+\infty)$, pois se $b$
+$A$ não pode ser da forma $[a, +\infty)$, nem $(a, +\infty)$, pois se $b$
 é um infinitésimo positivo, então $2 \cdot b$ é um infinitésimo maior.
-Por outro lado, $A$ não pode ser da forma $[a,b)$, nem $(a,b)$, pois se
+Por outro lado, $A$ não pode ser da forma $[a, b)$, nem $(a, b)$, pois se
 $b$ é positivo mas não infinitesimal, então $b/2$ é menor do que $b$, mas
 ainda assim positivo e não infinitesimal.
 \end{example}
@@ -636,20 +636,20 @@ Uma \newdef[equivalência!de ultraproduto]{equivalência de ultraproduto}
 de números reais que possuem as propriedades de Cauchy (1)--(3) e, além disso,
 \begin{enumerate}[(1)]
 \setcounter{enumi}{4}
-\item Se cada $a_n$ pertence ao conjunto $\{0,1\}$, então
+\item Se cada $a_n$ pertence ao conjunto $\{0, 1\}$, então
       $\langle a_1, a_2, \ldots \rangle$ é equivalente a exatamente uma das
-      sequências constantes $\langle 0,0,0, \ldots \rangle$ ou
-      $\langle 1,1,1,\ldots \rangle$.
+      sequências constantes $\langle 0, 0, 0, \ldots \rangle$ ou
+      $\langle 1, 1, 1, \ldots \rangle$.
 \end{enumerate}
 
 Dado uma relação de equivalência de ultraproduto, o conjunto dos números
 hiper-reais é definido como o conjunto de todas as classes de equivalências
 de sequências de números reais. Um número real $r$ corresponde à classe de
-equivalência da sequência constante $\langle r,r,r,\ldots \rangle$. Somas
+equivalência da sequência constante $\langle r, r, r, \ldots \rangle$. Somas
 e produtos são definidos da mesma forma que para sequências de Cauchy.
 A extensão natural $\hyper{f}$ de uma função real $f$ é definida de tal forma
-que a imagem da classe de equivalência de $\langle a_1,a_2,\ldots \rangle$ é
-a classe de equivalência de $\langle f(a_1),f(a_2),\ldots \rangle$. Pode-se
+que a imagem da classe de equivalência de $\langle a_1, a_2, \ldots \rangle$ é
+a classe de equivalência de $\langle f(a_1), f(a_2), \ldots \rangle$. Pode-se
 demonstrar que existem relações de equivalência de ultraproduto, e que todos
 os axiomas para números reais e hiper-reais são válidos para a estrutura
 definida desta forma.
@@ -658,15 +658,15 @@ Quando números hiper-reais são construidos como classes de equivalência de
 de sequências de números reais, podemos dar exemplos específicos de números
 hiper-reais infinitos. A classe de equivalência de
 $$
-  \langle 1,2,3,\ldots,n,\ldots \rangle
+  \langle 1, 2, 3, \ldots, n, \ldots \rangle
 $$
 é um número hiper-real infinito positivo. A classe de equivalência de
 $$
-  \langle 1,4,9,\ldots,n^9,\ldots \rangle
+  \langle 1, 4, 9, \ldots, n^9, \ldots \rangle
 $$
 é maior do que a anterior, e a classe de equivalencia de
 $$
-  \langle 1,2,4,\ldots,2^n,\ldots \rangle
+  \langle 1, 2, 4, \ldots, 2^n, \ldots \rangle
 $$
 é um número hiper-real infinito ainda maior.
 
@@ -674,9 +674,9 @@ Podemos ainda dar exemplos de infinitésimos não nulos. As classes de
 equivalência de
 $$
   \begin{array}{rcl}
-            & \langle 1,1/2,1/3,\ldots,1/n,\ldots \rangle & , \\
-            & \langle 1,1/4,1/9,\ldots,1/n^2,\ldots \rangle & , \\
-  \text{e } & \langle 1,1/2,1/4,\ldots,2^{-n},\ldots \rangle &
+            & \langle 1, 1/2, 1/3, \ldots, 1/n, \ldots \rangle & , \\
+            & \langle 1, 1/4, 1/9, \ldots, 1/n^2, \ldots \rangle & , \\
+  \text{e } & \langle 1, 1/2, 1/4, \ldots, 2^{-n}, \ldots \rangle &
   \end{array}
 $$
 são infinitésimos positivos progressivamente menores.
@@ -687,7 +687,7 @@ $\dif{x}/\dif{y}$ torna-se $0/0$. De acordo com a presente abordagem,
 as classes de equivalência de
 $$
   \begin{array}{rcl}
-            & \langle 1,1/2,1/3,\ldots,1/n,\ldots \rangle & , \\
+            & \langle 1, 1/2, 1/3, \ldots, 1/n, \ldots \rangle & , \\
   \text{e } & \langle 0, 0,  0, \ldots, 0, \ldots \rangle &
   \end{array}
 $$
