@@ -2023,6 +2023,105 @@ $$
 $$
 \end{example}
 
+\subsection{O Logaritmo Natural}
+
+A inversa da função exponencial $x = \e^x$ é a função
+\newdef{logaritmo natural}, denotada
+$$
+  y = \ln x.
+$$
+Em palavras, $\ln x$ é o número $y$ tal que $\e^y = x$. Como $y = \ln x$
+é a função inversa de $x = \e^y$, temos
+$$
+  \e^{\ln a} = a, \hspace{1.5em} \ln(\e^a) = a.
+$$
+Os valores mais simples de $y = \ln x$ são
+$$
+  \ln(1/\e) = -1, \hspace{1.5em} \ln(1) = 0, \hspace{1.5em} \ln \e = 1.
+$$
+A Figura~\ref{fig:lngraph} mostra o gráfico de $y = \ln x$. Ele está
+definido apenas para $x > 0$.
+
+\includefig{lngraph}
+
+As regras mais importantes para logaritmos são
+\begin{eqnarray*}
+  \ln(ab) & = & \ln a + \ln b, \\
+  \ln(a^b) & = & b \cdot \ln a.
+\end{eqnarray*}
+
+Um dos motivos da importância da função logaritmo natural no cálculo é
+o fato de de sua derivada ser simplesmente $1/x$,
+$$
+  \frac{\dif(\ln x)}{\dx} = \frac{1}{x}, \hspace{1.5em} (x > 0).
+$$
+Isto pode ser obtido a partir da Regra da Função Inversa.
+Se $y =  \ln x$, então
+\begin{eqnarray*}
+  x & = & \e^y, \\
+  \frac{\dx}{\dy} & = & \e^y, \\
+  \frac{\dy}{\dx} & = & \frac{1}{\dx/\dy} = \frac{1}{\e^y} = \frac{1}{x}.
+\end{eqnarray*}
+
+O logaritmo natural também é chamado logaritmo de base $\e$, sendo por
+vezes escrito como $\log_{\e} x$. Logaritmos em outras bases são discutidos
+no Capítulo~\ref{chp:explog}.
+
+\begin{example} Encontre a derivada de $y = \dfrac{1}{\ln x}$.
+$$
+  \frac{\dy}{\dx} = \frac{-1}{(\ln x)^2} \frac{\dif(\ln x)}{\dx} = 
+    -\frac{1}{x (\ln x)^2}.
+$$
+\end{example}
+
+\subsection{Resumo}
+
+Temos aqui uma lista das novas derivadas obtidas nesta seção.
+
+\begin{eqnarray*}
+  \frac{\dif(\sen x)}{\dx} & = & \cos x. \\
+  \frac{\dif(\cos x)}{\dx} & = & -\sen x. \\
+  \frac{\dif(\e^x)}{\dx} & = & \e^x. \\
+  \frac{\dif(\ln x)}{\dx} & = & \frac{1}{x} \hspace{1em} (x > 0).
+\end{eqnarray*}
+
+Tabelas de valores para $\sen x$, $\cos x$, $\e^x$ e $\ln x$ podem ser
+encontradas no final do livro.
+
+\begin{sectionproblems}
+Nos Problemas~\ref{prob:chp2p5p1}--\ref{prob:chp2p5p20}, encontre a derivada.
+
+\twoexer{$y = \cos^2 \theta$\label{prob:chp2p5p1}}{$s = \tan^2 t$}
+
+\twoexer{$y = 2 \sen x + 3 \cos x$}{$y = (\sen x)(\cos x)$}
+
+\twoexer{$w = \dfrac{1}{\cos z}$}{$w = \dfrac{1}{\sen z}$}
+
+\twoexer{$y = \sen^n \theta$}{$y = \tan^n \theta$}
+
+\twoexer{$s = t \sen t$}{$s = \dfrac{\cos t}{t - 1}$}
+
+\twoexer{$y = x\e^x$}{$y = 1/(1 + \e^x)$}
+
+\twoexer{$y = (\ln x)^2$}{$y = x \ln x$}
+
+\twoexer{$y = \e^x \cdot \ln x$}{$y = \e^x \cdot \sen x$}
+
+\twoexer{$u = \sqrt{v} (1 - \e^v)$}{$u = (1 + e^v)(1 - e^v)$}
+
+\twoexer{$x^n \ln x$}{$y = (\ln x)^n$\label{prob:chp2p5p20}}
+
+Nos Problemas~\ref{prob:chp2p5p21}--\ref{prob:chp2p5p24}, encontre a
+equação da reta tangente no ponto dado.
+
+\twoexer{$y = \sen x$ \; em \; $(\pi/6, \frac{1}{2})$\label{prob:chp2p5p21}}%
+        {$y = \cos x$ \; em \; $(\pi/4, \sqrt{2}/2)$}
+
+\twoexer{$y = x - \ln x$ \; em \; $(\e, \e-1)$}%
+        {$y = \e^{-x}$ \; em \; $(0, 1)$\label{prob:chp2p5p24}}
+
+\end{sectionproblems}
+
 \section{Regra da Cadeia}
 \label{sec:chainrule}
 
