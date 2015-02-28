@@ -1760,6 +1760,102 @@ função inversa $y$ e sua derivada $\dy/\dx$ como funções de $x$.
 \section{Funções Transcendentais}
 \label{sec:transcfunc}
 
+As funções transcendentais incluem as funções trigonométricas $\sen x$,
+$\cos x$, $\tan x$, a função exponencial $\e^x$ e a função logaritmo
+natural $\ln x$. Estas funções são desenvolvidas em detalhe nos
+Capítulos~\ref{chp:trigfunc} e \ref{chp:explog}. Esta seção contém uma
+breve discussão.
+
+\subsection{Funções Trigonométricas}
+
+As letras gregas $\theta$ (teta) e $\phi$ (fi) são comumente usadas para
+ângulos. No cálculo, é conveniente medirmos ângulos em \newdef{radianos} no
+lugar de graus. Um ângulo $\theta$ em radianos é definido como o comprimento
+do arco definido pelo ângulo em um círculo de raio $1$
+(Figura~\ref{fig:unitcircangle}). Como um círculo de raio unitário tem
+circunferência $2\pi$,
+$$
+  360 \text{ graus} = 2\pi \text{ radianos}.
+$$
+Assim, um ângulo reto tem medida
+$$
+  90 \text{ graus} = \pi/2 \text{ radianos}.
+$$
+
+\includefig{unitcircangle}
+
+Para definirmos as funções seno e cosseno, consideramos um ponto $P(x,y)$
+no círculo unitário $x^2 + y^2 = 1$. Seja $\theta$ o ângulo medido em radianos
+no sentido contrário aos ponteiros do relógio desde o ponto $(1,0)$ até o
+ponto $P(x,y)$, conforme mostrado na Figura~\ref{fig:trigcirc}. Ambas as
+coordenadas $x$ e $y$ dependem de $\theta$. O valor de $x$ é chamado o
+\newdef{cosseno} de $\theta$, e o valor de $y$ é chamado de \newdef{seno}
+de $\theta$. Ou, simbolicamente,
+$$
+  x = \cos \theta, \hspace{1.5em} y = \sen \theta.
+$$
+
+\includefig{trigcirc}
+
+A \newdef{tangente} de $\theta$ é definida por
+$$
+  \tan \theta = \frac{\sen \theta}{\cos \theta}.
+$$
+
+Ângulos negativos e ângulos maiores do que $2\pi$ radianos também são
+permitidos.
+
+As funções trigonométricas também podem ser definidas usando os lados de um
+triângulo retângulo, mas este método só funciona para $\theta$ entre $0$ e
+$\pi/2$. Seja $\theta$ um dos ângulos agudos de um triângulo retângulo,
+conforme a Figura~\ref{fig:trigtriangle}.
+
+\includefig{trigtriangle}
+
+Então,
+\begin{eqnarray*}
+  \sen \theta & = & \frac{\text{lado oposto}}{\text{hipotenusa}} =
+    \frac{a}{c}, \\
+  \cos \theta & = & \frac{\text{lado adjacente}}{\text{hipotenusa}} =
+    \frac{b}{c}, \\
+  \tan \theta & = & \frac{\text{lado oposto}}{\text{lado adjacente}} =
+    \frac{a}{b}.
+\end{eqnarray*}
+
+Ambas as definições, com círculos unitários e com triângulos retângulos,
+podem ser vistas como equivalentes àquelas usando similaridade de triângulos.
+
+A Tabela~\ref{tab:trigvalues} mostra os valores de $\sen \theta$ e
+$\cos \theta$ para alguns valores importantes de $\theta$.
+
+\begin{table}
+\caption{}
+\label{tab:trigvalues}
+\begingroup
+\setlength{\tabcolsep}{1em}
+\def\SP{\hspace{1em}}
+\begin{tabular}{l|c|c|c|c|c|c|c|c}
+\hline
+$\theta$ em graus & $0\degree$ & $30\degree$ & $45\degree$ & $60\degree$ &
+  $90\degree$ & $180\degree$ & $270\degree$ & $360\degree$ \\
+$\theta$ em radianos & $0$     & $\pi/6$     & $\pi/4$     & $\pi/3$     &
+  $\pi/2$     & $\pi$        & $3\pi/2$     & $2\pi$ \\
+$\sen \theta$ & $0$ & $1/2$ & $\sqrt{2}/2$ & $\sqrt{3}/2$ & $1$ & $0$ & $-1$ &
+  $0$ \\
+$\cos \theta$ & $1$ & $\sqrt{3}/2$ & $\sqrt{2}/2$ & $1/2$ & $0$ & $-1$ & $0$ &
+  $1$ \\
+\hline
+\end{tabular}
+\endgroup
+\end{table}
+
+Uma identidade útil que decorre da equação do círculo unitário
+$x^2 + y^2 = 1$ é
+$$
+  \sen^2 \theta + \cos^2 \theta = 1,
+$$
+onde $\sen^2 \theta$ significa $(\sen \theta)^2$.
+
 \section{Regra da Cadeia}
 \label{sec:chainrule}
 

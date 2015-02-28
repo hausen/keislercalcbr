@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   width="114.65586"
+   height="116.1498"
+   xml:space="preserve"
+   sodipodi:docname="unitcircangle.svg"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><font
+       id="Times New Romano"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90"><font-face
+         id="font-face3004"
+         units-per-em="1000"
+         font-family="Times New Romano"
+         descent="-293"
+         ascent="1010" /><glyph
+         id="glyph3006"
+         vert-adv-y="521"
+         unicode="θ"
+         horiz-adv-x="521"
+         glyph-name="theta"
+         d="M379 686C340 686 297 670 255 639C178 584 122 476 99 336C77 205 93 102 143 45C175 8 219 -13 262 -13C301 -13 343 3 386 34C462 89 518 196 540 331C563 468 548 570 498 628C465 665 423 686 379 686ZM434 312C413 198 390 133 352 80C329 49 293 26 268 26C242 26 214 50 202 80C182 133 181 198 198 312H434ZM207 368C228 477 252 543 288 595C310 625 347 649 372 649S426 625 438 595C458 543 460 477 443 368H207Z" /></font><font
+       id="Times New Roman"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90"><font-face
+         id="font-face3028"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-281"
+         ascent="924" /><glyph
+         id="glyph3030"
+         vert-adv-y="500"
+         unicode="1"
+         horiz-adv-x="500"
+         glyph-name="one"
+         d="M291 676L111 585V571C123 576 134 580 138 582C156 589 173 593 183 593C204 593 213 578 213 546V93C213 60 205 37 189 28C174 19 160 16 118 15V0H394V15C315 16 299 26 299 74V674L291 676Z" /></font></defs><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     id="namedview4"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="mm"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:zoom="3.150484"
+     inkscape:cx="75.866197"
+     inkscape:cy="15.758576"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10"><sodipodi:guide
+       orientation="1,0"
+       position="57.327934,57.327972"
+       id="guide3823" /><sodipodi:guide
+       orientation="0,1"
+       position="57.327934,57.327972"
+       id="guide3825" /></sodipodi:namedview><g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="keislercalc-12-27-13"
+     transform="matrix(1.25,0,0,-1.25,-269.83574,326.73569)"><g
+       id="g22" /><g
+       id="page1"
+       transform="matrix(0.80599998,0,0,-0.80599998,240.5499,304.88562)"><text
+   id="text3011"
+   y="65.753403"
+   x="56.4133"
+   class="f1"
+   style="font-size:11.91049957px;font-style:oblique;font-family:Times New Roman">θ</text>
+
+</g><g
+       id="page1-2"
+       transform="matrix(0.806,0,0,-0.806,234.35545,258.59322)"><text
+   id="text3035"
+   y="65.753403"
+   x="56.4133"
+   class="f2"
+   style="font-size:11.91049957px;font-family:Times New Roman">1</text>
+
+</g><g
+       transform="matrix(0.80599998,0,0,-0.80599998,217.20774,270.23149)"
+       id="g3815"><text
+   style="font-size:11.91049957px;font-style:oblique;font-family:Times New Roman"
+   class="f1"
+   x="56.4133"
+   y="65.753403"
+   id="text3817">θ</text>
+
+</g><g
+       transform="matrix(0.806,0,0,-0.806,197.18755,279.96028)"
+       id="g3819"><text
+   style="font-size:11.91049957px;font-family:Times New Roman"
+   class="f2"
+   x="56.4133"
+   y="65.753403"
+   id="text3821">1</text>
+
+</g><path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3829"
+       sodipodi:cx="297.16367"
+       sodipodi:cy="600.83618"
+       sodipodi:rx="53.518875"
+       sodipodi:ry="53.518875"
+       d="m 350.68254,600.83618 c 0,29.55766 -23.96122,53.51888 -53.51887,53.51888 -29.55766,0 -53.51888,-23.96122 -53.51888,-53.51888 0,-29.55766 23.96122,-53.51887 53.51888,-53.51887 29.55765,0 53.51887,23.96121 53.51887,53.51887 z"
+       transform="matrix(0.8,0,0,-0.8,24,695)" /><path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:0.53100002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 350.42235,600.8362 -53.25868,0 -27.52256,-45.67223"
+       id="path3831"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.8,0,0,-0.8,24,695)" /></g><style
+     id="style3008"
+     type="text/css">
+text.f1 {font-family:Times New Roman;font-style:oblique;font-size:11.9105px}
+</style><style
+     id="style3032"
+     type="text/css">
+text.f2 {font-family:Times New Roman;font-size:11.9105px}
+</style></svg>
