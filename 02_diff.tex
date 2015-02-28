@@ -435,10 +435,10 @@ Encontre a derivada da função dada nos Problemas 1--21.
 \section{Diferenciais e Retas Tangentes}
 \label{sec:tglines}
 
-Dados uma curva $y = f(x)$ e um ponto $(a,b)$ sobre a curva, a inclinação
+Dados uma curva $y = f(x)$ e um ponto $(a, b)$ sobre a curva, a inclinação
 $f'(a)$ está definida. Assim, a \newdef{reta tangente} à curva no ponto
-$(a,b)$, ilustrada na Figura\ref{fig:tangentline}, é definida como a reta
-que passa pelo ponto $(a,b)$ e que possui a mesma inclinação que a curva em
+$(a, b)$, ilustrada na Figura\ref{fig:tangentline}, é definida como a reta
+que passa pelo ponto $(a, b)$ e que possui a mesma inclinação que a curva em
 $x = a$. Deste modo, a reta tangente é definida pela equação
 $$
   r(x) - b = f'(a)(x-a),
@@ -451,8 +451,8 @@ $$
 \includefig[Retas tangentes.]{tangentline}
 
 \begin{example}
-Para a curva $y = x^3$, encontre as retas tangentes nos pontos $(0,0)$,
-$(1,1)$ e $(-\frac{1}{2}, -\frac{1}{8})$. (Figura~\ref{fig:cap2p2ex1}).
+Para a curva $y = x^3$, encontre as retas tangentes nos pontos $(0, 0)$,
+$(1, 1)$ e $(-\frac{1}{2}, -\frac{1}{8})$. (Figura~\ref{fig:cap2p2ex1}).
 
 \includefig{cap2p2ex1}
 
@@ -598,11 +598,11 @@ $\dif y/\dif x$ na maior parte do tempo.
 O diferencial $\dif y$ depende de duas variáveis independentes $x$ e $\dif x$.
 Em notação de função,
 $$
-  \dif y = \dif f(x,\dif x)
+  \dif y = \dif f(x, \dif x)
 $$
 onde $\dif f$ é a função real de duas variáveis definida por
 $$
-  \dif f(x,\dif x) = f'(x) \dif x.
+  \dif f(x, \dif x) = f'(x) \dif x.
 $$
 Quando $\dif x$ é substituído por $\Delta x$ e $\dif y$ por $f'(x) \dif x$,
 o Teorema do Incremento assume a forma abreviada 
@@ -619,7 +619,7 @@ que, quando $f'(x)$ existe:
 \item O diferencial $\dif y$ e o incremento
       $\Delta y = \dif y + \epsilon \dif x$ estão tão próximos que eles
       não há distinção entre eles sob um microscópio infinitesimal.
-\item A curva $y = f(x)$ e a reta tangente em $(x,y)$ estão tão próximas
+\item A curva $y = f(x)$ e a reta tangente em $(x, y)$ estão tão próximas
       que não há distinção entre elas sob um microscópio infinitesimal;
       ambas se assemelham a uma reta com inclinação $f'(x)$.
 \end{enumerate}
@@ -764,26 +764,26 @@ Nos Problemas~\ref{prob:cap2p2p1}--\ref{prob:cap2p2p8}
 Nos Problemas~\ref{prob:cap2p2p23}--\ref{prob:cap2p2p30} abaixo, dados
 uma curva e um ponto, encontre a equação da reta tangente.
 
-\twoexer{$y = x^2; \; (2,4)$ \label{prob:cap2p2p23}}%
-        {$y = 2x^2; \; (-1,2)$}
+\twoexer{$y = x^2; \; (2, 4)$ \label{prob:cap2p2p23}}%
+        {$y = 2x^2; \; (-1, 2)$}
 
-\twoexer{$y = -x^2; \; (0,0)$}%
-        {$y = \sqrt{x}; \; (1,1)$}
+\twoexer{$y = -x^2; \; (0, 0)$}%
+        {$y = \sqrt{x}; \; (1, 1)$}
 
-\twoexer{$y = 3x-4; \; (1,-1)$}%
-        {$y = \sqrt{t-1}; \; (5,2)$}
+\twoexer{$y = 3x-4; \; (1, -1)$}%
+        {$y = \sqrt{t-1}; \; (5, 2)$}
 
-\twoexer{$y = x^4; \; (-2,16)$}%
-        {$y = x^3 - x; \; (0,0)$ \label{prob:cap2p2p30}}
+\twoexer{$y = x^4; \; (-2, 16)$}%
+        {$y = x^3 - x; \; (0, 0)$ \label{prob:cap2p2p30}}
 
 \exer{Encontre a equação da reta tangente à parábola $y = x^2$
       no ponto $(x_0, x_0^2)$.}
 
-\exer{Encontre todos os pontos $P(x_0,x_0^2)$ na parábola $y = x^2$
-      tais que a reta tangente em $P$ passe pelo ponto $(0,-4)$.}
+\exer{Encontre todos os pontos $P(x_0, x_0^2)$ na parábola $y = x^2$
+      tais que a reta tangente em $P$ passe pelo ponto $(0, -4)$.}
 
 \hardex{Demonstre que a reta tangente à parábola $y = x^2$ no
-        ponto $P(x_0,x_0^2)$ não intersecta a parábola em qualquer
+        ponto $P(x_0, x_0^2)$ não intersecta a parábola em qualquer
         outro ponto além de $P$.}
 
 \end{sectionproblems}
@@ -924,9 +924,9 @@ temos a regra a seguir.
 Suponha que $u$ e $v$ dependam de $x$. Então, para qualquer valor $x$ onde
 $\du/\dx$ e $\dv/dx$ estejam definidos,
 $$
-  \frac{\dif(u,v)}{\dx} = u \frac{\dv}{\dx} + v \frac{\du}{\dx},
+  \frac{\dif(u v)}{\dx} = u \frac{\dv}{\dx} + v \frac{\du}{\dx},
   \hspace{1.5em}
-  \dif(u,v) = u \dv + v \du.
+  \dif(u v) = u \dv + v \du.
 $$
 \end{theorem}
 
@@ -1283,7 +1283,7 @@ $$
         \dif(u+v) = \du + \dv \\[1.5em]
   (3) & \dfrac{\dif(cu)}{\dx} = c \dfrac{\du}{\dx} &
         \dif(cu) = c \du \\[1.5em]
-  (4) & \dfrac{\dif(u,v)}{\dx} = u \dfrac{\dv}{\dx} + v \dfrac{\du}{\dx} &
+  (4) & \dfrac{\dif(u v)}{\dx} = u \dfrac{\dv}{\dx} + v \dfrac{\du}{\dx} &
         \dif(uv) = u \dv + v \du \\[1.5em]
   (5) & \dfrac{\dif(u^n)}{\dx} = n u^{n-1} \dfrac{\du}{\dx} &
         \dif(u^n) = n u^{n-1} \du \hspace{1.5em} \text{($n$ inteiro qualquer)} \\[1.5em]
@@ -1380,10 +1380,10 @@ e $\dv/\dx$.
         {$y = (u + v)(2u - v)$\label{prob:cap2p3p48}}
 
 \exer{Encontre a reta tangente à curva $y = 1 + x + x^2 + x^3$ no
-      ponto $(1,4)$.}
+      ponto $(1, 4)$.}
 
 \exer{Encontre a reta tangente à curva $y = 9x^{-2}$ no ponto
-      $(3,1)$.}
+      $(3, 1)$.}
 
 \hardex{Considere a parábola $y = x^2 + bx + c$. Encontre valores de $b$
         e $c$ tais que a reta $y = 2x$ seja tangente à parábola no
@@ -1424,7 +1424,7 @@ equações
 $$
   y = f(x), \hspace{1.5ex} x = g(y)
 $$
-têm os mesmos gráficos no plano $(x,y)$. Ou seja, um ponto $(x,y)$ está na
+têm os mesmos gráficos no plano $(x, y)$. Ou seja, um ponto $(x, y)$ está na
 curva $y = f(x)$ se, e somente se, ele está na curva $x = g(y)$. (Em geral,
 o gráfico da equação $x = g(y)$ é diferente do gráfico de $y = g(x)$, mas é
 o mesmo que o gráfico de $y = f(X)$; veja Figura~\ref{fig:graphinv}).
@@ -1489,11 +1489,11 @@ $\dfrac{\dx}{\dy} = \dfrac{1}{\dy/\dx}$.
 \end{tabular}
 \end{table}
 
-Suponha que o plano $(x,y)$ seja invertido ao redor da reta diagonal
+Suponha que o plano $(x, y)$ seja invertido ao redor da reta diagonal
 $y = x$. Isto fará com que os eixos $x$ e $y$ troquem de lugar, formando
-o plano $(y,x)$. Se $f$ possui uma função inversa $g$, o gráfico da
+o plano $(y, x)$. Se $f$ possui uma função inversa $g$, o gráfico da
 função $y = f(x)$ se tornará o gráfico da função inversa $x = g(y)$ no
-plano $(y,x)$, conforme mostrado na Figura~\ref{fig:invfuncgraphplane}.
+plano $(y, x)$, conforme mostrado na Figura~\ref{fig:invfuncgraphplane}.
 
 \includefig{invfuncgraphplane}
 
@@ -1576,7 +1576,7 @@ $$
 
 \begin{example}
 Encontre $\dy/\dx$ onde $x = y^5 + y^3 + y$. Calcule $\dy/\dx$ no ponto
-$(3,1)$. Apesar de não podermos resolver a equação explicitamente para
+$(3, 1)$. Apesar de não podermos resolver a equação explicitamente para
 $y$ em função de $x$, podemos ver pelo gráfico na
 Figura~\ref{fig:grafinvfuncexample} que há uma função inversa $y = f(x)$.
 
@@ -1587,7 +1587,7 @@ Pela Regra da Função Inversa,
   \frac{\dx}{\dy} & = & 5y^4 + 3y^2 + 1, \\
   \frac{\dy}{\dx} & = & \frac{1}{5y^4 + 3y^2 + 1}.
 \end{eqnarray*}
-Desta vez, devemos deixar a resposta em termos de $y$. No ponto $(3,1)$,
+Desta vez, devemos deixar a resposta em termos de $y$. No ponto $(3, 1)$,
 substituímos $1$ por $y$ e obtemos $\dy/\dx = 1/9$.
 \end{example}
 
@@ -1656,7 +1656,7 @@ A Figura~\ref{fig:graphxpow1over3} mostra os gráficos de $y = x^{1/3}$ e
 $y = x^{1/4}$. Em $x = 0$, as curvas são verticais e não possuem inclinação.
 
 \begin{example}
-Encontre as derivadas de $y = x^{1/n}$ para $n = 2,3,4$.
+Encontre as derivadas de $y = x^{1/n}$ para $n = 2$, $3$, $4$.
 \begin{eqnarray*}
   \frac{\dif(x^{1/2}}{\dx} & = & \frac{1}{2} x^{-1/2}, \hspace{1.5em} x > 0,\\
   \frac{\dif(x^{1/3}}{\dx} & = & \frac{1}{3} x^{-2/3}, \hspace{1.5em} x \ne 0,\\
@@ -1784,10 +1784,10 @@ $$
 
 \includefig{unitcircangle}
 
-Para definirmos as funções seno e cosseno, consideramos um ponto $P(x,y)$
+Para definirmos as funções seno e cosseno, consideramos um ponto $P(x, y)$
 no círculo unitário $x^2 + y^2 = 1$. Seja $\theta$ o ângulo medido em radianos
-no sentido contrário aos ponteiros do relógio desde o ponto $(1,0)$ até o
-ponto $P(x,y)$, conforme mostrado na Figura~\ref{fig:trigcirc}. Ambas as
+no sentido contrário aos ponteiros do relógio desde o ponto $(1, 0)$ até o
+ponto $P(x, y)$, conforme mostrado na Figura~\ref{fig:trigcirc}. Ambas as
 coordenadas $x$ e $y$ dependem de $\theta$. O valor de $x$ é chamado o
 \newdef{cosseno} de $\theta$, e o valor de $y$ é chamado de \newdef{seno}
 de $\theta$. Ou, simbolicamente,
@@ -1855,6 +1855,173 @@ $$
   \sen^2 \theta + \cos^2 \theta = 1,
 $$
 onde $\sen^2 \theta$ significa $(\sen \theta)^2$.
+
+A Figura~\ref{fig:sincosgraph} mostra os gráficos de $\sen \theta$ e
+$\cos \theta$, os quais se parecem com ondas que oscilam entre $1$ e $-1$
+e se repetem a cada $2\pi$ radianos.
+
+\includefig{sincosgraph}
+
+As derivadas das funções seno e cosseno são
+\begin{eqnarray*}
+  \frac{\dif(\sen \theta)}{\dif\theta} & = & \cos \theta. \\
+  \frac{\dif(\cos \theta)}{\dif\theta} & = & -\sen \theta.
+\end{eqnarray*}
+Em ambas as fórmulas, $\theta$ é medido em radianos. Podemos ver
+intuitivamente o porquê dessas derivadas na Figura~\ref{fig:derivtrig}.
+
+\includefig{derivtrig}
+
+No triângulo sob o microscópio infinitesimal,
+\begin{eqnarray*}
+  \frac{\Delta(\sen \theta)}{\Delta \theta} \approx
+    \frac{\text{lado adjacente}}{\text{hipotenusa}} & = &
+      \cos \theta; \\
+  \frac{\Delta(\cos \theta)}{\Delta \theta} \approx
+    \frac{-\text{lado poposto}}{\text{hipotenusa}} & = &
+      -\sen \theta.
+\end{eqnarray*}
+
+Note que $\cos \theta$ diminui e que $\Delta(\cos \theta)$ é negativo na
+figura, portanto a derivada de $\cos \theta$ é $-\sen\theta$ ao invés de
+apenas $\sen \theta$.
+
+Usando as regras de derivação podemos encontrar outras derivadas.
+
+\begin{absolutelynopagebreak}
+\begin{example}
+Derive $y = \sen^2 \theta$. Sejam $u = \sen\theta$, $y = u^2$. Então,
+$$
+  \frac{\dy}{\dif\theta} = 2u \frac{\du}{\dif\theta} = 2\sen\theta\cos\theta.
+$$
+\end{example}
+\end{absolutelynopagebreak}
+
+\begin{example}
+Derive $y = \sen\theta(1-\cos\theta)$. Sejam $u = \sen\theta$,
+$v = 1-\cos\theta$. Então, $y = u \cdot v$ e
+\begin{eqnarray*}
+  \frac{\dy}{\dif\theta} = u \frac{\du}{\dif\theta} + v \frac{\du}{\dif\theta}
+  & = & \sen\theta(-(-\sen\theta)) + (1-\cos\theta)\cos\theta \\
+  & = & \sen^2\theta + \cos\theta - \cos^2\theta.
+\end{eqnarray*}
+\end{example}
+
+As demais funções trigonométricas (secante, cossecante e cotangente) e
+as funções trigonometricas inversas são discutidas no
+Capítulo~\ref{chp:trigfunc}.
+
+\subsection{Funções Exponenciais}
+
+% hausen: adicionei "onde $m$ e $n$ são inteiros positivos"
+Dado um número real positivo $b$ e um número racional $m/n$, onde $m$ e $n$
+são inteiros positivos, a potência racional positiva $b^{m/n}$ é definida como
+$$
+  b^{m/n} = \sqrt[n]{b^m},
+$$
+ou seja, a $n$-ésima raiz positiva de $b^m$. A potência racional negativa
+$b^{-m/n}$ é
+$$
+  b^{-m/n} = \frac{1}{b^{m/n}}.
+$$
+
+Como exemplo, considere $b = 10$. Diversos valores de $10^{m/n}$ são mostrados
+na Tabela~\ref{tab:pow10}.
+
+\begin{table}
+\caption{Potências racionais de $10$}\label{tab:pow10}
+\begingroup
+\setlength{\tabcolsep}{1ex}
+\setlength{\extrarowheight}{1em}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+\hline
+  $10^{-3}$ & $10^{-3/2}$ & $10^{-1}$ & $10^{-2/3}$ & $10^{-1/3}$ & $10^0$ &
+    $10^{1/3}$ & $10^{2/3}$ & $10^1$ & $10^{3/2}$ & $10^3$ \\[\extrarowheight]
+\hline
+  $\dfrac{1}{1000}$ & $\dfrac{1}{10\sqrt{10}}$ & $\dfrac{1}{10}$ &
+    $\dfrac{1}{\sqrt[3]{100}}$ & $\dfrac{1}{\sqrt[3]{10}}$ & $1$ &
+    $\sqrt[3]{10}$ & $\sqrt[3]{100}$ & $10$ & $10\sqrt{10}$ & $1000$ \\[\extrarowheight]
+\hline
+\end{tabular}
+\endgroup
+\end{table}
+
+Se traçarmos todos as potências racionais de $10^{m/n}$ em um gráfico,
+obteremos a curva pontilhada da Figura~\ref{fig:pow10graph}, com um valor
+para cada número racional $m/n$.
+
+\includefig{pow10graph}
+
+Conectando todos os valores de $10^{m/n}$ por meio de uma curva suave,
+obtemos a função $y = 10^x$, onde $x$ varia sobre todos os números reais,
+ao invés de apenas sobre os racionais. A função $10^x$ é chamada
+\newdef[função exponencial!com base $10$]{função exponencial com base $10$}.
+Ela é positiva para todo $x$ e se comporta de acordo com as seguintes regras
+$$
+  10^{a+b} = 10^a \cdot 10^b, \hspace{1.5em} 10^{a \cdot b} = (10^a)^b.
+$$
+
+A derivada de $10^x$ é uma constante vezes $10^x$, aproximadamente
+$$
+  \frac{\dif(10^x)}{\dx} \sim (2,303)10^x.
+$$
+Para verificarmos esta afirmação, seja $\Dx$ um infinitésimo não nulo.
+Então,
+$$
+  \frac{\dif(10^x)}{\dx} = \std\left[\frac{10^{x + \Dx} - 10^x}{\Dx}\right]
+    = \std\left[\frac{(10^{\Dx} - 1)10^x}{\Dx}\right]
+    = \std\left[\frac{10^{\Dx} - 1}{\Dx}\right]10^x.
+$$
+O número $\std[(10^{\Dx} - 1)/\Dx]$ é uma constante que não depende de $x$ e
+podemos demonstrar que ele é aproximadamente $2,303$.
+
+Se começarmos com um número real $b$ dado no lugar de $10$, podemos obter
+a \newdef[função exponencial!com base $b$]{função exponencial com base $b$},
+$y = b^x$. A derivada de $b^x$ é igual à constante $\std[(b^{\Dx} - 1)/\Dx]$
+multiplicada por $b^x$. Esta constante depende de $b$. A derivada é calculada
+da seguinte maneira:
+$$
+  \frac{\dif(b^x)}{\dx} = \std\left[\frac{b^{x + \Dx} - b^x}{\Dx}\right]
+    = \std\left[\frac{(b^{\Dx} - 1)b^x}{\Dx}\right]
+    = \std\left[\frac{b^{\Dx} - 1}{\Dx}\right]b^x.
+$$
+
+\index{$e$}\index{número de Euler}
+A base mais útil para o cálculo é o número $\e$, o qual é definido como
+o número real tal que a derivada de $\e^x$ é a própria função $\e^x$, ou
+seja,
+$$
+  \frac{\dif(\e^x)}{\dx} = \e^x.
+$$
+Em outras palavras, $\e$ é o número real tal que a constante
+$$
+  \std\left[ \frac{\e^{\Dx}-1}{\Dx} \right] = 1,
+$$
+onde $\Dx$ é um infinitésimo não nulo. Será demonstrado na
+Seção~\ref{sec:derivexp} que tal número $\e$ existe, e que $\e$ possui
+o valor aproximado
+$$
+  \e \sim 2,71828.
+$$
+A função $y = \e^x$ é chamada \newdef[função exponencial!natural]{função
+exponencial natural}, ou simplesmente \newdef{função exponencial}. O valor
+de $\e^x$ é sempre positivo e se comporta de acordo com as regras
+$$
+  \e^{a+b} = \e^a \cdot \e^b, \hspace{1.5em}
+  \e^{a \cdot b} = (\e^a)^b, \hspace{1.5em}
+  \e^0 = 1.
+$$
+A Figura~\ref{fig:naturalexpgraph} mostra o gráfico de $y = \e^x$.
+
+\includefig{naturalexpgraph}
+
+\begin{example}
+Encontre a derivada de $y = x^2 \e^x$. Pela Regra do Produto,
+$$
+  \frac{\dy}{\dx} = x^2 \frac{\dif(\e^x)}{\dx} +
+    \e^x \frac{\dif(x^2)}{\dx} = x^2 \e^x + 2x \e^x.
+$$
+\end{example}
 
 \section{Regra da Cadeia}
 \label{sec:chainrule}
