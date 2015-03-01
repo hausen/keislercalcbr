@@ -2067,7 +2067,7 @@ O logaritmo natural também é chamado logaritmo de base $\e$, sendo por
 vezes escrito como $\log_{\e} x$. Logaritmos em outras bases são discutidos
 no Capítulo~\ref{chp:explog}.
 
-\begin{example} Encontre a derivada de $y = \dfrac{1}{\ln x}$.
+\begin{example} Encontre a derivada de $y = \dsfrac{1}{\ln x}$.
 $$
   \frac{\dy}{\dx} = \frac{-1}{(\ln x)^2} \frac{\dif(\ln x)}{\dx} = 
     -\frac{1}{x (\ln x)^2}.
@@ -2095,11 +2095,11 @@ Nos Problemas~\ref{prob:chp2p5p1}--\ref{prob:chp2p5p20}, encontre a derivada.
 
 \twoexer{$y = 2 \sen x + 3 \cos x$}{$y = (\sen x)(\cos x)$}
 
-\twoexer{$w = \dfrac{1}{\cos z}$}{$w = \dfrac{1}{\sen z}$}
+\twoexer{$w = \dsfrac{1}{\cos z}$}{$w = \dsfrac{1}{\sen z}$}
 
 \twoexer{$y = \sen^n \theta$}{$y = \tan^n \theta$}
 
-\twoexer{$s = t \sen t$}{$s = \dfrac{\cos t}{t - 1}$}
+\twoexer{$s = t \sen t$}{$s = \dsfrac{\cos t}{t - 1}$}
 
 \twoexer{$y = x\e^x$}{$y = 1/(1 + \e^x)$}
 
@@ -2195,6 +2195,436 @@ Então, tomando-se as partes padronizadas,
                                              G'(f(t)) f'(t).
 \end{eqnarray*}
 \end{proof}
+
+\begin{example}\label{ex:cap2chainrule1}
+Encontre a derivada de $g(t) = \ln(\sen t)$. O valor $g(t)$
+é o logaritmo natural do seno de $t$. Ele pode ser escrito na forma
+$$
+  g(t) = G(f(t)),
+$$
+onde \hspace{1.5em} $f(t) = \sen t$, \hspace{1.5em} $G(x) = \ln x$.
+
+Temos que \hspace{1.5em} $f'(t) = \cos t$, \hspace{1.5em} $G'(x) = \dsfrac{1}{x}$.
+
+Pela Regra da Cadeia,
+\begin{eqnarray*}
+  g'(t) & = & G'(f(t)) f'(t) \\
+  & = & \frac{1}{\sen t} \cdot \cos t = \frac{\cos t}{\sen t}.
+\end{eqnarray*}
+\end{example}
+
+\begin{example}\label{ex:cap2chainrule2}
+Encontre a derivada de $g(t) = \sqrt{3 t + 1}$. O valor
+$g(t)$ pode ser escrito na forma
+$$
+  g(T) = G(f(t)),
+$$
+onde \hspace{1.5em} $f(t) = 3t + 1$, \hspace{1.5em} $G(x) = \sqrt{x}$.
+
+Temos que \hspace{1.5em} $f'(t) = 3$, \hspace{1.5em} $G'(x) = \dsfrac{1}{2}x^{-1/2}$.
+
+Então,
+\begin{eqnarray*}
+  g'(t) & = & G'(f(t)) f'(t) \\
+  & = & \frac{1}{2}(3t+1)^{-1/2} \cdot 3 = \frac{3}{2\sqrt{3t+1}}.
+\end{eqnarray*}
+\end{example}
+
+Na prática, é mais conveniente usar a Regra da Cadeia com as variáveis
+dependentes $x$ e $y$ ao invés das funções $f$ e $g$.
+
+\subpart{Regra da Cadeia com Variáveis Dependentes}
+
+\begin{quote}
+  Sejam
+  $$
+    x = f(t), \hspace{1.5em} y = g(t) = G(x).
+  $$
+  Assuma que $g'(t)$ e $G'(x)$ existam. Então:
+  $$
+    \text{(i)} \hspace{0.7em} \frac{\dy}{\dx} = \frac{\dy}{\dx}\frac{\dx}{\dif t}
+    \hspace{1.5em}
+    \text{(ii)} \hspace{0.7em} \dy = \frac{\dy}{\dx} \dx
+  $$
+  onde $\dx/\dif t$, $\dy/\dif t$ são calculados considerando-se $t$ como a
+  variável independente, e $\dy/\dx$ é calculado considerando-se $x$ como a
+  variável independente.
+\end{quote}
+
+\begin{examplecont}{ex:cap2chainrule1}
+Sejam \hspace{1.5em} $x = \sen t$, \hspace{1.5em} $y = \ln x$.
+
+Encontre $\dy/\dt$ usando a Regra da Cadeia (1) e $\dy$ usando a Regra
+da Cadeia (ii).
+
+Usando a Regra da Cadeia (i), temos:
+\begin{eqnarray*}
+  \frac{\dx}{\dt} & = & \cos t, \hspace{1.5em} \frac{\dy}{\dx} = \frac{1}{x},\\
+  \frac{\dy}{\dt} & = & \frac{\dy}{\dx} \cdot \frac{\dx}{\dt} =
+    \frac{1}{x} \cdot \cos t = \frac{\cos t}{\sen t}.
+\end{eqnarray*}
+
+Usando a Regra da Cadeia (ii), temos:
+\begin{eqnarray*}
+  \dx & = & (\cos t) \dt, \hspace{1.5em} \frac{\dy}{\dx} = \frac{1}{x},\\
+  \dy & = & \frac{1}{x} \dx = \frac{1}{x}(\cos t)\dt = \frac{\cos t}{\sen t} \dt.
+\end{eqnarray*}
+\end{examplecont}
+
+\begin{examplecont}{ex:cap2chainrule2}
+Sejam \hspace{1.5em} $x = 3t + 1$, \hspace{1.5em} $y = \sqrt{x}$.
+
+Usando a Regra da Cadeia (i), temos:
+\begin{eqnarray*}
+  \frac{\dy}{\dt} &=& 3, \hspace{1.5em} \frac{\dy}{\dx} = \frac{1}{2}x^{-1/2},\\
+  \frac{\dy}{\dt} &=& \frac{\dy}{\dx}\frac{\dx}{\dt} = \frac{3}{2}x^{-1/2} =
+    \frac{3}{2}(3t+1)^{-1/2}.
+\end{eqnarray*}
+
+Usando a Regra da Cadeia (ii), temos:
+\begin{eqnarray*}
+  \dx & = & 3 \dt, \hspace{1.5em} \frac{\dy}{\dx} = \frac{1}{2}x^{-1/2}, \\
+  \dy & = & \frac{1}{2}x^{-1/2} \dx = \frac{1}{2}(3t+1)^{-1/2} \cdot 3 \dt
+    = \frac{3}{2}(3t+1)^{-1/2} \dt.
+\end{eqnarray*}
+\end{examplecont}
+
+Poderíamos pensar que a equação
+$$
+  \frac{\dy}{\dt} = \frac{\dy}{\dx} \frac{\dx}{\dt},
+$$
+com $t$ sendo a variável independente, é trivial. De fato, podemos
+simplesmente cancelar os $\dx$ neste caso. Porém, quando $\dy/\dx$
+é calculado com $x$ sendo a variável independente, enquanto que $\dx/\dt$
+é calculado com $t$ sendo a variável independente, dos dois $\dx$ têm
+significados diferentes, e a equação não é trivial.
+
+Do mesmo modo, a equação
+$$
+  \dy = \frac{\dy}{\dx} \dx
+$$
+é trivial quando $x$ é a variável independente, mas não quando $t$ é a
+variável independente em $\dy$ e $\dx$, enquanto que $x$ é independente
+com relação a $\dy/\dx$.
+
+A Regra da Cadeia mostra que, quando alteramos as variáveis independentes,
+as equações
+$$
+  \frac{\dy}{\dt} = \frac{\dy}{\dx} \frac{\dx}{\dt}, \hspace{1.5em}
+  \dy = \frac{\dy}{\dx} \dx
+$$
+continuam sendo válidas.
+
+A Regra da Função Inversa pode ser demonstrada a partir da Regra da Cadeia
+do seguinte modo. Sejam
+$$
+  y = f(x), \hspace{1.5em} x = g(y)
+$$
+funções inversas cujas derivadas existem. Então
+$$
+  \frac{\dy}{\dx}\frac{\dx}{\dy} = \frac{\dy}{\dy} = 1,
+$$
+logo
+$$
+  \frac{\dy}{\dx} = \frac{1}{\dx}{\dy}, \hspace{1.5em}
+  f'(x) = \frac{1}{g'(y)}.
+$$
+
+Usando a Regra da Cadeia, podemos escrever a Regra da Potência de uma
+forma mais geral.
+
+\subpart{Regra da Potência}
+
+\begin{quote}
+Seja $r$ um número racional e seja $u$ dependente de $x$. Se $u > 0$ e
+$\du/\dx$ existem, então
+$$
+  \frac{\dif(u^r)}{\dx} = r u^{r-1} \frac{\du}{\dx}.
+$$
+\end{quote}
+
+\begin{proof} Faça $y = u^r$ e calcule $\dy/\dx$ pela Regra da Cadeia,
+$$
+  \frac{\dy}{\dx} = \frac{\dy}{\du} \frac{\du}{\dx} = r u^{r-1} \frac{\du}{\dx}.
+$$
+\end{proof}
+
+A Regra da Cadeia possui dois tipos de aplicações:
+\begin{enumerate}[(1)]
+  \item Dados $x = f(t)$ e $y = G(x)$, encontre $\dsfrac{\dy}{\dt}$.
+        Use $\dsfrac{\dy}{\dt} = \dsfrac{\dy}{\dx} \dsfrac{\dx}{\dt}$.
+  \item Dados $x = f(t)$ e $y = g(t)$, encontre $\dsfrac{\dy}{\dx}$.
+        Use $\dsfrac{\dy}{\dx} = \dsfrac{\dy/\dt}{\dx/\dt}$.
+\end{enumerate}
+
+Aplicações do tipo (1) geralmente aparecem quando uma nova variável dependente
+$x$ é introduzida para auxiliar no cálculo de $\dsfrac{\dy}{\dx}$. Aplicações
+do tipo (2) aparecem quando duas variáveis $x$ e $y$ dependem de uma terceira
+variável $t$, por exemplo, quando $x$ e $y$ são coordenadas de uma partícula
+em movimento e $t$ é o tempo.
+
+Daremos três exemplos de aplicações do tipo (1) e, em seguida, dois do tipo
+(2).
+
+\begin{example}
+Suponha que, após um investimento de $t$ reais, uma companhia pode
+produzir $x$ itens, onde
+$$
+  x = \frac{t}{10} - 100, \hspace{1.5em} t \ge 1000.
+$$
+Ela pode vender os $x$ itens e obter um lucro total de
+$$
+  y = 5x - \frac{x^2}{100}.
+$$
+Encontre $\dsfrac{\dy}{\dt}$, o lucro marginal com relação à quantia investida.
+
+Temos que \hspace{1.5em} $\dsfrac{\dx}{\dy} = \dsfrac{1}{10}$, \hspace{1.5em}
+$\dsfrac{\dy}{\dx} = 5 - \dsfrac{x}{50}$.
+
+Pela Regra da Cadeia,
+\begin{eqnarray*}
+  \frac{\dy}{\dt} & = & \frac{\dy}{\dx} \frac{\dx}{\dt} =
+    \left( 5 - \frac{x}{50} \right) \frac{1}{10} \\
+  & = & \left( 5 - \frac{\frac{t}{10}-100}{50} \right) \frac{1}{10} \\
+  & = & 0,7 - \frac{t}{5000}.
+\end{eqnarray*}
+Então, após um investimento de $t$ reais, cada real adicional investido
+trará $0,7 - t/5000$ reais de lucro adicional.
+\end{example}
+
+\begin{example}
+Encontre $\dy/\dt$ onde $y = (5t^2 - 2)^{1/4}$.
+
+Sejam \hspace{1.5em} $x = 5t^2 - 2$, \hspace{1.5em} $y = x^{1/4}$.
+
+Então,
+\begin{eqnarray*}
+  \frac{\dx}{\dt} & = & 10t, \hspace{1.5em} \frac{\dy}{\dx} = \frac{1}{4}x^{-3/4},\\
+  \frac{\dy}{\dt} & = & \frac{\dy}{\dx}\frac{\dx}{\dt} =
+    \left( \frac{1}{4} x^{-3/4} \right)(10t) \\
+  & = & \frac{10}{4}(5t^2-2)^{-3/4}t.
+\end{eqnarray*}
+\end{example}
+
+\begin{example}
+Encontre $\dy/\dt$ onde $y = \sqrt{\sen(4x+1)+\cos(4x-1)}$. Este problema
+requer três aplicações da Regra da Cadeia.
+
+Sejam \hspace{1.5em} $u = \sen(4x+1)+\cos(4x-1)$, \hspace{1.5em} $y=\sqrt{u}$.
+
+Então, pela Regra da Cadeia,
+$$
+  \frac{\dy}{\dx} = \frac{\dy}{\du} \cdot \frac{\du}{\dx} =
+    = \frac{1}{2\sqrt{u}} \cdot \frac{\du}{\dx}.
+$$
+
+Agora, sejam \hspace{1.5em} $v = \sen(4x+1)$, \hspace{1.5em} $w = \cos(4x-1)$,
+\hspace{1.5em} $u = v + w$.
+
+Então,
+$$
+  \frac{\du}{\dx} = \frac{\dv}{\dx} + \frac{\dif w}{\dx}.
+$$
+
+Usaremos a Regra da Cadeia mais duas vezes para encontrarmos $\dv/\dx$ e
+$\dif w/\dx$.
+\begin{eqnarray*}
+  v & = & \sen(4x+1). \\
+  \frac{\dv}{\dx} & = & \cos(4x+1)\frac{\dif(4x+1)}{\dx} = 4\cos(4x+1). \\
+  w & = & \cos(4x-1). \\
+  \frac{\dif w}{\dx} & = & -\sen(4x-1)\frac{\dif(4x-1)}{\dx} = -4\sen(4x-1).
+\end{eqnarray*}
+Finalmente, combinamos tudo para obtermos
+\begin{eqnarray*}
+  \frac{\dy}{\dx} & = & \frac{1}{2\sqrt{u}} \cdot \frac{\du}{\dx} =
+    \frac{1}{2\sqrt{u}}\left(\frac{\dv}{\dx} + \frac{\dif w}{\dx}\right) \\
+  & = & \frac{4\cos(4x+1) - 4\sen(4x-1)}{2\sqrt{\sen(4x+1)+\cos(4x-1)}}.
+\end{eqnarray*}
+\end{example}
+
+Se uma partícula se move em um plano, sua posição $(x, y)$ no instante $t$
+será dada pelo par de equações
+$$
+  x = f(t), \hspace{1.5em} y = g(t).
+$$
+Estas equações são chamadas
+\newdef[equação!paramétrica]{equações paramétricas}. A inclinação da curva
+traçada por esta partícula pode ser determinada pela Regra da Cadeia,
+$$
+  \frac{\dy}{\dx} = \frac{\dy/\dt}{\dx/\dt} = \frac{g'(t)}{f'(t)},
+$$
+sempre que as derivadas existam e que $f'(t) \ne 0$. Esta é uma aplicação
+da Regra da Cadeia do tipo (2).
+
+\begin{example}
+Uma bola atirada horizontalmente de um penhasco de $30$ metros de altura
+a uma velocidade de $15$ metros por segundo seguirá aproximadamente as
+seguintes equações paramétricas
+$$
+  x = 15t, \hspace{1.5em} y = 30 - 4,9 t^2, \text{ com $x$ e $y$ em metros}.
+$$ 
+Encontre a inclinação da sua trajetória no instante $t$
+(Figura~\ref{fig:fallingball}).
+\begin{eqnarray*}
+  \text{como} \hspace{1.5em}  \frac{\dx}{\dt} & = & 15, \hspace{1.5em}
+    \frac{\dy}{\dt} = -9,8t \\
+  \text{então} \hspace{1.5em} \frac{\dy}{\dx} & = & \frac{\dy/\dt}{\dx/\dt} =
+    -\frac{9,8t}{15}.
+\end{eqnarray*}
+\end{example}
+
+\includefig{fallingball}
+
+\begin{example}
+\begin{absolutelynopagebreak}
+Uma partícula se move de acordo com as equações paramétricas
+$$
+  x = t^3 - t, \hspace{1.5em} y = t^2.
+$$
+\end{absolutelynopagebreak}
+Encontre a inclinação da sua trajetória no instante $t$.
+\begin{eqnarray*}
+  \text{como} \hspace{1.5em} \frac{\dx}{\dt} & = & 3t^2-1,
+    \hspace{1.5em} \frac{\dy}{\dt} = 2t, \\
+  \text{então} \hspace{1.5em} \frac{\dy}{\dx} & = &
+    \frac{\dy/\dt}{\dx/\dt} = \frac{2t}{3t^2 - 1}, \hspace{1.5em}
+    t \ne \pm \sqrt{1/3}.
+\end{eqnarray*}
+\end{example}
+
+Conforme ilustrado na Figura~\ref{fig:cap2pathparametric}, podemos ver
+que a trajetória desta partícula não é o gráfico de nenhuma função, e
+na verdade contém um laço que cruza o ponto $(0, 1)$ duas vezes, em
+$t = -1$ e $t = 1$. A trajetória é vertical nos instantes
+$t = \pm \sqrt{1/3}$, onde a inclinação é indeterminada. No ponto
+$(0, 1)$, as inclinações da trajetória são $\dy/\dx = -1$ quando
+$t = -1$ e $\dy/\dx = 1$ quando $t = 1$.
+
+\includefig{cap2pathparametric}
+
+\begin{example}
+Uma partícula em deslocamento de acordo com as equações paramétricas
+$$
+  x = \cos t, \hspace{1.5em} y = \sen t
+$$
+se moverá no sentido contrário ao dos ponteiros do relógio sobre
+o círculo unitário à velocidade de $1$ radiano por segundo, começando
+a partir do ponto $(1, 0)$, conforme mostrado na
+Figura~\ref{fig:parametricmovementcircle}. Encontre a inclinação
+da sua trajetória no instante $t$.
+$$
+  \frac{\dx}{\dt} = -\sen t, \hspace{1.5em}
+  \frac{\dy}{\dt} = \cos t.
+$$
+A inclinação é
+$$
+  \frac{\dy}{\dt} = \frac{\dy/\dt}{\dx/\dt} = - \frac{\cos t}{\sen t}.
+$$
+Em termos de $x$ e $y$, a inclinação é
+$$
+  \frac{\dy}{\dx} = -\frac{x}{y}.
+$$
+\end{example}
+
+\includefig{parametricmovementcircle}
+
+\begin{sectionproblems}
+
+Nos Problemas~\ref{prob:chp2p6p1}--\ref{prob:chp2p6p44}, encontre $\dy/\dx$.
+
+\twoexer{$y = \sqrt{x + 2}$\label{prob:chp2p6p1}}%
+        {$y = \sqrt{7 + 4x}$}
+
+\twoexer{$y = \sqrt{5 - x}$}%
+        {$y = \sqrt{1 - 10x}$}
+
+\twoexer{$y = \dsfrac{1}{\sqrt{2 + 3x}}$}%
+        {$y = \dsfrac{1}{\sqrt{4 - x}}$}
+
+\twoexer{$y = \sqrt[3]{6x+1}$}%
+        {$y = \sqrt[5]{2 - 3x}$}
+
+\twoexer{$y = \sqrt{x^2 + 1}$}%
+        {$y = \sqrt{1 - x^2}$}
+
+\twoexer{$y = \sen(3x)$}%
+        {$y = \cos(4 - 2x)$}
+
+\twoexer{$y = \sen(x^{-2})$}%
+        {$y = \cos\sqrt{x}$}
+
+\twoexer{$y = \e^{4x}$}%
+        {$y = \e^{-x^2}$}
+
+\twoexer{$y = \e^{\cos x}$}%
+        {$y = \ln(\ln x)$}
+
+\twoexer{$y = \cos u$, \; $u = \e^x$}%
+        {$y = \tan u$, \; $u = \ln x$}
+
+\twoexer{$y = u^{10}$, \; $u = 1 - 4x$}%
+        {$y = u^{-10}$, \; $u = 1 - x^2$}
+
+\exer{$y = \sen u + \sen v$, \; $u = 1 - x^2$, \; $v = 2x - 1$}
+
+\exer{$y = \e^u + \e^v$, \; $u = 1 - 3x$, \; $v = 3 - 4x$}
+
+\exer{$y = \e^u$, \; $u = \sqrt{v}$, \; $v = \sen x$}
+
+\exer{$y = \ln u$, \; $u = \tan v$, \; $v = 1/x$}
+
+\exer{$y = u^{-1/3}$, \; $u = 1 + \sqrt{v}$, \; $v = x^2 - 1$}
+
+\exer{$y = u^{-1}$, \; $u  = 3v + 4$, \; $v = 1/(x + 1)$}
+
+\exer{$y = u^4$, \; $u = 1 + 1/v$, \; $v = x^3 + 1$}
+
+\exer{$y = u^2 + 1$, \; $u = v^2 + 1$, \; $v = x^2 + 1$}
+
+\twoexer{$y = (\sqrt{x^2 - 1} + \sqrt{x^2 + 1})^{1/3}$}%
+        {$y = (x + \sqrt{3 - 4x})^{-1/2}$}
+
+\twoexer{$y = 3x \sen(2x -1)$}%
+        {$y = \sen(2x)\cos(3x)$}
+
+\twoexer{$x = \cos(3t)$, \; $y = \sen(3t)$}%
+        {$x = \e^t$, \; $y = \ln t$}
+
+\twoexer{$x = \sen t$, \; $y = \sen(2t)$}%
+        {$x = \sen(\e^t)$, \; $y = \cos(\e^t)$}
+
+\twoexer{$x = \ln(t + 1)$, \; $y = t^2$}%
+        {$x = \e^{\cos t}$, \; $y = \e^{\sen t}$}
+
+\twoexer{$x = \sqrt{t^2 - 4}$, \; $y = \sqrt{t^2 + 4}$}%
+        {$x = 1 + \sqrt[3]{t}$, \; $y = 2 + \sqrt[3]{t}$}
+
+\twoexer{$x = \sqrt[3]{t + 1}$, \; $y = \sqrt[3]{t + 2}$}%
+        {$x = \dsfrac{2t+1}{t + 2}$, \; $y = \dsfrac{2t+3}{t+2}$\label{prob:chp2p6p44}}
+
+\exer{Uma partícula se move no plano de acordo com as equações paramétricas
+$$
+  x = t^2 + 1, \hspace{1.5em} y = 3t^3.
+$$
+Encontre a inclinação da sua trajetória.}
+
+\exer{Uma formiga se move no plano de acordo com as equações
+$$
+  x = (1 - t^2)^{-1}, \hspace{1.5em} y = \sqrt{t}.
+$$
+Encontre a inclinação da sua trajetória.}
+
+\hardex{Sejam $y$, $u$ e $v$ variáveis tais que $y$ dependa de $u$,
+$u$ dependa de $v$ e $v$ dependa de $x$. Assuma que as derivadas
+$\dy/\du$, $\du/\dv$ e $\dv/\dx$ existam. Demonstre que
+$$
+  \frac{\dy}{\dx} = \frac{\dy}{\du} \frac{\du}{\dv} \frac{\dv}{\dx}.
+$$}
+
+\hardex{Suponha que $f(x)$ é diferenciável para todo $x$, e seja
+$g(x) = f(f(x))$. Demonstre que $g'(x) = f'(f(x))f'(x)$.}
+
+\end{sectionproblems}
 
 \section{Derivadas de Ordem Superior}
 \label{sec:higherderivs}
