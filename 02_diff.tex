@@ -2125,6 +2125,77 @@ equação da reta tangente no ponto dado.
 \section{Regra da Cadeia}
 \label{sec:chainrule}
 
+A Regra da Cadeia é mais geral do que a Regra da Função Inversa e lida com
+o caso onde $x$ e $y$ ambas são funções de uma terceira variável $t$.
+
+Suponha que 
+$$
+  x = f(t),\hspace{1.5em} y = G(X).
+$$
+Assim, $x$ depende de $t$ e $y$ depende $x$. Mas $y$ também é função de $t$,
+$$
+  y = g(t),
+$$
+onde $g$ é definida pela regra
+$$
+  g(t) = G(f(t)).
+$$
+A função $g$ é às vezes chamada a \newdef[composição!de funções]{composição}
+de $G$ e $f$ (por vezes denotada $g = G \circ f$).
+
+A composição de $G$ e $f$ pode ser descrita em termos de caixas pretas. A
+função $g = G \circ f$ é uma grande caixa preta que opera sobre a entrada
+$t$ para produzir $g(t) = G(f(t))$. Se olharmos dentro desta caixa preta
+(representada na Figura~\ref{fig:compblackbox}), veremos duas caixas pretas
+menores, $f$ e $G$. Primeiramente, $f$ opera sobre a entrada $t$ para
+produzir $f(t)$, e então $G$ opera sobre $f(t)$ para produzir a saída final
+$g(t) = G(f(t))$.
+
+\includefig{compblackbox}
+
+A Regra da Cadeia expressa a derivada de $g$ em termos das derivadas de $f$
+e $G$. Ela nos conduz ao poderoso método de ``substituição de variáveis''
+para o cálculo de derivadas e, mais tarde, para o de integrais.
+
+\subpart{Regra da Cadeia}\index{regra!da cadeia}
+
+\begin{quote}
+  Sejam $f$, $G$ duas funções reais e defina a nova função $g$ por
+  $$
+    g(t) = G(f(t)).
+  $$
+  Para todo $t$ tal que $f'(t)$ e $G'(f(t))$ existem, $g'(t)$ também
+  existe e seu valor é
+  $$
+    g'(t) = G'(f(t))f'(t).
+  $$
+\end{quote}
+
+\begin{proof} Sejam
+$$
+  x = f(t), \hspace{1.5em} y = g(t), \hspace{1.5em} y = G(x).
+$$
+Tome $t$ como a variável independente, e seja $\Delta t \ne 0$ um
+infinitésimo. Construa os incrementos correspondentes $\Dx$ e $\Dy$.
+Pelo Teorema do Incremento para $x = f(t)$, temos que $\Dx$ é um
+infinitésimo. Usando o Teorema do Incremento novamente, desta vez
+para $y = G(x)$, obtemos
+$$
+  \Dy = G'(x) \Dx + \epsilon \Dx
+$$
+para algum infinitésimo $\epsilon$. Dividindo por $\Delta t$,
+$$
+  \frac{\Dy}{\Delta t} = G'(x) \frac{\Dx}{\Delta t} +
+                         \epsilon \frac{\Dx}{\Delta t}.
+$$
+Então, tomando-se as partes padronizadas,
+\begin{eqnarray*}
+  \st{\frac{\Dy}{\Delta t}} & = & G'(x) \st{\frac{\Dx}{\Delta t}} + 0, \\
+  \text{ou seja,} \hspace{1.5em} g'(t) & = & G'(x)f'(t) =
+                                             G'(f(t)) f'(t).
+\end{eqnarray*}
+\end{proof}
+
 \section{Derivadas de Ordem Superior}
 \label{sec:higherderivs}
 
