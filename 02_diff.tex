@@ -2629,6 +2629,85 @@ $g(x) = f(f(x))$. Demonstre que $g'(x) = f'(f(x))f'(x)$.}
 \section{Derivadas de Ordem Superior}
 \label{sec:higherderivs}
 
+\subpart{Definição}
+
+\begin{quote}
+A \newdef{segunda derivada} de uma função real $f$ é a derivada da derivada
+de $f$, denotada por $f''$.
+A terceira derivada de $f$ é a derivada da segunda derivada, denotada por
+$f'''$ ou $f^{(3)}$. Em geral, a \newdef{$n$-ésima derivada} de $f$ é
+denotada por $f^{(n)}$.
+
+Se $y$ depende de $x$, $y = f(X)$, então o \newdef{segundo diferencial} de
+$y$ é definido por
+$$
+  \dif^2y = f''(x) \dx^2.
+$$
+Em geral, o \newdef{$n$-ésimo diferencial} de $y$ é definido por
+$$
+  \dif^ny = f^{(n)}(x) \dx^n.
+$$
+Aqui, $\dx^2$ significa $(dx)^2$ e $\dx^n$ significa $(\dx)^n$.
+\end{quote}
+
+A $n$-ésima derivada de $f$ também é chamada \newdef[derivada!de ordem $n$]%
+{derivada de $n$-ésima ordem}. Do mesmo modo, damos também o nome de
+\newdef[diferencial!de ordem $n$]{diferencial de ordem $n$} ao
+$n$-ésimo diferencial.
+
+Também temos as notações alternativas
+$$
+  \frac{\dif^2y}{\dx^2} = f''(x), \hspace{1.5em}
+  \frac{\dif^ny}{\dx^n} = f^{(n)}(x)
+$$
+para a segunda e $n$-ésima derivadas, respectivamente. A notação
+$$
+  y'' = f''(x), \hspace{1.5em} y^{(n)} = f^{(n)}(x)
+$$
+também é usada.
+
+% hausen: a seguir, um parágrafo presente no original que pode causar confusão
+%         prefiro deixá-lo comentado
+%
+%A definição do segundo diferencial pode ser memorizada da seguinte forma.
+%Pela definição,
+%$$
+%  \dy = f'(x) \dx.
+%$$
+%Agora, mantenha $\dx$ constante e aplique formalmente a Regra da Constante
+%para diferenciação, obtendo
+%\begin{eqnarray*}
+%  \dif(\dy) & = & f''(x) \dx \dx,
+%  \text{ou } \; \dif^2y & = & f''(x) \dx^2.
+%\end{eqnarray*}
+%(Este não é um uso correto da Regra da Constante, pois a regra se aplica
+%apenas para uma constante real $c$, e $\dx$ não é um número real. É apenas
+%um dispositivo de memorização para lembrar a definição de $\dif^2y$, não
+%uma demonstração.)
+%
+%Os diferenciais de terceira ordem e acima podem ser motivados da mesma
+%forma. Se mantivermos $\dx$ constante e usarmos formalmente a Regra da
+%Constante repetidamente, obteremos
+%\begin{eqnarray*}
+% \dy & = & f'(x) \dx, \\
+% \dif^2y & = & f''(x) \dx\dx = f''(x) \dx^2, \\
+% \dif^3y & = & f'''(x) \dx^2\dx = f'''(x) \dx^3, \\
+% \dif^4y & = & f^{(4)}(x) \dx^3\dx = f^{(4)}(x) \dx^4,
+%\end{eqnarray*}
+%e daí em diante.
+
+A \newdef{aceleração} de uma partícula em movimento é definida como a derivada
+da velocidade com relação ao tempo,
+$$
+  a = \frac{\dv}{\dt}.
+$$
+% hausen: usando "posição" em vez do original "distância"
+Deste modo, a velocidade é a primeira derivada da posição e a aceleração
+é a segunda derivada da posição. Se $s$ é a posição, temos
+$$
+  v = \frac{\dif s}{\dt}, \hspace{1.5em} a = \frac{\dif^2s}{\dt^2}.
+$$
+
 \section{Funções Implícitas}
 \label{sec:implicitfunc}
 
