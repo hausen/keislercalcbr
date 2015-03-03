@@ -2641,13 +2641,13 @@ denotada por $f^{(n)}$.
 Se $y$ depende de $x$, $y = f(X)$, então o \newdef{segundo diferencial} de
 $y$ é definido por
 $$
-  \dif^2y = f''(x) \dx^2.
+  \dif{^2}y = f''(x) \dx^2.
 $$
 Em geral, o \newdef{$n$-ésimo diferencial} de $y$ é definido por
 $$
-  \dif^ny = f^{(n)}(x) \dx^n.
+  \dif{^n}y = f^{(n)}(x) \dx^n.
 $$
-Aqui, $\dx^2$ significa $(dx)^2$ e $\dx^n$ significa $(\dx)^n$.
+Aqui, $\dx^2$ significa $(\dx)^2$ e $\dx^n$ significa $(\dx)^n$.
 \end{quote}
 
 A $n$-ésima derivada também é chamada \newdef[derivada!de ordem $n$]%
@@ -2658,8 +2658,8 @@ $n$-ésimo diferencial.
 
 Também temos as notações alternativas
 $$
-  \frac{\dif^2y}{\dx^2} = f''(x), \hspace{1.5em}
-  \frac{\dif^ny}{\dx^n} = f^{(n)}(x)
+  \od[2]{y}{x} = f''(x), \hspace{1.5em}
+  \od[n]{y}{x} = f^{(n)}(x)
 $$
 para a segunda e $n$-ésima derivadas, respectivamente. A notação
 $$
@@ -2700,13 +2700,13 @@ também é usada.
 A \newdef{aceleração} de uma partícula em movimento é definida como a derivada
 da velocidade com relação ao tempo,
 $$
-  a = \frac{\dv}{\dt}.
+  a = \od v t
 $$
 % hausen: usando "posição" em vez do original "distância"
 Deste modo, a velocidade é a primeira derivada da posição e a aceleração
 é a segunda derivada da posição. Se $s$ é a posição, temos
 $$
-  v = \frac{\dif s}{\dt}, \hspace{1.5em} a = \frac{\dif^2s}{\dt^2}.
+  v = \od s t, \hspace{1.5em} a = \od[2] s t
 $$
 
 \section{Funções Implícitas}
