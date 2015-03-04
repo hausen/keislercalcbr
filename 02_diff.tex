@@ -2709,6 +2709,160 @@ $$
   v = \od s t, \hspace{1.5em} a = \od[2] s t
 $$
 
+\begin{example}
+Uma bola jogada para cima com velocidade inicial $b$, em metros por segundo,
+se move de acordo com a equação
+$$
+  y = bt - 4,9 t^2
+$$
+com $y$ em metros e $t$ em segundos. Então, a velocidade é
+$$
+  v = b - 9,8t \;\; \si{m/s},
+$$
+e a aceleração (devida à gravidade) é uma constante,
+$$
+  a = -9,8 \;\; \si{m/s^2}.
+$$
+\end{example}
+
+\begin{example}
+Encontre a segunda derivada de $y = \sen(2\theta)$.
+
+\emph{Primeira derivada:} Seja $u = 2\theta$. Então,
+$$
+  y = \sen u, \hspace{1.5em} \od y u = \cos u, \hspace{1.5em}
+  \od u \theta = 2.
+$$
+Pela Regra da Cadeia,
+\begin{eqnarray*}
+  \dod y \theta = \dod y u \cdot \dod u \theta
+    & = & \cos(2\theta) \cdot 2, \\
+  \dod y \theta & = & 2 \cos(2\theta).
+\end{eqnarray*}
+
+\emph{Segunda derivada:} Seja $v = 2 \cos(2\theta)$. Devemos encontrar
+$\dv/\dif\theta$. Faça $u = 2\theta$ e assim,
+$$
+  v = 2 \cos u, \hspace{1.5em} \od v u = -2 \sen u, \hspace{1.5em}
+  \od u \theta = 2.
+$$
+Usando novamente a Regra da Cadeia, temos
+$$
+  \dod[2] y \theta = \dod v \theta =
+  \dod v u \cdot \dod u \theta =
+  (-2 \sen(2\theta)) \cdot 2,
+$$
+que pode ser simplificado para
+$$
+  \dod[2] y \theta = -4 \sen(2\theta).
+$$
+\end{example}
+
+\begin{example}\label{ex:chp2p7ex3}
+Uma partícula se desloca de tal modo que, no instante $t$, ela percorreu uma
+distância $s$ ao longo de uma linha reta, sua velocidade é $v$ e sua
+aceleração é $a$. Demonstre que
+$$
+  a = v \dod v s.
+$$
+De acordo com as definições, temos
+$$
+  v = \dod s t, \hspace{1.5em} a = \dod v t,
+$$
+logo, pela Regra da Cadeia,
+$$
+  a = \dod v s \dod s t = v \dod v s.
+$$
+\end{example}
+
+\begin{example}
+Se um polinômio de grau $n$ é repetidamente derivado, a sua $k$-ésima derivada
+será um polinômio de grau $n - k$, para $k \le n$, e a sua $(n+1)$-ésima
+derivada será zero. Por exemplo,
+\begin{eqnarray*}
+  y & = & 3x^5 - 10x^4 + x^2 - 7x + 4, \\
+  \dod y x & = & 15x^4 - 40x^3 + 2x - 7, \\
+  \dod[2] y x & = & 60x^3 - 120x^2 + 2, \\
+  \dod[3] y x & = & 180x^2 - 240x, \\
+  \dod[4] y x & = & 360x - 240, \\
+  \dod[5] y x & = & 360, \\
+  \dod[6] y x & = & 0. \\
+\end{eqnarray*}
+Geometricamente falando, a segunda derivada $f''(x)$ é a inclinação da curva
+$y' = f'(x)$ e também é a taxa de variação da inclinação da curva $y = f(x)$.
+\end{example}
+
+\begin{sectionproblems}
+
+Nos Problemas~\ref{prob:chp2p7p1}--\ref{prob:chp2p7p23}, encontre a segunda
+derivada. Considere $x$, $t$ como variáveis independentes e $a$, $A$, $B$ como
+constantes.
+
+\twoexer{$y = 1/x$\label{prob:chp2p7p1}}%
+        {$y = x^5$}
+
+\twoexer{$y = \dsfrac{-5}{x+1}$}%
+        {$f(x) = 3x^{-2}$}
+
+\twoexer{$f(x) = x^{1/2} + x^{-1/2}$}%
+        {$f(t) = t^3 - 4t^2$}
+
+\twoexer{$f(t) = t \sqrt{t}$}%
+        {$y = (3t-1)^{10}$}
+
+\twoexer{$y = \sen x$}
+        {$y = \cos x$}
+
+\twoexer{$y = A \sen(Bx)$}
+        {$y = A \cos(Bx)$}
+
+\twoexer{$y = \e^{ax}$}
+        {$y = \e^{-ax}$}
+
+\twoexer{$y = \ln x$}
+        {$y = x \ln x$}
+
+\twoexer{$y = \dsfrac{1}{t^2 + 1}$}
+        {$y = \sqrt{3t + 2}$}
+
+\twoexer{$x = \dsfrac{x - 5}{x + 2}$}
+        {$z = \dsfrac{2x - 1}{3x - 2}$}
+
+\twoexer{$z = x \sqrt{x + 1}$}
+        {$s = \left( \dfrac{t + 1}{t + 2} \right)^2$}
+
+\exer{$s = \sqrt{\dfrac{t}{t + 3}}$\label{prob:chp2p7p23}}
+
+\exer{Encontre a terceira derivada de $y = x^2 - 2/x$.}
+
+\exer{Uma partícula se move de acordo com a equação $s = 1 - 1/t^2$, $t > 0$.
+      Encontre sua aceleração.}
+
+\exer{Um objeto se move de tal maneira que, ao percorrer uma distância $s$,
+      a sua velocidade é $v = \sqrt{s}$. Encontre a sua aceleração. (Use
+      o Exemplo~\ref{ex:chp2p7ex3}.)}
+
+\exer{Suponha que $u$ depende de $x$ e que $\dif{^2}u/\dx^2$ existe. Se
+      $y = 3u$, encontre $\dif{^2}y/\dx^2$.}
+
+\exer{Se $\dif{^2}u/\dx^2$ e $\dif{^2}v/\dx^2$ existem e $y = u + v$,
+      encontre $\dif{^2}y/\dx^2$.}
+
+\exer{Se $\dif{^2}u/\dx^2$ existe e $y = u^2$, encontre $\dif{^2}y/\dx^2$.}
+
+\exer{Se $\dif{^2}u/\dx^2$ e $\dif{^2}v/\dx^2$ existem e $y = uv$, encontre
+      $\dif{^2}y/\dx^2$.}
+
+\exer{Seja $y = ax^2 + bx + c$ um polinômio de grau dois. Mostre que
+      $\dy/\dx$ é uma função linear e que $\dif{^2}y/\dx^2$ é uma
+      função constante.}
+
+\hardex{Demonstre que a $n$-ésima derivada de um polinômio de grau $n$ é
+        constante. (Demonstre que a derivada de um polinômio de grau $k$
+        é um polinômio de grau $k - 1$ e use o Princípio da Indução.)} 
+\end{sectionproblems}
+
+
 \section{Funções Implícitas}
 \label{sec:implicitfunc}
 
