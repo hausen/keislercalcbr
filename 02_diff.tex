@@ -2862,9 +2862,96 @@ constantes.
         é um polinômio de grau $k - 1$ e use o Princípio da Indução.)} 
 \end{sectionproblems}
 
-
 \section{Funções Implícitas}
 \label{sec:implicitfunc}
+
+Nos dedicaremos agora ao tópico de diferenciação implícita. Dizemos que
+$y$ é uma \newdef{função implícita} de $x$ quando nos é dada uma equação
+$$
+  \sigma(x, y) = \tau(x, y)
+$$
+a qual determina $y$ em função de $x$. Um exemplo é $x + xy = 2y$. A
+diferenciação implícita é uma maneira de determinarmos a derivada de $y$
+sem realmente resolver $y$ como função de $x$. Assuma que $\dy/\dx$ exista.
+O método tem dois passos:
+\begin{stepanalysis}
+\item Diferencie ambos os lados da equação $\sigma(x, y) = \tau(x, y)$
+para obter uma nova equação
+\begin{eqnarray}
+  \dod{\left(\sigma(x, y)\right)}{x} & = & \dod{\left(\tau(x, y)\right)}{x}
+  \label{eq:firststepimplicit}
+\end{eqnarray}
+A Regra da Cadeia é frequentemente usada neste passo.
+\item Resolva a Equação~\ref{eq:firststepimplicit} para $\dy/\dx$. A resposta
+geralmente envolverá tanto $x$ quanto $y$.
+\end{stepanalysis}
+
+Em cada um dos exemplos abaixo, assumiremos que $\dy/\dx$ existe e usaremos
+a diferenciação implícita para encontrar o valor de $\dy/\dx$.
+
+\begin{example}\label{ex:cap2p8ex1}
+Dada a equação $x + xy = 2y$, encontre $\dy/\dx$.
+\begin{stepanalysis}
+\item $\dsfrac{\dif(x + xy)}{\dx} = \dsfrac{\dif(2y)}{\dy}$. Determinamos
+ambos os lados usando as Regras da Soma e do Produto,
+\begin{eqnarray*}
+  \dod{(x + xy)}{x} & = & \frac{\dx + \dif(xy)}{\dx} =
+    \frac{\dx + x \dy + y \dx}{\dx} \\
+  & = & 1 + x \frac{\dy}{\dx} + y. \\
+  \dod{(2y)}{x} & = & 2 \dod y x.
+\end{eqnarray*}
+Logo, a nossa nova equação é
+$$
+  1 + x \dod y x  + y = 2 \dod y x.
+$$
+\item Resolva para $\dy/\dx$.
+\begin{eqnarray*}
+  2 \dod y x - x \dod y x & = & 1 + y. \\
+  \dod y x & = & \frac{1 + y}{2 - x}.
+\end{eqnarray*}
+\end{stepanalysis}
+Podemos verificar nossa resposta resolvendo a equação original para $y$
+e usando a diferenciação comum:
+\begin{eqnarray*}
+  x + xy & = & 2y, \\
+  2y - xy & = & x, \\
+  y & = & \frac{x}{2-x}.
+\end{eqnarray*}
+Pela Regra do Quociente,
+$$
+  \dod y x = \frac{(2-x)\cdot 1 - x (-1)}{(2-x)^2} = \frac{2}{(2-x)^2}.
+$$
+Um terceiro modo de se encontrar $\dy/\dx$ é resolver a equação original para
+$x$, encontrar $\dx/\dy$ e então usar a Regra da Função Inversa.
+\begin{eqnarray*}
+  x + xy & = & 2y, \\
+  x & = & \frac{2y}{1 + y}, \\
+  \dod y x & = & \frac{(1+y)\cdot2 - 2y \cdot 1}{(1 + y)^2} = \frac{2}{(1+y)^2},\\
+  \dod y x & = & \frac{1}{2}(1+y)^2.
+\end{eqnarray*}
+Para verificar que nossas três respostas
+$$
+  \dod y x = \frac{1+y}{2-x}, \hspace{3em}
+  \dod y x = \frac{2}{(2-x)^2}, \hspace{3em}
+  \dod y x = \frac{1}{2}(1+y)^2
+$$
+são equivalentes substituímos $\dsfrac{x}{2-x}$ por $y$:
+\begin{eqnarray*}
+  \dod y x & = & \frac{1+y}{2-x} = \frac{1 + \dfrac{x}{2-x}}{2-x} = \frac{2}{(2-x)^2}. \\
+  \dod y x & = & \frac{1}{2}(1+y)^2 = \frac{1}{2}\left(1 + \frac{x}{2-x}\right)^2 = \frac{2}{(2-x)^2}.
+\end{eqnarray*}
+\end{example}
+
+No Exemplo~\ref{ex:cap2p8ex1}, encontramos $\dy/\dx$ por três métodos diferentes:
+\begin{enumerate}[(a)]
+\item Diferenciação implícita. Obtemos $\dy/\dx$ tanto em termos de $x$ quanto
+de $y$.
+\item Resolvemos para $y$ como função de $x$ e derivamos diretamente. Isto nos
+dá $\dy/\dx$ em termos de $x$ apenas.
+\item Resolvemos para $x$ em função de $y$, encontramos $\dx/\dy$ diretamente
+e usamos a Regra da Função Inversa. Este método nos dá $\dy/\dx$ em termos de
+$y$ apenas.
+\end{enumerate}
 
 \begin{chapterproblems}
 \end{chapterproblems}
