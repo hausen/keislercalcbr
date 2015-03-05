@@ -2953,6 +2953,176 @@ e usamos a Regra da Função Inversa. Este método nos dá $\dy/\dx$ em termos d
 $y$ apenas.
 \end{enumerate}
 
+\begin{example}
+Dada $y + \sqrt{y} = x^2$, encontre $\dy/\dx$.
+\begin{eqnarray*}
+  \dod{(y + \sqrt{y})}{x} & = & \dod{(x^2)}{x}, \\
+  \dod y x + \frac{1}{2} y^{-1/2} \dod y x & = & 2x, \\
+  \dod y x & = & \frac{2x}{1 + \frac{1}{2}y^{-1/2}}.
+\end{eqnarray*}
+Esta resposta pode ser usada para encontrarmos a inclinação em qualquer ponto
+da curva. Por exemplo, no ponto $(\sqrt{2}, 1)$ a inclinação é
+$$
+  \frac{2 \sqrt{2}}{1 + \frac{1}{2} \cdot 1^{-1/2}} = \frac{2\sqrt{2}}{3/2} =
+  \frac{4 \sqrt{2}}{3},
+$$
+enquanto que no ponto $(-\sqrt{2}, 1)$ a inclinação é
+$$
+  \frac{2(-\sqrt{2})}{1 + \frac{1}{2} \cdot 1^{-1/2}} = \frac{-4\sqrt{2}}{3}.
+$$
+Para obtermos $\dy/\dx$ em termos de $x$, resolvemos a equação original para
+$y$ usando a fórmula quadrática:
+\begin{eqnarray*}
+  y + \sqrt{y} - x^2 & = & 0, \\
+  \sqrt{y} & = & \frac{-1 \pm \sqrt{1 + 4x^2}}{2}.
+\end{eqnarray*}
+Como $\sqrt{y} \ge 0$, apenas uma solução ocorre,
+$$
+  \sqrt{y} = \frac{-1 + \sqrt{1 + 4x^2}}{2}.
+$$
+Portanto,
+$$
+  y = \left(\frac{-1 + \sqrt{1 + 4x^2}}{2} \right)^2.
+$$
+O gráfico desta função é mostrado na Figura~\ref{fig:cap2p8ex2}. Por
+substituição, obtemos
+$$
+  \dod y x = \frac{2x}{1 + \frac{1}{2}y^{-1/2}} =
+  \frac{2x}{1 + (-1 + \sqrt{1 + 4x^2})^{-1}}.
+$$
+\end{example}
+
+\includefig[$y + \sqrt{y} = x^2$]{cap2p8ex2}
+
+Em alguns casos, um dos lados de uma equação de função implícita é constante
+e sua derivada é zero.
+
+\begin{example}
+Dada $x^2 - 2y^2 = 4$, $y \le 0$, encontre $\dy/\dx$.
+\begin{eqnarray*}
+  \dod{(x^2 - 2y^2)}{x} & = & \dod{(4)}{x}. \\
+  \dod{(x^2 - 2y^2)}{x} & = & 2x - 4y \dod y x. \\
+  \dod{(4)}{x} & = & 0. \\
+  2x - 4y \dod y x & = & 0. \\
+  \dod y x = \frac{-2x}{-4v} = \frac{x}{2y}.
+\end{eqnarray*}
+Resolvendo a equação original para $y$, obtemos
+\begin{eqnarray*}
+  -2y^2 & = & 4 - x^2, \hspace{1.5em} y \le 0; \\
+  y^2 & = & \frac{x^2 - 4}{2}, \hspace{1.5em} y \le 0; \\
+  y & = & -\sqrt{\frac{x^2 - 4}{2}}.
+\end{eqnarray*}
+Portanto, $\dy/\dx$ em termos de $x$ é
+$$
+  \dod y x = \frac{x}{2y} = \frac{x}{-2\sqrt{\dfrac{x^2-4}{2}}} =
+  - \frac{x}{\sqrt{2(x^2 - 4)}}.
+$$
+O gráfico desta função é mostrado na Figura~\ref{fig:cap2p8ex3}.
+\end{example}
+
+\includefig[$x^2 - 2y^2 = 4$, $y \le 0$]{cap2p8ex3}
+
+A diferenciação implícita pode até mesmo ser aplicada a uma equação que não
+determina, por si só, $y$ como função de $x$. Às vezes, desigualdades
+adicionais precisam ser assumidas para obtermos $y$ como função de $x$.
+
+\begin{example}
+Dada
+\begin{eqnarray}
+  x^2 + y^2 & = & 1, \label{eq:cap2p8ex4eq1}
+\end{eqnarray}
+encontre $\dy/\dx$. Esta equação não determina $y$ como função de $x$; seu
+gráfico é o círculo unitário. Contudo, podemos derivar ambos os lados com
+relação a $x$ e resolver para $\dy/\dx$,
+$$
+  2x + 2y \dod y x = 0, \hspace{1.5em} \dod y x = -\frac{x}{y}.
+$$
+Podemos concluir que, para qualquer sistema de fórmulas $S$ que contém a
+Equação~\ref{eq:cap2p8ex4eq1} e que também determina $y$ em função de $x$,
+é verdade que
+\begin{eqnarray}
+  \dod y x & = & -\frac{x}{y}. \label{eq:cap2p8ex4eq2}
+\end{eqnarray}
+Podemos usar a Equação~\ref{eq:cap2p8ex4eq2} para encontrar a inclinação da
+reta tangente ao círculo unitário em qualquer ponto do círculo. Os exemplos
+a seguir são ilustrados na Figura~\ref{fig:unitcirctangents}.
+\includefig[$x^2 + y^2 = 1$]{unitcirctangents}
+$$
+\begin{array}{l<{\hspace{1.5em}}l}
+  \dsfrac{\dy}{\dx} = 0 \text{ em } (0, -1), &
+    \dsfrac{\dy}{\dx} = -\frac{1}{\sqrt{3}} \text{ em } \left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right), \\
+  \dsfrac{\dy}{\dx} = \sqrt{8} \text{ em } \left(\frac{\sqrt{8}}{3}, -\frac{1}{3}\right),
+  & \dsfrac{\dy}{\dx} \text{ está indefinido em } (-1, 0).
+\end{array}
+$$
+O sistema de fórmulas
+$$
+  x^2 + y^2 = 1, \hspace{1.5em} y \ge 0
+$$
+nos dá \hspace{1.5em} $y = \sqrt{1 - x^2}$, \hspace{1.5em}
+$\dsfrac{\dy}{\dx} = -\dsfrac{x}{y} = -\dsfrac{x}{\sqrt{1-x^2}}$.
+
+Por outro lado, o sistema
+$$
+  x^2 + y^2 = 1, \hspace{1.5em} y < 0
+$$
+nos dá \hspace{1.5em} $y = -\sqrt{1 - x^2}$, \hspace{1.5em}
+$\dsfrac{\dy}{\dx} = -\dsfrac{x}{y} = \dsfrac{x}{\sqrt{1-x^2}}$
+\end{example}
+
+\begin{example}
+Encontre a inclinação da reta tangente à curva
+\begin{eqnarray}
+  x^5y^3 + xy^6 & = & y + 1 \label{eq:cap2p8ex5eq1}
+\end{eqnarray}
+nos pontos $(1, 1)$, $(1, -1)$ e $(0, -1)$.
+
+Os três pontos estão todos sobre a curva, e os dois primeiros pontos têm a
+mesma coordenada $x$, logo a Equação~\ref{eq:cap2p8ex5eq1} não determina,
+por si só, $y$ como função de $x$.
+
+Derivando com relação a $x$,
+\begin{eqnarray*}
+  \dod{(x^5y^3 + xy^6)}{x} &  = & \dod{(y+1)}{x}, \\
+  5x^4y^3 + x^5 \cdot 3y^2\dod y x + y^6 + 6xy^5 \dod y x & = & \dod y x,
+\end{eqnarray*}
+e resolvendo para $\dy/\dx$,
+\begin{eqnarray}
+  5x^4y^3 + y^6 + (3x^5y^2 + 6xy^5 - 1)\dod y x & = & 0, \notag \\
+  \dod y x & = & -\frac{5x^4y^3 + y^6}{3x^5y^2 + 6xy^5 - 1}. \label{eq:cap2p8ex5eq2}
+\end{eqnarray}
+Substituindo, temos
+\begin{eqnarray*}
+ \dod y x & = & -\frac{6}{8} \text{ em } (1, 1), \\
+ \dod y x & = & -1 \text{ em } (1, -1), \\
+ \dod y x & = & +1 \text{ em } (0, -1).
+\end{eqnarray*}
+A Equação~\ref{eq:cap2p8ex5eq2} para $\dy/\dx$ é verdadeira para qualquer
+sistema $S$ de fórmulas que contém a Equação~\ref{eq:cap2p8ex5eq1} e determina
+$y$ em função de $x$.
+\end{example}
+
+Eis aqui o que geralmente acontece no método de diferenciação implícita.
+Dada uma equação
+\begin{eqnarray}
+  \tau(x,y) & = & \sigma(x,y) \label{eq:cap2p8eq6}
+\end{eqnarray}
+entre dois termos, os quais podem envolver as variáveis $x$ e $y$,
+derivamos ambos os lados da equação e obtemos
+\begin{eqnarray}
+  \dod{(\tau(x,y))}{x} & = & \dod{(\sigma(x,y))}{x}. \label{eq:cap2p8eq7}
+\end{eqnarray}
+Então, resolvemos a Equação~\ref{eq:cap2p8eq7} para obtermos $\dy/\dx$
+igual a um termo que tipicamente envolve tanto $x$ quanto $y$. Podemos
+concluir que, para qualquer sistema de fórmulas que contém a
+Equação~\ref{eq:cap2p8eq6} e determina $y$ em função de $x$, a
+Equação~\ref{eq:cap2p8eq7} é verdadeira. Além disso, a
+Equação~\ref{eq:cap2p8eq7} pode ser usada para encontrarmos a inclinação
+da reta tangente em qualquer ponto da curva $\tau(x,y) = \sigma(x,y)$.
+
+\begin{sectionproblems}
+\end{sectionproblems}
+
 \begin{chapterproblems}
 \end{chapterproblems}
 
