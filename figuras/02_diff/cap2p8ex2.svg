@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   width="239.32851"
+   height="119.60291"
+   sodipodi:docname="cap2p8ex2.tif">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6">
+    <font
+       id="font3801"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3803"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-250"
+         ascent="750" />
+      <glyph
+         id="glyph3805"
+         vert-adv-y="277"
+         unicode=","
+         horiz-adv-x="277"
+         glyph-name="comma"
+         d="M203 1C203 67 178 106 139 106C106 106 86 81 86 53C86 26 106 0 139 0C151 0 164 4 174 13C177 15 178 16 179 16S181 15 181 1C181 -73 146 -133 113 -166C102 -177 102 -179 102 -182C102 -189 107 -193 112 -193C123 -193 203 -116 203 1Z" />
+    </font>
+    <font
+       id="cmr10"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3795"
+         units-per-em="1000"
+         font-family="cmr10"
+         descent="-250"
+         ascent="750" />
+      <glyph
+         id="glyph3797"
+         vert-adv-y="388"
+         unicode="("
+         horiz-adv-x="388"
+         glyph-name="parenleft"
+         d="M331 -240C331 -237 331 -235 314 -218C189 -92 157 97 157 250C157 424 195 598 318 723C331 735 331 737 331 740C331 747 327 750 321 750C311 750 221 682 162 555C111 445 99 334 99 250C99 172 110 51 165 -62C225 -185 311 -250 321 -250C327 -250 331 -247 331 -240Z" />
+      <glyph
+         id="glyph3799"
+         vert-adv-y="388"
+         unicode=")"
+         horiz-adv-x="388"
+         glyph-name="parenright"
+         d="M289 250C289 328 278 449 223 562C163 685 77 750 67 750C61 750 57 746 57 740C57 737 57 735 76 717C174 618 231 459 231 250C231 79 194 -97 70 -223C57 -235 57 -237 57 -240C57 -246 61 -250 67 -250C77 -250 167 -182 226 -55C277 55 289 166 289 250Z" />
+    </font>
+    <font
+       id="font3786"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3788"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-281"
+         ascent="924" />
+      <glyph
+         id="glyph3790"
+         vert-adv-y="500"
+         unicode="1"
+         horiz-adv-x="500"
+         glyph-name="one"
+         d="M291 676L111 585V571C123 576 134 580 138 582C156 589 173 593 183 593C204 593 213 578 213 546V93C213 60 205 37 189 28C174 19 160 16 118 15V0H394V15C315 16 299 26 299 74V674L291 676Z" />
+      <glyph
+         id="glyph3792"
+         vert-adv-y="500"
+         unicode="2"
+         horiz-adv-x="500"
+         glyph-name="two"
+         d="M475 137L462 142C425 85 412 76 367 76H128L296 252C385 345 424 421 424 499C424 599 343 676 239 676C184 676 132 654 95 614C63 580 48 548 31 477L52 472C92 570 128 602 197 602C281 602 338 545 338 461C338 383 292 290 208 201L30 12V0H420L475 137Z" />
+    </font>
+    <font
+       id="Times New Roman"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3780"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-960"
+         ascent="775" />
+      <glyph
+         id="glyph3782"
+         vert-adv-y="777"
+         unicode="−"
+         horiz-adv-x="777"
+         glyph-name="minus"
+         d="M659 230C676 230 694 230 694 250S676 270 659 270H118C101 270 83 270 83 250S101 230 118 230H659Z" />
+      <glyph
+         id="glyph3784"
+         vert-adv-y="833"
+         unicode="√"
+         horiz-adv-x="833"
+         glyph-name="radical"
+         d="M389 -855L213 -466C206 -450 201 -450 198 -450C197 -450 192 -450 181 -458L86 -530C73 -540 73 -543 73 -546C73 -551 76 -557 83 -557C89 -557 106 -543 117 -535C123 -530 138 -519 149 -511L346 -944C353 -960 358 -960 367 -960C382 -960 385 -954 392 -940L846 0C853 14 853 18 853 20C853 30 845 40 833 40C825 40 818 35 810 19L389 -855Z" />
+    </font>
+    <font
+       id="font3879"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3881"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-250"
+         ascent="750" />
+      <glyph
+         id="glyph3883"
+         vert-adv-y="277"
+         unicode=","
+         horiz-adv-x="277"
+         glyph-name="comma"
+         d="M203 1C203 67 178 106 139 106C106 106 86 81 86 53C86 26 106 0 139 0C151 0 164 4 174 13C177 15 178 16 179 16S181 15 181 1C181 -73 146 -133 113 -166C102 -177 102 -179 102 -182C102 -189 107 -193 112 -193C123 -193 203 -116 203 1Z" />
+    </font>
+    <font
+       id="cmr10-0"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3873"
+         units-per-em="1000"
+         font-family="cmr10"
+         descent="-250"
+         ascent="750" />
+      <glyph
+         id="glyph3875"
+         vert-adv-y="388"
+         unicode="("
+         horiz-adv-x="388"
+         glyph-name="parenleft"
+         d="M331 -240C331 -237 331 -235 314 -218C189 -92 157 97 157 250C157 424 195 598 318 723C331 735 331 737 331 740C331 747 327 750 321 750C311 750 221 682 162 555C111 445 99 334 99 250C99 172 110 51 165 -62C225 -185 311 -250 321 -250C327 -250 331 -247 331 -240Z" />
+      <glyph
+         id="glyph3877"
+         vert-adv-y="388"
+         unicode=")"
+         horiz-adv-x="388"
+         glyph-name="parenright"
+         d="M289 250C289 328 278 449 223 562C163 685 77 750 67 750C61 750 57 746 57 740C57 737 57 735 76 717C174 618 231 459 231 250C231 79 194 -97 70 -223C57 -235 57 -237 57 -240C57 -246 61 -250 67 -250C77 -250 167 -182 226 -55C277 55 289 166 289 250Z" />
+    </font>
+    <font
+       id="font3864"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3866"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-281"
+         ascent="924" />
+      <glyph
+         id="glyph3868"
+         vert-adv-y="500"
+         unicode="1"
+         horiz-adv-x="500"
+         glyph-name="one"
+         d="M291 676L111 585V571C123 576 134 580 138 582C156 589 173 593 183 593C204 593 213 578 213 546V93C213 60 205 37 189 28C174 19 160 16 118 15V0H394V15C315 16 299 26 299 74V674L291 676Z" />
+      <glyph
+         id="glyph3870"
+         vert-adv-y="500"
+         unicode="2"
+         horiz-adv-x="500"
+         glyph-name="two"
+         d="M475 137L462 142C425 85 412 76 367 76H128L296 252C385 345 424 421 424 499C424 599 343 676 239 676C184 676 132 654 95 614C63 580 48 548 31 477L52 472C92 570 128 602 197 602C281 602 338 545 338 461C338 383 292 290 208 201L30 12V0H420L475 137Z" />
+    </font>
+    <font
+       id="Times New Roman-9"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3860"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-960"
+         ascent="775" />
+      <glyph
+         id="glyph3862"
+         vert-adv-y="833"
+         unicode="√"
+         horiz-adv-x="833"
+         glyph-name="radical"
+         d="M389 -855L213 -466C206 -450 201 -450 198 -450C197 -450 192 -450 181 -458L86 -530C73 -540 73 -543 73 -546C73 -551 76 -557 83 -557C89 -557 106 -543 117 -535C123 -530 138 -519 149 -511L346 -944C353 -960 358 -960 367 -960C382 -960 385 -954 392 -940L846 0C853 14 853 18 853 20C853 30 845 40 833 40C825 40 818 35 810 19L389 -855Z" />
+    </font>
+    <font
+       id="font3945"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3947"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-250"
+         ascent="750" />
+      <glyph
+         id="glyph3949"
+         vert-adv-y="277"
+         unicode=","
+         horiz-adv-x="277"
+         glyph-name="comma"
+         d="M203 1C203 67 178 106 139 106C106 106 86 81 86 53C86 26 106 0 139 0C151 0 164 4 174 13C177 15 178 16 179 16S181 15 181 1C181 -73 146 -133 113 -166C102 -177 102 -179 102 -182C102 -189 107 -193 112 -193C123 -193 203 -116 203 1Z" />
+    </font>
+    <font
+       id="cmr10-6"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3939"
+         units-per-em="1000"
+         font-family="cmr10"
+         descent="-250"
+         ascent="750" />
+      <glyph
+         id="glyph3941"
+         vert-adv-y="388"
+         unicode="("
+         horiz-adv-x="388"
+         glyph-name="parenleft"
+         d="M331 -240C331 -237 331 -235 314 -218C189 -92 157 97 157 250C157 424 195 598 318 723C331 735 331 737 331 740C331 747 327 750 321 750C311 750 221 682 162 555C111 445 99 334 99 250C99 172 110 51 165 -62C225 -185 311 -250 321 -250C327 -250 331 -247 331 -240Z" />
+      <glyph
+         id="glyph3943"
+         vert-adv-y="388"
+         unicode=")"
+         horiz-adv-x="388"
+         glyph-name="parenright"
+         d="M289 250C289 328 278 449 223 562C163 685 77 750 67 750C61 750 57 746 57 740C57 737 57 735 76 717C174 618 231 459 231 250C231 79 194 -97 70 -223C57 -235 57 -237 57 -240C57 -246 61 -250 67 -250C77 -250 167 -182 226 -55C277 55 289 166 289 250Z" />
+    </font>
+    <font
+       id="Times New Roman-3"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3934"
+         units-per-em="1000"
+         font-family="Times New Roman"
+         descent="-281"
+         ascent="924" />
+      <glyph
+         id="glyph3936"
+         vert-adv-y="500"
+         unicode="0"
+         horiz-adv-x="500"
+         glyph-name="zero"
+         d="M254 676C199 676 157 659 120 624C62 568 24 453 24 336C24 227 57 110 104 54C141 10 192 -14 250 -14C301 -14 344 3 380 38C438 93 476 209 476 330C476 535 385 676 254 676ZM251 650C335 650 380 537 380 328S336 12 250 12S120 119 120 327C120 539 165 650 251 650Z" />
+    </font>
+    <font
+       id="Times New Roman;font-style:italic"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face3990"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" />
+      <glyph
+         id="glyph3992"
+         vert-adv-y="444"
+         unicode="y"
+         horiz-adv-x="444"
+         glyph-name="y"
+         d="M15 400C28 403 35 404 46 404C103 404 118 379 164 207C181 142 205 25 205 8C205 -8 199 -24 184 -42C153 -83 133 -109 122 -121C101 -143 89 -151 76 -151C70 -151 63 -148 52 -140C37 -128 26 -123 15 -123C-7 -123 -24 -140 -24 -162C-24 -187 -2 -206 27 -206C91 -206 222 -56 330 142C398 265 426 337 426 386C426 416 401 441 371 441C348 441 332 426 332 404C332 389 340 378 360 365C379 354 386 345 386 331C386 291 349 213 264 72L244 188C229 276 173 441 158 441H154C153 440 149 440 145 440C136 439 100 433 47 423C42 422 29 419 15 417V400Z" />
+    </font>
+    <font
+       id="Times New Roman;font-style:italic-0"
+       horiz-adv-x="0"
+       horiz-origin-x="0"
+       horiz-origin-y="0"
+       vert-origin-x="45"
+       vert-origin-y="90"
+       vert-adv-y="90">
+      <font-face
+         id="font-face4014"
+         units-per-em="1000"
+         font-family="Times New Roman;font-style:italic"
+         descent="-270"
+         ascent="924" />
+      <glyph
+         id="glyph4016"
+         vert-adv-y="444"
+         unicode="x"
+         horiz-adv-x="444"
+         glyph-name="x"
+         d="M402 111C394 102 389 96 380 84C357 54 345 44 334 44C319 44 310 57 303 85C301 93 300 99 299 102C274 203 263 249 263 264C307 341 343 385 361 385C367 385 375 382 385 377C397 370 404 368 412 368C433 368 447 383 447 404S430 441 406 441C362 441 324 405 255 298L244 353C230 421 219 441 192 441C170 441 136 432 75 412L64 408L68 393C106 402 115 404 124 404C149 404 155 395 169 335L198 212L116 95C96 65 76 47 65 47C59 47 49 50 39 56C26 63 15 66 7 66C-12 66 -27 51 -27 31C-27 5 -7 -11 23 -11C54 -11 66 -2 116 59C143 91 164 118 206 176L236 56C249 5 262 -11 294 -11C332 -11 358 13 416 103L402 111Z" />
+    </font>
+    <path
+       id="g3-50"
+       d="M 5.65749,-1.63174 5.50265,-1.69129 c -0.44069,0.6789 -0.59552,0.786092 -1.1315,0.786092 H 1.52454 L 3.52551,-3.00145 c 1.06003,-1.10767 1.52454,-2.01287 1.52454,-2.94189 0,-1.19105 -0.96475,-2.10816 -2.20344,-2.10816 -0.65508,0 -1.27442,0.26203 -1.71511,0.73845 -0.381138,0.40496 -0.559796,0.78609 -0.762274,1.63174 l 0.25012,0.05955 C 1.09577,-6.78899 1.52454,-7.17012 2.34637,-7.17012 c 1.00048,0 1.67938,0.6789 1.67938,1.67938 0,0.92902 -0.54788,2.03669 -1.54837,3.09673 L 0.357315,-0.142926 V 0 H 5.00241 l 0.65508,-1.63174 z"
+       inkscape:connector-curvature="0" />
+    <use
+       xlink:href="#g3-50"
+       id="g7-50"
+       x="0"
+       y="0"
+       width="706"
+       height="340" />
+    <path
+       id="g1-112"
+       d="M 4.63319,10.1835 2.53694,5.55029 C 2.45356,5.35973 2.39401,5.35973 2.35828,5.35973 c -0.01191,0 -0.07146,0 -0.20248,0.09528 L 1.0243,6.31257 C 0.869467,6.43167 0.869467,6.4674 0.869467,6.50314 c 0,0.05955 0.035731,0.13101 0.119105,0.13101 C 1.06003,6.63415 1.26251,6.4674 1.39353,6.37212 1.46499,6.31257 1.64365,6.18155 1.77467,6.08627 l 2.34636,5.15723 c 0.08338,0.1906 0.14293,0.1906 0.25012,0.1906 0.17866,0 0.21439,-0.0715 0.29777,-0.2382 L 10.0763,0 c 0.0834,-0.166747 0.0834,-0.214389 0.0834,-0.23821 0,-0.119105 -0.0953,-0.23821 -0.23825,-0.23821 -0.09528,0 -0.17866,0.059552 -0.27394,0.25012 L 4.63319,10.1835 z"
+       inkscape:connector-curvature="0" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     id="namedview4"
+     showgrid="false"
+     units="mm"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:zoom="0.97450425"
+     inkscape:cx="209.09275"
+     inkscape:cy="-100.30056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     style="color:#000000;fill:none;stroke:#000000;stroke-width:0.53100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="m 118.69677,115.79411 0,-111.9853029"
+     id="path3755"
+     inkscape:connector-curvature="0" />
+  <path
+     style="color:#000000;fill:none;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="m 3.8090551,99.347007 231.7103949,0"
+     id="path3757"
+     inkscape:connector-curvature="0" />
+  <path
+     style="color:#000000;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="m 27.754075,24.609507 c 58.053021,98.581503 124.154895,101.113703 181.643525,0"
+     id="path3759"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     sodipodi:type="arc"
+     style="fill:#000000;fill-opacity:1;stroke:none"
+     id="path3761"
+     sodipodi:cx="21.7682"
+     sodipodi:cy="109.25708"
+     sodipodi:rx="31.201086"
+     sodipodi:ry="31.201086"
+     d="m 52.969286,109.25708 a 31.201086,31.201086 0 1 1 -62.4021721,0 31.201086,31.201086 0 1 1 62.4021721,0 z"
+     transform="matrix(0.06813815,0,0,0.06813815,39.121686,37.586407)" />
+  <path
+     transform="matrix(0.06813815,0,0,0.06813815,195.48992,37.586407)"
+     d="m 52.969286,109.25708 a 31.201086,31.201086 0 1 1 -62.4021721,0 31.201086,31.201086 0 1 1 62.4021721,0 z"
+     sodipodi:ry="31.201086"
+     sodipodi:rx="31.201086"
+     sodipodi:cy="109.25708"
+     sodipodi:cx="21.7682"
+     id="path3773"
+     style="fill:#000000;fill-opacity:1;stroke:none"
+     sodipodi:type="arc" />
+  <style
+     id="style3807"
+     type="text/css">
+text.f1 {font-family:Times New Roman;font-size:11.9105px}
+text.f7 {font-family:Times New Roman;font-size:11.9105px}
+text.f11 {font-family:Times New Roman;font-size:11.9105px}
+text.f12 {font-family:cmr10;font-size:11.9105px}
+</style>
+  <g
+     id="page1"
+     transform="matrix(1.0075,0,0,1.0075,-10.364118,-21.335093)">
+    <text
+       id="text3810"
+       y="65.753403"
+       x="56.4133"
+       class="f12"
+       style="font-size:11.91049957px;font-family:cmr10">(</text>
+    <g
+       transform="matrix(0.99255583,0,0,0.99255583,82.917834,-196.86135)"
+       id="g4064-2">
+      <use
+         height="1"
+         width="1"
+         x="56.4133"
+         xlink:href="#g1-112"
+         y="55.717201"
+         id="use4041-6"
+         transform="matrix(1.0075,0,0,1.0075,-69.572991,198.34028)" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m -2.7032993,254.00566 6.0224118,0 0,0.46963 -6.0224118,0 z"
+         id="rect4043-5" />
+    </g>
+    <text
+       id="text3818"
+       y="65.753403"
+       x="80.247398"
+       class="f11"
+       style="font-size:11.91049957px;font-family:Times New Roman">2</text>
+    <text
+       id="text3820"
+       y="65.753403"
+       x="86.224899"
+       class="f7"
+       style="font-size:11.91049957px;font-family:Times New Roman">,</text>
+    <text
+       id="text3822"
+       y="65.753403"
+       x="90.852402"
+       class="f11"
+       style="font-size:11.91049957px;font-family:Times New Roman">1</text>
+    <text
+       id="text3824"
+       y="65.753403"
+       x="96.807602"
+       class="f12"
+       style="font-size:11.91049957px;font-family:cmr10">)</text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.91067028px;font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.25;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="65.178871"
+       y="66.804604"
+       id="text4131"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4133"
+         x="65.178871"
+         y="66.804604"
+         style="font-style:normal;font-weight:normal">−</tspan></text>
+  </g>
+  <style
+     id="style3885"
+     type="text/css">
+text.f1 {font-family:Times New Roman;font-size:11.9105px}
+text.f7 {font-family:Times New Roman;font-size:11.9105px}
+text.f11 {font-family:Times New Roman;font-size:11.9105px}
+text.f12 {font-family:cmr10;font-size:11.9105px}
+</style>
+  <g
+     id="g4097"
+     transform="translate(178.09498,-271.20159)">
+    <g
+       transform="translate(-6.6891865,51.971577)"
+       id="g4064">
+      <use
+         height="1"
+         width="1"
+         x="56.4133"
+         xlink:href="#g1-112"
+         y="55.717201"
+         id="use4041"
+         transform="matrix(1.0075,0,0,1.0075,-69.572991,198.34028)" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m -2.7032993,254.00566 6.0224118,0 0,0.46963 -6.0224118,0 z"
+         id="rect4043" />
+    </g>
+    <text
+       id="text3888"
+       y="316.5538"
+       x="-24.100605"
+       class="f12"
+       style="font-size:11.99982834px;font-family:cmr10">(</text>
+    <text
+       id="text3894"
+       y="316.5538"
+       x="-9.411561"
+       class="f11"
+       style="font-size:11.99982834px;font-family:Times New Roman">2</text>
+    <text
+       id="text3896"
+       y="316.5538"
+       x="-3.3891292"
+       class="f7"
+       style="font-size:11.99982834px;font-family:Times New Roman">,</text>
+    <text
+       id="text3898"
+       y="316.5538"
+       x="1.2729796"
+       class="f11"
+       style="font-size:11.99982834px;font-family:Times New Roman">1</text>
+    <text
+       id="text3900"
+       y="316.5538"
+       x="7.2729435"
+       class="f12"
+       style="font-size:11.99982834px;font-family:cmr10">)</text>
+  </g>
+  <style
+     id="style3951"
+     type="text/css">
+text.f2 {font-family:Times New Roman;font-size:11.9105px}
+text.f6 {font-family:Times New Roman;font-size:11.9105px}
+text.f7 {font-family:cmr10;font-size:11.9105px}
+</style>
+  <g
+     id="page1-2"
+     transform="matrix(1.0075,0,0,1.0075,64.486994,45.555307)">
+    <text
+       id="text3954"
+       y="65.753403"
+       x="56.4133"
+       class="f7"
+       style="font-size:11.91049957px;font-family:cmr10">(</text>
+    <text
+       id="text3956"
+       y="65.753403"
+       x="61.034401"
+       class="f6"
+       style="font-size:11.91049957px;font-family:Times New Roman">0</text>
+    <text
+       id="text3958"
+       y="65.753403"
+       x="66.9897"
+       class="f2"
+       style="font-size:11.91049957px;font-family:Times New Roman">,</text>
+    <text
+       id="text3960"
+       y="65.753403"
+       x="71.617104"
+       class="f6"
+       style="font-size:11.91049957px;font-family:Times New Roman">0</text>
+    <text
+       id="text3962"
+       y="65.753403"
+       x="77.572304"
+       class="f7"
+       style="font-size:11.91049957px;font-family:cmr10">)</text>
+  </g>
+  <style
+     id="style3994"
+     type="text/css">
+text.f3 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+</style>
+  <g
+     id="page1-9"
+     transform="matrix(1.0075,0,0,1.0075,51.466267,-55.754293)">
+    <text
+       id="text3997"
+       y="65.753403"
+       x="56.4133"
+       class="f3"
+       style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">y</text>
+  </g>
+  <style
+     id="style4018"
+     type="text/css">
+text.f3 {font-family:Times New Roman;font-style:italic;font-size:11.9105px}
+</style>
+  <g
+     id="page1-1"
+     transform="matrix(1.0075,0,0,1.0075,171.905,44.879807)">
+    <text
+       id="text4021"
+       y="65.753403"
+       x="56.4133"
+       class="f3"
+       style="font-size:11.91049957px;font-style:italic;font-family:Times New Roman">x</text>
+  </g>
+</svg>
