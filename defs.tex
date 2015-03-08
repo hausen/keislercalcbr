@@ -303,6 +303,17 @@
 
 \def\SPC{\hspace{2ex}}
 
+\newenvironment{interpretsolution}%
+  {
+    \begingroup
+    \ifx\interpretsolutionbox\undefined
+    \newsavebox\interpretsolutionbox
+    \fi
+    \sbox{\interpretsolutionbox}{\emph{Passo} \itshape3:{ }}
+    \leftskip\wd\interpretsolutionbox\parindent0pt
+    \hspace{-\wd\interpretsolutionbox}\emph{Interpretação da solução:} }%
+  {\par\endgroup}
+
 \spnewtheorem{contexample}{Exemplo}{\itshape}{\rmfamily}
 
 \usepackage{refcount}
