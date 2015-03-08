@@ -1,8 +1,297 @@
+\graphicspath{ {./figuras/03_continuity/} }
 \chapter{Funções contínuas}
 \label{chp:continuity}
 
 \section{Como Estabelecer um Problema}
 \label{sec:howtoproblem}
+
+Quando estamos trabalhando com aplicações do cálculo, os problemas são
+frequentemente apresentados de maneira verbal, e é nossa tarefa escrevê-los
+em termos matemáticos. Um problema pode ser geralmente descrito por uma
+lista de equações e inequações. As próximas duas seções contém vários
+exemplos que ilustram o processo de tradução de problemas para a lignuagem
+matemática. Os exemplos desta seção usam conceitos de álgebra e geometria,
+enquanto que os da próxima seção usam o cálculo.
+
+Às vezes é difícil identificar como começar a solução de um problema que
+é contado por meio de uma história. É útil dividir este processo em três
+etapas:
+\begin{stepanalysis}
+\item Desenhe um diagrama, se possível, e rotule todas as quantidades
+      envolvidas.
+\item Escreva a informação dada como um conjunto de equações e/ou
+      inequações.
+\item Resolva o problema matemático e interprete a solução encontrada
+      para responder o problema original da história.
+\end{stepanalysis}
+
+\begin{example}\label{ex:chp3p1ex1}
+De acordo com um mapa de tesouro, existe um baú enterrado a oeste de
+determinada caverna e a 200 passos de uma árvore. A árvore está a 30
+passos a oeste e 40 passos ao norte da caverna. Qual é a distância, em
+linha reta, entre o tesouro e a árvore?
+
+A solução para este problema usa a fórmula quadrática, a qual será muito
+utilizada ao longo deste curso de cálculo. Nós a revisaremos aqui.
+
+\newdef[fórmula!quadrática]{Fórmula quadrática}: Se $a \ne 0$, então
+$$
+  ax^2 + bx + c = 0
+$$
+se, e somente se,
+$$
+  x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+$$
+
+Resolveremos o Exemplo~\ref{ex:chp3p1ex1} em três etapas.
+\begin{stepanalysis}
+\item Desenhe um diagrama e rotule todas as quantidades envolvidas. Na
+      Figura~\ref{fig:treasuremap}, colocamos a caverna na origem e
+      chamamos de $x$ a distância entre a caverna e o objetivo
+      ao longo do eixo dos $x$.
+      A árvore está no ponto $(30, 40)$ e o tesouro está no ponto $(x, 0)$.
+\includefig{treasuremap}
+\item Escreva as informações conhecidas como um sistema de fórmulas. Pela
+      Fórmula da Distância, temos
+      $$
+        200 = \sqrt{(x-30)^2 + (0-40)^2}, \hspace{1.5em} x \ge 0
+      $$
+      A desigualdade $x \ge 0$ aparece pois o tesouro está a leste da
+      caverna.
+\item Resolva para $x$. Elevando ambos os lados da Fórmula da Distância
+      ao quadrado, temos
+      \begin{eqnarray*}
+        \fnum{40000} & = & (x - 30)^2 + (0 - 40)^2 = x^2 - 60x + 900 + 1600\\
+        & = & x^2 - 60x + 250 \\
+        &   & x^2 - 60x + \fnum{37500} = 0
+      \end{eqnarray*}
+      Para encontrarmos $x$, usamos a Fórmula Quadrática.
+      \begin{eqnarray*}
+        x & = & \frac{60 \pm \sqrt{(60)^2 - 4(-\fnum{37500}}}{2}
+          = \frac{60 \pm \sqrt{\fnum{153600}}}2{} \\
+        & = & 30 \pm \sqrt{\fnum{38400}}.
+      \end{eqnarray*}
+\end{stepanalysis}
+\begin{interpretsolution}
+  Como $x \ge 0$, rejeitamos a solução negativa. Assim,
+  $x = 30 + \sqrt{\fnum{38400}} \sim 226$ passos. O tesouro está a
+  aproximadamente 226 passos da caverna.
+\end{interpretsolution}
+\end{example}
+
+A maioria dos problemas de cálculo envolve duas ou mais variáveis.
+
+\begin{example}
+Um homem de $1,8\si{m}$ de altura está próximo de um poste cuja lâmpada
+está a $3\si{m}$ de altura. Encontre o comprimento de sua sombra em função
+da sua distância ao poste.
+\begin{stepanalysis}
+\item Desenhe um diagrama e rotule todas as quantidades envolvidas. Na
+      Figura~\ref{fig:exlamppost}, sejam
+      \begin{eqnarray*}
+        x & = & \text{distância do homem ao poste,} \\
+        s & = & \text{comprimento de sua sombra}.
+      \end{eqnarray*}
+\includefig{exlamppost}
+\item Escreva as informações conhecidas como um sistema de fórmulas. Por
+      semelhança de triângulos, temos
+      $$
+        \frac{s}{1,8} = \frac{s + x}{3}, \hspace{1.5em} x \ge 0.
+      $$
+      A desigualdade $x \ge 0$ aparece pois a distância não pode ser
+      negativa.
+\item Resolva para $s$ em função de $x$.
+      \begin{eqnarray*}
+        3s & = & 1,8s + 1,8x, \\
+        1,2s & = & 1,8x, \\
+         12s & = & 18x, \\
+        s & = & \frac{18}{12}x = \frac{3}{2}x.
+      \end{eqnarray*}
+\end{stepanalysis}
+\begin{interpretsolution} $s = \frac{3}{2}x$, \hspace{1.5ex} $x \ge 0$.
+
+  O domínio da função é $[0, \infty)$. O comprimento da sombra é
+  $\frac{3}{2}$ vezes a distância do homem ao poste. Neste problema, $x$
+  é a variável independente e $s$ depende de $x$.
+\end{interpretsolution}
+\end{example}
+
+\begin{example}
+Dois navios começam a se deslocar a partir do mesmo ponto no instante
+$t = 0$. Um navio se desloca para o norte a $30\si{km/h}$, enquanto que
+o outro navio se desloca para o leste a $40\si{km/h}$. Encontre a
+distância entre os dois navios em função do tempo.
+\begin{stepanalysis}
+\item Os navios começam na origem; o eixo dos $y$ aponta para o norte;
+o eixo dos $x$ aponta para o leste. O diagrama é mostrado na
+Figura~\ref{fig:exships}. Os valores $x$ e $y$ representam as distâncias
+entre a origem e o navio que se desloca para o leste e para o norte,
+respectivamente e $z$ é a distância entre os navios, todos em quilômetros.
+A variável $t$ é o tempo, medido em horas.
+\includefig{exships}
+\item $t \ge 0$, \hspace{1.5em} $y = 30t$, \hspace{1.5em} $x = 40t$,
+      \hspace{1.5em} $z = \sqrt{x^2 + y^2}$.
+\item $x = \sqrt{(30t)^2 + (40t)^2} = \sqrt{2500t^2} = 50t$.
+\end{stepanalysis}
+\begin{interpretsolution} $z = 50t$, \hspace{1.5em} $t \ge 0$.
+
+Onde $t$ é uma variável independente, $x$, $y$ e $z$ dependem de $t$.
+A distância entre os navios é de $50t$ quilômetros, onde $t$ é o
+tempo em horas.
+\end{interpretsolution}
+\end{example}
+
+\begin{example}
+  Um incêndio florestal começa ao longo de um segmento de reta com
+  $20\si{m}$ de comprimento e se expande em todas as direções à taxa
+  de $2\si{m/s}$. Determine a área queimada em função do tempo.
+  \begin{stepanalysis}
+  \item A partir do diagrama na Figura~\ref{fig:exbrushfire}, temos:
+        \begin{eqnarray*}
+          A & = & \text{área total queimada} \\
+          A_1 & = & \text{área do semicírculo esquerdo} \\
+          A_2 & = & \text{área do retângulo central} \\
+          A_3 & = & \text{área do semicírculo direito} \\
+          s & = & \text{distância do fogo em expansão} \\
+          t & = & \text{tempo}
+        \end{eqnarray*}
+  \includefig{exbrushfire}
+  \item As relações entre as variáveis são:
+        \begin{eqnarray*}
+          s & = & 2t, \hspace{1.5em} t \ge 0 \\
+          A_1 & = & \frac{1}{2}\pi s^2, \hspace{1.5em} A_2 = 20(2s),
+            \hspace{1.5em} A_3 = \frac{1}{2} \pi s^2, \\
+          A & = & A_1 + A_2 + A_3.
+        \end{eqnarray*}
+  \item Determinamos $A$ em função de $t$,
+        \begin{eqnarray*}
+          A_1 & = & \frac{1}{2}\pi(2t)^2 = 2 \pi t^2,\\
+          A_2 & = & 20 \cdot 2 \cdot 2t = 80t, \\
+          A_3 & = & \frac{1}{2}\pi(2t)^2 = 2\pi t^2, \\
+          A & = & 2\pi t^2 + 80t + 2\pi t^2 = 4\pi t^2 + 80t. \\
+        \end{eqnarray*}
+  \end{stepanalysis}
+  \begin{interpretsolution}
+    A área queimada é de $A = 4\pi t^2 + 80t \si{km^2}$, onde $t \ge 0$
+    é o tempo em segundos.
+  \end{interpretsolution}
+\end{example}
+
+Uma identidade algébrica que aparece frequentemente em problemas de cálculo
+é
+$$
+  (a - b)(a + b) = a^2 - b^2.
+$$
+Às vezes ela ocorre na forma
+$$
+  (\sqrt{a} - \sqrt{b})(\sqrt{a} + \sqrt{b}) = a - b.
+$$
+
+\begin{example}
+A área do quadrado $A$ é doze unidades de área maior do que a área do
+quadrado $B$, e o lado de $A$ é três unidades de comprimento maior do
+que o lado de $B$. Encontre as áreas de $A$ e $B$.
+\begin{stepanalysis}
+\item Seja $a$ a área de $A$ e $b$ a área de $B$. Veja
+      Figura~\ref{fig:exsquarearea}.
+\includefig{exsquarearea}
+\item Os lados dos quadrados possuem comprimento $\sqrt{a}$ e $\sqrt{b}$,
+      respectivamente. Portanto,
+      $$
+        a - b = 12, \hspace{1.5em} \sqrt{a} - \sqrt{b} = 3.
+      $$
+\item Encontramos $\sqrt{a} + \sqrt{b}$.
+      \begin{eqnarray*}
+        (\sqrt{a} - \sqrt{b})(\sqrt{a} + \sqrt{b}) & = & a - b, \\
+        3(\sqrt{a} + \sqrt{b}) & = & 12, \\
+        \sqrt{a} + \sqrt{b} & = & 4.
+      \end{eqnarray*}
+      Somando as equações $\sqrt{a} + \sqrt{b} = 4$ e
+      $\sqrt{a} - \sqrt{b} = 3$, obtemos $2\sqrt{a} = 7$, \;
+      $\sqrt{a} = \frac{7}{2}$, \; $a = \frac{49}{4}$. A subtração das
+      equações dá $2 \sqrt{b} = 1$, \; $\sqrt{b} = \frac{1}{2}$, \;
+      $b = \frac{1}{4}$.
+\end{stepanalysis}
+\begin{interpretsolution}
+  A área do quadrado $A$ é $\frac{49}{4}$ unidades de área e a área do
+  quadrado $B$ é $\frac{1}{4}$ unidades de área.
+\end{interpretsolution}
+\end{example}
+
+\begin{sectionproblems}
+\exer{Encontre o perímetro $p$ de um quadrado em função de sua área $A$.}
+
+\exer{Um pedaço de argila no formato de um cubo de lado $s$ é moldado
+      até se tornar uma esfera de raio $r$. Encontre $r$ em função de $s$.}
+
+\exer{Encontre o volume $V$ de uma esfera em função da área da sua
+      superfície $S$.}
+
+\exer{Encontre a área $A$ de um retângulo com perímetro $4$ em função do
+      comprimento $x$ de um de seus lados.}
+
+\exer{Encontre a distância $z$ entre a origem e um ponto na parábola
+      $y = 1 - x^2$ em função de $x$.}
+
+\exer{Exprima o perímetro $p$ de um triângulo retângulo em função de
+      sua base $x$ e altura $y$.}
+
+\exer{Quatro pequenos quadrados, cada um de lado $x$, são cortados dos
+      cantos de um grande quadrado de cartolina cujo lado é $s$. Os
+      lados do quadrado grande são dobrados para formar uma caixa sem
+      tampa. Encontre o volume da caixa em função de $s$ e $x$.}
+
+\exer{Uma escada de comprimento $L$ é apoiada contra uma parede com a
+      sua parte inferior à distância $x$ da parede. Encontre a altura
+      $y$ do topo da escada em função de $x$.}
+
+\exer{Um homem de altura $y$ está a $3\si{m}$ de uma lâmpada posicionada
+      a $10\si{m}$ de altura. Encontre o comprimento $s$ de sua sombra
+      em função de $y$.}
+
+\exer{Um navio está se deslocando para o norte a $30\si{\km/m}$ e passa
+      pela origem no instante $t = 0$ hora. Um segundo navio, se deslocando
+      para o leste a $30\si{km/h}$ passa pela origem em $t = 1$ hora.
+      Encontre a distância $z$ entre eles em função de $t$.}
+
+\exer{Uma bola é jogada do nível do solo e a sua trajetória segue as
+      equações
+      $$
+        x = bt, \hspace{1.5em} y = t - 16t^2.
+      $$
+      Que distância a bola percorrerá na direção $x$ até que ela atinja
+      o solo?}
+
+\exer{Um campo de ervas daninhas inicialmente ocupa um espaço circular
+      com $2\si{m}$ de raio. O seu crescimento é tal que o seu raio
+      aumenta de $1\si{m}$ por dia. Encontre a sua área após cinco dias.}
+
+\exer{Um retângulo tem, originalmente, comprimento $\ell$ e largura $w$.
+      Sua forma é alterada de tal modo que seu comprimento aumenta de
+      uma unidade por segundo, enquanto que sua largura decresce de $2$
+      unidades por segundo. Encontre sua área em função de $\ell$, $w$
+      e do tempo $t$.}
+
+\exer{Para cada $p$ unidades de poluição por ítem, um produto pode ser
+      feito ao custo de $2 + 1/p$ reais por ítem. É preciso produzir
+      $x$ ítens, com poluição total de uma unidade de poluição. Encontre
+      o custo.}
+
+\exer{Em economia, o lucro de produção e venda de $x$ ítens é igual ao
+      faturamento menos o custo,
+      $$
+        L(x) = F(x) - C(x),
+      $$
+      Se um produto pode ser fabricado a um custo de R\$10 por
+      ítem e se $x$ ítens podem ser vendidos a um preço de $100-\sqrt{x}$
+      por ítem, encontre o lucro em função de $x$.}
+
+\exer{Suponha que a demanda por um produto vendido a preço $p$ é de
+      $x = 1000/\sqrt{p}$, ou seja, $x = 1000/\sqrt{p}$ ítens podem ser
+      vendidos quando o preço é de $p$ reais por ítem. Se o custo de
+      produção de $x$ ítens é de $100+10x$ reais, encontre o lucro em
+      função do preço de venda $p$.}
+\end{sectionproblems}
 
 \section{Taxas Relacionadas}
 \label{sec:relatedrates}
