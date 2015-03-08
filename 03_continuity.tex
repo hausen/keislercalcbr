@@ -315,9 +315,100 @@ problemas frequentemente podem ser resolvidos por diferenciação implícita.
       Tanto $A$ quanto $r$ são funções de $t$. O diagrama é mostrado na
       Figura~\ref{fig:inkblot}.
 \includefig{inkblot}
+\item Escreva a informação dada na forma de equações.
+      $$
+        \dif A/\dt = 0,03, \hspace{1.5em} A = \pi r^2.
+      $$
+      O problema se resume a encontrar $\dif r/\dt$ quando $r = 1/2$.
+\item Derive ambos os lados da equação $A = \pi r^2$ com relação a $t$.
+      $$
+        \dod A t = 2\pi r \dod r t, \text{ portanto } 0,03 = 2 \pi r
+                                                      \dod r t .
+      $$
+\item Fixe $r = \frac{1}{2}$ e resolva para $\dif r/\dt$.
+      $$
+        0,03 = 2 \pi \frac{1}{2} \cdot \dod r t, \text{ portanto }
+          \dod r t = \frac{0,03}{\pi}\si{cm/s}.
+      $$
 \end{stepanalysis}
 \end{example}
 
+\begin{example}
+Uma escada de $3\si{m}$ de altura está apoiada contra uma parede. A parte
+inferior da escada é afastada da parede à velocidade constante de
+$0,6\si{m/s}$. Encontre a velocidade com que o topo da escada está
+escorregando para baixo ao longo da parede quando a parte inferior está
+a $1,5\si{m}$ da parede. \emph{Atenção:} apesar de a parte inferior da
+escada estar sendo deslocada a uma velocidade constante, a velocidade de
+deslocamento da parte superior varia com o tempo.
+\begin{stepanalysis}
+\item $t$ = tempo,\\
+      $x$ = distância entre a parede e a parte inferior,\\
+      $y$ = altura entre o topo da escada e o chão.
+
+      O diagama é mostrado na Figura~\ref{fig:slidingladder}.
+\includefig{slidingladder}
+\item $\dx/\dt = 0,6$, \hspace{1.5em} $x^2 + y^2 = 3^2 = 9$.
+\item Derivamos ambos os lados de $x^2 + y^2 = 9$ com relação a $t$.
+      $$
+        2x \dod x t + 2y \dod y t = 0, \text{ portanto }
+          1,2 x + 2y \dod y t = 0.
+      $$
+\item Fixe $x = 1,5\si{m}$ e resolva para $\dy/\dt$. Encontramos
+      primeiramente o valor de $y$ quando $x = 1,5$.
+      $$
+        x^2 + y^2 = 9, \hspace{1.5em} y = \sqrt{9 - x^2} =
+          \sqrt{9 - 1,5^2} = \sqrt{6,75}.
+      $$
+      Então, resolvemos para $\dy/\dt$.
+      \begin{eqnarray*}
+        1,2 x + 2 y \dod y t & = & 0, \\
+        1,2 \cdot 1,5 + 2 \sqrt{6,75} \dod y t & = & 0, \\
+        \dod y t & = & -\frac{1,2 \cdot 1,5}{2 \sqrt{6,75}} =
+          - \frac{1,8}{2 \sqrt{6,75}} \sim 0,35\si{m/s}.
+      \end{eqnarray*}
+      O sinal de $\dy/\dt$ é negativo pois $y$ está diminuindo.
+\end{stepanalysis}
+\end{example}
+
+Problemas de taxas relacionadas geralmente assumem a forma a seguir.
+
+\emph{Dados:}
+\begin{enumerate}[(a)]
+\item Duas quantidades que dependem do tempo, a saber, $x$ e $y$.
+\item A taxa de variação de uma delas, por exemplo, $\dx/\dt$.
+\item Uma equação que mostra a relação entre $x$ e $y$.
+\end{enumerate}
+(Geralmente, esta informação é dada na forma de uma descrição verbal de
+uma situação física e parte do problema é exprimi-lo na forma de uma
+equação.)
+
+\emph{O problema:} encontrar a taxa de veriação de $y$ com relação ao
+tempo, $\dy/\dt$, em um dado instante $t_0$. (Às vezes, o instante $t_0$
+é especificado por algum valor dado para $x$ ou $y$ naquele instante.)
+
+Problemas de taxas relacionadas frequentemente podem ser resolvidos em
+quatro passos, conforme fizemos nos exemplos anteriores.
+\begin{stepanalysis}
+\item Rotule todas as quantidades no problema e construa um diagrama.
+      Considerando que os rótulos sejam $x$, $y$ e $t$ (tempo), os
+      passos restantes são os seguintes:
+\item Escreva uma equação para a taxa de variação $\dx/\dt$, a qual
+      será dada no enunciado. Escreva outra
+      equação para a relação dada entre $x$ e $y$.
+\item Derive ambos os lados da equação que relaciona $x$ e $y$ com
+      relação a $t$. Escolhemos o tempo $t$ como a variável independente.
+      O resultado é uma nova equação envolvendo $x$, $y$, $\dx/\dt$ e
+      $\dy/\dt$.
+\item Fixe $t = t_0$ e resolva para $\dy/\dt$. Pode ser necessário
+      determinar primeiramente os valores de $x$, $y$ e $\dx/\dt$ no
+      instante $t = t_0$.
+\end{stepanalysis}
+
+O passo mais complexo é geralmente o segundo, já que é necessário
+interpretar a descrição verbal do problema para obtermos um sistema
+de fórmulas. Algumas vezes, são dadas mais de duas quantidades que
+dependem do tempo. O próximo exemplo tem três dessas quantidads.
 \section{Limites}
 \label{sec:limits}
 
