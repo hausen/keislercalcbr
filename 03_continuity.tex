@@ -408,7 +408,55 @@ quatro passos, conforme fizemos nos exemplos anteriores.
 O passo mais complexo é geralmente o segundo, já que é necessário
 interpretar a descrição verbal do problema para obtermos um sistema
 de fórmulas. Algumas vezes, são dadas mais de duas quantidades que
-dependem do tempo. O próximo exemplo tem três dessas quantidads.
+dependem do tempo. O próximo exemplo tem três destas quantidads.
+
+\begin{example}
+Um carro se desloca para o norte a $40\si{km/h}$ e passa um ponto $P$
+à $1$ hora. Outro carro se move para o leste a $60\si{km/h}$ e
+passa pelo mesmo ponto $P$ às $2\si{h}30\si{min}$. Qual é a variação
+da distância entre os dois carros às $2\si{h}$?
+
+Note que o enunciado sequer informa se os carros estão se
+aproximando ou se afastando às $2\si{h}$. Isto é parte do problema.
+\begin{stepanalysis}
+\item $t$ = tempo,\\
+      $y$ = posição do carro que trafega para o norte,\\
+      $x$ = posição do carro que trafega para o leste,\\
+      $z$ = distãncia entre os dois carros.
+
+      No diagrama da Figura~\ref{fig:carsnortheast}, o ponto $P$ é
+      colocado na origem.
+\includefig{carsnortheast}
+\item $\dsfrac{\dy}{\dt} = 40$, \hspace{1.5em}
+      $\dsfrac{\dx}{\dt} = 60$, \hspace{1.5em}
+      $x^2 + y^2 = z^2$.
+\item $2x\dsfrac{\dx}{\dt} + 2y\dsfrac{\dy}{\dt} = 2z\dsfrac{\dz}{\dt}$,
+      \;\;\; portanto \;\;\; $60x + 40y = z\dsfrac{\dz}{\dt}$
+\item Primeiramente, encontramos os valores de $x$, $y$ e $z$ no instante
+      $t = 2\si{h}$. Temos que em $t = 1$, $y = 0$. Na próxima hora, o
+      carro se desloca $40\si{km}$, então em $t = 2$, $y = 40$. Temos também
+      que no instante $t = 2,5$, $x = 0$. Meia hora antes disto, o carro
+      estava $30\si{km}$ à esquerda de $P$, então em $t = 2$, $x = -30$.
+      Em suma:
+      $$
+        \text{em } t = 2, \hspace{1.5em} y = 40 \hspace{1.5em} \text{e}
+          \hspace{1.5em} x = -30.
+      $$
+      Agora, podemos encontrar o valor de $z$ em $t = 2$,
+      $$
+        z = \sqrt{x^2 + y^2} = \sqrt{(-30)^2 + 40^2} = 50.
+      $$
+      Finalmente, podemos resolver para $\dz/\dt$ em $t = 2$,
+      $$
+        60 \cdot (-30) + 40 \cdot 40 = 50 \dod z t, \hspace{1.5em}
+          \dod z t = \frac{-1800 + 1600}{50} = -4.
+      $$
+      O sinal negativo indica que $z$ está diminuindo. Assim, às
+      $2\si{h}$, os carros estão se aproximando a uma velociade
+      relativa de $4\si{km/h}$ entre eles.
+\end{stepanalysis}
+\end{example}
+
 \section{Limites}
 \label{sec:limits}
 
