@@ -9,7 +9,7 @@ Quando estamos trabalhando com aplicações do cálculo, os problemas são
 frequentemente apresentados de maneira verbal, e é nossa tarefa escrevê-los
 em termos matemáticos. Um problema pode ser geralmente descrito por uma
 lista de equações e inequações. As próximas duas seções contém vários
-exemplos que ilustram o processo de tradução de problemas para a lignuagem
+exemplos que ilustram o processo de tradução de problemas para a linguagem
 matemática. Os exemplos desta seção usam conceitos de álgebra e geometria,
 enquanto que os da próxima seção usam o cálculo.
 
@@ -457,6 +457,46 @@ aproximando ou se afastando às $2\si{h}$. Isto é parte do problema.
 \end{stepanalysis}
 \end{example}
 
+\begin{example}
+  A população de um país está crescendo à taxa de um milhão de pessoas
+  por ano, enquanto que o consumo de gasolina está diminuindo em um
+  bilhão de litros por ano. Encontre a taxa de variação do consumo
+  per capita de gasolina quando a população é de 30 milhões e o consumo
+  total de gasolina é de 15 bilhões de litros por ano.
+
+  O consumo per capita de gasolina é o consumo total de gasolina dividido
+  pela população.
+\begin{stepanalysis}
+  \item $t$ = tempo\\
+        $x$ = população\\
+        $y$ = consumo de gasolina\\
+        $z$ = consumo per capita de gasolina.
+  \item Em $t = t_0$,
+  \begin{eqnarray*}
+    \dx/\dt & = & 1 \text{ milhão} = 10^6 \\
+    \dy/\dt & = & -1 \text{ bilhão} = -10^9 \\
+          z & = & y/x.
+  \end{eqnarray*}
+  \item
+  \begin{eqnarray*}
+    \dod z t & = & \frac{x(\dy/\dt)-y(\dx/\dt)}{x^2}, \\
+    \dod z t & = & \frac{-10^9x - 10^6y}x^2}.
+  \end{eqnarray*}
+  \item Em $t = t_0$, temos
+  \begin{eqnarray*}
+    x & = & 30 \text{ milhões} = 20 \times 10^6, \\
+    y & = & 15 \text{ bilhões} = 15 \times 10^9, \\
+    \text{Portanto,} \hspace{1.5em} \dod z t & = &
+      \frac{-10^9 \cdot 30 \cdot 10^6 - 10^6 \cdot 15 \cdot 10^9}%
+           {(30 \cdot 10^6)^2} \\
+    & = & -\frac{45 \cdot 10^{15}}{900 \cdot 10^{12}} = -50.
+  \end{eqnarray*}
+  O consumo per capita de gasolina está decrescendo à taxa anual de 50
+  litros por pessoa.
+\end{stepanalysis}
+\end{example}
+
+
 \section{Limites}
 \label{sec:limits}
 
@@ -477,5 +517,3 @@ aproximando ou se afastando às $2\si{h}$. Isto é parte do problema.
 
 \begin{chapterproblems}
 \end{chapterproblems}
-
-
