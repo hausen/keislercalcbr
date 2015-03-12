@@ -480,7 +480,7 @@ aproximando ou se afastando às $2\si{h}$. Isto é parte do problema.
   \item
   \begin{eqnarray*}
     \dod z t & = & \frac{x(\dy/\dt)-y(\dx/\dt)}{x^2}, \\
-    \dod z t & = & \frac{-10^9x - 10^6y}x^2}.
+    \dod z t & = & \frac{-10^9x - 10^6y}{x^2}.
   \end{eqnarray*}
   \item Em $t = t_0$, temos
   \begin{eqnarray*}
@@ -496,6 +496,81 @@ aproximando ou se afastando às $2\si{h}$. Isto é parte do problema.
 \end{stepanalysis}
 \end{example}
 
+Concluímos com mais um exemplo da área de economia. Neste exemplo,
+a variável independente é a quantidade $x$ de um produto. A quantidade
+$x$ que pode ser vendida a um preço $p$ é chamada \newdef{função demanda}
+$D(p)$.
+$$
+  x = D(p).
+$$
+Quando uma quantidade $x$ é vendida a preço $p$, a \newdef{receita} é o
+produto
+$$
+  R = px.
+$$
+A receita adicional da venda de uma unidade adicional de um produto é
+chamada \newdef{receita marginal} e é dada pela derivada
+$$
+  \text{receita marginal} = \dif R/\dx.
+$$
+
+\begin{example}
+  Suponha que a demanda por um produto é igual ao inverso do quadrado do
+  seu preço. Encontre a receita marginal quando o preço é de R\$10 por
+  unidade.
+\begin{stepanalysis}
+\item $p$ = preço, $x$ = demanda, $R$ = receita.
+\item $x = 1/p^2$, $R = px.$
+\item
+  \begin{eqnarray*}
+    \dod R x & = & p \dod x x + x \dod p x = p + x \dod p x, \\
+    \dod x p & = & -2p^{-3},
+  \end{eqnarray*}
+  então, pela Regra da Função Inversa,
+  $$
+    \dod p x = \frac{1}{\dx/\dif p} = -\frac{1}{2p^{-3}} = -\frac{1}{2}p^3.
+  $$
+  Substituindo na fórmula para $\dif R/\dx$, temos
+  $$
+    \dod R x = p + \left(\frac{1}{p^2}\right)\left(-\frac{1}{2}p^3\right)
+      = \frac{1}{2} p.
+  $$
+\item Temos que $p = 10$ reais. Portando, a receita marginal é
+  $$
+    \dif R/dx = 5 \text{ reais.}
+  $$
+  O que quer dizer que cada unidade adicional vendida trará uma receita
+  adicional de 5 reais.
+\end{stepanalysis}
+\end{example}
+
+Temos a seguir uma lista de fórmulas das
+geometrias plana e sólida, as quais serão úteis em problemas de taxas
+relacionadas. Nesta lista, $A$ = área e $V$ = volume.
+\begin{itemize}
+  \item Retângulo com lados $a$ e $b$: \;\;\;
+        $A = ab$, \;\;\; perímetro $= 2a + 2b$
+  \item Triângulo com base $b$ e altura $h$: \;\;\;
+        $A = \frac{1}{2}bh$
+  \item Círculo de raio $r$: \;\;\;
+        $A = \pi r^2$, \;\;\; circunferência = $2\pi r$
+  \item Setor (fatia de pizza) de um círculo de raio $r$ e ângulo
+        central $\theta$ (medido em radianos): \;\;\;
+        $A = \frac{1}{2}r^2 \theta$
+  \item Sólido retangular com lados $a$, $b$ e $c$: \;\;\;
+        $V = abc$
+  \item Esfera de raio $r$: \;\;\;
+        $V = \frac{4}{3}\pi r^3$, \;\;\; $A = 4\pi r^2$
+  \item Cilindro circular reto, raio da base $r$, altura $h$: \;\;\;
+        $V = \pi r^2 h, \;\;\; A = 2\pi r h$
+  \item Prisma com base de área $B$ e altura $h$: \;\;\;
+        $V = Bh$
+  \item Cone circular reto, base de raio $r$, altura $h$: \;\;\;
+        $V = \pi r^2 h/3, \;\;\; A = \pi r \sqrt{r^2 + h^2}$
+\end{itemize}
+
+\begin{sectionproblems}
+\end{sectionproblems}
 
 \section{Limites}
 \label{sec:limits}
