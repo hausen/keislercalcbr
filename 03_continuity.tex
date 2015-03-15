@@ -728,6 +728,70 @@ com lados $x$ e $y$, quando $x = 1$, $y = 2$, $\dx/\dt = 3$ e $\dy/\dt = -2$.}
 \section{Limites}
 \label{sec:limits}
 
+A noção de limite é intimamente relacionada à de derivada, mas é mais
+geral. Neste capítulo, assumiremos sempre que $f$ é uma função real
+de uma variável. Vamos recordar a definição da inclinação de $f$ em um
+ponto $a$:
+\begin{quote}
+Dizemos que $S$ é a inclinação de $f$ em $a$ se, para todo $\Delta x$
+infinitamente próximo de zero, mas não igual a zero, o quociente
+$$
+  \frac{f(a + \Delta x) - f(a)}{\Delta x}
+$$
+está infinitamente próximo de $S$.
+\end{quote}
+
+Definiremos agora o conceito de limite. Na definição a seguir, $c$ e $L$
+são números reais.
+
+\begin{defin}
+Dizemos que $L$ é o \newdef{limite} de $f(x)$ quando $x$ se aproxima de $c$
+se, para todo $x$ infinitamente próximo, mas não igual a $c$, temos que
+$f(x)$ está infinitamente próximo de $L$.
+
+Simbolicamente,
+$$
+  \lim_{x \to c} f(x) = L
+$$
+se, para todo $x \approx c$ tal que $x \ne c$, é verdade que
+$f(x) \approx L$. Quando não existe número $L$ que satisfaça a definição
+acima, dizemos que o limite de $f(x)$ quando $x$ se aproxima de $c$
+\emph{não existe}.
+\end{defin}
+
+Note que o limite
+$$
+  \lim_{x \to c} f(x)
+$$
+depende apenas dos valores de $f(x)$ para $x$ infinitamente próximo, mas
+não igual a $c$. O valor de $f(c)$, se existir, não tem influência nenhuma
+sobre o limite. Na verdade, é muito comum que o limite
+$$
+  \lim_{x \to c} f(x)
+$$
+exista, mas $f(c)$ seja indefinido.
+
+A Figura~\ref{fig:typicallimit} mostra um limite típico. Observando-se o
+ponto $(c, L)$ através de um microscópio infinitesimal, podemos ver a
+porção inteira da curva com $x \approx c$, pois $f(x)$ estará infinitamente
+próximo de $L$ e, consequentemente, dentro do campo de visão do microscópio.
+
+Na Figura~\ref{fig:inexistentlimit}, parte da curva com $x \approx c$
+sempre está fora do campo de visão do microscópio, logo o limite não existe.
+
+Nosso primeiro exemplo de um limite é a inclinação de uma função.
+
+\begin{figure}
+\begin{center}
+\subfigure[fig:typicallimit][$\displaystyle \lim_{x \to c} f(x) = L$]%
+	{\includegraphics{typicallimit}}
+
+\subfigure[fig:inexistentlimit][Limite inexistente]%
+	{\includegraphics{inexistentlimit}}
+\end{center}
+\caption{}
+\end{figure}
+
 \section{Continuidade}
 \label{sec:continuity}
 
