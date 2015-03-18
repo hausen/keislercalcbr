@@ -794,6 +794,68 @@ Nosso primeiro exemplo de um limite é a inclinação de uma função.
 \caption{}\label{fig:exgraphlimits}
 \end{figure}
 
+\begin{theorem}\label{teo:slopelimit} A inclinação de $f$ é dada pelo limite
+$$
+  f'(a) = \lim_{\Dx \to 0} \frac{f(a+\Dx) - f(a)}{\Dx}.
+$$
+\end{theorem}
+
+Em palavras, a inclinação de $f$ em $a$ é o limite da razão entre a
+variação em $f(x)$ e a variação em $x$, tomado à medida que a variação
+em $x$ se aproxima de zero. O Teorema~\ref{teo:slopelimit} pode ser
+demonstrado apenas pela comparação das definições de limite e inclinação.
+A inclinação existe exatamente quando o limite existe; e quando ambos
+existem, eles são iguais. Note que a razão
+$$
+  \frac{f(a+\Dx) - f(a)}{\Dx}
+$$
+é indefinida quando $\Dx = 0$.
+
+A inclinação de $f$ em $a$ também é igual ao limite
+$$
+  f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}.
+$$
+Isto pode ser visto se fixarmos
+\begin{eqnarray*}
+  \Dx & = & x - a, \\
+  x & = & a + \Dx.
+\end{eqnarray*}
+Então, quando $x \approx a$ mas $x \ne a$, temos que $\Dx \approx 0$ mas
+$\Dx \ne 0$ e
+$$
+  \frac{f(x) - f(a)}{x - a} = \frac{f(a + \Dx) - f(a)}{\Dx} \approx f'(a).
+$$
+
+Às vezes um limite pode ser avaliado se reconhecermos que ele é uma
+derivada e usarmos o Teorema~\ref{teo:slopelimit}.
+
+\begin{example}
+  Avalie $\displaystyle \lim_{\Dx \to 0} \frac{(3 + \Dx)^2 - 9}{\Dx}.$
+
+  Seja $F(x) = x^2$. O limire dado é apenas $F'(3)$.
+  \begin{eqnarray*}
+    F'(3) & = & \lim_{\Dx \to 0} \frac{F(3 + \Dx) - F(3)}{\Dx} =
+      \lim_{\Dx \to 0} \frac{(3 + \Dx)^2 - 9}{\Dx}, \\
+    F'(3) & = & 2 \cdot 3 = 6.
+  \end{eqnarray*}
+  Portanto,
+  $$
+    \lim_{\Dx \to 0} \frac{(3 + \Dx)^2 - 9}{\Dx} = 6.
+  $$
+\end{example}
+
+O símbolo $x$ em
+$$
+  \lim_{x \to c} f(x)
+$$
+é um exemplo de ``variável artificial\tnote{Do inglês: ``dummy variable.''}.''
+O valor do limite não depende de $x$ de maneira nenhuma. Entretanto, ele
+depende de $c$. Se substituirmos $c$ por uma variável $u$, obtemos uma
+nova função
+$$
+  L(u) = \lim_{x \to u} f(x).
+$$
+
 \section{Continuidade}
 \label{sec:continuity}
 
