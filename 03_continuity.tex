@@ -829,7 +829,7 @@ $$
 Às vezes um limite pode ser avaliado se reconhecermos que ele é uma
 derivada e usarmos o Teorema~\ref{teo:slopelimit}.
 
-\begin{example}
+\begin{example}\label{ex:cap3p3ex1}
   Avalie $\displaystyle \lim_{\Dx \to 0} \frac{(3 + \Dx)^2 - 9}{\Dx}.$
 
   Seja $F(x) = x^2$. O limire dado é apenas $F'(3)$.
@@ -855,6 +855,68 @@ nova função
 $$
   L(u) = \lim_{x \to u} f(x).
 $$
+
+Um limite $\displaystyle \lim_{x \to c} f(x)$ é geralmente calculado da
+seguinte maneira:
+\begin{stepanalysis}
+  \item Considere $x$ infinitamente próximo, mas não igual a $c$, e
+        simplifique $f(x)$.
+  \item Calcule a parte padronizada $\std(f(x))$.
+\end{stepanalysis}
+\emph{Conclusão:} Se o limite $\displaystyle \lim_{x \to c} f(x)$ existir,
+ele deve ser igual a $\std(f(x))$.
+
+\begin{examplecont}{ex:cap3p3ex1}
+  Em vez de usarmos a derivada, podemos calcular diretamente
+  $$
+    \lim_{\Dx \to 0} \frac{(3 + \Dx)^2 - 9}{\Dx}.
+  $$
+  \begin{stepanalysis}
+    \item Seja $\Dx \approx 0$ mas $\Dx \ne 0$. Então
+    $$
+      \frac{(3 + \Dx)^2 - 9}{\Dx} = \frac{9 + 6 \Dx + \Dx^2 - 9}{\Dx} =
+        \frac{6 \Dx + \Dx^2}{\Dx} = 6 + \Dx.
+    $$
+    \item Tomando-se a parte padronizada, temos
+    $$
+      \std \frac{(3 + \Dx)^2 - 9}{\Dx} = \std(6 + \Dx) = 6.
+    $$
+    Portanto, o limite é igual a $6$. (Veja Figura~\ref{fig:cap3p3ex1}
+  \end{stepanalysis}
+\end{examplecont}
+
+\includefig[$f(\Dx) = \frac{(3 + \Dx)^2 - 9}{\Dx}$]{cap3p3ex1}
+
+\begin{example}
+  Determine $\displaystyle \lim_{t \to 4} (t^2 + 3t - 5)$.
+
+  \begin{stepanalysis}
+    \item Seja $t$ infinitamente próximo mas não igual a $4$.
+    \item Tomamos a parte padronizada.
+    $$
+      \std(t^2 + 3t - 5) = 4^2 + 3 \cdot 4 - 5 = 23,
+    $$
+    logo o limite é $23$.
+  \end{stepanalysis}
+\end{example}
+
+\begin{example}
+  Determine $\displaystyle \lim_{x \to 2} \frac{x^2 + 3x - 10}{x^2 - 4}$.
+
+  \begin{stepanalysis}
+    \item Desta vez, o termo dentro do limite é indefinido para $x = 2$.
+    Fazendo-se $x \approx 2$, mas $x \ne 2$, temos
+    $$
+      \frac{x^2 + 3x - 10}{x^2 - 4} = \frac{(x - 2)(x + 5)}{(x - 2)(x + 2)}
+        = \frac{x + 5}{x + 2}.
+    $$
+    \item $\displaystyle \st{\frac{x^2 + 3x - 10}{x^2 - 4}} =
+             \st{\frac{x + 5}{x + 2}} = \frac{2 + 5}{2 + 2} = \frac{7}{4}$.\\
+    Portanto, \hspace{1.5em}
+      $\displaystyle \lim_{x \to 2} \frac{x^2 + 3x - 10}{x^2 - 4} =
+        \frac{7}{4}$.
+  \end{stepanalysis}
+\end{example}
 
 \section{Continuidade}
 \label{sec:continuity}
