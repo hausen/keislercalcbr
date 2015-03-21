@@ -965,6 +965,37 @@ ele deve ser igual a $\std(f(x))$.
   \end{stepanalysis}
 \end{example}
 
+As regras mostradas no Capítulo~\ref{chp:reals} para o cálculo de partes
+padronizadas levam diretamente às regras para os limites. Listamos estas
+regras na Tabela~\ref{tab:limitrules}. As regras para limites podem ser
+aplicadas sempre que os dois limites $\dslim{x \to c} f(x)$ e
+$\dslim{x \to c} g(x)$ existam.
+
+\begin{includetable}{limitrules}
+\setlength{\tabcolsep}{0.7em}
+  \begin{tabular}{l|l}
+  \hline
+    \multicolumn{1}{c|}{Regra para Parte Padronizada} &
+      \multicolumn{1}{c}{Regra para Limite} \\
+  \hline
+    $\std(kb) = k \std(b)$, $k$ real &
+    $\dslim{x \to c} k f(x) = k \dslim{x \to c} f(x)$ \\
+    $\std(a + b) = \std(a) + \std(b)$ &
+    $\dslim{x \to c} (f(x) + g(x)) = \dslim{x \to c} f(x) +
+      \dslim{x \to c} g(x)$ \\
+    $\std(a b) = \std(a) \cdot \std(b)$ &
+    $\dslim{x \to c} (f(x) g(x)) = \dslim{x \to c} f(x) \cdot
+      \dslim{x \to c} g(x)$ \\
+    $\std(a/b) = \std(a) / \std(b)$, se $|\std(b)| > 0$ &
+    $\dslim{x \to c} (f(x) / g(x)) = \dslim{x \to c} f(x) /
+      \dslim{x \to c} g(x)$, se $\dslim{x \to c} g(x) \ne 0$  \\
+    $\std(\sqrt[n]{a}) = \sqrt[n]{\std(a)}$, se $a > 0$ &
+    $\dslim{x \to c} \sqrt[n]{f(x)} = \vclear{\sqrt[n]{\lim\limits_{x \to c} f(x)}}$
+      se $\dslim{x \to c} f(x) > 0$ \\
+  \hline
+  \end{tabular}
+\end{includetable}
+
 \section{Continuidade}
 \label{sec:continuity}
 
