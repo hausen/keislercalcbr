@@ -3,6 +3,8 @@
 \newcommand{\hyper}[1]{{#1}^\hypersymb}
 
 \newcommand{\dsfrac}[2]{\frac{\mbox{\normalsize\strut$#1$}}{\mbox{\normalsize\strut$#2$}}}
+\newcommand{\dslim}[1]{\vphantom{\lim\limits_{\mathstrut{}#1}}\lim\limits_{x \to c}}
+\newcommand{\vclear}[1]{\vphantom{\fbox{$#1$}}#1}
 
 \newcommand{\Dy}{\Delta y}
 \newcommand{\Dx}{\Delta x}
@@ -223,6 +225,23 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{includetable}[caption]{label}
+%   this environment creates a table float and sets up tabular
+%   spacing. A label tab:label will be created.
+\newenvironment{includetable}[2][]%
+{%
+\begin{table}
+\caption{#1}
+\label{tab:#2}
+\begingroup
+\setlength{\tabcolsep}{1em}
+\setlength{\extrarowheight}{2ex}
+}%
+{%
+\endgroup
+\end{table}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \captions{left}{right}
