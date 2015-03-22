@@ -919,23 +919,6 @@ ele deve ser igual a $\std(f(x))$.
 \end{example}
 
 \begin{example}
-  Determine $\displaystyle \lim_{x \to 2} \frac{x^2 + 3x - 10}{x^2 - 4}$.
-  \begin{stepanalysis}
-  \item Desta vez, o termo dentro do limite é indefinido quando $x = 2$.
-        Tomando $x \approx 2$ mas $x \ne 2$, temos
-        $$
-          \frac{x^2 + 3x - 10}{x^2 - 4} =
-            \frac{(x - 2)(x + 5)}{(x - 2)(x + 2)} = \frac{x+5}{x+2}.
-        $$
-  \item $\displaystyle \st{\frac{x^2 + 3x - 10}{x^2 - 4}} =
-          \st{\frac{x+5}{x+2}} = \frac{2 + 5}{2 + 2} = \frac{7}{4}$.
-
-        Portanto, \hspace{1.5em} $\displaystyle \lim_{x \to 2}
-          \left(\frac{x^2 + 3x - 10}{x^2 - 4}\right) = \frac{7}{4}$.
-  \end{stepanalysis}
-\end{example}
-
-\begin{example}
   Determine $\displaystyle \lim_{x \to 0}
     \left(\frac{(2/x)+3}{(3/x)-1}\right)$.
   \begin{stepanalysis}
@@ -995,6 +978,201 @@ $\dslim{x \to c} g(x)$ existam.
   \hline
   \end{tabular}
 \end{includetable}
+
+\begin{example}
+  Determine $\dslim{x \to 1} (x^2 - 2x)\sqrt{(x^2-1)/(x-1)}$.
+
+  Todos os limites envolvidos existem, logo podemos usar as regras de limites
+  para calcular o limite como se segue. Primeiramente, encontramos o limite
+  da expressão dentro do radical.
+  $$
+    \lim_{x \to 1} \frac{x^2 - 1}{x - 1} =
+      \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x+1) = 2.
+  $$
+  Agora, encontramos a resposta para o problema original.
+  \begin{eqnarray*}
+    \lim_{x \to 1} (x^2 - 2x)\sqrt{(x^2-1)/(x-1)} & = &
+      \lim_{x \to 1} (x^2 - 2x) \cdot \sqrt{\lim_{x \to 1} (x^2-1)/(x-1)} \\
+    & = & (1 -2) \sqrt{2} = -\sqrt{2}.
+  \end{eqnarray*}
+\end{example}
+
+Há três maneiras nas quais um limite $\dslim{x \to c} f(x)$ pode não
+existir:
+\begin{enumerate}[(1)]
+\item $f(x)$ é indefinido para algum $x$ infinitamente próximo, mas não igual
+      a $c$.
+\item $f(x)$ é infinito para algum $x$ infinitamente próximo, mas não igual a
+      $c$.
+\item A parte padronizada de $f(x)$ é diferente para distintos números $x_1$,
+      $x_2$ infinitamente próximos, mas não iguais a $c$.
+\end{enumerate}
+
+\begin{example}\label{ex:cap3p3ex7}
+$\dslim{x \to 0} \sqrt{x}$ não existe pois $\sqrt{x}$ é indefinido para
+qualquer número infinitesimal negativo $x$. (Veja
+Figura~\ref{fig:cap3p3exs789}(a).)
+\end{example}
+
+\begin{example}\label{ex:cap3p3ex8}
+$\dslim{x \to 0} 1/x^2$ não existe pois $1/x^2$ é infinito para qualquer
+infinitesimal $x \ne 0$. (Veja Figura~\ref{fig:cap3p3exs789}(b).)
+\end{example}
+
+\begin{figure}
+\begin{minipage}{0.3\textwidth}
+\centering
+\includegraphics{cap3p3ex7}\\
+(a) \; $y = \sqrt{x}$
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.3\textwidth}
+\centering
+\includegraphics{cap3p3ex8}\\
+(b) \; $y = \dfrac{1}{x^2}$
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.3\textwidth}
+\centering
+\includegraphics{cap3p3ex9}\\
+(c) \; $y = \dfrac{x}{|x|}$
+\end{minipage}%
+\caption{}\label{fig:cap3p3exs789}
+\end{figure}
+
+\begin{example}\label{ex:cap3p3ex9}
+$\dslim{x \to 0} x/|x|$ não existe pois 
+$$
+  \st{\frac{x}{|x|}} = \left\{ \begin{array}{rl}
+                          1 & \text{ se } x > 0, \\
+                         -1 & \text{ se } x < 0.
+                       \end{array} \right.
+$$
+(Veja Figura~\ref{fig:cap3p3exs789}(b).)
+\end{example}
+
+Nos três exemplos anteriores, a função se comporta de maneira diferente de
+um dos lados do ponto $0$ com relação ao seu comportamento do outro lado.
+Para tais funções, é útil definir o conceito de
+\newdef[limite!lateral]{limites laterais}.
+
+Dizemos que
+$$
+  \lim_{x \to c^+} f(x) = L
+$$
+se, para todo $x > c$ tal que $x \approx c$, é verdade que $f(x) \approx L$.
+Já o limite
+$$
+  \lim_{x \to c^-} f(x) = L
+$$
+significa que, para todo $x < c$ tal que $x \approx c$, é verdade que
+$f(x) \approx L$. Estes dois tipos de limites, ilustrados na
+Figura~\ref{fig:onesidedlimits}, são chamados respectivamente de
+\newdef[limite!pela direita]{limite pela direita} e
+\newdef[limite!pela esquerda]{limite pela esquerda}.
+
+\begin{includepic}[Limites laterais.]{onesidedlimits}{101.02,55.24}
+\put(0,0){\includegraphics{onesidedlimits}}
+\put(80.929,44.409){\normalsize$\lim\limits_{x \to c^{+}} f(x) = M$}
+\put(80.929,17.306){\normalsize$\lim\limits_{x \to c^{-}} f(x) = L$}
+\end{includepic}
+
+\begin{theorem}
+% corrigindo erro no enunciado original do teorema 2 na p. 123
+O valor de um limite é $L$, ou seja,
+$$
+  \lim_{x \to c} f(x) = L, % erro no original: estava f(c)
+$$
+se, e somente se, ambos os limites laterais existem e são iguais a L,
+ou seja,
+$$
+  \lim_{x \to c^-} f(x) = \lim_{x \to c^+} f(x) = L.
+$$
+\end{theorem}
+
+\begin{proof}
+Se $\lim_{x \to c} f(x) = L$, decorre imediatamente da definição que ambos
+os limites laterais são $L$.
+
+Para demonstrar a recíproca, assuma que ambos os limites laterais são
+iguais a $L$. Seja $x \approx c$, mas $x \ne c$. Então, ou $x < c$,
+ou $x > c$. Se $x < c$, então, como $\lim_{x \to c^-} f(x) = L$, temos
+que $f(x) \approx L$. Por outro lado, se $x > c$, então $\lim_{x \to c}
+f(x) = L$ nos dá $f(x) \approx L$. Assim, em ambos os casos,
+$f(x) \approx L$. Isto nos mostra que $\lim_{x \to c} f(x) = L$.
+\end{proof}
+
+Quando um limite não existe, é possível que nenhum dos limites laterais
+exista, que apenas um dele exista, ou que ambos os limites laterais existam
+mas possuindo valores diferentes.
+
+\begin{examplecont}{ex:cap3p3ex7} \; $\dslim{x \to 0^+} \sqrt{x} = 0$,
+  \hspace{1.5em} e \hspace{1.5em} $\dslim{x \to 0^-} \sqrt{x}$ \; não existe.
+\end{examplecont}
+
+\begin{examplecont}{ex:cap3p3ex8} \; Nem \; $\dslim{x \to 0^+} 1/x^2$,
+  \hspace{1.5em} nem \hspace{1.5em} $\dslim{x \to 0^-} 1/x^2$ \; existem.
+\end{examplecont}
+
+\begin{examplecont}{ex:cap3p3ex9} \; $\dslim{x \to 0^+} x/|x| = 1$,
+  \hspace{1.5em} e \hspace{1.5em} $\dslim{x \to 0^-} x/|x| = -1$.
+\end{examplecont}
+
+\begin{sectionproblems}
+Em cada um dos problemas abaixo, determine se o limite existe ou não.
+Nos casos em que o limite existe, calcule o seu valor. Com uma calculadora,
+calcule alguns valores da função à medida que a variável se aproxima do 
+valor indicado e verifique o que acontece.
+
+\twoexer{$\dslim{t \to 4} 3t^2 + t + 1$}%
+        {$\dslim{\Dx \to -1} \dfrac{\Dx^2 + 2\Dx + 1}{\Dx + 1}$}
+
+\twoexer{$\dslim{x \to c} \sqrt{c - x}$}%
+        {$\dslim{y \to 0} \dfrac{1}{y^5}$}
+
+\twoexer{$\dslim{x \to 2} \dfrac{x}{x^2 - 4}$}%
+        {$\dslim{x \to 2} \dfrac{x^2 - 4}{x - 2}$}
+
+\twoexer{$\dslim{v \to 8} \dfrac{\sqrt{8} - \sqrt{v}}{v - 8}$}%
+        {$\dslim{x \to 0} \dfrac{\sqrt{x + 1} - 1}{x}$}
+
+\twoexer{$\dslim{u \to 1} \dfrac{\sqrt[3]{u} - 1}{u - 1}$}%
+        {$\dslim{t \to 0} \dfrac{t^3-2t^2+4}{3t^2-5t+7}$}
+
+\twoexer{$\dslim{y \to 0} (\sqrt{1 + 1/y} - \sqrt{1/y})$}%
+        {$\dslim{x \to 0} \dfrac{(a + x)^2 - a^2}{x}$}
+
+\twoexer{$\dslim{y \to -1} \dfrac{y^2 + 1}{y + 1}$}%
+        {$\dslim{x \to 1} \dfrac{|x-1|}{x-1}$}
+
+\twoexer{$\dslim{x \to 1^+} \dfrac{|x-1|}{x-1}$}%
+        {$\dslim{x \to c^-} \sqrt{c-x}$}
+
+\twoexer{$\dslim{z \to 1} \sqrt{z+\sqrt{z+\sqrt{z}}}$}%
+        {$\dslim{x \to a} \sqrt{|a-x|}$}
+
+\twoexer{$\dslim{x \to 0^+} x \sqrt{1 + x^{-2}}$}%
+        {$\dslim{x \to 0^-} x \sqrt{1 + x^{-2}}$}
+
+\twoexer{$\dslim{t \to 0} \dfrac{1 + 2t^{-1}}{3 - 4t^{-1}}$}%
+        {$\dslim{x \to 0} \dfrac{3 + 4x^{-1} - 5x^{-2}}{6-x^{-1}+3x^{-2}}$}
+
+\twoexer{$\dslim{\Dx \to 0} \dfrac{(x + \Dx)^2 - x^2}{\Dx}$}%
+        {$\dslim{\Dx \to 0} \dfrac{\dfrac{1}{x + \Dx}-\dfrac{1}{x}}{\Dx}$ \;
+         ($x \ne 0$)}
+
+\twoexer{$\dslim{\Dt \to 0} \dfrac{\sqrt{t + \Dt}-\sqrt{t}}{\Dt}$ \; ($t > 0$)}%
+        {$\dslim{\Dt \to 0} \dfrac{(t + \Dt)^{1/5} - t^{1/5}}{\Dt}$ \; ($t > 0$)}
+
+\twoexer{$\dslim{\Dx \to 0} \dfrac{(x - \Dx)^3 - x^3}{\Dx}$}%
+        {$\dslim{\Dx \to 0} \dfrac{\dfrac{x + \Dx}{x + \Dx + 1}-\dfrac{x}{x+1}}{\Dx}$ \; ($x~\ne~-1$)}
+
+\twoexer{$\dslim{\Dx \to 0^-} \dfrac{|(1+\Dx)^3-(1+\Dx)|}{\Dx}$}%
+        {$\dslim{\Dx \to 0^+} \dfrac{|(1+\Dx)^3-(1+\Dx)|}{\Dx}$}
+
+\exer{$\dslim{\Dx \to 0^-} \dfrac{\sqrt{1 - (1+\Dx)^2}}{\Dx}$}
+
+\end{sectionproblems}
 
 \section{Continuidade}
 \label{sec:continuity}
