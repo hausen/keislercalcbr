@@ -3,7 +3,7 @@
 \newcommand{\hyper}[1]{{#1}^\hypersymb}
 
 \newcommand{\dsfrac}[2]{\frac{\mbox{\normalsize\strut$#1$}}{\mbox{\normalsize\strut$#2$}}}
-\newcommand{\dslim}[1]{\vphantom{\lim\limits_{\mathstrut{}#1}}\lim\limits_{x \to c}}
+\newcommand{\dslim}[1]{\vphantom{\lim\limits_{\mathstrut{}#1}}\lim\limits_{#1}}
 \newcommand{\vclear}[1]{\vphantom{\fbox{$#1$}}#1}
 
 \newcommand{\Dy}{\Delta y}
@@ -11,7 +11,7 @@
 \newcommand{\Dz}{\Delta z}
 \newcommand{\Du}{\Delta u}
 \newcommand{\Dv}{\Delta v}
-\newcommand{\Dt}{\delta t}
+\newcommand{\Dt}{\Delta t}
 \newcommand{\dy}{\dif y}
 \newcommand{\dx}{\dif x}
 \newcommand{\dz}{\dif z}
@@ -207,6 +207,31 @@
 \end{center}
 \end{figure}
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{includepic}[caption]{label}{width}{height}
+%   this environment creates a picture environment inside a figure float
+%   and defines a label fig:label. The picture dimensions are in mm.
+\newenvironment{includepic}[3][]%
+{
+\begin{figure}
+\begingroup
+\def\thepiccaption{#1}
+\def\thepiclabel{#2}
+\setlength{\unitlength}{1mm}
+\begin{center}
+\begin{picture}(#3)
+}
+{
+\end{picture}
+\caption{\thepiccaption}
+\label{fig:\thepiclabel}
+\end{center}
+\endgroup
+\end{figure}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
