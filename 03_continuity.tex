@@ -1348,6 +1348,86 @@ contínuas para todo $x$, e $\ln x$ é contínua para $x > 0$.
 O Teorema~\ref{teo:diffimpliescont} pode ser usado para demonstrar que
 combinações entre estas funções são contínuas.
 
+\begin{example}
+  Encontre o maior domínio possível para o qual a função
+  $$
+    f(x) = \frac{\sen x \ln(x + 1)}{x^2 - 4}
+  $$
+  é contínua.
+
+  A função $\sen x$ é contínua para todo $x$, enquanto que $\ln(x + 1)$ é
+  contínua sempre que $x + 1 > 0$, ou seja, $x > -1$. Portanto, o numerador
+  $\sen x \ln(x + 1)$ é contínuo sempre que $x > -1$. O denominador $x^2-4$
+  é contínuo para todo $x$ mas é zero quando $x = \pm 2$. Deste modo, $f(x)$
+  é contínua sempre que $x > -1$ e $x \ne 2$.
+\end{example}
+
+Os próximos dois exemplos apresentam funções que são contínuas mas \emph{não}
+diferenciáveis em um ponto $c$.
+
+\begin{example}
+  A função $y = x^{1/3}$ é contínua mas não diferenciável em $x = 0$.
+  (Veja Figura~\ref{fig:nondifffunc}(a).). Vimos, anteriormente, que esta
+  função não é diferenciável em $x = 0$. Ela é contínua em $0$ pois, se
+  $\Dx$ é um infinitésimo, então o $\Dy$ também é, onde
+  $$
+    \Dy = (0 + \Dx)^{1/3} - 0^{1/3} = (\Dx)^{1/3}.
+  $$
+\end{example}
+
+\begin{example}
+  A função valor absoluto $y = |x|$ é contínua mas não diferenciável no
+  ponto $x = 0$. (Veja Figura~\ref{fig:nondifffunc}(b).)
+
+  Já demonstramos que a sua derivada não existe em $x = 0$. Para verificar
+  que a função é contínua em $0$, note que para qualquer infinitésimo $\Dx$,
+  $$
+    \Dy = |0 + \Dx| - |0| = |\Dx|,
+  $$
+  logo $\Dy$ é um infinitésimo.
+\end{example}
+
+\begin{figure}
+\begin{minipage}{60.91mm}
+\centering
+\includegraphics{nondifffunc-a}
+
+(a) $y = x^{1/3}$
+\end{minipage}
+\hfill
+\begin{minipage}{43.58mm}
+\centering
+\includegraphics{nondifffunc-b}
+
+(b) $y = |x|$
+\end{minipage}
+\caption{}\label{fig:nondifffunc}
+\end{figure}
+
+A trajetória de uma bola que está quicando é uma série de parábolas,
+conforme Figura~\ref{fig:bouncingball}. A curva é contínua em todos
+os pontos. Nos pontos $a_1$, $a_2$, $a_3$, \ldots onde a bola quica,
+a curva é contínua mas não diferenciável. Em todos os outros pontos,
+a curva é contínua e diferenciável.
+
+\begin{includepic}[Trajetória de uma bola que quica.]{bouncingball}{104.14,35.64}
+\normalsize
+\put(0,0){\includegraphics{bouncingball}}
+\put(27.1196816257409, 5.49025317527519){\hspace{-0.5em}$a_1$}
+\put(53.94029353655094,5.49025317527519){\hspace{-0.5em}$a_2$}
+\put(73.73377081569291, 5.49025317527519){\hspace{-0.5em}$a_3$}
+\put(87.20056731583404, 5.49025317527519){\hspace{-0.5em}$a_4$}
+\put(96.87135196161444, 5.49025317527519){\hspace{-0.5em}$a_5$}
+\end{includepic}
+
+Na teoria cinética clássica dos gases, assumimos que uma molécula de gás
+se desloca a velocidade constante em linha reta, exceto no instante de
+tempo em que ela colide com outra molécula ou com a parede do recipiente
+que contém o gás. Sua trajetória descreve um zigue-zague no espaço, conforme
+a Figura~\ref{fig:brownianmotion}.
+
+\includefig[Movimento de uma molécula em um gás ideal.]{brownianmotion}
+
 \section{Máximos e Mínimos}
 \label{sec:maxmin}
 
