@@ -1177,6 +1177,177 @@ valor indicado e verifique o que acontece.
 \section{Continuidade}
 \label{sec:continuity}
 
+Intuitivamente, uma curva $y = f(x)$ é contínua se ela forma um gráfico
+sem quebras, isto é, toda vez que $x_1$ estiver próximo de $x_2$, teremos
+que $f(x_1)$ estará próximo de $f(x_2)$. Para transformarmos esta ideia
+intuitiva em uma definição matemática, substituiremos ``próximo'' por
+``infinitamente próximo.''
+
+% TODO: definir environment definition*
+\begin{definition*}
+Dizemos que uma função $f$ é \index{continuidade}
+\newdef[função!contínua em um ponto]{contínua} em um ponto $c$ se:
+\begin{enumerate}[(i)]
+\item $f$ está definida em $c$;
+\item para todo $x$ infinitamente próximo de $c$, temos que $f(x)$ está
+      infinitamente próximo de $f(c)$.
+\end{enumerate}
+\end{definition*}
+
+Se $f$ não é contínua em $c$, dizemos que ela é \newdef[função!descontínua em um ponto]{descontínua} em $c$.
+
+Quando $f$ é contínua em $c$, a parte inteira da curva onde $x \approx c$
+será visível em um microscópio infinitesimal centrado em $(c, f(c))$,
+conforme mostrado na Figura~\ref{fig:continuitygraph}(a). Mas se $f$ é
+descontínua em $c$, alguns valores de $f(x)$ onde $x \approx c$ ou estarão
+indefinidos, ou estarão fora do campo de visão do microscópio, conforme
+Figura~\ref{fig:continuitygraph}(b).
+
+Continuidade, como a derivada, pode ser expressada em termos de limites.
+Novamente, a prova decorre imediatamente das definições.
+
+\begin{figure}
+\begin{center}
+\includegraphics{continuitygraph-a}
+
+(a) $f$ contínua em $c$.
+
+\includegraphics{continuitygraph-b}
+
+(b) $f$ descontínua em $c$.
+\end{center}
+\caption{}\label{fig:continuitygraph}
+\end{figure}
+
+\begin{theorem}
+A função $f$ é contínua em $c$ se, e somente se,
+$$
+  \lim_{x \to c} f(x) = f(c).
+$$
+\end{theorem}
+
+Como aplicação, temos um conjunto de regras para combinar funções contínuas.
+Elas podem ser demonstradas tanto pelas regras correspondentes para limites
+(Tabela~\ref{tab:limitrules} na Seção~\ref{sec:limits}) ou pelo cálculo de
+partes padronizadas.
+
+\begin{theorem}\label{teo:continuityrules}
+Suponha que $f$ e $g$ sejam contínuas em $c$.
+\begin{enumerate}[(i)]
+\item Para qualquer constante $k$, a função $k \cdot f(x)$ é contínua em $c$.
+\item $f(x) + g(x)$ é contínua em $c$.
+\item $f(x) \cdot g(x)$ é contínua em $c$.
+\item Se $g(c) \ne 0$, então $f(x)/g(x)$ é contínua em $c$.
+\item Se $f(c)$ é positivo e $n$ é um inteiro, então $\sqrt[n]{f(x)}$ é
+      contínua em $c$.
+\end{enumerate}
+\end{theorem}
+
+Através da aplicação repetida do Teorema~\ref{teo:continuityrules}, vemos
+que todas as funções a seguir são contínuas em $c$.
+\begin{itemize}
+\item Funções polinomiais.
+\item Funções racionais $f(x)/g(x)$, onde $f(x)$ e $g(x)$ são polinômios e
+      $g(c) \ne 0$.
+\item Funções do tipo $f(x) = x^r$, com $r$ racional e $x > 0$.
+\end{itemize}
+
+Às vezes, uma função $f(x)$ é indefinida em um ponto $x = c$, enquanto que
+o limite
+$$
+  L = \lim_{x \to c} f(x)
+$$
+existe. Quando isto acontece, podemos fazer a função contínua em $c$
+definindo $f(c) = L$.
+
+\begin{example}
+Seja $f(x) = \dfrac{x^2 + x - 2}{x - 1}$.
+
+Em qualquer ponto $c \ne 1$, $f$ é contínua. Mas $f(1)$ é indefinido, logo
+$f$ é descontínua em $1$. Entretanto,
+$$
+  \lim_{x \to 1} \frac{x^2 + x - 2}{x - 1} =
+    \lim_{x \to 1} \frac{(x - 1)(x + 2)}{x - 1} = 3.
+$$
+Podemos fazer $f$ contínua em $1$ definindo
+$$
+  f(x) = \left\{ \begin{array}{cl}
+           \dfrac{x^2 + x - 2}{x - 1} & \text{ se } x \ne 1, \\[2ex]
+           3 & \text{ se } x = 1.
+         \end{array} \right.
+$$
+(Veja Figura~\ref{fig:cap3p4ex1}.)
+\end{example}
+
+\begin{figure}
+\begingroup
+\begin{center}
+\setlength{\unitlength}{1mm}
+\begin{picture}(62.81,46.39)
+\put(0,0){\includegraphics{cap3p4ex1a}}
+\put(24.826,31.219){\normalsize$f(1)$ indefinido}
+\put(22.815,21.236){\normalsize$f(x) = \dfrac{x^2 + x - 2}{x - 1}$}
+\end{picture}
+%
+\begin{picture}(62.81,46.39)
+\put(0,0){\includegraphics{cap3p4ex1b}}
+\put(26.014,32.883){\normalsize$f(1) = 3$}
+\put(24.005,20.336){\normalsize$f(x) =
+         \left\{ \begin{array}{cl}
+           \frac{x^2 + x - 2}{x - 1} & \text{ se } x \ne 1, \\[2ex]
+           3 & \text{ se } x = 1.
+         \end{array} \right.$}
+\end{picture}
+\end{center}
+\endgroup
+\caption{}\label{fig:cap3p4ex1}
+\end{figure}
+
+Em termos de uma variável dependente $y = f(x)$, a definição de continuidade
+assume a seguinte forma, onde $\Dy = f(c + \Dx) - f(c)$.
+
+\begin{quote}
+Dizemos que $y$ é contínua em $x = c$ se:
+\begin{enumerate}[(i)]
+\item $y$ está definida em $x = c$.
+\item Sempre que $\Dx$ é um infintésimo, temos que $\Dy$ é um infinitésimo.
+\end{enumerate}
+\end{quote}
+
+Resumindo, dada uma função $y = f(x)$ definida em $x = c$, todas as
+afirmações abaixo são equivalentes:
+\begin{enumerate}[(1)]
+\item $f$ é contínua em $c$.
+\item Sempre que $x \approx c$, temos que $f(x) \approx f(c)$.
+\item Sempre que $\std(x) = c$, temos que $\std(f(x)) = f(c)$.
+\item $\lim_{x \to c} f(x) = f(c)$.
+\item $y$ é contínua em $x = c$.
+\item Sempre que $\Dx$ é um infinitésimo, temos que $\Dy$ é um
+      infinitésimo.
+\end{enumerate}
+
+Nosso próximo teorema nos diz que diferenciabilidade implica continuidade.
+Ou seja, o conjunto de funções diferenciáveis em $c$ é um subconjunto das
+funções contínuas em $c$. (Veja Figura~\ref{fig:realfuncclasses}.)
+
+\includefig{realfuncclasses}
+
+\begin{theorem}\label{teo:diffimpliescont}
+Se $f$ é diferenciável em $c$, então $f$ é contínua em $c$.
+\end{theorem}
+
+\begin{proof}
+Seja $y = f(x)$ e seja $\Dx$ um infinitésimo não nulo. Então, $\Dy/\Dx$ está
+infinitamente próximo de $f'(c)$, logo é um número finito. Portanto,
+$\Dy = \Dx(\Dy/\Dx)$ é o produto entre um infinitésimo e um número finito,
+logo $\Dy$ é um infinitésimo.
+\end{proof}
+
+Por exemplo, as funções transcendentais $\sen x$, $\cos x$, $\e^x$ são
+contínuas para todo $x$, e $\ln x$ é contínua para $x > 0$.
+O Teorema~\ref{teo:diffimpliescont} pode ser usado para demonstrar que
+combinações entre estas funções são contínuas.
+
 \section{Máximos e Mínimos}
 \label{sec:maxmin}
 
