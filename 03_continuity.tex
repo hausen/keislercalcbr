@@ -1420,13 +1420,40 @@ a curva é contínua e diferenciável.
 \put(96.87135196161444, 5.49025317527519){\hspace{-0.5em}$a_5$}
 \end{includepic}
 
-Na teoria cinética clássica dos gases, assumimos que uma molécula de gás
+Na teoria cinética dos gases clássica, assumimos que uma molécula de gás
 se desloca a velocidade constante em linha reta, exceto no instante de
 tempo em que ela colide com outra molécula ou com a parede do recipiente
 que contém o gás. Sua trajetória descreve um zigue-zague no espaço, conforme
 a Figura~\ref{fig:brownianmotion}.
 
 \includefig[Movimento de uma molécula em um gás ideal.]{brownianmotion}
+
+A posição no espaço tridimensional no instante $t$ pode ser representada
+por três funções
+$$
+  x = f(t), \hspace{1.5em} y = g(t), \hspace{1.5em} z = h(t).
+$$
+Todas as três funções, $f$, $g$ e $h$ são contínuas para todos os valores
+de $t$. No instante $t$ de uma colisão, ao menos uma, e geralmente todas as
+três derivadas $\dx/\dt$, $\dy/\dt$, $\dz/\dt$ serão indefinidas pois a
+velocidade ou a direção da molécula muda subitamente. Em qualquer outro
+instante $t$, quando nenhuma colisão está acontecendo, todas as três
+derivadas $\dx/\dt$, $\dy/\dt$, $\dz/\dt$ existirão.
+
+As funções que encontraremos comumente neste livro serão definidas e
+possuirão derivada em todos os pontos, à exceção possível de um conjunto
+finito de pontos em um intervalo. O gráfico de tal função será uma curva
+suave onde a derivada existe. Nos pontos onde a curva possuir um bico afiado
+(como no ponto $x = 0$ para a função $y = |x|$) ou uma tangente vertical
+(como no ponto $x = 0$ para a função $y = x^{1/3}$), a função é contínua mas
+não diferenciável (veja Figura~\ref{fig:excontbutnotdiff}). Nos pontos onde
+a função é indefinida ou dá um salto, ou o valor se aproxima de infinito,
+ou oscila violentamente, a função é descontínua (veja
+Figura~\ref{fig:exfuncdiscontinuous}).
+
+\includefig[Pontos onde $f$ é contínua mas não diferenciável.]{excontbutnotdiff}
+
+\includefig[Pontos onde $f$ é descontínua.]{exfuncdiscontinuous}
 
 \section{Máximos e Mínimos}
 \label{sec:maxmin}
