@@ -1455,6 +1455,101 @@ Figura~\ref{fig:exfuncdiscontinuous}).
 
 \includefig[Pontos onde $f$ é descontínua.]{exfuncdiscontinuous}
 
+O próximo teorema é similar à Regra da Cadeia para derivadas.
+
+\begin{theorem}
+  Se $f$ é contínua em $c$ e $G$ é contínua em $f(c)$, então a função
+  $$
+    g(x) = G(f(x))
+  $$
+  também é contínua em $c$. Ou seja, a composição de duas funções contínuas
+  é uma função contínua
+\end{theorem}
+
+\begin{proof}
+  Seja $x$ infinitamente próximo, mas não igual a $c$. Então
+  $$
+    \std(g(x)) = \std(G(f(x))) = G(\std(f(x))) = G(f(c)) = g(c).
+  $$
+\end{proof}
+
+Por exemplo, as funções a seguir são contínuas:
+$$
+  \begin{array}{rcl@{\hspace{1em}}l}
+    f(x) & = & \sqrt{x^2 + 1}, & \text{ para todo } x, \\
+    g(x) & = & |x^3 - x|, & \text{ para todo } x, \\
+    h(x) & = & (1 + \sqrt{x})^{1/3}, & \text{ para } x > 0, \\
+    j(x) & = & \e^{\sen x}, & \text{ para todo } x, \\
+    k(x) & = & \ln|x|, & \text{ para } x \ne 0.
+  \end{array}
+$$
+A seguir, apresentamos dois exemplos que ilustram dois tipos de
+descontinuidades.
+
+\begin{example}
+  A função
+  $$
+    g(x) = \frac{x^2 - 3x + 4}{4(x-1)(x-2)}
+  $$
+  é contínua para todo número real exceto $x = 1$ e $x = 2$. Nestes dois
+  pontos, $g(x)$ é indefinido (Figura~\ref{fig:cap3p4ex5}).
+\end{example}
+
+\includefig[\normalsize$y = \frac{x^2 - 3x + 4}{4(x-1)(x-2)}$]{cap3p4ex5}
+
+\includefig[\normalsize$y = \floor{x}$]{cap3p4ex6}
+
+\begin{example}
+  A \newdef[função!maior inteiro]{função maior inteiro}%
+  \tnote{Também denominada \emph{função piso}.\index{função!piso}}, denotada por
+  $\floor{x}$, cujo gráfico é ilustrado na Figura~\ref{fig:cap3p4ex6},
+  é definida por
+  $$
+    \floor{x} = \text{maior inteiro } n \text{ tal que } n \le x.
+  $$
+  Assim, $\floor{x} = 0$ se $0 \le x < 1$, $\floor{x} = 1$,
+  se $1 \le x < 2$, $\floor{x} = 2$ se $2 \le x < 3$, e daí em diante.
+  Para $x$ negativo, temos $\floor{x} = -1$ se $-1 \le x < 0$,
+  $\floor{x} = -2$ se $-2 \le x < -1$, e daí em diante. Por exemplo,
+  $$
+    \floor{7,362} = 7, \hspace{1.5em}
+    \floor{\pi} = 3, \hspace{1.5em}
+    \floor{-2,43} = -3.
+  $$
+  Para todo inteiro $n$, $\floor{n}$ é igual a $n$. A função $\floor{x}$
+  é contínua quando $x$ não é um inteiro, mas é descontínua quando $x$ é
+  um inteiro $n$. Em um inteiro $n$, os limites laterais existem, mas são
+  diferentes:
+  $$
+    \lim_{x \to n^-} f(x) = n-1, \hspace{1.5em}
+    \lim_{x \to n^+} f(x) = n.
+  $$
+  O gráfico de $\floor{x}$ se parece com uma escada. Ele tem um degrau,
+  ou salto descontínuo, para cada inteiro $n$. A função $\floor{x}$ será
+  útil na última seção deste capítulo. Algumas calculadoras têm uma tecla
+  para a função maior inteiro, ou para a função similar que dá $\floor{x}$
+  para $x$ positivo e $\floor{x} + 1$ para $x$ negativo.
+\end{example}
+
+Funções que são ``contínuas em um intervalo'' desempenharão um papel
+importante neste capítulo. Os intervalos foram discutidos na
+Seção~\ref{sec:realline}. Recorde que os intervalos fechados têm a forma
+$$
+  [a, b],
+$$
+enquanto que os intervalos abertos têm uma das formas
+$$
+  (a, b), \hspace{1.5em} (a, \infty), \hspace{1.5em}, (-\infty, b),
+  \hspace{1.5em} (-\infty, \infty),
+$$
+e intervalos semi-abertos têm uma das formas
+$$
+  [a, b), \hspace{1.5em} (a, b], \hspace{1.5em} [a, \infty),
+  \hspace{1.5em} (-\infty, b].
+$$
+Nestes intervalos, $a$ é chamado de \newdef{extremo inferior} e $b$ de
+\newdef{extremo superior}. O símbolo $-\infty$ indica que não há extremo
+inferior, enquanto que $\infty$ indica que não há extremo superior.
 \section{Máximos e Mínimos}
 \label{sec:maxmin}
 
