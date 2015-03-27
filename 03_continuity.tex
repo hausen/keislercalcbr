@@ -1499,7 +1499,7 @@ descontinuidades.
 
 \includefig[\normalsize$y = \floor{x}$]{cap3p4ex6}
 
-\begin{example}
+\begin{example}\label{ex:floorfunc}
   A \newdef[função!maior inteiro]{função maior inteiro}%
   \tnote{Também denominada \emph{função piso}.\index{função!piso}}, denotada por
   $\floor{x}$, cujo gráfico é ilustrado na Figura~\ref{fig:cap3p4ex6},
@@ -1550,6 +1550,49 @@ $$
 Nestes intervalos, $a$ é chamado de \newdef{extremo inferior} e $b$ de
 \newdef{extremo superior}. O símbolo $-\infty$ indica que não há extremo
 inferior, enquanto que $\infty$ indica que não há extremo superior.
+
+\begin{definition*}
+  Dizemos que $f$ é \index{continuidade!em intervalo aberto}
+\newdef[função!contínua!em intervalo aberto]{contínua em um intervalo
+aberto $I$} se $f$ é contínua em todo ponto $c$ de $I$. Se, além disso, ela
+for diferenciável em todo ponto de $I$, então dizemos que $f$ é
+\index{diferenciabilidade!em intervalo aberto}
+\newdef[função!diferenciável em intervalo aberto]{diferenciável em $I$}.
+\end{definition*}
+
+Para definirmos o significado de uma função contínua em um intervalo fechado,
+introduzimos as noções de continuidade pela direita e continuidade pela
+esquerda por meio de limites laterais.
+
+\begin{definition*}
+  Dizemos que $f$ é \index{continuidade!pela direita}
+\newdef[função!contínua!pela direita]{contínua pela direita} em $x$ se
+$\lim\limits_{x \to c^+} f(x) = f(c)$.
+
+  Dizemos que $f$ é \index{continuidade!pela esquerda}
+\newdef[função!contínua!pela esquerda]{contínua pela direita} em $x$ se
+$\lim\limits_{x \to c^-} f(x) = f(c)$.
+\end{definition*}
+
+\begin{examplecont}{ex:floorfunc}
+  A função maior inteiro $f(x) = \floor{X}$ é contínua pela direita mas não
+  pela esquerda em cada inteiro $n$ pois
+  $$
+    \floor{n} = n, \hspace{1.5em} \lim_{x \to n^+} \floor{x} = n,
+    \hspace{1.5em} \lim_{x \to n^-} \floor{x} = n - 1.
+  $$
+\end{examplecont}
+
+É fácil verificar que $f$ é contínua em $c$ se, e somente se, $f$ é contínua
+tanto pela esquerda quanto pela direita em $c$.
+
+\begin{definition*}
+  Dizemos que $f$ é \index{continuidade!em intervalo fechado}
+\newdef[função!contínua!em intervalo fechado]{contínua em um intervalo
+fechado $[a, b]$} se $f$ é contínua em todo ponto $c$ tal que $a < c < b$,
+contínua pela direita em $a$ e contínua pela esquerda em $b$.
+\end{definition*}
+
 \section{Máximos e Mínimos}
 \label{sec:maxmin}
 
