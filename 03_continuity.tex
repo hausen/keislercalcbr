@@ -1570,12 +1570,12 @@ esquerda por meio de limites laterais.
 $\lim\limits_{x \to c^+} f(x) = f(c)$.
 
   Dizemos que $f$ é \index{continuidade!pela esquerda}
-\newdef[função!contínua!pela esquerda]{contínua pela direita} em $x$ se
+\newdef[função!contínua!pela esquerda]{contínua pela esquerda} em $x$ se
 $\lim\limits_{x \to c^-} f(x) = f(c)$.
 \end{definition*}
 
 \begin{examplecont}{ex:floorfunc}
-  A função maior inteiro $f(x) = \floor{X}$ é contínua pela direita mas não
+  A função maior inteiro $f(x) = \floor{x}$ é contínua pela direita mas não
   pela esquerda em cada inteiro $n$ pois
   $$
     \floor{n} = n, \hspace{1.5em} \lim_{x \to n^+} \floor{x} = n,
@@ -1592,6 +1592,33 @@ tanto pela esquerda quanto pela direita em $c$.
 fechado $[a, b]$} se $f$ é contínua em todo ponto $c$ tal que $a < c < b$,
 contínua pela direita em $a$ e contínua pela esquerda em $b$.
 \end{definition*}
+
+A Figura~\ref{fig:fcontclosedinter} mostra uma função $f$ contínua em
+$[a, b]$.
+
+\includefig[Função $f$ contínua no intervalo ${[}a, b{]}$.]{fcontclosedinter}
+
+\begin{example}
+  O semicírculo
+  $$
+    y = \sqrt{1 - x^2},
+  $$
+  mostrado na Figura~\ref{fig:fsemicircle}, é contínuo no intervalo fechado
+  $[-1, 1]$. Ele é diferenciável no intervalo aberto $(-1, 1)$. Para
+  verificar que ele é contínuo pela direita em $x = -1$, seja $\Delta x$
+  um infinitésimo positivo. Então,
+  \begin{eqnarray*}
+    y & = & \sqrt{1 - (-1)^2} = 0 \\
+    y + \Dy & = & \sqrt{1 - (-1 + \Dx)^2} = \sqrt{1 - (1 - 2\Dx + \Dx^2)} \\
+    & = & \sqrt{2 \Dx - \Dx^2} = \sqrt{(2 - \Dx)\Dx)}.
+  \end{eqnarray*}
+  Portanto
+  $$
+    \Dy = \sqrt{(2-\Dx)\Dx}.
+  $$
+\end{example}
+
+\includefig[$y = \sqrt{1 - x^2}$]{fsemicircle}
 
 \section{Máximos e Mínimos}
 \label{sec:maxmin}
