@@ -1630,6 +1630,78 @@ $[a, b]$.
 \section{Máximos e Mínimos}
 \label{sec:maxmin}
 
+Assumiremos, nesta seção, que $f$ é uma função real cujo domínio é um intervalo
+$I$ e que $f$ é contínua em $I$. Um problema que comumente aparece é o de se
+encontrar o ponto $c$ onde $f(c)$ assume o seu maior valor, ou o ponto $c$
+onde $f(c)$ tem seu menor valor. A derivada mostra a sua utilidade neste
+problema. Começamos por definir os conceitos de máximo e mínimo.
+
+\begin{definition*}
+  Seja $c$ um número real no domínio $I$ de $f$.
+  \begin{enumerate}[(i)]
+  \item $f$ tem um \newdef{máximo} em $c$ se $f(c) \ge f(x)$ para todo
+        e qualquer número real $x$ em $I$. Neste caso, $f(c)$ é chamado
+        o \newdef{valor máximo} de $f$.
+  \item $f$ tem um \newdef{mínimo} em $c$ se $f(c) \le f(x)$ para todo
+        e qualquer número real $x$ em $I$. Neste caso, $f(c)$ é chamado
+        o \newdef{valor mínimo} de $f$.
+  \end{enumerate}
+\end{definition*}
+
+Quando observamos o gráfico de uma função $f$ contínua em $I$, o máximo
+aparecerá como o maior pico e o mínimo como o vale mais baixo
+(Figura~\ref{fig:maxmin}).
+
+\includefig[Máximo e mínimo.]{maxmin}
+
+Em geral, todas as possibilidades a seguir podem ocorrer:
+\begin{itemize}
+\item $f$ não tem máximo em seu domínio $I$.
+\item $f$ tem um máximo em exatamente um ponto em $I$.
+\item $f$ tem máximos em vários pontos diferentes em $I$.
+\end{itemize}
+
+Entretanto, mesmo que $f$ tenha máximos em vários pontos diferentes, $f$ só
+pode ter um único valor máximo (se tiver algum). Como $f$ tem um máximo em
+$c_1$ e também em $c_2$, então $f(c_1) \ge f(c_2)$ e $f(c_2) \ge f(c_1)$,
+portanto $f(c_1)$ e $f(c_2)$ são iguais.
+
+\begin{example}
+  Cada uma das funções a seguir, cujos gráficos estão na
+  Figura~\ref{fig:nomaxmin}, não possuem máximo nem mínimo:
+  \begin{enumerate}[(a)]
+  \item $f(x) = 1/x$, \hspace{1.5em} $0 < x$.
+  \item $f(x) = x^2$, \hspace{1.5em} $0 < x < 1$.
+  \item $f(x) = 2x + 3$.
+  \end{enumerate}
+\end{example}
+
+\begin{figure}
+\begin{minipage}{38.67mm}
+\begin{center}
+\includegraphics{nomaxmin-a}
+
+(a) $f(x) = \frac{1}{x}, \; 0 < x$
+\end{center}
+\end{minipage}%
+\begin{minipage}{38.67mm}
+\begin{center}
+\includegraphics{nomaxmin-b}
+
+(b) $f(x) = x^2, \; 0 < x < 1$
+\end{center}
+\end{minipage}%
+\begin{minipage}{38.67mm}
+\begin{center}
+\includegraphics{nomaxmin-c}
+
+(c) $f(x) = 2x + 3$
+\end{center}
+\end{minipage}
+\caption{Sem máximo nem mínimo.}
+\label{fig:nomaxmin}
+\end{figure}
+
 \section{Máximos e Mínimos -- Aplicações}
 \label{sec:maxminappl}
 
